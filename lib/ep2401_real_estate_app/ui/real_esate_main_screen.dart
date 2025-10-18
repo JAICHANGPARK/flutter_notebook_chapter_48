@@ -100,7 +100,18 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
               ],
             ),
             SizedBox(
-              height: 180,
+              height: 240,
+              child: Placeholder(),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Featured Property"),
+                TextButton(onPressed: () {}, child: Text("View All")),
+              ],
+            ),
+            SizedBox(
+              height: 240,
               child: Placeholder(),
             )
           ],
