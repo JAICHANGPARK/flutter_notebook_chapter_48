@@ -4,10 +4,10 @@ class RealEstateMainScreen extends StatefulWidget {
   const RealEstateMainScreen({super.key});
 
   @override
-  State<RealEstateMainScreen> createState() => _RealEsateMainScreenState();
+  State<RealEstateMainScreen> createState() => _RealEstateMainScreenState();
 }
 
-class _RealEsateMainScreenState extends State<RealEstateMainScreen> {
+class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
