@@ -17,6 +17,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
         children: [Row(children: [])],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
@@ -28,6 +29,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
           ),
           BottomNavigationBarItem(
             icon: HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
+            label: "Wishlist",
+          ),
+          BottomNavigationBarItem(
+            icon: HugeIcon(icon: HugeIcons.strokeRoundedMessage01),
             label: "Wishlist",
           ),
         ],
