@@ -14,7 +14,14 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [Row(children: [])],
+        children: [
+          Row(
+            children: [
+              CircleAvatar(),
+              Expanded(child: Column(children: [])),
+            ],
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
