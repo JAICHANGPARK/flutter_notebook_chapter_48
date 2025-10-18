@@ -37,7 +37,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
-            label: "Message",
+            label: "Profile",
           ),
         ],
       ),
