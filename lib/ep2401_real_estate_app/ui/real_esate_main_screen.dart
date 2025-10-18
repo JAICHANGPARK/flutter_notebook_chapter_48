@@ -26,6 +26,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
             icon: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
             label: "Schedule",
           ),
+          BottomNavigationBarItem(
+            icon: HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
+            label: "Wishlist",
+          ),
         ],
       ),
     );
