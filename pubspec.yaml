@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   hugeicons:
-  
+
 
 dev_dependencies:
   flutter_test:
