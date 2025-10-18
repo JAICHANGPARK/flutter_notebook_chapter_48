@@ -33,7 +33,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
           ),
           BottomNavigationBarItem(
             icon: HugeIcon(icon: HugeIcons.strokeRoundedMessage01),
-            label: "Wishlist",
+            label: "Message",
+          ),
+          BottomNavigationBarItem(
+            icon: HugeIcon(icon: HugeIcons.strokeRoundedUser03),
+            label: "Message",
           ),
         ],
       ),
