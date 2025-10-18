@@ -73,6 +73,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                     spreadRadius: 12,
                   ),
                 ],
+                color: Colors.white,
               ),
               child: Row(
                 children: [
@@ -83,6 +84,8 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                       border: Border.all(color: Colors.grey[300]!),
                       shape: BoxShape.circle,
                     ),
+                    padding: EdgeInsets.all(8),
+                    child: Icon(Icons.tune),
                   ),
                 ],
               ),
