@@ -16,18 +16,40 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              spacing: 12,
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [Text("Dream Walker"), Text("Find your new house")],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                spacing: 12,
+                children: [
+                  CircleAvatar(radius: 24),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Dream Walker",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Find your new house",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Container(),
-              ],
+                  Container(
+                    height: 58,
+                    width: 58,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      boxShadow: [],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
