@@ -22,6 +22,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
             icon: HugeIcon(icon: HugeIcons.strokeRoundedHome03),
             label: "Home",
           ),
+          BottomNavigationBarItem(
+            icon: HugeIcon(icon: HugeIcons.strokeRoundedHome03),
+            label: "Home",
+          ),
         ],
       ),
     );
