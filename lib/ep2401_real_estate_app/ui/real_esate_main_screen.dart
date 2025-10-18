@@ -36,7 +36,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
             label: "Message",
           ),
           BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedUser03),
+            icon: Icon(Icons.account_circle_outlined),
             label: "Message",
           ),
         ],
