@@ -13,10 +13,9 @@ class _RealEsateMainScreenState extends State<RealEsateMainScreen> {
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          
-        ],
+        children: [Row(children: [])],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: []),
     );
   }
 }
