@@ -45,7 +45,13 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                     width: 58,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      boxShadow: [],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey[100]!,
+                          blurRadius: 12,
+                          spreadRadius: 12,
+                        ),
+                      ],
                       color: Colors.white,
                     ),
                     child: Center(
