@@ -18,7 +18,13 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
           Row(
             children: [
               CircleAvatar(),
-              Expanded(child: Column(children: [])),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [Text("Dream Walker"), Text("Find your new house")],
+                ),
+              ),
+              Container(),
             ],
           ),
         ],
