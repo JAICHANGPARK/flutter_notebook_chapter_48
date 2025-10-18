@@ -100,7 +100,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
               ],
             ),
             SizedBox(
-              height: 240,
+              height: 320,
               child: Placeholder(),
             ),
             Row(
