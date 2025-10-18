@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class RealEsateMainScreen extends StatefulWidget {
-  const RealEsateMainScreen({super.key});
+class RealEstateMainScreen extends StatefulWidget {
+  const RealEstateMainScreen({super.key});
 
   @override
-  State<RealEsateMainScreen> createState() => _RealEsateMainScreenState();
+  State<RealEstateMainScreen> createState() => _RealEsateMainScreenState();
 }
 
-class _RealEsateMainScreenState extends State<RealEsateMainScreen> {
+class _RealEsateMainScreenState extends State<RealEstateMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
