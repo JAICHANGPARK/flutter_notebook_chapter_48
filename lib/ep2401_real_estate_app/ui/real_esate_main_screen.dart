@@ -76,6 +76,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 ],
                 color: Colors.white,
               ),
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               child: Row(
                 children: [
                   Icon(Icons.search),
@@ -90,6 +91,12 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                   ),
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Text("Featured Property"),
+                TextButton(onPressed: () {}, child: Text("View All")),
+              ],
             ),
           ],
         ),
