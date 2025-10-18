@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  hugeicons:
+  hugeicons: ^1.1.1
 
 
 dev_dependencies:
