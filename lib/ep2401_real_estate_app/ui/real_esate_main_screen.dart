@@ -64,13 +64,14 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
               ),
             ),
             Container(
+              margin: EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 16),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 shadows: [
                   BoxShadow(
                     color: Colors.grey[200]!,
-                    blurRadius: 12,
-                    spreadRadius: 12,
+                    blurRadius: 8,
+                    spreadRadius: 8,
                   ),
                 ],
                 color: Colors.white,
