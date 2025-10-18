@@ -47,6 +47,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                       shape: BoxShape.circle,
                       boxShadow: [],
                     ),
+                    child: Center(child: HugeIcon(icon: HugeIcons.strokeRoundedNotification01,)),
                   ),
                 ],
               ),
