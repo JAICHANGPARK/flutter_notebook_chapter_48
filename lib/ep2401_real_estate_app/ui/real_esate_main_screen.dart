@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class RealEstateMainScreen extends StatefulWidget {
   const RealEstateMainScreen({super.key});
@@ -15,7 +16,14 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [Row(children: [])],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: []),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: HugeIcon(icon: HugeIcons.strokeRoundedHome03),
+            label: "Home",
+          ),
+        ],
+      ),
     );
   }
 }
