@@ -41,13 +41,13 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                     ),
                   ),
                   Container(
-                    height: 58,
-                    width: 58,
+                    height: 52,
+                    width: 52,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.grey[100]!,
+                          color: Colors.grey[200]!,
                           blurRadius: 12,
                           spreadRadius: 12,
                         ),
@@ -58,6 +58,30 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                       child: HugeIcon(
                         icon: HugeIcons.strokeRoundedNotification01,
                       ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                shadows: [
+                  BoxShadow(
+                    color: Colors.grey[200]!,
+                    blurRadius: 12,
+                    spreadRadius: 12,
+                  ),
+                ],
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.search),
+                  Expanded(child: Column(children: [])),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey[300]!),
+                      shape: BoxShape.circle,
                     ),
                   ),
                 ],
