@@ -151,6 +151,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                               color: Colors.blue,
                               child: Column(children: []),
                             ),
+                            Container(
+                              width: 240,
+                              color: Colors.blue,
+                              child: Column(children: []),
+                            ),
                           ],
                         ),
                       ),
@@ -173,7 +178,19 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: 240, child: Placeholder()),
+                      SizedBox(
+                        height: 200,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Column(
+                              children: [
+
+                              ],
+                            );
+                          },
+                        ),
+                      ),
                     ],
                   ),
                 ),
