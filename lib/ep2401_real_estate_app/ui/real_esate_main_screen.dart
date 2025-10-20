@@ -147,7 +147,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                               child: Column(children: []),
                             );
                           },
-                        
+
                         ),
                       ),
                       SizedBox(height: 24),
