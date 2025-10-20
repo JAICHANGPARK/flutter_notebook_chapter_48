@@ -106,9 +106,18 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         children: [
                           Text(
                             "Featured Property",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
                           ),
-                          TextButton(onPressed: () {}, child: Text("View All")),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("View All"),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Color.fromRGBO(139, 150, 82, 1),
+                            ),
+                          ),
                         ],
                       ),
                       SizedBox(height: 320, child: Placeholder()),
