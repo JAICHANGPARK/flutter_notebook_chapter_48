@@ -190,8 +190,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                 ),
                                 Text("Dream Walker"),
                                 Row(
+                                  spacing: 4,
                                   children: [
-                                    Icon(Icons.star),
+                                    Icon(Icons.star,
+                                    color: Colors.orange,
+                                    size: 18,),
                                     Text("4.0(100)")
                                   ],
                                 )
