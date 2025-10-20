@@ -134,7 +134,19 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: 320, child: Placeholder()),
+                      SizedBox(height: 320, child: ListView(
+                        children: [
+                          Container(
+                            width: 160,
+                            color: Colors.blue,
+                            child: Column(
+                              children: [
+
+                              ],
+                            ),
+                          )
+                        ],
+                      )),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
