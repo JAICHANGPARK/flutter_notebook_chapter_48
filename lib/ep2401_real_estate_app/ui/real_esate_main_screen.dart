@@ -93,11 +93,14 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 ],
               ),
             ),
-            Expanded(child: Column(
-              children: [
+            Expanded(child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
 
-              ],
-            ))
+                ],
+              ),
+            )),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
