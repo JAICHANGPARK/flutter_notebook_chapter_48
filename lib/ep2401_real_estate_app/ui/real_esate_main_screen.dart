@@ -81,7 +81,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
               child: Row(
                 children: [
                   Icon(Icons.search),
-                  Expanded(child: Column(children: [])),
+                  Expanded(child: Column(children: [
+                    Text("Property Type"),
+                    Text("Beds · Baths · Price Range")
+                  ])),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey[300]!),
