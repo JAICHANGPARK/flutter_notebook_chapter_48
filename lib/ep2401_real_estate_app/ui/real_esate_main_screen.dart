@@ -96,7 +96,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
             Expanded(child: SingleChildScrollView(
               padding: EdgeInsets.zero,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.only(left: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
