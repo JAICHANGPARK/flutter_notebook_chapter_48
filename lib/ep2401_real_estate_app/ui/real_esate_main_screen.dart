@@ -79,7 +79,8 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 color: Colors.white,
               ),
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: Row(spacing: 12,
+              child: Row(
+                spacing: 12,
                 children: [
                   Icon(Icons.search),
                   Expanded(
@@ -134,32 +135,25 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: 320, child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: [
-                          Container(
-                            width: 240,
-                            margin: EdgeInsets.only(
-                              right: 16
+                      SizedBox(
+                        height: 320,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            Container(
+                              width: 240,
+                              margin: EdgeInsets.only(right: 16),
+                              color: Colors.blue,
+                              child: Column(children: []),
                             ),
-                            color: Colors.blue,
-                            child: Column(
-                              children: [
-
-                              ],
+                            Container(
+                              width: 240,
+                              color: Colors.blue,
+                              child: Column(children: []),
                             ),
-                          ),
-                          Container(
-                            width: 240,
-                            color: Colors.blue,
-                            child: Column(
-                              children: [
-
-                              ],
-                            ),
-                          )
-                        ],
-                      )),
+                          ],
+                        ),
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
