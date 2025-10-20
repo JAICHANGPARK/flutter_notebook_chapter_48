@@ -159,7 +159,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 24,),
+                      SizedBox(height: 24),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -191,9 +191,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
 
                                 spacing: 8,
                                 children: [
-                                  CircleAvatar(
-                                    radius: 32,
-                                  ),
+                                  CircleAvatar(radius: 32),
                                   Column(
                                     spacing: 4,
                                     children: [
@@ -201,16 +199,16 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                       Row(
                                         spacing: 4,
                                         children: [
-                                          Icon(Icons.star,
+                                          Icon(
+                                            Icons.star,
                                             color: Colors.orange,
-                                            size: 18,),
-                                          Text("4.0(100)")
+                                            size: 18,
+                                          ),
+                                          Text("4.0(100)"),
                                         ],
-                                      )
+                                      ),
                                     ],
                                   ),
-
-
                                 ],
                               ),
                             );
@@ -227,7 +225,9 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
       ),
       bottomNavigationBar: SizedBox(
         height: 100,
+
         child: BottomNavigationBar(
+          backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
