@@ -184,20 +184,29 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+
+                              spacing: 8,
                               children: [
                                 CircleAvatar(
                                   radius: 32,
                                 ),
-                                Text("Dream Walker"),
-                                Row(
+                                Column(
                                   spacing: 4,
                                   children: [
-                                    Icon(Icons.star,
-                                    color: Colors.orange,
-                                    size: 18,),
-                                    Text("4.0(100)")
+                                    Text("Dream Walker"),
+                                    Row(
+                                      spacing: 4,
+                                      children: [
+                                        Icon(Icons.star,
+                                          color: Colors.orange,
+                                          size: 18,),
+                                        Text("4.0(100)")
+                                      ],
+                                    )
                                   ],
-                                )
+                                ),
+
 
                               ],
                             );
