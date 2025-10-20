@@ -159,6 +159,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ],
                         ),
                       ),
+                      SizedBox(height: 12,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
