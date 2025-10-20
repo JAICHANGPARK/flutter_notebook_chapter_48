@@ -93,6 +93,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 ],
               ),
             ),
+            Expanded(child: Column(
+              children: [
+
+              ],
+            ))
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
