@@ -15,6 +15,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
       backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Column(
+          spacing: 8,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
@@ -78,7 +79,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 color: Colors.white,
               ),
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: Row(
+              child: Row(spacing: 12,
                 children: [
                   Icon(Icons.search),
                   Expanded(
@@ -105,6 +106,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 ],
               ),
             ),
+
             Expanded(
               child: SingleChildScrollView(
                 padding: EdgeInsets.zero,
