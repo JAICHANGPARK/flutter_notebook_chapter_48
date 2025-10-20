@@ -183,32 +183,35 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 12),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
 
-                              spacing: 8,
-                              children: [
-                                CircleAvatar(
-                                  radius: 32,
-                                ),
-                                Column(
-                                  spacing: 4,
-                                  children: [
-                                    Text("Dream Walker"),
-                                    Row(
-                                      spacing: 4,
-                                      children: [
-                                        Icon(Icons.star,
-                                          color: Colors.orange,
-                                          size: 18,),
-                                        Text("4.0(100)")
-                                      ],
-                                    )
-                                  ],
-                                ),
+                                spacing: 8,
+                                children: [
+                                  CircleAvatar(
+                                    radius: 32,
+                                  ),
+                                  Column(
+                                    spacing: 4,
+                                    children: [
+                                      Text("Dream Walker"),
+                                      Row(
+                                        spacing: 4,
+                                        children: [
+                                          Icon(Icons.star,
+                                            color: Colors.orange,
+                                            size: 18,),
+                                          Text("4.0(100)")
+                                        ],
+                                      )
+                                    ],
+                                  ),
 
 
-                              ],
+                                ],
+                              ),
                             );
                           },
                         ),
