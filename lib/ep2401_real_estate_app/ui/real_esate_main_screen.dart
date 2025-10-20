@@ -93,40 +93,38 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 ],
               ),
             ),
-            Expanded(child: SingleChildScrollView(
-              padding: EdgeInsets.zero,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Featured Property"),
-                        TextButton(onPressed: () {}, child: Text("View All")),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 320,
-                      child: Placeholder(),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Featured Property"),
-                        TextButton(onPressed: () {}, child: Text("View All")),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 240,
-                      child: Placeholder(),
-                    )
-                  ],
+            Expanded(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.zero,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Featured Property",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          TextButton(onPressed: () {}, child: Text("View All")),
+                        ],
+                      ),
+                      SizedBox(height: 320, child: Placeholder()),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Featured Property"),
+                          TextButton(onPressed: () {}, child: Text("View All")),
+                        ],
+                      ),
+                      SizedBox(height: 240, child: Placeholder()),
+                    ],
+                  ),
                 ),
               ),
-            )),
-
+            ),
           ],
         ),
       ),
