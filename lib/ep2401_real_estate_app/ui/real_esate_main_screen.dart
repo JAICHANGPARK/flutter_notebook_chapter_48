@@ -138,7 +138,19 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         scrollDirection: Axis.horizontal,
                         children: [
                           Container(
-                            width: 160,
+                            width: 240,
+                            margin: EdgeInsets.only(
+                              right: 16
+                            ),
+                            color: Colors.blue,
+                            child: Column(
+                              children: [
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            width: 240,
                             color: Colors.blue,
                             child: Column(
                               children: [
