@@ -185,6 +185,16 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           itemBuilder: (context, index) {
                             return Column(
                               children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                ),
+                                Text("Dream Walker"),
+                                Row(
+                                  children: [
+                                    Icon(Icons.star),
+                                    Text("4.0(100)")
+                                  ],
+                                )
 
                               ],
                             );
