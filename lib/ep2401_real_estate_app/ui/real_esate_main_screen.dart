@@ -113,10 +113,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("View All"),
                             style: TextButton.styleFrom(
                               foregroundColor: Color.fromRGBO(139, 150, 82, 1),
                             ),
+                            child: Text("View All"),
                           ),
                         ],
                       ),
@@ -124,8 +124,20 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Featured Property"),
-                          TextButton(onPressed: () {}, child: Text("View All")),
+                          Text(
+                            "Listing Agents",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              foregroundColor: Color.fromRGBO(139, 150, 82, 1),
+                            ),
+                            child: Text("View All"),
+                          ),
                         ],
                       ),
                       SizedBox(height: 240, child: Placeholder()),
