@@ -159,7 +159,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 12,),
+                      SizedBox(height: 24,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -225,30 +225,33 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
-            label: "Schedule",
-          ),
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
-            label: "Wishlist",
-          ),
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedMessage01),
-            label: "Message",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined),
-            label: "Profile",
-          ),
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 100,
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
+              label: "Schedule",
+            ),
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
+              label: "Wishlist",
+            ),
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedMessage01),
+              label: "Message",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined),
+              label: "Profile",
+            ),
+          ],
+        ),
       ),
     );
   }
