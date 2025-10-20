@@ -135,6 +135,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         ],
                       ),
                       SizedBox(height: 320, child: ListView(
+                        scrollDirection: Axis.horizontal,
                         children: [
                           Container(
                             width: 160,
