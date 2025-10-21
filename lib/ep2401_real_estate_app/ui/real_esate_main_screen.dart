@@ -254,7 +254,12 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                   Column(
                                     spacing: 4,
                                     children: [
-                                      Text("Dream Walker"),
+                                      Text(
+                                        "Dream Walker",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                       Row(
                                         spacing: 4,
                                         children: [
