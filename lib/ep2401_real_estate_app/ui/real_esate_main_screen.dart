@@ -143,7 +143,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                             return Container(
                               width: 220,
                               margin: EdgeInsets.only(right: 16),
-                              color: Colors.blue,
+                              // color: Colors.blue,
                               child: Column(
                                 spacing: 12,
                                 children: [
@@ -207,6 +207,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                         "\$1,200,000",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          fontSize: 18,
                                         ),
                                       ),
                                     ],
@@ -249,7 +250,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
 
                                 spacing: 8,
                                 children: [
-                                  CircleAvatar(radius: 32),
+                                  CircleAvatar(radius: 46),
                                   Column(
                                     spacing: 4,
                                     children: [
