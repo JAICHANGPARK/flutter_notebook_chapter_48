@@ -140,16 +140,27 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
-                            return   Container(
+                            return Container(
                               width: 240,
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.blue,
-                              child: Column(children: [
-                                Expanded(child: Container(decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),))
-                              ]),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: ShapeDecoration(
+                                        shape: RoundedSuperellipseBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            24,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             );
                           },
-
                         ),
                       ),
                       SizedBox(height: 24),
