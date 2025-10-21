@@ -162,6 +162,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
+                                    spacing: 4,
                                     children: [
                                       Text(
                                         "Villa Serenity",
@@ -173,7 +174,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                       Row(
                                         spacing: 6,
                                         children: [
-                                          Icon(Icons.location_on_outlined),
+                                          Icon(
+                                            Icons.location_on_outlined,
+                                            size: 16,
+                                          ),
                                           Text("Los Angeles, CA"),
                                         ],
                                       ),
