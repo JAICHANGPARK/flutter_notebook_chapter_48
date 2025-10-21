@@ -293,6 +293,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
+          selectedItemColor: Color.fromRGBO(139, 150, 82, 1),
           items: [
             BottomNavigationBarItem(
               icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
