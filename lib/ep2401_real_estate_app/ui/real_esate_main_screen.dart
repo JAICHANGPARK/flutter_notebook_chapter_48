@@ -182,7 +182,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                         ],
                                       ),
                                       Row(
-                                        spacing: 8,
+                                        spacing: 12,
                                         children: [
                                           Row(
                                             spacing: 4,
