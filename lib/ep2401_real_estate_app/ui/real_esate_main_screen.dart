@@ -149,6 +149,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                   Expanded(
                                     child: Container(
                                       decoration: ShapeDecoration(
+                                        color: Colors.grey,
                                         shape: RoundedSuperellipseBorder(
                                           borderRadius: BorderRadius.circular(
                                             24,
