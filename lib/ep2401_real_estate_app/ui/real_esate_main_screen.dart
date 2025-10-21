@@ -161,6 +161,12 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                   ),
                                   Column(
                                     children: [
+                                      Text("Villa Serenity"),
+                                      Row(
+                                        children: [
+                                          
+                                        ],
+                                      )
 
                                     ],
                                   )
