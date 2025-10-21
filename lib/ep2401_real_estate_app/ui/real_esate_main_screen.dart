@@ -168,6 +168,26 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                           Icon(Icons.location_on_outlined),
                                           Text("Los Angeles, CA")
                                         ],
+                                      ),
+                                      Row(
+                                        spacing: 8,
+                                        children: [
+                                          Row(
+                                            spacing: 4,
+                                            children: [
+                                              Icon(Icons.bed),
+                                              Text("4 Bed"),
+                                            ],
+                                          ),
+                                          Row(
+                                            spacing: 4,
+                                            children: [
+                                              Icon(Icons.bed),
+                                              Text("4 Bed"),
+                                            ],
+                                          )
+
+                                        ],
                                       )
 
                                     ],
