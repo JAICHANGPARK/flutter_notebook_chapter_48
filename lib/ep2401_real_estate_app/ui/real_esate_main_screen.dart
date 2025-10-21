@@ -187,14 +187,14 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                           Row(
                                             spacing: 4,
                                             children: [
-                                              Icon(Icons.bed),
+                                              Icon(Icons.bed , size: 16,),
                                               Text("4 Bed"),
                                             ],
                                           ),
                                           Row(
                                             spacing: 4,
                                             children: [
-                                              Icon(Icons.bathtub_outlined),
+                                              Icon(Icons.bathtub_outlined, size: 16,),
                                               Text("3 Bath"),
                                             ],
                                           ),
