@@ -160,14 +160,21 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                     ),
                                   ),
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-                                      Text("Villa Serenity"),
+                                      Text(
+                                        "Villa Serenity",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18,
+                                        ),
+                                      ),
                                       Row(
                                         spacing: 6,
                                         children: [
                                           Icon(Icons.location_on_outlined),
-                                          Text("Los Angeles, CA")
+                                          Text("Los Angeles, CA"),
                                         ],
                                       ),
                                       Row(
@@ -186,13 +193,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                               Icon(Icons.bathtub_outlined),
                                               Text("3 Bath"),
                                             ],
-                                          )
-
+                                          ),
                                         ],
-                                      )
-
+                                      ),
                                     ],
-                                  )
+                                  ),
                                 ],
                               ),
                             );
