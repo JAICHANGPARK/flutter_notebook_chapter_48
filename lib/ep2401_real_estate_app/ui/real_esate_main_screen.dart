@@ -163,8 +163,10 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                     children: [
                                       Text("Villa Serenity"),
                                       Row(
+                                        spacing: 6,
                                         children: [
-                                          
+                                          Icon(Icons.location_on_outlined),
+                                          Text("Los Angeles, CA")
                                         ],
                                       )
 
