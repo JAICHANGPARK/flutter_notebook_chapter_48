@@ -136,12 +136,12 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         ],
                       ),
                       SizedBox(
-                        height: 320,
+                        height: 310,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
                             return Container(
-                              width: 240,
+                              width: 220,
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.blue,
                               child: Column(
