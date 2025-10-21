@@ -145,7 +145,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.blue,
                               child: Column(children: [
-                                Expanded(child: Container(decoration: ShapeDecoration(shape: shape),))
+                                Expanded(child: Container(decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),))
                               ]),
                             );
                           },
