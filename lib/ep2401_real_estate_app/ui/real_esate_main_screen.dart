@@ -160,6 +160,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                     ),
                                   ),
                                   Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Villa Serenity"),
                                       Row(
