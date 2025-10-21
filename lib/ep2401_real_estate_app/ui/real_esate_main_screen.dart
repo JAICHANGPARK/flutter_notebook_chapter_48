@@ -145,6 +145,7 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.blue,
                               child: Column(
+                                spacing: 12,
                                 children: [
                                   Expanded(
                                     child: Container(
@@ -158,6 +159,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                       ),
                                     ),
                                   ),
+                                  Column(
+                                    children: [
+
+                                    ],
+                                  )
                                 ],
                               ),
                             );
