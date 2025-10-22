@@ -31,7 +31,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(139, 150, 82, 1),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               child: Text("Schedule Tour"),
             ),
           ],
