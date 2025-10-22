@@ -23,16 +23,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
+        decoration: BoxDecoration(boxShadow: []),
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Row(
           children: [
-            Expanded(child: Column(
+            Expanded(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-              Text("\$1,200,000"),
-              Text("List price: \$1,484,000")
-            ])),
+                  Text("\$1,200,000"),
+                  Text("List price: \$1,484,000"),
+                ],
+              ),
+            ),
             Container(
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
