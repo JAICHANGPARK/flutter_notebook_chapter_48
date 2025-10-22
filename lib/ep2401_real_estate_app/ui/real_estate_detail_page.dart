@@ -32,7 +32,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 color: Color.fromRGBO(139, 150, 82, 1),
               ),
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-              child: Text("Schedule Tour"),
+              child: Text(
+                "Schedule Tour",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),
