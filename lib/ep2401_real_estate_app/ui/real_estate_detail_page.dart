@@ -23,7 +23,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
+        margin: EdgeInsets.only(
+          top: 12
+        ),
         decoration: BoxDecoration(
+          color: Colors.white,
           boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .4))],
         ),
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
