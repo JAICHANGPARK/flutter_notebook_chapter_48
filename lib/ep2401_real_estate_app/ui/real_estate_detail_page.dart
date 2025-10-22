@@ -28,7 +28,8 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         ),
         decoration: BoxDecoration(
           color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .4))],
+          boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .1,
+          ),spreadRadius: 4, blurRadius: 8)],
         ),
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Row(
