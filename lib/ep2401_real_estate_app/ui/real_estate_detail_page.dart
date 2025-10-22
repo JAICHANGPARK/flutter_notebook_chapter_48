@@ -53,7 +53,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             Container(
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
-                color: Color.fromRGBO(139, 150, 82, 1),
+                color: Color.fromRGBO(128, 137, 38, 1),
               ),
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               child: Text(
