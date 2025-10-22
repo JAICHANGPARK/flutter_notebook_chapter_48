@@ -165,7 +165,14 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                       ),
                                       child: Stack(
                                         children: [
-                                          Positioned(child: CircleAvatar()),
+                                          Positioned(
+                                            right: 12,
+                                            top: 12,
+                                            child: CircleAvatar(
+                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.bookmark_border),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
