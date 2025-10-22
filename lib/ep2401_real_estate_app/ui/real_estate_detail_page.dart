@@ -13,6 +13,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
           ],
