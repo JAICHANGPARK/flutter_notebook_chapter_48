@@ -19,7 +19,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
           color: Colors.blue,),
           Expanded(
             child: SingleChildScrollView(child: Column(children: [
-              
+
             ])),
           ),
         ],
