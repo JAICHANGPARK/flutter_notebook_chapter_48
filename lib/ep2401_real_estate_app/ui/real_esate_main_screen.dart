@@ -156,6 +156,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                             24,
                                           ),
                                         ),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://dribbble.com/shots/26658852-Real-Estate-App-Buying-a-House",
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ),
