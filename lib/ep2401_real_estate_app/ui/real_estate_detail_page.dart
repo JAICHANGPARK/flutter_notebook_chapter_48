@@ -44,7 +44,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 children: [
                   Text(
                     "\$1,200,000",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                   ),
                   Text("List price: \$1,484,000"),
                 ],
