@@ -25,7 +25,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         height: 100,
         child: Row(
           children: [
-            Expanded(child: Column(children: [])),
+            Expanded(child: Column(children: [
+              Text("\$1,200,000"),
+              Text("List price: \$1,484,000")
+            ])),
             Container(
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
