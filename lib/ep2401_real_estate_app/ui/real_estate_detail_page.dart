@@ -23,6 +23,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Row(
           children: [
             Expanded(child: Column(
