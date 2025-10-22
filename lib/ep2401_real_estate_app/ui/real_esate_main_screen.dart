@@ -141,7 +141,9 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
                             return GestureDetector(
-                              onTap: (){},
+                              onTap: (){
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RealEstateDetailPage()));
+                              },
                               child: Container(
                                 width: 220,
                                 margin: EdgeInsets.only(right: 16),
