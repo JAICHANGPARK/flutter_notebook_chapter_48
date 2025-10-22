@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+import 'real_estate_detail_page.dart';
+
 class RealEstateMainScreen extends StatefulWidget {
   const RealEstateMainScreen({super.key});
 
@@ -141,8 +143,13 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
                             return GestureDetector(
-                              onTap: (){
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RealEstateDetailPage()));
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        RealEstateDetailPage(),
+                                  ),
+                                );
                               },
                               child: Container(
                                 width: 220,
