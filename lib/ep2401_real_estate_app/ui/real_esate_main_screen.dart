@@ -170,8 +170,12 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                             top: 12,
                                             child: CircleAvatar(
                                               backgroundColor: Colors.white,
+                                              foregroundColor: Colors.black,
                                               radius: 18,
-                                              child: Icon(Icons.bookmark_border, size: 18,),
+                                              child: Icon(
+                                                Icons.bookmark_border,
+                                                size: 18,
+                                              ),
                                             ),
                                           ),
                                         ],
