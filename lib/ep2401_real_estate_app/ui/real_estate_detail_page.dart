@@ -34,7 +34,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               child: Text(
                 "Schedule Tour",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ],
