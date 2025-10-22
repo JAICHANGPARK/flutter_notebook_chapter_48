@@ -21,14 +21,22 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
           ),
         ],
       ),
-      bottomNavigationBar: Container(height: 100, child: Row(children: [
-        Expanded(child: Column(children: [
-          
-        ],)),
-        Container(
-          decoration: ShapeDecoration(shape: StadiumBorder(),),
-        )
-      ])),
+      bottomNavigationBar: Container(
+        height: 100,
+        child: Row(
+          children: [
+            Expanded(child: Column(children: [])),
+            Container(
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                color: Color.fromRGBO(139, 150, 82, 1),
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              child: Text("Schedule Tour"),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
