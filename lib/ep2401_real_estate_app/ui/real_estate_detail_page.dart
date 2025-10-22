@@ -34,7 +34,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             ),
           ],
         ),
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
         child: Row(
           children: [
             Expanded(
@@ -44,7 +44,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 children: [
                   Text(
                     "\$1,200,000",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   Text("List price: \$1,484,000"),
                 ],
