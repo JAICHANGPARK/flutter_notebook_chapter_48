@@ -140,102 +140,105 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
-                            return Container(
-                              width: 220,
-                              margin: EdgeInsets.only(right: 16),
-                              // color: Colors.blue,
-                              child: Column(
-                                spacing: 12,
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      decoration: ShapeDecoration(
-                                        color: Colors.grey,
-                                        shape: RoundedSuperellipseBorder(
-                                          borderRadius: BorderRadius.circular(
-                                            24,
-                                          ),
-                                        ),
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg",
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            right: 12,
-                                            top: 12,
-                                            child: CircleAvatar(
-                                              backgroundColor: Colors.white,
-                                              foregroundColor: Colors.black,
-                                              radius: 18,
-                                              child: Icon(
-                                                Icons.bookmark_border,
-                                                size: 18,
-                                              ),
+                            return GestureDetector(
+                              onTap: (){},
+                              child: Container(
+                                width: 220,
+                                margin: EdgeInsets.only(right: 16),
+                                // color: Colors.blue,
+                                child: Column(
+                                  spacing: 12,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        decoration: ShapeDecoration(
+                                          color: Colors.grey,
+                                          shape: RoundedSuperellipseBorder(
+                                            borderRadius: BorderRadius.circular(
+                                              24,
                                             ),
                                           ),
-                                        ],
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              right: 12,
+                                              top: 12,
+                                              child: CircleAvatar(
+                                                backgroundColor: Colors.white,
+                                                foregroundColor: Colors.black,
+                                                radius: 18,
+                                                child: Icon(
+                                                  Icons.bookmark_border,
+                                                  size: 18,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    spacing: 4,
-                                    children: [
-                                      Text(
-                                        "Villa Serenity",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      spacing: 4,
+                                      children: [
+                                        Text(
+                                          "Villa Serenity",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                          ),
                                         ),
-                                      ),
-                                      Row(
-                                        spacing: 6,
-                                        children: [
-                                          Icon(
-                                            Icons.location_on_outlined,
-                                            size: 16,
-                                          ),
-                                          Text("Los Angeles, CA"),
-                                        ],
-                                      ),
-                                      Row(
-                                        spacing: 12,
-                                        children: [
-                                          Row(
-                                            spacing: 4,
-                                            children: [
-                                              Icon(Icons.bed, size: 16),
-                                              Text("4 Bed"),
-                                            ],
-                                          ),
-                                          Row(
-                                            spacing: 4,
-                                            children: [
-                                              Icon(
-                                                Icons.bathtub_outlined,
-                                                size: 16,
-                                              ),
-                                              Text("3 Bath"),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                      Text(
-                                        "\$1,200,000",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
+                                        Row(
+                                          spacing: 6,
+                                          children: [
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 16,
+                                            ),
+                                            Text("Los Angeles, CA"),
+                                          ],
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                                        Row(
+                                          spacing: 12,
+                                          children: [
+                                            Row(
+                                              spacing: 4,
+                                              children: [
+                                                Icon(Icons.bed, size: 16),
+                                                Text("4 Bed"),
+                                              ],
+                                            ),
+                                            Row(
+                                              spacing: 4,
+                                              children: [
+                                                Icon(
+                                                  Icons.bathtub_outlined,
+                                                  size: 16,
+                                                ),
+                                                Text("3 Bath"),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "\$1,200,000",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             );
                           },
