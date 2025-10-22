@@ -163,6 +163,11 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                                           fit: BoxFit.cover,
                                         ),
                                       ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(child: CircleAvatar()),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Column(
