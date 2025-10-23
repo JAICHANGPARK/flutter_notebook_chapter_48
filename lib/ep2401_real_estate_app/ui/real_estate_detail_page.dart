@@ -16,7 +16,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 320,
+            height: 340,
 
             decoration: BoxDecoration(
               color: Colors.blue,
@@ -58,6 +58,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         shape: StadiumBorder(),
                         color: Colors.black,
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
                       child: Text("1/19", style: TextStyle(color: Colors.white)),
                     ),
                   ),
