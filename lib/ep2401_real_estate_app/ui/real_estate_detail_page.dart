@@ -113,7 +113,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     Wrap(
                       children: [
                         Container(
-                          decoration: ShapeDecoration(shape: StadiumBorder()),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[100]!,
+                          ),
                           child: Row(
                             children: [
                               Icon(Icons.home_work_outlined),
