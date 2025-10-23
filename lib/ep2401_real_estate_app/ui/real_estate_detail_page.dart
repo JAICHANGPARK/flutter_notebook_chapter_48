@@ -51,6 +51,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     ],
                   ),
                   Align(
+                    alignment: Alignment.topRight,
                     child: Container(
                       margin: EdgeInsets.all(16),
                       decoration: ShapeDecoration(
