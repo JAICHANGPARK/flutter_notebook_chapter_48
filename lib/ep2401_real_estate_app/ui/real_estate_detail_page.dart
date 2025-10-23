@@ -27,6 +27,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 fit: BoxFit.cover,
               ),
             ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Icon(Icons.arrow_back_ios_new),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
           Expanded(
             child: SingleChildScrollView(child: Column(children: [])),
