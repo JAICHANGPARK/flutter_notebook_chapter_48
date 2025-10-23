@@ -109,7 +109,6 @@ class _RealEstateMainScreenState extends State<RealEstateMainScreen> {
                 ],
               ),
             ),
-
             Expanded(
               child: SingleChildScrollView(
                 padding: EdgeInsets.zero,
