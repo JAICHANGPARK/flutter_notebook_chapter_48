@@ -110,6 +110,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         fontSize: 22,
                       ),
                     ),
+                    Row(
+                      children: [
+                        Text("Amenities"),
+                        TextButton(onPressed: (){}, child: Text("View All"))
+                      ],
+                    )
                   ],
                 ),
               ),
