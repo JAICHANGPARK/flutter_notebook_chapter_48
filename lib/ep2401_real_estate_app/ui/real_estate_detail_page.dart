@@ -118,18 +118,19 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             color: Colors.grey[100]!,
                           ),
                           padding: EdgeInsets.symmetric(
-                            horizontal: 12,
-                            vertical: 8,
+                            horizontal: 16,
+                            vertical: 12,
                           ),
                           child: Row(
                             spacing: 4,
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Icon(Icons.home_work_outlined, size: 12),
+                              Icon(Icons.home_work_outlined, size: 14),
                               Text("Private Backyard"),
                             ],
                           ),
                         ),
+
                       ],
                     ),
                     Row(
