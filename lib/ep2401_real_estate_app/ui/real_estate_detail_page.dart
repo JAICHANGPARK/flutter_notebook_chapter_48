@@ -85,13 +85,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     ),
                     Text("Center Avenue, CA"),
                     Row(
+
                       children: [
                         Icon(Icons.bed),
+                        SizedBox(width: 4,),
                         Text('4 bed'),
                         Icon(Icons.bathtub),
+                        SizedBox(width: 4,),
                         Text('3 bath'),
                         Icon(Icons.bed),
-                        Text('4 bed')
+                        SizedBox(width: 4,),
+                        Text('3600 Ft')
                       ],
                     )
                   ],
