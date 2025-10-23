@@ -35,6 +35,15 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       backgroundColor: Colors.white,
                       child: Icon(Icons.arrow_back_ios_new),
                     ),
+                    Spacer(),
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Icon(Icons.ios_share),
+                    ),
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Icon(Icons.favorite_border),
+                    ),
                   ],
                 ),
               ],
