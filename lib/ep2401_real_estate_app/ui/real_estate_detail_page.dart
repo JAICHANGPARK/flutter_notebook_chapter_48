@@ -30,7 +30,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: SafeArea(
               child: Column(
-                
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                     spacing: 15,
