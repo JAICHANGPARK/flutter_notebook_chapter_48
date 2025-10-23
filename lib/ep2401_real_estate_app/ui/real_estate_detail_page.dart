@@ -111,7 +111,81 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       ),
                     ),
                     Wrap(
+                      spacing: 12,
+                      runSpacing: 12,
                       children: [
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[100]!,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
+                          child: Row(
+                            spacing: 4,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.home_work_outlined, size: 14),
+                              Text("Private Backyard"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[100]!,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
+                          child: Row(
+                            spacing: 4,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.home_work_outlined, size: 14),
+                              Text("Private Backyard"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[100]!,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
+                          child: Row(
+                            spacing: 4,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.home_work_outlined, size: 14),
+                              Text("Private Backyard"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[100]!,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
+                          child: Row(
+                            spacing: 4,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.home_work_outlined, size: 14),
+                              Text("Private Backyard"),
+                            ],
+                          ),
+                        ),
                         Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
