@@ -111,6 +111,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       ),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Amenities"),
                         TextButton(onPressed: (){}, child: Text("View All"))
