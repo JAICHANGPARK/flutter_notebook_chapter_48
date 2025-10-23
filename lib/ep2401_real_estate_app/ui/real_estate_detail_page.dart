@@ -27,26 +27,30 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 fit: BoxFit.cover,
               ),
             ),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(Icons.arrow_back_ios_new),
-                    ),
-                    Spacer(),
-                    CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(Icons.ios_share),
-                    ),
-                    CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(Icons.favorite_border),
-                    ),
-                  ],
-                ),
-              ],
+            padding: EdgeInsets.symmetric(horizontal: 16,),
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    spacing: 15,
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.arrow_back_ios_new),
+                      ),
+                      Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.ios_share),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.favorite_border),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
