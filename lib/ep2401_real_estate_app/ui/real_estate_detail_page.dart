@@ -15,12 +15,9 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(height: 320,
-          color: Colors.blue,),
+          Container(height: 320, color: Colors.blue),
           Expanded(
-            child: SingleChildScrollView(child: Column(children: [
-
-            ])),
+            child: SingleChildScrollView(child: Column(children: [])),
           ),
         ],
       ),
