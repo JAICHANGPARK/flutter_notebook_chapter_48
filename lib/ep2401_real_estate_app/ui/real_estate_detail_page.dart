@@ -50,12 +50,15 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       ),
                     ],
                   ),
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.black,
+                  Align(
+                    child: Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.black,
+                      ),
+                      child: Text("1/19", style: TextStyle(color: Colors.white)),
                     ),
-                    child: Text("1/19", style: TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
