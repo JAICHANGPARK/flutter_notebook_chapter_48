@@ -76,6 +76,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
+                  spacing: 6,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
