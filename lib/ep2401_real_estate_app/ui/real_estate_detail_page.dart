@@ -27,9 +27,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 fit: BoxFit.cover,
               ),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 16,),
+            padding: EdgeInsets.symmetric(horizontal: 16),
             child: SafeArea(
               child: Column(
+                
                 children: [
                   Row(
                     spacing: 15,
@@ -48,6 +49,13 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         child: Icon(Icons.favorite_border),
                       ),
                     ],
+                  ),
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.black,
+                    ),
+                    child: Text("1/19", style: TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
