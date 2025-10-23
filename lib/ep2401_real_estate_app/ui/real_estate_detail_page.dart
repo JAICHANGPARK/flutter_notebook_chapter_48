@@ -17,7 +17,6 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         children: [
           Container(
             height: 340,
-
             decoration: BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(
@@ -58,8 +57,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         shape: StadiumBorder(),
                         color: Colors.black,
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                      child: Text("1/19", style: TextStyle(color: Colors.white)),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 4,
+                      ),
+                      child: Text(
+                        "1/19",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ),
                 ],
