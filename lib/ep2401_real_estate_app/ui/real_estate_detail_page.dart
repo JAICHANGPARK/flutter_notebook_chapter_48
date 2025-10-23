@@ -17,12 +17,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         children: [
           Container(
             height: 320,
-            color: Colors.blue,
+
             decoration: BoxDecoration(
+              color: Colors.blue,
               image: DecorationImage(
                 image: NetworkImage(
                   "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg",
                 ),
+                fit: BoxFit.cover,
               ),
             ),
           ),
