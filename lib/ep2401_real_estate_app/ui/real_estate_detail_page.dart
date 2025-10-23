@@ -72,15 +72,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             ),
           ),
           Expanded(
-            child: SingleChildScrollView(child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Villa Serenity Shores Retreat at Emerald Bay")
-
-                  ]),
-            )),
+                    Text(
+                      "Villa Serenity Shores Retreat at Emerald Bay",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),
