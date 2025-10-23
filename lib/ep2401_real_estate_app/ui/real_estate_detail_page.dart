@@ -16,7 +16,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 340,
+            height: 360,
             decoration: BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(
