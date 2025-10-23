@@ -80,24 +80,27 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   children: [
                     Text(
                       "Villa Serenity Shores Retreat at Emerald Bay",
-                      style: TextStyle(fontWeight: FontWeight.bold,
-                      fontSize: 24),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
                     ),
                     Text("Center Avenue, CA"),
                     Row(
-
                       children: [
                         Icon(Icons.bed),
-                        SizedBox(width: 4,),
+                        SizedBox(width: 4),
                         Text('4 bed'),
+                        SizedBox(width: 16),
                         Icon(Icons.bathtub),
-                        SizedBox(width: 4,),
+                        SizedBox(width: 4),
                         Text('3 bath'),
+                        SizedBox(width: 16),
                         Icon(Icons.bed),
-                        SizedBox(width: 4,),
-                        Text('3600 Ft')
+                        SizedBox(width: 4),
+                        Text('3600 Ft'),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
