@@ -110,13 +110,32 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         fontSize: 22,
                       ),
                     ),
+                    Wrap(
+                      children: [
+                        Container(
+                          decoration: ShapeDecoration(shape: StadiumBorder()),
+                          child: Row(
+                            children: [
+                              Icon(Icons.home_work_outlined),
+                              Text("Private Backyard"),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Amenities"),
-                        TextButton(onPressed: (){}, child: Text("View All"))
+                        Text(
+                          "Amenities",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        TextButton(onPressed: () {}, child: Text("View All")),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
