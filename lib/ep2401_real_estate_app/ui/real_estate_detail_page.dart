@@ -102,6 +102,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         Text('3600 Ft'),
                       ],
                     ),
+                    SizedBox(height: 16),
+                    Text(
+                      "What's Special",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                      ),
+                    ),
                   ],
                 ),
               ),
