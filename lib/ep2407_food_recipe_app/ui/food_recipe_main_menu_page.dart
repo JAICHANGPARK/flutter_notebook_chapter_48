@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class FoodRecipeMainMenuPage extends StatefulWidget {
   const FoodRecipeMainMenuPage({super.key});
@@ -24,10 +25,19 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(27, 27, 27, 1),
               ),
+              padding: EdgeInsets.all(8),
               child: Container(
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Color.fromRGBO(37, 37, 37, 1),
+                ),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: HugeIcon(icon: HugeIcons.strokeRoundedChefHat),
+                    ),
+                  ],
                 ),
               ),
             ),
