@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FoodRecipeMainMenuPage extends StatefulWidget {
   const FoodRecipeMainMenuPage({super.key});
 
@@ -11,6 +10,8 @@ class FoodRecipeMainMenuPage extends StatefulWidget {
 class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Stack(children: [Positioned(child: Container())]),
+    );
   }
 }
