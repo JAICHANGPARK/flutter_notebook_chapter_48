@@ -31,11 +31,38 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                   shape: StadiumBorder(),
                   color: Color.fromRGBO(37, 37, 37, 1),
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 12),
                 child: Row(
                   children: [
                     IconButton(
                       onPressed: () {},
                       icon: HugeIcon(icon: HugeIcons.strokeRoundedChefHat),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 72,
+                      width: 72,
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(shape: BoxShape.circle),
+                          ),
+                        ],
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.import_contacts),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: HugeIcon(icon: HugeIcons.strokeRoundedCalendar02),
                       color: Colors.grey,
                     ),
                   ],
