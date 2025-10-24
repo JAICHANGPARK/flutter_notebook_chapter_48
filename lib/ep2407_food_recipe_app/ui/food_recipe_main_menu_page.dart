@@ -36,6 +36,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     IconButton(
                       onPressed: () {},
                       icon: HugeIcon(icon: HugeIcons.strokeRoundedChefHat),
+                      color: Colors.grey,
                     ),
                   ],
                 ),
