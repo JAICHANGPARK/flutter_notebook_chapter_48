@@ -70,10 +70,14 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                 shape: BoxShape.circle,
                                 color: Colors.white,
                               ),
-                              padding: EdgeInsets.all(2),
+                              padding: EdgeInsets.all(1.5),
                               child: CircleAvatar(
-                                radius: 8,
-                                backgroundColor: Colors.black
+                                radius: 10,
+                                backgroundColor: Colors.black,
+                                child: Text(
+                                  "2",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
                           ),
