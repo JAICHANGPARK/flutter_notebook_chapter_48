@@ -11,13 +11,15 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Stack(
         children: [
           Positioned(
-            bottom: 16,
+            bottom: 24,
             left: 16,
             right: 16,
             child: Container(
+              height: 100,
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(27, 27, 27, 1),
