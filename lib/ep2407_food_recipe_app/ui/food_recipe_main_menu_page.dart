@@ -15,6 +15,8 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
         children: [
           Positioned(
             bottom: 16,
+            left: 16,
+            right: 16,
             child: Container(
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
