@@ -46,14 +46,20 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.grey,
                     ),
                     Container(
-                      height: 54,
-                      width: 54,
+                      height: 58,
+                      width: 58,
                       child: Stack(
                         children: [
                           Positioned.fill(
                             child: Container(
-                              decoration: BoxDecoration(shape: BoxShape.circle,
-                              color: Colors.white),
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.white,
+                              ),
+                              padding: EdgeInsets.all(2),
+                              child: CircleAvatar(
+                                backgroundColor: Color.fromRGBO(240, 79, 6, 1),
+                              ),
                             ),
                           ),
                         ],
