@@ -62,6 +62,21 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                               ),
                             ),
                           ),
+                          Positioned(
+                            right: 0,
+                            top: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.white,
+                              ),
+                              padding: EdgeInsets.all(2),
+                              child: CircleAvatar(
+                                radius: 8,
+                                backgroundColor: Colors.black
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
