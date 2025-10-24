@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2407_food_recipe_app/ui/food_recipe_main_menu_page.dart';
 
 
 class FoodRecipeApp extends StatelessWidget {
@@ -7,7 +8,7 @@ class FoodRecipeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      home: FoodRecipeMainMenuPage(),
     );
   }
 }
