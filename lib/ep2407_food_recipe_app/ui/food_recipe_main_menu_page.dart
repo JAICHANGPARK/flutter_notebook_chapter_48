@@ -24,6 +24,12 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(27, 27, 27, 1),
               ),
+              child: Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Color.fromRGBO(37, 37, 37, 1),
+                ),
+              ),
             ),
           ),
         ],
