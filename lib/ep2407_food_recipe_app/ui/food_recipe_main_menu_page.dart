@@ -46,12 +46,13 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.grey,
                     ),
                     Container(
-                      height: 58,
-                      width: 58,
+                      height: 62,
+                      width: 62,
                       child: Stack(
                         children: [
                           Positioned.fill(
                             child: Container(
+                              margin: EdgeInsets.all(3),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Colors.white,
@@ -74,9 +75,14 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                               child: CircleAvatar(
                                 radius: 10,
                                 backgroundColor: Colors.black,
-                                child: Text(
-                                  "2",
-                                  style: TextStyle(color: Colors.white),
+                                child: Center(
+                                  child: Text(
+                                    "2",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
