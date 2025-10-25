@@ -135,7 +135,8 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                     ),
                                     Row(
                                       children: [
-                                        Icon(Icons.shopping_bag, size: 14),
+                                        Icon(Icons.shopping_bag, size: 14,
+                                        color: Colors.white,),
                                         Text(
                                           "No shopping list",
                                           style: TextStyle(color: Colors.white),
