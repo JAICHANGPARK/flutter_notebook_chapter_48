@@ -47,6 +47,11 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ],
                     ),
                   ),
+                  Column(
+                    children: [
+                      
+                    ],
+                  )
                 ],
               ),
             ),
