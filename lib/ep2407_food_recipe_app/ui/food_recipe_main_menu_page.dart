@@ -87,6 +87,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           shape: StadiumBorder(),
                           color: Color.fromRGBO(242, 78, 4, 1),
                         ),
+                        padding: EdgeInsets.symmetric(vertical: 16),
                         child: Center(
                           child: Text(
                             "Create a shoppping list",
