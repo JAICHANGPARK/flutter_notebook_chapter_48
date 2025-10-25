@@ -75,8 +75,10 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         Container(
                           height: 62,
                           width: 62,
-                          decoration: BoxDecoration(color: Colors.orange,
-                          borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
                         Expanded(
                           child: Column(
@@ -97,6 +99,11 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                               ),
                             ],
                           ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.arrow_forward_ios),
+                          color: Colors.white,
                         ),
                       ],
                     ),
