@@ -20,6 +20,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
             right: 16,
             child: SafeArea(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 62,
@@ -31,7 +32,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           child: CircleAvatar(
                             foregroundColor: Colors.white,
                             backgroundColor: Colors.white.withValues(alpha: .1),
-                            child: Icon(Icons.arrow_back_ios_new, size: 16,),
+                            child: Icon(Icons.arrow_back_ios_new, size: 16),
                           ),
                         ),
                         Center(
@@ -48,11 +49,18 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                   ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Main Menu"),
-                      Text("No planned revenu")
+                      Text(
+                        "Main Menu",
+                        style: TextStyle(color: Colors.white, fontSize: 18),
+                      ),
+                      Text(
+                        "No planned revenue",
+                        style: TextStyle(color: Colors.grey),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
