@@ -115,7 +115,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                     padding: EdgeInsets.all(12),
                     child: Column(
-                      spacing: 24,
+                      spacing: 32,
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -163,7 +163,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 32),
+                  SizedBox(height: 24),
                   Column(
                     spacing: 12,
                     children: [
