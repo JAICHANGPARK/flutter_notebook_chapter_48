@@ -109,13 +109,13 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                   ),
                   Container(
-                    height: 260,
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: .1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: EdgeInsets.all(12),
                     child: Column(
+                      spacing: 24,
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -155,7 +155,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         ),
 
                         Container(
-                          height: 200,
+                          height: 160,
                           decoration: BoxDecoration(
                             color: Colors.orange,
                           ),
