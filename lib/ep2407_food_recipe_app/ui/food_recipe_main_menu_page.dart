@@ -122,7 +122,13 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("My shopping lists"),
+                                  Text(
+                                    "My shopping lists",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                    ),
+                                  ),
                                   Row(
                                     children: [
                                       Icon(Icons.shopping_bag),
