@@ -130,10 +130,11 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                       "My shopping lists",
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 16,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     Row(
+                                      spacing: 4,
                                       children: [
                                         Icon(Icons.shopping_bag, size: 14,
                                         color: Colors.white,),
