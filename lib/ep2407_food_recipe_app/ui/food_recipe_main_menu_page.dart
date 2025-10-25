@@ -74,12 +74,25 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                     ),
                   ),
+                  SizedBox(
+                    height: 42,
+                  ),
                   Column(
                     spacing: 12,
                     children: [
-                      Text("You haven't created a shopping list yet",)
+                      Text(
+                        "You haven't created a shopping list yet",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Color.fromRGBO(242, 78, 4, 1),
+                        ),
+                        child: Center(child: Text("Create a shoppping list")),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
