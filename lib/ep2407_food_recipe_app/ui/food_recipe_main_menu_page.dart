@@ -85,6 +85,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
+                                  fontSize: 16,
                                 ),
                               ),
                               Text(
