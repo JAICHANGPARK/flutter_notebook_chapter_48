@@ -114,36 +114,40 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                       borderRadius: BorderRadius.circular(12),
                     ),
+                    padding: EdgeInsets.all(12),
                     child: Column(
                       children: [
-                        Row(
-                          children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "My shopping lists",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "My shopping lists",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                      ),
                                     ),
-                                  ),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.shopping_bag),
-                                      Text("No shopping list"),
-                                    ],
-                                  ),
-                                ],
+                                    Row(
+                                      children: [
+                                        Icon(Icons.shopping_bag),
+                                        Text("No shopping list"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                            CircleAvatar(
-                              backgroundColor: Colors.black,
-                              foregroundColor: Colors.white,
-                              child: Icon(Icons.shopping_bag_outlined),
-                            ),
-                          ],
+                              CircleAvatar(
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                child: Icon(Icons.shopping_bag_outlined),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
