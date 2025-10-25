@@ -16,9 +16,37 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
       body: Stack(
         children: [
           Positioned.fill(
-              left: 16,
-              right: 16,
-              child: SafeArea(child: Column(children: []))),
+            left: 16,
+            right: 16,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Container(
+                    height: 62,
+                    color: Colors.blue,
+                    child: Stack(
+                      children: [
+                        Align(
+                          child: CircleAvatar(),
+                          alignment: Alignment.centerLeft,
+                        ),
+                        Center(
+                          child: Text(
+                            "Plan",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
           Positioned(
             bottom: 24,
             left: 16,
