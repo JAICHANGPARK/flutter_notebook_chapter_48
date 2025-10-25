@@ -68,6 +68,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                       borderRadius: BorderRadius.circular(12),
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
                       children: [
                         Container(
