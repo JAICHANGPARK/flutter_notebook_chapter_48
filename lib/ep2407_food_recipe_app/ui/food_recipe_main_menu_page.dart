@@ -76,6 +76,9 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           width: 62,
                           decoration: BoxDecoration(color: Colors.orange),
                         ),
+                        Expanded(child: Column(children: [
+                          
+                        ],))
                       ],
                     ),
                   ),
