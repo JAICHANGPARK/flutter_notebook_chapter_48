@@ -80,7 +80,13 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Food menu"),
+                              Text(
+                                "Food menu",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Text(
                                 "Access my menus",
                                 style: TextStyle(color: Colors.grey),
