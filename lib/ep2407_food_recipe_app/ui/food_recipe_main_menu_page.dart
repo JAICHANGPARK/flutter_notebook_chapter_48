@@ -70,6 +70,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
+                      spacing: 12,
                       children: [
                         Container(
                           height: 62,
@@ -78,6 +79,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         ),
                         Expanded(
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
