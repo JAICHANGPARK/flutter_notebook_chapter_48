@@ -54,7 +54,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     children: [
                       Text(
                         "Main Menu",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                       Text(
                         "No planned revenue",
