@@ -66,13 +66,20 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     height: 80,
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: .1),
+                      borderRadius: BorderRadius.circular(12),
                     ),
                   ),
                   Container(
                     height: 260,
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: .1),
+                      borderRadius: BorderRadius.circular(12),
                     ),
+                    child:Column(
+                      children: [
+                        
+                      ],
+                    )
                   ),
                   SizedBox(height: 32),
                   Column(
