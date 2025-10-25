@@ -23,15 +23,15 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                 children: [
                   Container(
                     height: 62,
-                    color: Colors.blue,
+                    // color: Colors.blue,
                     child: Stack(
                       children: [
                         Align(
                           alignment: Alignment.centerLeft,
                           child: CircleAvatar(
                             foregroundColor: Colors.white,
-                            backgroundColor: Colors.white.withValues(alpha: .7),
-                            child: Icon(Icons.arrow_back_ios_new),
+                            backgroundColor: Colors.white.withValues(alpha: .1),
+                            child: Icon(Icons.arrow_back_ios_new, size: 16,),
                           ),
                         ),
                         Center(
