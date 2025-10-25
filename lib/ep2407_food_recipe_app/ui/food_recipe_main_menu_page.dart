@@ -20,7 +20,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
             right: 16,
             child: SafeArea(
               child: Column(
-                spacing: 16,
+                spacing: 24,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
@@ -63,7 +63,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ],
                   ),
                   Container(
-                    height: 100,
+                    height: 80,
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: .1),
                     ),
