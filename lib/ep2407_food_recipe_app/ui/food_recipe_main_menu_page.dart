@@ -27,7 +27,10 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     child: Stack(
                       children: [
                         Align(
-                          child: CircleAvatar(),
+                          child: CircleAvatar(
+                            foregroundColor: Colors.white,
+                            child: Icon(Icons.arrow_back_ios_new),
+                          ),
                           alignment: Alignment.centerLeft,
                         ),
                         Center(
