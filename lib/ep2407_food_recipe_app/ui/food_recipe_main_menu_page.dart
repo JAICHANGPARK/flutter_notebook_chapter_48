@@ -68,6 +68,15 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                       borderRadius: BorderRadius.circular(12),
                     ),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 62,
+                          width: 62,
+                          decoration: BoxDecoration(color: Colors.orange),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     height: 260,
@@ -75,11 +84,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child:Column(
-                      children: [
-                        
-                      ],
-                    )
+                    child: Column(children: []),
                   ),
                   SizedBox(height: 32),
                   Column(
