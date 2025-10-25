@@ -123,6 +123,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                             children: [
                               Expanded(
                                 child: Column(
+                                  spacing: 6,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
