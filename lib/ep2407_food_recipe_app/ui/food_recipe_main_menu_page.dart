@@ -76,9 +76,18 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           width: 62,
                           decoration: BoxDecoration(color: Colors.orange),
                         ),
-                        Expanded(child: Column(children: [
-                          
-                        ],))
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Food menu"),
+                              Text(
+                                "Access my menus",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
