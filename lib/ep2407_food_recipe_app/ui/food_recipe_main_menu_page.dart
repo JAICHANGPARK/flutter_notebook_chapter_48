@@ -151,8 +151,8 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                 backgroundColor: Colors.black,
 
                                 foregroundColor: Colors.white,
-                                child: Icon(Icons.shopping_bag_outlined),
-                                
+                                child: Icon(Icons.shopping_bag_outlined,size: 18,),
+
                               ),
                             ],
                           ),
@@ -168,7 +168,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 24),
+                  SizedBox(height: 16),
                   Column(
                     spacing: 12,
                     children: [
