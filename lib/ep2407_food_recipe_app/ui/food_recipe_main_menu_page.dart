@@ -20,6 +20,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
             right: 16,
             child: SafeArea(
               child: Column(
+                spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
