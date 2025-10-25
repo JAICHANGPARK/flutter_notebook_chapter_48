@@ -117,11 +117,26 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     child: Column(
                       children: [
                         Row(
-                          children: [Expanded(child: Column(children: [])),
-                          CircleAvatar(
-                            backgroundColor: Colors.black,foregroundColor: Colors.white,
-                            child: Icon(Icons.shopping_bag_outlined),
-                          ),
+                          children: [
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("My shopping lists"),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.shopping_bag),
+                                      Text("No shopping list"),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            CircleAvatar(
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              child: Icon(Icons.shopping_bag_outlined),
+                            ),
                           ],
                         ),
                       ],
