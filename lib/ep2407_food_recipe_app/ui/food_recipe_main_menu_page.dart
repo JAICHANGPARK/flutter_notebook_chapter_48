@@ -75,7 +75,8 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         Container(
                           height: 62,
                           width: 62,
-                          decoration: BoxDecoration(color: Colors.orange),
+                          decoration: BoxDecoration(color: Colors.orange,
+                          borderRadius: BorderRadius.circular(8)),
                         ),
                         Expanded(
                           child: Column(
