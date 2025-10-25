@@ -62,6 +62,12 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ),
                     ],
                   ),
+                  Container(
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.white.withValues(alpha: .1),
+                    ),
+                  ),
                 ],
               ),
             ),
