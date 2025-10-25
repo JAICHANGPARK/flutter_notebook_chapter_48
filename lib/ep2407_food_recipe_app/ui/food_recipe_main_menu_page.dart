@@ -15,7 +15,10 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Positioned(child: Column(children: [])),
+          Positioned.fill(
+              left: 16,
+              right: 16,
+              child: SafeArea(child: Column(children: []))),
           Positioned(
             bottom: 24,
             left: 16,
