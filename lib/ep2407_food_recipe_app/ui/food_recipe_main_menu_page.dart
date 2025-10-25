@@ -74,7 +74,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                     ),
                   ),
-                  SizedBox(height: 42),
+                  SizedBox(height: 32),
                   Column(
                     spacing: 12,
                     children: [
@@ -91,7 +91,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         child: Center(
                           child: Text(
                             "Create a shoppping list",
-                            style: TextStyle(color: Colors.white, fontSize: 18),
+                            style: TextStyle(color: Colors.white, fontSize: 16),
                           ),
                         ),
                       ),
