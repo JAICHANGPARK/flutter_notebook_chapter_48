@@ -74,6 +74,12 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       color: Colors.white.withValues(alpha: .1),
                     ),
                   ),
+                  Column(
+                    spacing: 12,
+                    children: [
+                      Text("You haven't created a shopping list yet",)
+                    ],
+                  )
                 ],
               ),
             ),
