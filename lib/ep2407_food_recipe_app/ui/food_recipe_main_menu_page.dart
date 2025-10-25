@@ -49,7 +49,8 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                   ),
                   Column(
                     children: [
-                      
+                      Text("Main Menu"),
+                      Text("No planned revenu")
                     ],
                   )
                 ],
