@@ -147,9 +147,12 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                 ),
                               ),
                               CircleAvatar(
+                                radius: 24,
                                 backgroundColor: Colors.black,
+
                                 foregroundColor: Colors.white,
                                 child: Icon(Icons.shopping_bag_outlined),
+                                
                               ),
                             ],
                           ),
@@ -159,6 +162,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           height: 160,
                           decoration: BoxDecoration(
                             color: Colors.orange,
+                            borderRadius: BorderRadius.circular(6)
                           ),
                         )
                       ],
