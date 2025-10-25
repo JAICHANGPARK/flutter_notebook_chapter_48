@@ -70,7 +70,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
-                      spacing: 12,
+                      spacing: 16,
                       children: [
                         Container(
                           height: 62,
@@ -134,13 +134,13 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                       ),
                                     ),
                                     Row(
-                                      spacing: 4,
+                                      spacing: 6,
                                       children: [
                                         Icon(Icons.shopping_bag, size: 14,
                                         color: Colors.white,),
                                         Text(
                                           "No shopping list",
-                                          style: TextStyle(color: Colors.white),
+                                          style: TextStyle(color: Colors.grey),
                                         ),
                                       ],
                                     ),
