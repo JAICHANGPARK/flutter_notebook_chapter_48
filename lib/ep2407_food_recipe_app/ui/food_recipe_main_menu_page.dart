@@ -55,166 +55,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
 
                     ],
                   ),),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Main Menu",
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                      Text(
-                        "No planned revenue",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: .1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                    child: Row(
-                      spacing: 16,
-                      children: [
-                        Container(
-                          height: 62,
-                          width: 62,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(8),
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2021/01/01/15/31/sushi-balls-5878892_1280.jpg",
-                              ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Food menu",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                "Access my menus",
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                            ],
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.arrow_forward_ios),
-                          color: Colors.white,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: .1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    padding: EdgeInsets.all(12),
-                    child: Column(
-                      spacing: 32,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  spacing: 6,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "My shopping lists",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                      ),
-                                    ),
-                                    Row(
-                                      spacing: 6,
-                                      children: [
-                                        Icon(
-                                          Icons.shopping_bag,
-                                          size: 14,
-                                          color: Colors.white,
-                                        ),
-                                        Text(
-                                          "No shopping list",
-                                          style: TextStyle(color: Colors.grey),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              CircleAvatar(
-                                radius: 24,
-                                backgroundColor: Colors.black,
 
-                                foregroundColor: Colors.white,
-                                child: Icon(
-                                  Icons.shopping_bag_outlined,
-                                  size: 18,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-
-                        Container(
-                          height: 160,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(6),
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2016/11/19/12/44/burgers-1839090_1280.jpg",
-                              ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 16),
-                  Column(
-                    spacing: 12,
-                    children: [
-                      Text(
-                        "You haven't created a shopping list yet",
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Color.fromRGBO(242, 78, 4, 1),
-                        ),
-                        padding: EdgeInsets.symmetric(vertical: 16),
-                        child: Center(
-                          child: Text(
-                            "Create a shoppping list",
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),
@@ -314,7 +155,170 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
     );
   }
 
-  buildMainMenuWidget(){
-    
+  Widget buildMainMenuWidget(){
+    return Column(
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Main Menu",
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
+            Text(
+              "No planned revenue",
+              style: TextStyle(color: Colors.grey),
+            ),
+          ],
+        ),
+        Container(
+          height: 80,
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: .1),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+          child: Row(
+            spacing: 16,
+            children: [
+              Container(
+                height: 62,
+                width: 62,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(8),
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2021/01/01/15/31/sushi-balls-5878892_1280.jpg",
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Food menu",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    Text(
+                      "Access my menus",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ],
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.arrow_forward_ios),
+                color: Colors.white,
+              ),
+            ],
+          ),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: .1),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          padding: EdgeInsets.all(12),
+          child: Column(
+            spacing: 32,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        spacing: 6,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "My shopping lists",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                            ),
+                          ),
+                          Row(
+                            spacing: 6,
+                            children: [
+                              Icon(
+                                Icons.shopping_bag,
+                                size: 14,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "No shopping list",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 24,
+                      backgroundColor: Colors.black,
+
+                      foregroundColor: Colors.white,
+                      child: Icon(
+                        Icons.shopping_bag_outlined,
+                        size: 18,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              Container(
+                height: 160,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(6),
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2016/11/19/12/44/burgers-1839090_1280.jpg",
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 16),
+        Column(
+          spacing: 12,
+          children: [
+            Text(
+              "You haven't created a shopping list yet",
+              style: TextStyle(color: Colors.white, fontSize: 16),
+            ),
+            Container(
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                color: Color.fromRGBO(242, 78, 4, 1),
+              ),
+              padding: EdgeInsets.symmetric(vertical: 16),
+              child: Center(
+                child: Text(
+                  "Create a shoppping list",
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
+    )
   }
 }
