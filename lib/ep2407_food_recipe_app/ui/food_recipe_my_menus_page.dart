@@ -97,15 +97,14 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                         shape: StadiumBorder(
                           side: BorderSide(color: Colors.grey),
                         ),
-
                       ),
                       child: Text(
                         "Add",
                         style: TextStyle(color: Colors.grey, fontSize: 13),
                       ),
                     ),
-                    
                   },
+                  SizedBox(width: 0,),
                 ],
               ),
             ),
