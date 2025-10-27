@@ -32,11 +32,8 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
           children: List.generate(
             4,
             (idx) => Container(
-
               height: 100,
-              margin: EdgeInsets.only(
-                bottom: 16
-              ),
+              margin: EdgeInsets.only(bottom: 16),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.white12,
@@ -46,8 +43,12 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                   Container(
                     height: 92,
                     width: 92,
-                    decoration: BoxDecoration(),
-                  )
+                    decoration: BoxDecoration(color: Colors.blue),
+                  ),
+                  Expanded(child: Column(children: [
+                    Text("Chihuahua")
+
+                  ],),),
                 ],
               ),
             ),
