@@ -175,6 +175,12 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(6),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2016/11/19/12/44/burgers-1839090_1280.jpg",
+                              ),
+                              
+                            ),
                           ),
                         ),
                       ],
