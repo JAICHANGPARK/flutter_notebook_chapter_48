@@ -73,20 +73,39 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                       ],
                     ),
                   ),
-                  switch(idx){
-                  0 =>  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 14, vertical: 3),
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.deepOrange,
+                  switch (idx) {
+                    0 => Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 3,
+                      ),
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.deepOrange,
+                      ),
+                      child: Text(
+                        "Added",
+                        style: TextStyle(color: Colors.white, fontSize: 13),
+                      ),
                     ),
-                    child: Text(
-                      "Added",
-                      style: TextStyle(color: Colors.white, fontSize: 13),
-                    ),
-                  ),
-                  }
+                    _ => Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 3,
+                      ),
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(
+                          side: BorderSide(color: Colors.grey),
+                        ),
 
+                      ),
+                      child: Text(
+                        "Add",
+                        style: TextStyle(color: Colors.grey, fontSize: 13),
+                      ),
+                    ),
+                    
+                  },
                 ],
               ),
             ),
