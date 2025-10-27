@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+import 'food_recipe_my_menus_page.dart';
+
 class FoodRecipeMainMenuPage extends StatefulWidget {
   const FoodRecipeMainMenuPage({super.key});
 
@@ -52,8 +54,9 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                   ),
                   IndexedStack(
-                      index: pageNum,
-                      children: [buildMainMenuWidget()]),
+                    index: pageNum,
+                    children: [buildMainMenuWidget(), FoodRecipeMyMenusPage()],
+                  ),
                 ],
               ),
             ),
