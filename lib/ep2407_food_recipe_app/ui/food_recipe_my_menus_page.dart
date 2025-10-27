@@ -50,7 +50,10 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       spacing: 6,
                       children: [
-                        Text("Chihuahua"),
+                        Text(
+                          "Chihuahua",
+                          style: TextStyle(color: Colors.white),
+                        ),
                         Text(
                           "\$0.99 35Cal",
                           style: TextStyle(color: Colors.grey),
