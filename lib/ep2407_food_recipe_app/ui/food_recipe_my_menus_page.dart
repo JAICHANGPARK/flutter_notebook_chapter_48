@@ -45,7 +45,10 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                   Container(
                     height: 92,
                     width: 92,
-                    decoration: BoxDecoration(color: Colors.blue),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   Expanded(
                     child: Column(
@@ -55,7 +58,8 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                       children: [
                         Text(
                           "Chihuahua",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,
+                          fontSize: 20,),
                         ),
                         Text(
                           "\$0.99 35Cal",
