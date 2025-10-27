@@ -11,6 +11,15 @@ class FoodRecipeMyMenusPage extends StatefulWidget {
 class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Container(
+          height: 58,
+          decoration: ShapeDecoration(shape: StadiumBorder(),
+          color: Colors.white12,
+          ),
+        )
+      ],
+    );
   }
 }
