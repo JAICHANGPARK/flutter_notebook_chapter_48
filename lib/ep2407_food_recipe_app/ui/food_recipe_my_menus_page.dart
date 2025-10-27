@@ -73,7 +73,8 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                       ],
                     ),
                   ),
-                  Container(
+                  switch(idx){
+                  0 =>  Container(
                     padding: EdgeInsets.symmetric(horizontal: 14, vertical: 3),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
@@ -84,6 +85,8 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                       style: TextStyle(color: Colors.white, fontSize: 13),
                     ),
                   ),
+                  }
+
                 ],
               ),
             ),
