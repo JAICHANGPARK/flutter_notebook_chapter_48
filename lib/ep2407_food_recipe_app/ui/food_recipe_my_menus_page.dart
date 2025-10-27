@@ -33,7 +33,10 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
             4,
             (idx) => Container(
 
-              height: 72,
+              height: 100,
+              margin: EdgeInsets.only(
+                bottom: 16
+              ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.white12,
