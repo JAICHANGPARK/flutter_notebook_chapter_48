@@ -52,7 +52,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                     ),
                   ),
                   IndexedStack(
-                      index: pageNume,
+                      index: pageNum,
                       children: [buildMainMenuWidget()]),
                 ],
               ),
