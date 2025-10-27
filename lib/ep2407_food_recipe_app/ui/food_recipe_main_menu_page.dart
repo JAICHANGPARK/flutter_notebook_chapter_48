@@ -158,6 +158,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
 
   Widget buildMainMenuWidget() {
     return Column(
+      spacing: 24,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Column(
