@@ -68,12 +68,15 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                    padding: EdgeInsets.symmetric(horizontal: 14, vertical: 3),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
                       color: Colors.deepOrange,
                     ),
-                    child: Text("Added", style: TextStyle(color: Colors.white)),
+                    child: Text(
+                      "Added",
+                      style: TextStyle(color: Colors.white, fontSize: 13),
+                    ),
                   ),
                 ],
               ),
