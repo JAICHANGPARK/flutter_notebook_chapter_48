@@ -38,6 +38,7 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.white12,
               ),
+              padding: EdgeInsets.all(8),
               child: Row(
                 spacing: 16,
                 children: [
