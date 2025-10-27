@@ -9,7 +9,7 @@ class FoodRecipeMainMenuPage extends StatefulWidget {
 }
 
 class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
-  int pageNume = 0;
+  int pageNum = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,9 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ],
                     ),
                   ),
-                  Expanded(child: IndexedStack(children: [])),
+                  IndexedStack(
+                      index: pageNume,
+                      children: [buildMainMenuWidget()]),
                 ],
               ),
             ),
