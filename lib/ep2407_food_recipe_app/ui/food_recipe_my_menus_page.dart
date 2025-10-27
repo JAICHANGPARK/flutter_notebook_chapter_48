@@ -72,7 +72,7 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                       shape: StadiumBorder(),
                       color: Colors.deepOrange,
                     ),
-                    
+                    child: Text("Added", style: TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
