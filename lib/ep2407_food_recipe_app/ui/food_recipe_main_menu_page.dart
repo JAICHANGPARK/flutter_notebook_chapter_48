@@ -78,6 +78,11 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2021/01/01/15/31/sushi-balls-5878892_1280.jpg",
+                              ),
+                            ),
                           ),
                         ),
                         Expanded(
@@ -136,8 +141,11 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                     Row(
                                       spacing: 6,
                                       children: [
-                                        Icon(Icons.shopping_bag, size: 14,
-                                        color: Colors.white,),
+                                        Icon(
+                                          Icons.shopping_bag,
+                                          size: 14,
+                                          color: Colors.white,
+                                        ),
                                         Text(
                                           "No shopping list",
                                           style: TextStyle(color: Colors.grey),
@@ -152,8 +160,10 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                                 backgroundColor: Colors.black,
 
                                 foregroundColor: Colors.white,
-                                child: Icon(Icons.shopping_bag_outlined,size: 18,),
-
+                                child: Icon(
+                                  Icons.shopping_bag_outlined,
+                                  size: 18,
+                                ),
                               ),
                             ],
                           ),
@@ -163,9 +173,9 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                           height: 160,
                           decoration: BoxDecoration(
                             color: Colors.orange,
-                            borderRadius: BorderRadius.circular(6)
+                            borderRadius: BorderRadius.circular(6),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
