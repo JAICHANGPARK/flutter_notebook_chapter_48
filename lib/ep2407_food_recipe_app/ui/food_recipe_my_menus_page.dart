@@ -28,7 +28,19 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
             textAlign: TextAlign.center,
           ),
         ),
-        Column(children: []),
+        Column(
+          children: List.generate(
+            4,
+            (idx) => Container(
+
+              height: 72,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.white12,
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
