@@ -24,10 +24,11 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
           padding: const EdgeInsets.symmetric(horizontal: 42),
           child: Text(
             "Your menu is empty. Add the recipes you want to plan",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontSize: 20),
             textAlign: TextAlign.center,
           ),
         ),
+        Column(children: []),
       ],
     );
   }
