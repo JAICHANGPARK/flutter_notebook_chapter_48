@@ -9,6 +9,7 @@ class FoodRecipeMainMenuPage extends StatefulWidget {
 }
 
 class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
+  int pageNume = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,6 +50,11 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ],
                     ),
                   ),
+                  Expanded(child: IndexedStack(
+                    children: [
+
+                    ],
+                  ),),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -306,5 +312,9 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
         ],
       ),
     );
+  }
+
+  buildMainMenuWidget(){
+    
   }
 }
