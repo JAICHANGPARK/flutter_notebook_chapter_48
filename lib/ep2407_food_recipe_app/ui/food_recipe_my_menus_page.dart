@@ -48,6 +48,12 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2016/03/05/22/16/coffee-1239226_1280.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   Expanded(
