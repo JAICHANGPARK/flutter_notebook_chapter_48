@@ -10,6 +10,7 @@ class FoodRecipeMainMenuPage extends StatefulWidget {
 
 class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
   int pageNume = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,12 +51,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       ],
                     ),
                   ),
-                  Expanded(child: IndexedStack(
-                    children: [
-
-                    ],
-                  ),),
-
+                  Expanded(child: IndexedStack(children: [])),
                 ],
               ),
             ),
@@ -155,8 +151,9 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
     );
   }
 
-  Widget buildMainMenuWidget(){
+  Widget buildMainMenuWidget() {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,10 +162,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
               "Main Menu",
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
-            Text(
-              "No planned revenue",
-              style: TextStyle(color: Colors.grey),
-            ),
+            Text("No planned revenue", style: TextStyle(color: Colors.grey)),
           ],
         ),
         Container(
@@ -243,10 +237,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         children: [
                           Text(
                             "My shopping lists",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                            ),
+                            style: TextStyle(color: Colors.white, fontSize: 18),
                           ),
                           Row(
                             spacing: 6,
@@ -270,10 +261,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       backgroundColor: Colors.black,
 
                       foregroundColor: Colors.white,
-                      child: Icon(
-                        Icons.shopping_bag_outlined,
-                        size: 18,
-                      ),
+                      child: Icon(Icons.shopping_bag_outlined, size: 18),
                     ),
                   ],
                 ),
@@ -319,6 +307,6 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
           ],
         ),
       ],
-    )
+    );
   }
 }
