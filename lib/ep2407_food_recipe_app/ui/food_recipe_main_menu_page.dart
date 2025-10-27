@@ -82,6 +82,7 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2021/01/01/15/31/sushi-balls-5878892_1280.jpg",
                               ),
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
