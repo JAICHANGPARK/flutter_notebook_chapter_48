@@ -59,7 +59,7 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                         Text(
                           "Chihuahua",
                           style: TextStyle(color: Colors.white,
-                          fontSize: 20,),
+                          fontSize: 18,),
                         ),
                         Text(
                           "\$0.99 35Cal",
