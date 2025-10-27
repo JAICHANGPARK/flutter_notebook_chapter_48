@@ -39,6 +39,7 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                 color: Colors.white12,
               ),
               child: Row(
+                spacing: 16,
                 children: [
                   Container(
                     height: 92,
@@ -47,6 +48,7 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                   ),
                   Expanded(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       spacing: 6,
                       children: [
