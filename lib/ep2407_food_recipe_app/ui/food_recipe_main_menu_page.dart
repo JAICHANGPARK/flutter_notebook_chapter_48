@@ -34,15 +34,31 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                       children: [
                         Align(
                           alignment: Alignment.centerLeft,
-                          child: CircleAvatar(
-                            foregroundColor: Colors.white,
-                            backgroundColor: Colors.white.withValues(alpha: .1),
-                            child: Icon(Icons.arrow_back_ios_new, size: 16),
+                          child: InkWell(
+                            onTap: () {
+                              if (pageNum == 1) {
+                                pageNum = 0;
+                              }
+
+                              setState(() {});
+                            },
+                            child: CircleAvatar(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.white.withValues(
+                                alpha: .1,
+                              ),
+                              child: Icon(Icons.arrow_back_ios_new, size: 16),
+                            ),
                           ),
                         ),
                         Center(
                           child: Text(
-                            "Plan",
+                            switch (pageNum) {
+                              0 => "Plan",
+                              1 => "My menus",
+                              _ => "Plan",
+                            },
+
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
@@ -262,12 +278,19 @@ class _FoodRecipeMainMenuPageState extends State<FoodRecipeMainMenuPage> {
                         ],
                       ),
                     ),
-                    CircleAvatar(
-                      radius: 24,
-                      backgroundColor: Colors.black,
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          pageNum = 1;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 24,
+                        backgroundColor: Colors.black,
 
-                      foregroundColor: Colors.white,
-                      child: Icon(Icons.shopping_bag_outlined, size: 18),
+                        foregroundColor: Colors.white,
+                        child: Icon(Icons.shopping_bag_outlined, size: 18),
+                      ),
                     ),
                   ],
                 ),
