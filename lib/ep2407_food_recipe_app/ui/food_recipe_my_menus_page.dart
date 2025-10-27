@@ -45,10 +45,19 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                     width: 92,
                     decoration: BoxDecoration(color: Colors.blue),
                   ),
-                  Expanded(child: Column(children: [
-                    Text("Chihuahua")
-
-                  ],),),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      spacing: 6,
+                      children: [
+                        Text("Chihuahua"),
+                        Text(
+                          "\$0.99 35Cal",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
