@@ -43,8 +43,8 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                 spacing: 16,
                 children: [
                   Container(
-                    height: 92,
-                    width: 92,
+                    height: 82,
+                    width: 82,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
@@ -54,12 +54,11 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      spacing: 6,
+                      spacing: 8,
                       children: [
                         Text(
                           "Chihuahua",
-                          style: TextStyle(color: Colors.white,
-                          fontSize: 18,),
+                          style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                         Text(
                           "\$0.99 35Cal",
@@ -67,6 +66,13 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                         ),
                       ],
                     ),
+                  ),
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.deepOrange,
+                    ),
+                    
                   ),
                 ],
               ),
