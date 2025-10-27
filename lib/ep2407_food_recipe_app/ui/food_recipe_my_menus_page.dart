@@ -41,6 +41,15 @@ class _FoodRecipeMyMenusPageState extends State<FoodRecipeMyMenusPage> {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.white12,
               ),
+              child: Row(
+                children: [
+                  Container(
+                    height: 92,
+                    width: 92,
+                    decoration: BoxDecoration(),
+                  )
+                ],
+              ),
             ),
           ),
         ),
