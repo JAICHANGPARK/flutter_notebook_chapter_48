@@ -48,7 +48,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.grey[50]!,
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 6,
+                          ),
                           child: TextField(
                             decoration: InputDecoration(
                               suffixIcon: Icon(Icons.tune),
@@ -56,7 +59,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             ),
                           ),
                         ),
+                        Text("Discover The Perfect Property For You."),
                       ],
+                    ),
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) => Placeholder(),
                     ),
                   ),
                 ],
