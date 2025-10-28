@@ -21,39 +21,42 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 24,
                 children: [
-                  Column(
-                    spacing: 24,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          CircleAvatar(radius: 28),
-                          CircleAvatar(
-                            radius: 28,
-                            backgroundColor: Colors.grey[100],
-                            foregroundColor: Colors.black,
-                            child: Badge(
-                              child: HugeIcon(
-                                icon: HugeIcons.strokeRoundedNotification01,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      spacing: 24,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CircleAvatar(radius: 28),
+                            CircleAvatar(
+                              radius: 28,
+                              backgroundColor: Colors.grey[100],
+                              foregroundColor: Colors.black,
+                              child: Badge(
+                                child: HugeIcon(
+                                  icon: HugeIcons.strokeRoundedNotification01,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.grey[100]!,
+                          ],
                         ),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            suffixIcon: Icon(Icons.tune),
-                            prefixIcon: Icon(Icons.search),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[100]!,
+                          ),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              suffixIcon: Icon(Icons.tune),
+                              prefixIcon: Icon(Icons.search),
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
