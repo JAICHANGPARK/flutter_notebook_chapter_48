@@ -19,23 +19,37 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             child: SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                spacing: 24,
                 children: [
                   Column(
+                    spacing: 24,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      CircleAvatar(radius: 28),
-                      CircleAvatar(
-                        radius: 28,
-                        backgroundColor: Colors.grey[100],
-                        foregroundColor: Colors.black,
-                        child: Badge(
-                          child: HugeIcon(
-                            icon: HugeIcons.strokeRoundedNotification01,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CircleAvatar(radius: 28),
+                          CircleAvatar(
+                            radius: 28,
+                            backgroundColor: Colors.grey[100],
+                            foregroundColor: Colors.black,
+                            child: Badge(
+                              child: HugeIcon(
+                                icon: HugeIcons.strokeRoundedNotification01,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.grey[100]!,
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            suffixIcon: Icon(Icons.tune),
+                            prefixIcon: Icon(Icons.search),
                           ),
                         ),
                       ),
