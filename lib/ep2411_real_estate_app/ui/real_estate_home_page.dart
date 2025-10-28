@@ -27,8 +27,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         radius: 28,
                         backgroundColor: Colors.grey[100],
                         foregroundColor: Colors.black,
-                        child: HugeIcon(
-                          icon: HugeIcons.strokeRoundedNotification01,
+                        child: Badge(
+                          child: HugeIcon(
+                            icon: HugeIcons.strokeRoundedNotification01,
+                          ),
                         ),
                       ),
                     ],
