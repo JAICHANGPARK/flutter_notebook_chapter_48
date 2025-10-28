@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({super.key});
@@ -15,17 +16,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: SafeArea(child: Column(children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: SafeArea(
+              child: Column(
                 children: [
-                  CircleAvatar(
-                    radius: 28,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      CircleAvatar(radius: 28),
+                      CircleAvatar(
+                        radius: 28,
+                        backgroundColor: Colors.grey[100],
+                        foregroundColor: Colors.black,
+                        child: HugeIcon(
+                          icon: HugeIcons.strokeRoundedNotification01,
+                        ),
+                      ),
+                    ],
                   ),
-                  CircleAvatar()
                 ],
-              )
-            ])),
+              ),
+            ),
           ),
         ],
       ),
