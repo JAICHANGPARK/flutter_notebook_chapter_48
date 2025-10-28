@@ -74,7 +74,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     child: ListView.builder(
                       padding: EdgeInsets.zero,
                       itemBuilder: (context, index) => Container(
-                        height: 240,
+                        height: 250,
                         child: Placeholder(),
                       ),
                     ),
