@@ -19,12 +19,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             child: SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                spacing: 24,
+                spacing: 20,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
-                      spacing: 24,
+                      spacing: 20,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
