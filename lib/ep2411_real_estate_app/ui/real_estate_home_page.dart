@@ -33,7 +33,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             CircleAvatar(radius: 28),
                             CircleAvatar(
                               radius: 28,
-                              backgroundColor: Colors.grey[100],
+                              backgroundColor: Colors.grey[50],
                               foregroundColor: Colors.black,
                               child: Badge(
                                 child: HugeIcon(
@@ -46,7 +46,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
-                            color: Colors.grey[100]!,
+                            color: Colors.grey[50]!,
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                           child: TextField(
