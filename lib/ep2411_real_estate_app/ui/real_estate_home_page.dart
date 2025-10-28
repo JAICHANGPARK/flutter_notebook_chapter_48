@@ -18,7 +18,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           Positioned.fill(
             child: SafeArea(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Column(
+                    children: [
+
+                    ],
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
