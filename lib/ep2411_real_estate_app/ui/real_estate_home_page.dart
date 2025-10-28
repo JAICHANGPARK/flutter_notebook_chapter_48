@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({super.key});
 
@@ -12,7 +11,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: Stack(
+        children: [
+          Positioned(
+            child: SafeArea(child: Column(children: [])),
+          ),
+        ],
+      ),
     );
   }
 }
