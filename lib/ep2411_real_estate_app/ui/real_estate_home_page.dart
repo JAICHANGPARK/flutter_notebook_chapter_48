@@ -19,7 +19,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             child: SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                spacing: 20,
+                spacing: 8,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -71,7 +71,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                   Expanded(
                     child: ListView.builder(
-                      itemBuilder: (context, index) => Placeholder(),
+                      padding: EdgeInsets.zero,
+                      itemBuilder: (context, index) => Container(
+                        height: 160,
+                        child: Placeholder(),
+                      ),
                     ),
                   ),
                 ],
