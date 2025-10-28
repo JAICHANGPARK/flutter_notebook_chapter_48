@@ -59,7 +59,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             ),
                           ),
                         ),
-                        Text("Discover The Perfect Property For You."),
+                        Text(
+                          "Discover The Perfect\nProperty For You.",
+                          style: TextStyle(
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
                     ),
                   ),
