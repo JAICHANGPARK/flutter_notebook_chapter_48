@@ -48,6 +48,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.grey[100]!,
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                           child: TextField(
                             decoration: InputDecoration(
                               suffixIcon: Icon(Icons.tune),
