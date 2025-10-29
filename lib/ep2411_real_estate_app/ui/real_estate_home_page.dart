@@ -75,7 +75,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       padding: EdgeInsets.zero,
                       itemBuilder: (context, index) => Container(
                         height: 250,
-                        child: Placeholder(),
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2020/01/20/10/33/room-4779953_1280.jpg",
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
