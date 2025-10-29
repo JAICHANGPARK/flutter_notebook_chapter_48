@@ -119,12 +119,25 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
+                                fontSize: 24,
                               ),
                             ),
                             Text(
                               "8721 S 72th Ave A, Tulsa, EK 1234545",
                               style: TextStyle(color: Colors.white),
                             ),
+                            Row(
+                              children: [
+                                Text("2"),
+                                Text("Beds"),
+                                VerticalDivider(),
+                                Text("2"),
+                                Text("Baths"),
+                                VerticalDivider(),
+                                Text("2"),
+                                Text("Sq. Ft"),
+                              ],
+                            )
                           ],
                         ),
                       ),
