@@ -135,15 +135,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
+                                      fontSize: 20
                                     ),
                                   ),
                                   Text("Beds",
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                                      // fontWeight: FontWeight.bold,
                                       color: Colors.white,
                                     ),),
                                   VerticalDivider(),
-                                  Text("2"),
+                                  Text("2", style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),),
                                   Text("Baths"),
                                   VerticalDivider(),
                                   Text("2"),
