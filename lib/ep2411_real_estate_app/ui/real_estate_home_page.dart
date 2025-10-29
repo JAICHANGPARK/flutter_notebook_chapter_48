@@ -92,10 +92,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 Container(
                                   decoration: ShapeDecoration(
                                     shape: StadiumBorder(),
+                                    color: Colors.white12,
                                   ),
                                   padding: EdgeInsets.symmetric(
                                     horizontal: 12,
-                                    vertical: 4,
+                                    vertical: 12,
                                   ),
                                   child: Text(
                                     "New Construction",
@@ -109,6 +110,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   child: Icon(Icons.favorite_border),
                                 ),
                               ],
+                            ),
+                            Text(
+                              "\$889,000",
+                              style: TextStyle(fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ],
                         ),
