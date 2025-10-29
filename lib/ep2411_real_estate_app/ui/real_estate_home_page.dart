@@ -126,18 +126,31 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               "8721 S 72th Ave A, Tulsa, EK 1234545",
                               style: TextStyle(color: Colors.white),
                             ),
-                            Row(
-                              children: [
-                                Text("2"),
-                                Text("Beds"),
-                                VerticalDivider(),
-                                Text("2"),
-                                Text("Baths"),
-                                VerticalDivider(),
-                                Text("2"),
-                                Text("Sq. Ft"),
-                              ],
-                            )
+                            IntrinsicHeight(
+                              child: Row(
+                                spacing: 6,
+                                children: [
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text("Beds",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),),
+                                  VerticalDivider(),
+                                  Text("2"),
+                                  Text("Baths"),
+                                  VerticalDivider(),
+                                  Text("2"),
+                                  Text("Sq. Ft"),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
