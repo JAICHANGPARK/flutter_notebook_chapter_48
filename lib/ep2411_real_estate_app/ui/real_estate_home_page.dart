@@ -83,6 +83,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             fit: BoxFit.cover,
                           ),
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           children: [
                             Row(
