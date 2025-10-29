@@ -119,6 +119,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 color: Colors.white,
                               ),
                             ),
+                            Text(
+                              "8721 S 72th Ave A, Tulsa, EK 1234545",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ],
                         ),
                       ),
