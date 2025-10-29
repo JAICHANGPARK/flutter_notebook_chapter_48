@@ -86,6 +86,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 12,
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -112,6 +113,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 ),
                               ],
                             ),
+                            Spacer(),
                             Text(
                               "\$889,000",
                               style: TextStyle(
