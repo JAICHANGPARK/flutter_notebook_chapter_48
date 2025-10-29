@@ -99,7 +99,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),
-                                CircleAvatar(radius: 20),
+                                CircleAvatar(radius: 20,
+                                
+                                child: Icon(Icons.favorite_border,),),
                               ],
                             ),
                           ],
