@@ -93,15 +93,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   decoration: ShapeDecoration(
                                     shape: StadiumBorder(),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                    vertical: 4,
+                                  ),
                                   child: Text(
                                     "New Construction",
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),
-                                CircleAvatar(radius: 20,
-                                
-                                child: Icon(Icons.favorite_border,),),
+                                CircleAvatar(
+                                  radius: 20,
+                                  foregroundColor: Colors.white,
+                                  child: Icon(Icons.favorite_border),
+                                ),
                               ],
                             ),
                           ],
