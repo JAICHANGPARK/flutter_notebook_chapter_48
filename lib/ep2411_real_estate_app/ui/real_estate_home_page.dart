@@ -83,6 +83,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             fit: BoxFit.cover,
                           ),
                         ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                  ),
+                                  child: Text("New Construction"),
+                                ),
+                                CircleAvatar(
+                                  radius: 20,
+                                  
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
