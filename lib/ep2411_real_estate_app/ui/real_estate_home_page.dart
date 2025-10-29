@@ -135,24 +135,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
-                                      fontSize: 20
+                                      fontSize: 20,
                                     ),
                                   ),
-                                  Text("Beds",
-                                    style: TextStyle(
-                                      // fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),),
+                                  Text(
+                                    "Beds",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
                                   VerticalDivider(),
-                                  Text("2", style: TextStyle(
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
-                                      fontSize: 20
-                                  ),),
-                                  Text("Baths",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),),
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Baths",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
                                   VerticalDivider(),
                                   Text("2"),
                                   Text("Sq. Ft"),
