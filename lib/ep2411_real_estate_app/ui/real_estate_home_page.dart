@@ -149,7 +149,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       color: Colors.white,
                                       fontSize: 20
                                   ),),
-                                  Text("Baths"),
+                                  Text("Baths",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),),
                                   VerticalDivider(),
                                   Text("2"),
                                   Text("Sq. Ft"),
