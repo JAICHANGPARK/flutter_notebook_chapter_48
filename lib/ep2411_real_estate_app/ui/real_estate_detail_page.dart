@@ -18,6 +18,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               padding: EdgeInsets.zero,
               itemCount: 10,
               itemBuilder: (context, index) {
+
                 return Container(
                   height: 250,
                   decoration: BoxDecoration(
@@ -28,6 +29,21 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       fit: BoxFit.cover,
                     ),
                   ),
+                  child: index == 1 ? Stack(
+                    children: [
+                      Center(
+                        child: CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.white12,
+                          foregroundColor: Colors.white,
+
+                          child: Icon(Icons.favorite_border),
+                        ),
+                      )
+
+
+                    ],
+                  ) : Container(),
                 );
               },
               separatorBuilder: (context, index) =>
