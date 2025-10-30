@@ -13,7 +13,21 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(child: ListView.builder(itemBuilder: (context,index){},))
+          Positioned.fill(
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2021/12/25/13/08/real-estate-6893060_1280.jpg",
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
         ],
       ),
     );
