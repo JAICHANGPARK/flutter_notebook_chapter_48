@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2401_real_estate_app/ui/real_estate_detail_page.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class RealEstateHomePage extends StatefulWidget {
@@ -59,7 +60,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               prefixIcon: Icon(Icons.search),
                               border: InputBorder.none,
                               hintText: "Search",
-                              contentPadding: EdgeInsets.symmetric(vertical: 12)
+                              contentPadding: EdgeInsets.symmetric(
+                                vertical: 12,
+                              ),
                             ),
                           ),
                         ),
@@ -76,105 +79,115 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Expanded(
                     child: ListView.builder(
                       padding: EdgeInsets.zero,
-                      itemBuilder: (context, index) => Container(
-                        height: 250,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://cdn.pixabay.com/photo/2020/01/20/10/33/room-4779953_1280.jpg",
+                      itemBuilder: (context, index) => InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => RealEstateDetailPage(),
                             ),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        padding: EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          spacing: 12,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Container(
-                                  decoration: ShapeDecoration(
-                                    shape: StadiumBorder(),
-                                    color: Colors.white12,
-                                  ),
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 12,
-                                    vertical: 12,
-                                  ),
-                                  child: Text(
-                                    "New Construction",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 20,
-                                  backgroundColor: Colors.white12,
-                                  foregroundColor: Colors.white,
-                                  child: Icon(Icons.favorite_border),
-                                ),
-                              ],
-                            ),
-                            Spacer(),
-                            Text(
-                              "\$889,000",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                fontSize: 24,
+                          );
+                        },
+                        child: Container(
+                          height: 250,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2020/01/20/10/33/room-4779953_1280.jpg",
                               ),
+                              fit: BoxFit.cover,
                             ),
-                            Text(
-                              "8721 S 72th Ave A, Tulsa, EK 1234545",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            IntrinsicHeight(
-                              child: Row(
-                                spacing: 6,
+                          ),
+                          padding: EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            spacing: 12,
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    "2",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 18,
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.white12,
+                                    ),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                      vertical: 12,
+                                    ),
+                                    child: Text(
+                                      "New Construction",
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   ),
-                                  Text(
-                                    "Beds",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  VerticalDivider(),
-                                  Text(
-                                    "2",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Baths",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  VerticalDivider(),
-                                  Text(
-                                    "672",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Sq. Ft",
-                                    style: TextStyle(color: Colors.white),
+                                  CircleAvatar(
+                                    radius: 20,
+                                    backgroundColor: Colors.white12,
+                                    foregroundColor: Colors.white,
+                                    child: Icon(Icons.favorite_border),
                                   ),
                                 ],
                               ),
-                            ),
-                          ],
+                              Spacer(),
+                              Text(
+                                "\$889,000",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              Text(
+                                "8721 S 72th Ave A, Tulsa, EK 1234545",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              IntrinsicHeight(
+                                child: Row(
+                                  spacing: 6,
+                                  children: [
+                                    Text(
+                                      "2",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Beds",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                    VerticalDivider(),
+                                    Text(
+                                      "2",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Baths",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                    VerticalDivider(),
+                                    Text(
+                                      "672",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Sq. Ft",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
