@@ -35,6 +35,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               left: 16,
                               top: 16,
                               child: Container(
+                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Colors.white12,
