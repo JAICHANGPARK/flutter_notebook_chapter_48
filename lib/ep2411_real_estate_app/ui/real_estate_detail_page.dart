@@ -35,12 +35,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               left: 16,
                               top: 16,
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 16,
+                                ),
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Colors.white12,
                                 ),
-                                child: Text("3D Walktrough"),
+                                child: Text(
+                                  "3D Walktrough",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
                             Center(
