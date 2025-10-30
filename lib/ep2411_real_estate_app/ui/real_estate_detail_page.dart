@@ -35,18 +35,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             ),
           ),
           Positioned(
-            top: 32,
+            top: 0,
             right: 16,
-            child: Row(
-              children: [
-                CircleAvatar(
-                  radius: 24,
-                  backgroundColor: Colors.white12,
-                  foregroundColor: Colors.white,
-
-                  child: Icon(Icons.favorite_border),
-                ),
-              ],
+            child: SafeArea(
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+              
+                    child: Icon(Icons.favorite_border),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
