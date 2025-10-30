@@ -48,6 +48,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               
                     child: Icon(Icons.favorite_border),
                   ),
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.ios_share),
+                  ),
                 ],
               ),
             ),
