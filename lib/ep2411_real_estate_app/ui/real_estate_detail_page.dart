@@ -33,11 +33,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     children: [
                       Center(
                         child: CircleAvatar(
-                          radius: 24,
+                          radius: 26,
                           backgroundColor: Colors.white12,
                           foregroundColor: Colors.white,
 
-                          child: Icon(Icons.favorite_border),
+                          child: Icon(Icons.play_arrow),
                         ),
                       )
 
