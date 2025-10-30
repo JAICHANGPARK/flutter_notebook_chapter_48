@@ -13,7 +13,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Positioned.fill(child: ListView.builder(itemBuilder: (context,index){},))
         ],
       ),
     );
