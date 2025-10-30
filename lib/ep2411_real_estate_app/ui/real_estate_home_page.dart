@@ -57,6 +57,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             decoration: InputDecoration(
                               suffixIcon: Icon(Icons.tune),
                               prefixIcon: Icon(Icons.search),
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
@@ -156,12 +157,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   VerticalDivider(),
-                                  Text("672", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                  ),),
-                                  Text("Sq. Ft",
+                                  Text(
+                                    "672",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Sq. Ft",
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ],
