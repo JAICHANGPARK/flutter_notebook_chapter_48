@@ -78,14 +78,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                   Expanded(
                     child: ListView.builder(
+                      itemCount: 10,
                       padding: EdgeInsets.zero,
                       itemBuilder: (context, index) => InkWell(
                         onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => RealEstateDetailPage(),
-                            ),
-                          );
+                          // Navigator.of(context).push(
+                          //   MaterialPageRoute(
+                          //     builder: (context) => RealEstateDetailPage(),
+                          //   ),
+                          // );
                         },
                         child: Container(
                           height: 250,
