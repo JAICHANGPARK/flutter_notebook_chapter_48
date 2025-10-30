@@ -135,7 +135,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
-                                      fontSize: 20,
+                                      fontSize: 18,
                                     ),
                                   ),
                                   Text(
@@ -148,7 +148,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
-                                      fontSize: 20,
+                                      fontSize: 18,
                                     ),
                                   ),
                                   Text(
