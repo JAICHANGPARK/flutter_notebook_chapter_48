@@ -31,8 +31,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 );
               },
               separatorBuilder: (context, index) =>
-                  Divider(color: Colors.white,
-                  height: 2,),
+                  Divider(color: Colors.white, height: 2),
+            ),
+          ),
+          Positioned(
+            top: 32,
+            left: 16,
+            child: Row(
+              children: [
+                CircleAvatar(
+                  radius: 24,
+                  foregroundColor: Colors.white12,
+                  child: Icon(Icons.favorite_border),
+                ),
+              ],
             ),
           ),
         ],
