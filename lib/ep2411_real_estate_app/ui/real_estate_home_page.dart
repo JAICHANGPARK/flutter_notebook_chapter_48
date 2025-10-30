@@ -58,7 +58,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               suffixIcon: Icon(Icons.tune),
                               prefixIcon: Icon(Icons.search),
                               border: InputBorder.none,
-                              hintText: "Search"
+                              hintText: "Search",
+                              contentPadding: EdgeInsets.symmetric(vertical: 12)
                             ),
                           ),
                         ),
