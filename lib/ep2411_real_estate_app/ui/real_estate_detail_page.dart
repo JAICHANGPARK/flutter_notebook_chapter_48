@@ -14,9 +14,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: ListView.builder(
+            child: ListView.separated(
+              itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
+                  height: 250,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
@@ -27,6 +29,8 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   ),
                 );
               },
+              separatorBuilder: (context, index) =>
+                  Divider(color: Colors.white),
             ),
           ),
         ],
