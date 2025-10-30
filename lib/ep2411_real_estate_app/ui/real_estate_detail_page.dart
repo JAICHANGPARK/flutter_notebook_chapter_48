@@ -37,10 +37,19 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
           Positioned(
             top: 0,
             right: 16,
+            left: 16,
             child: SafeArea(
               child: Row(
                 spacing: 12,
                 children: [
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Spacer(),
                   CircleAvatar(
                     radius: 24,
                     backgroundColor: Colors.white12,
@@ -53,6 +62,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     backgroundColor: Colors.white12,
                     foregroundColor: Colors.white,
                     child: Icon(Icons.ios_share),
+                  ),
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.more_horiz),
                   ),
                 ],
               ),
