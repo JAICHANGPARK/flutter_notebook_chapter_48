@@ -18,7 +18,6 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               padding: EdgeInsets.zero,
               itemCount: 10,
               itemBuilder: (context, index) {
-
                 return Container(
                   height: 250,
                   decoration: BoxDecoration(
@@ -29,21 +28,28 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: index == 1 ? Stack(
-                    children: [
-                      Center(
-                        child: CircleAvatar(
-                          radius: 26,
-                          backgroundColor: Colors.white12,
-                          foregroundColor: Colors.white,
+                  child: index == 1
+                      ? Stack(
+                          children: [
+                            Container(
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                                color: Colors.white12,
+                              ),
+                              child: Text("3D Walktrough"),
+                            ),
+                            Center(
+                              child: CircleAvatar(
+                                radius: 26,
+                                backgroundColor: Colors.white12,
+                                foregroundColor: Colors.white,
 
-                          child: Icon(Icons.play_arrow),
-                        ),
-                      )
-
-
-                    ],
-                  ) : Container(),
+                                child: Icon(Icons.play_arrow, size: 28),
+                              ),
+                            ),
+                          ],
+                        )
+                      : Container(),
                 );
               },
               separatorBuilder: (context, index) =>
@@ -70,7 +76,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     radius: 24,
                     backgroundColor: Colors.white12,
                     foregroundColor: Colors.white,
-              
+
                     child: Icon(Icons.favorite_border),
                   ),
                   CircleAvatar(
