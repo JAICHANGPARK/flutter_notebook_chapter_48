@@ -22,6 +22,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       image: NetworkImage(
                         "https://cdn.pixabay.com/photo/2021/12/25/13/08/real-estate-6893060_1280.jpg",
                       ),
+                      fit: BoxFit.cover,
                     ),
                   ),
                 );
