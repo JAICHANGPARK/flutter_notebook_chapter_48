@@ -39,6 +39,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             right: 16,
             child: SafeArea(
               child: Row(
+                spacing: 12,
                 children: [
                   CircleAvatar(
                     radius: 24,
