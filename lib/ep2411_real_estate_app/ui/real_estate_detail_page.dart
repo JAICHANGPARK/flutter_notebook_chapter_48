@@ -31,12 +31,16 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   child: index == 1
                       ? Stack(
                           children: [
-                            Container(
-                              decoration: ShapeDecoration(
-                                shape: StadiumBorder(),
-                                color: Colors.white12,
+                            Positioned(
+                              left: 16,
+                              top: 16,
+                              child: Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Colors.white12,
+                                ),
+                                child: Text("3D Walktrough"),
                               ),
-                              child: Text("3D Walktrough"),
                             ),
                             Center(
                               child: CircleAvatar(
