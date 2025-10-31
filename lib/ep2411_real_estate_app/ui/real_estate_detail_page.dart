@@ -121,6 +121,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               ),
               padding: EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 4,
