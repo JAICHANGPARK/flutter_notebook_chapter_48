@@ -122,6 +122,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               padding: EdgeInsets.all(16),
               child: Column(
                 children: [
+                  Container(
+                    height: 4,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                   borderRadius: BorderRadius.circular(7)
+                    ),
+                  ),
                   Row(
                     children: [
                       Expanded(
