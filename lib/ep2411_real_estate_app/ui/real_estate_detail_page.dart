@@ -201,8 +201,15 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       ),
                       Expanded(
                         child: Column(
+                          spacing: 4,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("Active"), Text("1")],
+                          children: [
+                            Text(
+                              "Active",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text("1"),
+                          ],
                         ),
                       ),
                     ],
@@ -210,13 +217,13 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   Row(
                     children: [
                       Expanded(
-                        child: Column(
+                        child: Column(  spacing: 4,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [Text("Status"), Text("Days On Market")],
                         ),
                       ),
                       Expanded(
-                        child: Column(
+                        child: Column(  spacing: 4,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [Text("Active"), Text("1")],
                         ),
