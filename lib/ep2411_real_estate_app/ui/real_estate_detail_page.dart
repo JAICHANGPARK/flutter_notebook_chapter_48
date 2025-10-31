@@ -113,7 +113,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             right: 0,
             child: Container(
               decoration: BoxDecoration(color: Colors.white,
-              
+
               ),
               child: Column(children: []),
             ),
