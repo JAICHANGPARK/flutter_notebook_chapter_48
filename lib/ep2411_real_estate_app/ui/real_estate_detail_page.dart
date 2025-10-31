@@ -178,6 +178,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    spacing: 4,
                     children: [
                       Text(
                         "Key Details",
