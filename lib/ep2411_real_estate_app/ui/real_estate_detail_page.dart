@@ -161,8 +161,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           color: Colors.grey,
                         ),
                       ),
+
                     ],
                   ),
+                  Row(
+                    children: [
+                      Text('2'),
+                      Text("Beds"),
+                      VerticalDivider(),
+                    ],
+                  )
+
                 ],
               ),
             ),
