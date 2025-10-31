@@ -106,6 +106,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               ),
             ),
           ),
+
+          Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container())
         ],
       ),
     );
