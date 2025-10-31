@@ -126,10 +126,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 6,
                           children: [
                             Text("\$627,000"),
                             Text("7219 S 72th Ave A, Tulsa, EK 123344"),
                           ],
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(color: Colors.white),
                         ),
                       ),
                     ],
