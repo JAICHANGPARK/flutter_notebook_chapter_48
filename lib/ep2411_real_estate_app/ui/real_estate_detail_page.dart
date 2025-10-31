@@ -181,12 +181,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   Text("Updated 20/09/2025 4:32 AM"),
                   Row(
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Status"),
-                          Text("Days On Market")
-                        ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Status"),
+                            Text("Days On Market")
+                          ],
+                        ),
                       )
                     ],
                   )
