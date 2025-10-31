@@ -177,8 +177,13 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       VerticalDivider(),
                     ],
                   ),
-                  Text("Key Details"),
-                  Text("Updated 20/09/2025 4:32 AM"),
+                  Column(
+                    children: [
+                      Text("Key Details"),
+                      Text("Updated 20/09/2025 4:32 AM"),
+                    ],
+                  ),
+
                   Row(
                     children: [
                       Expanded(
