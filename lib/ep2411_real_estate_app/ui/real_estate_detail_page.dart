@@ -169,6 +169,25 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       Text('2'),
                       Text("Beds"),
                       VerticalDivider(),
+                      Text('2'),
+                      Text("Baths"),
+                      VerticalDivider(),
+                      Text('892'),
+                      Text("Sq. Ft."),
+                      VerticalDivider(),
+                    ],
+                  ),
+                  Text("Key Details"),
+                  Text("Updated 20/09/2025 4:32 AM"),
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Status"),
+                          Text("Days On Market")
+                        ],
+                      )
                     ],
                   )
 
