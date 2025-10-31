@@ -119,6 +119,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   topRight: Radius.circular(16),
                 ),
               ),
+              padding: EdgeInsets.all(16),
               child: Column(
                 children: [
                   Row(
