@@ -121,14 +121,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               ),
               padding: EdgeInsets.all(16),
               child: Column(
+                spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    height: 4,
-                    width: 32,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                   borderRadius: BorderRadius.circular(7)
+                  Center(
+                    child: Container(
+                      height: 4,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(7),
+                      ),
                     ),
                   ),
                   Row(
@@ -144,9 +147,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         ),
                       ),
                       Container(
+                        height: 42,
+                        width: 42,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6),
                           border: Border.all(color: Colors.white),
+                          color: Colors.grey,
                         ),
                       ),
                     ],
