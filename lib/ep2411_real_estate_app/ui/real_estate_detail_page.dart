@@ -161,7 +161,6 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           color: Colors.grey,
                         ),
                       ),
-
                     ],
                   ),
                   Row(
@@ -189,22 +188,23 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     children: [
                       Expanded(
                         child: Column(
+                          spacing: 4,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Status"),
-                            Text("Days On Market")
+                            Text(
+                              "Status",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text("Days On Market"),
                           ],
                         ),
                       ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Active"),
-                            Text("1")
-                          ],
+                          children: [Text("Active"), Text("1")],
                         ),
-                      )
+                      ),
                     ],
                   ),
                   Row(
@@ -212,24 +212,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Status"),
-                            Text("Days On Market")
-                          ],
+                          children: [Text("Status"), Text("Days On Market")],
                         ),
                       ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Active"),
-                            Text("1")
-                          ],
+                          children: [Text("Active"), Text("1")],
                         ),
-                      )
+                      ),
                     ],
-                  )
-
+                  ),
                 ],
               ),
             ),
