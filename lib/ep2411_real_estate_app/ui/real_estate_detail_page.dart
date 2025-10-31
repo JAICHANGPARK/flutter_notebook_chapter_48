@@ -108,10 +108,16 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
           ),
 
           Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Container())
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              decoration: BoxDecoration(color: Colors.white,
+              
+              ),
+              child: Column(children: []),
+            ),
+          ),
         ],
       ),
     );
