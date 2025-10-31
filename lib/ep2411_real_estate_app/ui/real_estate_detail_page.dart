@@ -206,6 +206,28 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         ),
                       )
                     ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Status"),
+                            Text("Days On Market")
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Active"),
+                            Text("1")
+                          ],
+                        ),
+                      )
+                    ],
                   )
 
                 ],
