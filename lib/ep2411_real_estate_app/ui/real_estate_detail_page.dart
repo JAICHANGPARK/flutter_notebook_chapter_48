@@ -153,8 +153,8 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         ),
                       ),
                       Container(
-                        height: 42,
-                        width: 42,
+                        height: 62,
+                        width: 62,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6),
                           border: Border.all(color: Colors.white),
@@ -187,6 +187,15 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           children: [
                             Text("Status"),
                             Text("Days On Market")
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Active"),
+                            Text("1")
                           ],
                         ),
                       )
