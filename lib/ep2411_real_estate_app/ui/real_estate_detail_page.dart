@@ -112,8 +112,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             left: 0,
             right: 0,
             child: Container(
-              decoration: BoxDecoration(color: Colors.white,
-
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
+                ),
               ),
               child: Column(children: []),
             ),
