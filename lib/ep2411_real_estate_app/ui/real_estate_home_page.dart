@@ -197,8 +197,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
             ),
           ),
-          Align(alignment: Alignment.bottomCenter,
-          child: Container(),)
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              decoration: ShapeDecoration(shape: StadiumBorder()),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.home_filled),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
