@@ -197,6 +197,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
             ),
           ),
+          Align(alignment: Alignment.bottomCenter,
+          child: Container(),)
         ],
       ),
     );
