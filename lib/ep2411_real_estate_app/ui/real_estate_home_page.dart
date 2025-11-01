@@ -235,6 +235,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.account_circle_outlined),
+                      color: Colors.grey[500],
                     ),
                   ],
                 ),
