@@ -208,6 +208,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 ),
                 padding: EdgeInsets.all(8),
                 child: Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     CircleAvatar(
                       backgroundColor: Colors.black,
