@@ -75,12 +75,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               child: Row(
                 spacing: 12,
                 children: [
-                  CircleAvatar(
-                    radius: 24,
-                    backgroundColor: Colors.white12,
-                    foregroundColor: Colors.white,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).pop();
+                    },
+                    child: CircleAvatar(
+                      radius: 24,
+                      backgroundColor: Colors.white12,
+                      foregroundColor: Colors.white,
 
-                    child: Icon(Icons.favorite_border),
+                      child: Icon(Icons.arrow_back_ios_new),
+                    ),
                   ),
                   Spacer(),
                   CircleAvatar(
