@@ -200,7 +200,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              decoration: ShapeDecoration(shape: StadiumBorder()),
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                color: Colors.white,
+              ),
+              padding: EdgeInsets.all(8),
               child: Row(
                 children: [
                   CircleAvatar(
