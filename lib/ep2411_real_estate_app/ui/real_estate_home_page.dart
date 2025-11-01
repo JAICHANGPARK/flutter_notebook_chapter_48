@@ -214,8 +214,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       radius: 24,
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
-                      child: Icon(Icons.home_filled,
-                      size: 28,),
+                      child: Icon(Icons.home_filled, size: 28),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.map_outlined),
+                    ),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.chat)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.favorite_border),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.account_circle_outlined),
                     ),
                   ],
                 ),
