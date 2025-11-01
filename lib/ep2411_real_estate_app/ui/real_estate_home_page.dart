@@ -211,6 +211,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     CircleAvatar(
+                      radius: 24,
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
                       child: Icon(Icons.home_filled),
