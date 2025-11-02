@@ -38,12 +38,17 @@ class _EventHomePageState extends State<EventHomePage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
-                      Spacer(),
-                      IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
+                        Spacer(),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                      ],
+                    ),
                   ),
                 ],
               ),
