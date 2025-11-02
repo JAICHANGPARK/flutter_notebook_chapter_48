@@ -59,8 +59,17 @@ class _EventHomePageState extends State<EventHomePage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
+        decoration: BoxDecoration(color: Colors.white),
+        
         child: Row(
+
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.location_on_outlined)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.queue_music_outlined)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.account_circle_outlined)),
 
           ],
         ),
