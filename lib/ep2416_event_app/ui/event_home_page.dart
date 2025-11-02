@@ -57,6 +57,14 @@ class _EventHomePageState extends State<EventHomePage> {
           ),
         ],
       ),
+      bottomNavigationBar: Container(
+        height: 100,
+        child: Row(
+          children: [
+
+          ],
+        ),
+      ),
     );
   }
 }
