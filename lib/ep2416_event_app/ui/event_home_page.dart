@@ -17,8 +17,10 @@ class _EventHomePageState extends State<EventHomePage> {
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.white,
-                gradient: RadialGradient(colors: [Colors.red,
-                ]),
+                gradient: RadialGradient(
+                  colors: [Colors.red, Colors.white],
+                  center: Alignment.topCenter,
+                ),
               ),
             ),
           ),
