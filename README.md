@@ -1,7 +1,15 @@
 # flutter_notebook_chapter_48
 
+## EP2416
 
-## EP2411
+- Real Estate Mobile App
+- Fireart UI/UX for Fireart Studio
+- https://dribbble.com/shots/26698518-Real-Estate-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/45467303/file/2bc9ef332354425c679191deb1922632.jpg?resize=1905x1429&vertical=center" alt="">
+
+
+## EP2411-2415
 
 - Real Estate Mobile App
 - Fireart UI/UX for Fireart Studio
