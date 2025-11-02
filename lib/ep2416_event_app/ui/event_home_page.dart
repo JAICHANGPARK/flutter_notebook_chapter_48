@@ -59,8 +59,8 @@ class _EventHomePageState extends State<EventHomePage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
-        decoration: BoxDecoration(color: Colors.white),
-        
+        decoration: BoxDecoration(color: Colors.blue),
+        padding: EdgeInsets.symmetric(horizontal: 24),
         child: Row(
 
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
