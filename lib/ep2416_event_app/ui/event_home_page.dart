@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class EventHomePage extends StatefulWidget {
@@ -18,9 +20,19 @@ class _EventHomePageState extends State<EventHomePage> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 gradient: RadialGradient(
-                  colors: [Colors.red, Colors.white],
+                  colors: [Colors.red[300]!, Colors.white],
                   center: Alignment.topCenter,
                 ),
+              ),
+            ),
+          ),
+          Positioned.fill(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 1, sigmaY: 1),
+              child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white10
+                      ),
               ),
             ),
           ),
