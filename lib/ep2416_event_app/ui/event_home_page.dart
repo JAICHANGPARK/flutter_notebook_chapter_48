@@ -50,7 +50,11 @@ class _EventHomePageState extends State<EventHomePage> {
                       ],
                     ),
                   ),
-                  Expanded(child: IndexedStack(index: 0, children: [])),
+                  Expanded(child: IndexedStack(index: 0, children: [
+                    ListView.builder(itemBuilder: (context,index){
+                      return Placeholder();
+                    },),
+                  ])),
                 ],
               ),
             ),
@@ -58,19 +62,32 @@ class _EventHomePageState extends State<EventHomePage> {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 100,
-        decoration: BoxDecoration(color: Colors.blue),
+        height: 72,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(color: Colors.white, blurRadius: 20, spreadRadius: 20,
+            ),
+          ],
+        ),
         padding: EdgeInsets.symmetric(horizontal: 24),
         child: Row(
-
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.location_on_outlined)),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.location_on_outlined),
+            ),
             IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.queue_music_outlined)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.account_circle_outlined)),
-
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.queue_music_outlined),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.account_circle_outlined),
+            ),
           ],
         ),
       ),
