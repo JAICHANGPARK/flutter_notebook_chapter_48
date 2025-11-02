@@ -2,7 +2,7 @@
 
 ## EP2416
 
-- Real Estate Mobile App
+- Nightlife Discovery App
 - Fireart UI/UX for Fireart Studio
 - https://dribbble.com/shots/26698518-Real-Estate-Mobile-App
 
