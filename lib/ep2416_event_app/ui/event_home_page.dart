@@ -50,6 +50,7 @@ class _EventHomePageState extends State<EventHomePage> {
                       ],
                     ),
                   ),
+                  Expanded(child: IndexedStack(index: 0, children: [])),
                 ],
               ),
             ),
