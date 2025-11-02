@@ -15,8 +15,8 @@ class _EventHomePageState extends State<EventHomePage> {
         children: [
           Positioned.fill(
             child: Container(
-              
               decoration: BoxDecoration(
+                color: Colors.white,
                 gradient: RadialGradient(colors: [Colors.red,
                 ]),
               ),
