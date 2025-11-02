@@ -30,9 +30,22 @@ class _EventHomePageState extends State<EventHomePage> {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 1, sigmaY: 1),
               child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white10
-                      ),
+                decoration: BoxDecoration(color: Colors.white10),
+              ),
+            ),
+          ),
+          Positioned.fill(
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
+                      Spacer(),
+                      IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
