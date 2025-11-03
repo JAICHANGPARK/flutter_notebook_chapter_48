@@ -98,15 +98,25 @@ class _EventHomePageState extends State<EventHomePage> {
                                           fit: BoxFit.cover,
                                         ),
                                         borderRadius: BorderRadius.circular(16),
-
                                       ),
                                       child: Column(
                                         children: [
                                           Row(
                                             children: [
-                                              
+                                              Container(
+                                                decoration: ShapeDecoration(
+                                                  shape: StadiumBorder(),
+                                                  color: Colors.red,
+                                                ),
+                                                child: Text(
+                                                  "Today",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ),
                                             ],
-                                          )
+                                          ),
                                         ],
                                       ),
                                     );
