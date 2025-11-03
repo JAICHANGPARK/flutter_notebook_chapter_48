@@ -88,7 +88,11 @@ class _EventHomePageState extends State<EventHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       decoration: BoxDecoration(
-                                        image: 
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/06/29/11/16/halloween-1486549_1280.jpg",
+                                          ),
+                                        ),
                                       ),
                                     );
                                   },
