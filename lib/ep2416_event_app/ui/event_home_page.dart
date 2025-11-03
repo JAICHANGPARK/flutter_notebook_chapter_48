@@ -134,7 +134,8 @@ class _EventHomePageState extends State<EventHomePage> {
                                           Text("Halloween Party"),
                                           Row(
                                             children: [
-                                              
+                                              Icon(Icons.location_on_outlined),
+                                              Text("Dreamwalker")
                                             ],
                                           )
                                         ],
