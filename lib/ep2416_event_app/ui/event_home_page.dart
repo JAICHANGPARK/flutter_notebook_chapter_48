@@ -135,6 +135,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.location_on_outlined),
+              iconSize: 32,
             ),
             IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
             IconButton(
