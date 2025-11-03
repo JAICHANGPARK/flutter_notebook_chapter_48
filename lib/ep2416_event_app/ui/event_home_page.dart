@@ -85,8 +85,10 @@ class _EventHomePageState extends State<EventHomePage> {
                               ),
                               Expanded(
                                 child: ListView.builder(
+                                  itemCount: 10,
                                   itemBuilder: (context, index) {
                                     return Container(
+                                      height: 200,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
