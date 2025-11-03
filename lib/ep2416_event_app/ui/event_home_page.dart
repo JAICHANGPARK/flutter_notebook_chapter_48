@@ -42,7 +42,8 @@ class _EventHomePageState extends State<EventHomePage> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       children: [
-                        IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.phone),
+                          iconSize: 28,),
                         Spacer(),
                         IconButton(
                           onPressed: () {},
