@@ -101,7 +101,7 @@ class _EventHomePageState extends State<EventHomePage> {
                                       ),
                                       padding: EdgeInsets.all(16),
                                       child: Column(
-                                        spacing: 6,
+                                        spacing: 4,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
@@ -144,6 +144,8 @@ class _EventHomePageState extends State<EventHomePage> {
                                             "Halloween Party",
                                             style: TextStyle(
                                               color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 24,
                                             ),
                                           ),
                                           Row(
