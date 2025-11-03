@@ -101,10 +101,10 @@ class _EventHomePageState extends State<EventHomePage> {
                                       ),
                                       padding: EdgeInsets.all(16),
                                       child: Column(
-
                                         children: [
                                           Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
                                                 decoration: ShapeDecoration(
@@ -131,20 +131,29 @@ class _EventHomePageState extends State<EventHomePage> {
                                             ],
                                           ),
                                           Spacer(),
-                                          Text("DJ Dreams",style: TextStyle(
-                                            color: Colors.white,
-                                          ),),
-                                          Text("Halloween Party",style: TextStyle(
-                                            color: Colors.white,
-                                          ),),
+                                          Text(
+                                            "DJ Dreams",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Halloween Party",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
                                           Row(
                                             children: [
-                                              Icon(Icons.location_on_outlined,),
-                                              Text("Dreamwalker",style: TextStyle(
-                                                color: Colors.white,
-                                              ),)
+                                              Icon(Icons.location_on_outlined),
+                                              Text(
+                                                "Dreamwalker",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
                                             ],
-                                          )
+                                          ),
                                         ],
                                       ),
                                     );
