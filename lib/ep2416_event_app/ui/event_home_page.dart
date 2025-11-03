@@ -99,6 +99,7 @@ class _EventHomePageState extends State<EventHomePage> {
                                         ),
                                         borderRadius: BorderRadius.circular(16),
                                       ),
+                                      padding: EdgeInsets.all(16),
                                       child: Column(
                                         children: [
                                           Row(
@@ -108,12 +109,22 @@ class _EventHomePageState extends State<EventHomePage> {
                                                   shape: StadiumBorder(),
                                                   color: Colors.red,
                                                 ),
+                                                padding: EdgeInsets.symmetric(
+                                                  horizontal: 16,
+                                                  vertical: 6,
+                                                ),
                                                 child: Text(
                                                   "Today",
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                   ),
                                                 ),
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                ),
+                                                child: Text("31\nOCT"),
                                               ),
                                             ],
                                           ),
