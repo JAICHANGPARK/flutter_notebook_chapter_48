@@ -70,21 +70,24 @@ class _EventHomePageState extends State<EventHomePage> {
                     child: IndexedStack(
                       index: 0,
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "EXPLORE EVENTS",
-                              style: TextStyle(fontSize: 20),
-                            ),
-                            Expanded(
-                              child: ListView.builder(
-                                itemBuilder: (context, index) {
-                                  return Placeholder();
-                                },
+                        Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(spacing: 16,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "EXPLORE EVENTS",
+                                style: TextStyle(fontSize: 20),
                               ),
-                            ),
-                          ],
+                              Expanded(
+                                child: ListView.builder(
+                                  itemBuilder: (context, index) {
+                                    return Placeholder();
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
