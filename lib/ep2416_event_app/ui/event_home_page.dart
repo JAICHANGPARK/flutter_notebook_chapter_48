@@ -88,7 +88,10 @@ class _EventHomePageState extends State<EventHomePage> {
                                   itemCount: 10,
                                   itemBuilder: (context, index) {
                                     return Container(
-                                      height: 200,
+                                      height: 220,
+                                      margin: EdgeInsets.only(
+                                        bottom: 16
+                                      ),
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
@@ -121,9 +124,11 @@ class _EventHomePageState extends State<EventHomePage> {
             BoxShadow(color: Colors.white, blurRadius: 20, spreadRadius: 20),
           ],
         ),
-        padding: EdgeInsets.symmetric(horizontal: 24),
+        padding: EdgeInsets.symmetric(horizontal: 24, ),
+
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
             IconButton(
