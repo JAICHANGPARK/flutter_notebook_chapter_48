@@ -101,6 +101,9 @@ class _EventHomePageState extends State<EventHomePage> {
                                       ),
                                       padding: EdgeInsets.all(16),
                                       child: Column(
+                                        spacing: 6,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Row(
                                             mainAxisAlignment:
@@ -145,7 +148,11 @@ class _EventHomePageState extends State<EventHomePage> {
                                           ),
                                           Row(
                                             children: [
-                                              Icon(Icons.location_on_outlined),
+                                              Icon(
+                                                Icons.location_on_outlined,
+                                                color: Colors.white,
+                                                size: 18,
+                                              ),
                                               Text(
                                                 "Dreamwalker",
                                                 style: TextStyle(
