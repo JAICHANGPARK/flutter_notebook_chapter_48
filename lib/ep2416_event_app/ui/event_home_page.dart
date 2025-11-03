@@ -77,10 +77,12 @@ class _EventHomePageState extends State<EventHomePage> {
                               "EXPLORE EVENTS",
                               style: TextStyle(fontSize: 20),
                             ),
-                            ListView.builder(
-                              itemBuilder: (context, index) {
-                                return Placeholder();
-                              },
+                            Expanded(
+                              child: ListView.builder(
+                                itemBuilder: (context, index) {
+                                  return Placeholder();
+                                },
+                              ),
                             ),
                           ],
                         ),
