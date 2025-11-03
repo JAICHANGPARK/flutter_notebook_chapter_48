@@ -92,6 +92,7 @@ class _EventHomePageState extends State<EventHomePage> {
                                           image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2016/06/29/11/16/halloween-1486549_1280.jpg",
                                           ),
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     );
