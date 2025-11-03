@@ -101,7 +101,7 @@ class _EventHomePageState extends State<EventHomePage> {
                                       ),
                                       padding: EdgeInsets.all(16),
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
                                         children: [
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -130,12 +130,19 @@ class _EventHomePageState extends State<EventHomePage> {
                                               ),
                                             ],
                                           ),
-                                          Text("DJ Dreams"),
-                                          Text("Halloween Party"),
+                                          Spacer(),
+                                          Text("DJ Dreams",style: TextStyle(
+                                            color: Colors.white,
+                                          ),),
+                                          Text("Halloween Party",style: TextStyle(
+                                            color: Colors.white,
+                                          ),),
                                           Row(
                                             children: [
-                                              Icon(Icons.location_on_outlined),
-                                              Text("Dreamwalker")
+                                              Icon(Icons.location_on_outlined,),
+                                              Text("Dreamwalker",style: TextStyle(
+                                                color: Colors.white,
+                                              ),)
                                             ],
                                           )
                                         ],
