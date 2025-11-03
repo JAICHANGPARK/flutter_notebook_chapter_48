@@ -121,7 +121,7 @@ class _EventHomePageState extends State<EventHomePage> {
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
-            BoxShadow(color: Colors.white, blurRadius: 20, spreadRadius: 20),
+            BoxShadow(color: Colors.white, blurRadius: 20, spreadRadius: 30),
           ],
         ),
         padding: EdgeInsets.only(left: 24, right: 24, bottom: 28),
