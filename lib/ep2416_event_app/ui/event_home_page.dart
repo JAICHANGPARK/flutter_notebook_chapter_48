@@ -89,9 +89,7 @@ class _EventHomePageState extends State<EventHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       height: 220,
-                                      margin: EdgeInsets.only(
-                                        bottom: 16
-                                      ),
+                                      margin: EdgeInsets.only(bottom: 16),
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
@@ -99,6 +97,17 @@ class _EventHomePageState extends State<EventHomePage> {
                                           ),
                                           fit: BoxFit.cover,
                                         ),
+                                        borderRadius: BorderRadius.circular(16),
+
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              
+                                            ],
+                                          )
+                                        ],
                                       ),
                                     );
                                   },
@@ -127,23 +136,32 @@ class _EventHomePageState extends State<EventHomePage> {
         padding: EdgeInsets.only(left: 24, right: 24, bottom: 28),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)
-              ,iconSize: 32,),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.home_filled),
+              iconSize: 32,
+            ),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.location_on_outlined),
               iconSize: 32,
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border),iconSize: 32,),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.queue_music_outlined),iconSize: 32,
+              icon: Icon(Icons.favorite_border),
+              iconSize: 32,
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.account_circle_outlined),iconSize: 32,
+              icon: Icon(Icons.queue_music_outlined),
+              iconSize: 32,
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.account_circle_outlined),
+              iconSize: 32,
             ),
           ],
         ),
