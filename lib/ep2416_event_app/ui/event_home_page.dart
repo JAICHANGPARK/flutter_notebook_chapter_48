@@ -44,18 +44,36 @@ class _EventHomePageState extends State<EventHomePage> {
                       children: [
                         IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
                         Spacer(),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.search),
-                        iconSize: 28,),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.discount_outlined)),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.search),
+                          iconSize: 28,
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.tune),
+                          iconSize: 28,
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.discount_outlined),
+                          iconSize: 28,
+                        ),
                       ],
                     ),
                   ),
-                  Expanded(child: IndexedStack(index: 0, children: [
-                    ListView.builder(itemBuilder: (context,index){
-                      return Placeholder();
-                    },),
-                  ])),
+                  Expanded(
+                    child: IndexedStack(
+                      index: 0,
+                      children: [
+                        ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Placeholder();
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -67,8 +85,7 @@ class _EventHomePageState extends State<EventHomePage> {
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
-            BoxShadow(color: Colors.white, blurRadius: 20, spreadRadius: 20,
-            ),
+            BoxShadow(color: Colors.white, blurRadius: 20, spreadRadius: 20),
           ],
         ),
         padding: EdgeInsets.symmetric(horizontal: 24),
