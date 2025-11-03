@@ -130,7 +130,13 @@ class _EventHomePageState extends State<EventHomePage> {
                                               ),
                                             ],
                                           ),
-                                          Text("DJ Rockers")
+                                          Text("DJ Dreams"),
+                                          Text("Halloween Party"),
+                                          Row(
+                                            children: [
+                                              
+                                            ],
+                                          )
                                         ],
                                       ),
                                     );
