@@ -101,8 +101,10 @@ class _EventHomePageState extends State<EventHomePage> {
                                       ),
                                       padding: EdgeInsets.all(16),
                                       child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
                                                 decoration: ShapeDecoration(
@@ -128,6 +130,7 @@ class _EventHomePageState extends State<EventHomePage> {
                                               ),
                                             ],
                                           ),
+                                          Text("DJ Rockers")
                                         ],
                                       ),
                                     );
