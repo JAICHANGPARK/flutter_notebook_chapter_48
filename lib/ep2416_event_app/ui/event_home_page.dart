@@ -72,12 +72,12 @@ class _EventHomePageState extends State<EventHomePage> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(16),
-                          child: Column(spacing: 16,
+                          child: Column(spacing: 24,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "EXPLORE EVENTS",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 24),
                               ),
                               Expanded(
                                 child: ListView.builder(
