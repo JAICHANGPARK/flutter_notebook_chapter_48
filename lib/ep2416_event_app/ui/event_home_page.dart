@@ -46,7 +46,7 @@ class _EventHomePageState extends State<EventHomePage> {
                         Spacer(),
                         IconButton(onPressed: () {}, icon: Icon(Icons.search)),
                         IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.discount_outlined)),
                       ],
                     ),
                   ),
