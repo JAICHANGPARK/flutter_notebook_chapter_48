@@ -130,7 +130,8 @@ class _EventHomePageState extends State<EventHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
 crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)
+              ,iconSize: 32,),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.location_on_outlined),
