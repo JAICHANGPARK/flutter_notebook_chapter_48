@@ -110,6 +110,7 @@ class _EventHomePageState extends State<EventHomePage> {
               },
               icon: Icon(Icons.home_filled),
               iconSize: 32,
+              color: pageNum == 0 ? Colors.red : Colors.grey,
             ),
             IconButton(
               onPressed: () {
@@ -119,6 +120,7 @@ class _EventHomePageState extends State<EventHomePage> {
               },
               icon: Icon(Icons.location_on_outlined),
               iconSize: 32,
+              color: pageNum == 1 ? Colors.red : Colors.grey,
             ),
             IconButton(
               onPressed: () {
@@ -127,6 +129,7 @@ class _EventHomePageState extends State<EventHomePage> {
                 });
               },
               icon: Icon(Icons.favorite_border),
+              color: pageNum == 2 ? Colors.red : Colors.grey,
               iconSize: 32,
             ),
             IconButton(
