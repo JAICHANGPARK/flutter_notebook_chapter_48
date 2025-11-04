@@ -13,6 +13,7 @@ class _EventMusicPageState extends State<EventMusicPage> {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
+        spacing: 16,
         children: [
           Container(
             height: 120,
@@ -45,6 +46,7 @@ class _EventMusicPageState extends State<EventMusicPage> {
           Expanded(
             child: ListView.builder(
               itemCount: 10,
+              padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
                 return Container(
                   height: 100,
