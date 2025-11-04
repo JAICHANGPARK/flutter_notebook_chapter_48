@@ -62,6 +62,7 @@ class _EventMusicPageState extends State<EventMusicPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          spacing: 4,
                           children: [
                             Text("DJ DreamW"),
                             Text("Male"),
@@ -73,7 +74,7 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                   child: Row(
 
                                     spacing: 6,
