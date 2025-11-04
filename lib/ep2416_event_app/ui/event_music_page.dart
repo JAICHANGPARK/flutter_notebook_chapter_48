@@ -19,7 +19,20 @@ class _EventMusicPageState extends State<EventMusicPage> {
             child: ListView.builder(
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {}),
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                        ),
+                      ),
+                      
+                    ],
+                  );
+                }),
           ),
           Expanded(
             child: ListView.builder(
