@@ -66,13 +66,16 @@ class _EventMusicPageState extends State<EventMusicPage> {
                             Text("DJ DreamW"),
                             Text("Male"),
                             Row(
+                              spacing: 16,
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                   child: Row(
+
                                     children: [
                                       Icon(
                                         Icons.favorite_border,
