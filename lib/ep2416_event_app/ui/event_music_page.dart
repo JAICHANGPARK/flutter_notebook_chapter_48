@@ -14,7 +14,13 @@ class _EventMusicPageState extends State<EventMusicPage> {
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
-          Container(height: 100, child: Placeholder()),
+          Container(
+            height: 100,
+            child: ListView.builder(
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {}),
+          ),
           Expanded(
             child: ListView.builder(
               itemCount: 10,
@@ -26,14 +32,10 @@ class _EventMusicPageState extends State<EventMusicPage> {
                   ),
                   child: Row(
                     children: [
-                      CircleAvatar(
-                        radius: 42,
-                      ),
-                      Expanded(child: Column(children: [
-                        
-                      ],))
+                      CircleAvatar(radius: 42),
+                      Expanded(child: Column(children: [])),
                     ],
-                  )
+                  ),
                 );
               },
             ),
