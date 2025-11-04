@@ -76,10 +76,12 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                   padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                   child: Row(
 
+                                    spacing: 6,
                                     children: [
                                       Icon(
                                         Icons.favorite_border,
                                         color: Colors.white,
+                                        size: 18,
                                       ),
                                       Text(
                                         "Show Love",
