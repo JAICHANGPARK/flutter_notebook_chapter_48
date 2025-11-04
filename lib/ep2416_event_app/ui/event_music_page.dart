@@ -51,10 +51,13 @@ class _EventMusicPageState extends State<EventMusicPage> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Row(
+                    spacing: 16,
                     children: [
                       CircleAvatar(radius: 42),
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text("DJ DreamW"),
                             Text("Male"),
@@ -77,6 +80,13 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                       ),
                                     ],
                                   ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Icon(Icons.calendar_today),
                                 ),
                               ],
                             ),
