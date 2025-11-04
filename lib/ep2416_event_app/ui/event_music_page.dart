@@ -49,7 +49,7 @@ class _EventMusicPageState extends State<EventMusicPage> {
                   // height: 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
-                    color: Colors.grey,
+                    color: Colors.grey[400],
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
 
@@ -71,7 +71,11 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Text("Male"),
+                            Text("Male",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),),
                             Row(
                               spacing: 16,
                               children: [
