@@ -73,6 +73,7 @@ class _EventHomePageState extends State<EventHomePage> {
                   Expanded(
                     child: IndexedStack(
                       index: pageNum,
+
                       children: [
                         Container(),
                         EventExplorePage(),
@@ -102,17 +103,25 @@ class _EventHomePageState extends State<EventHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  pageNum = 0;
+                });
+              },
               icon: Icon(Icons.home_filled),
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {setState(() {
+                pageNum = 1;
+              });},
               icon: Icon(Icons.location_on_outlined),
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {setState(() {
+                pageNum = 2;
+              });},
               icon: Icon(Icons.favorite_border),
               iconSize: 32,
             ),
