@@ -112,31 +112,41 @@ class _EventHomePageState extends State<EventHomePage> {
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {setState(() {
-                pageNum = 1;
-              });},
+              onPressed: () {
+                setState(() {
+                  pageNum = 1;
+                });
+              },
               icon: Icon(Icons.location_on_outlined),
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {setState(() {
-                pageNum = 2;
-              });},
+              onPressed: () {
+                setState(() {
+                  pageNum = 2;
+                });
+              },
               icon: Icon(Icons.favorite_border),
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {setState(() {
-                pageNum = 3;
-              });},
+              onPressed: () {
+                setState(() {
+                  pageNum = 3;
+                });
+              },
               icon: Icon(Icons.queue_music_outlined),
+              color: pageNum == 3 ? Colors.red : Colors.grey,
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {setState(() {
-                pageNum = 4;
-              });},
+              onPressed: () {
+                setState(() {
+                  pageNum = 4;
+                });
+              },
               icon: Icon(Icons.account_circle_outlined),
+              color: pageNum == 4 ? Colors.red : Colors.grey,
               iconSize: 32,
             ),
           ],
