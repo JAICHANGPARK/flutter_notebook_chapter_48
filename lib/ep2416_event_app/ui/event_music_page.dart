@@ -15,12 +15,13 @@ class _EventMusicPageState extends State<EventMusicPage> {
       child: Column(
         children: [
           Container(
-            height: 100,
+            height: 120,
             child: ListView.builder(
               itemCount: 10,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Column(
+                  spacing: 4,
                   children: [
                     Container(
                       height: 80,
@@ -33,7 +34,9 @@ class _EventMusicPageState extends State<EventMusicPage> {
                       padding: EdgeInsets.all(2),
                       child: CircleAvatar(),
                     ),
-                    Text("DJ Dreamwalker"),
+                    Text("DJ Dreamwalker",style: TextStyle(
+                      fontSize: 12,
+                    ),),
                   ],
                 );
               },
