@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2416_event_app/ui/event_explore_page.dart';
 
 class EventHomePage extends StatefulWidget {
   const EventHomePage({super.key});
@@ -71,6 +72,8 @@ class _EventHomePageState extends State<EventHomePage> {
                     child: IndexedStack(
                       index: pageNum,
                       children: [
+                        EventExplorePage(),
+                        
 
                       ],
                     ),
