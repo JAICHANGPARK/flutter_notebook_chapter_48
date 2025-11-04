@@ -23,9 +23,15 @@ class _EventMusicPageState extends State<EventMusicPage> {
                 return Column(
                   children: [
                     Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(color: Colors.red),
+                      height: 80,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        shape: BoxShape.circle,
+
+                      ),
+                      padding: EdgeInsets.all(2),
+                      child: CircleAvatar(),
                     ),
                     Text("DJ Dreamwalker"),
                   ],
