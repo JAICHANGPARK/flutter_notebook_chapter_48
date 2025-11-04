@@ -5,7 +5,7 @@ class EventExplorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
+    return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         spacing: 24,
@@ -13,10 +13,7 @@ class EventExplorePage extends StatelessWidget {
         children: [
           Text(
             "EXPLORE EVENTS",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           Expanded(
             child: ListView.builder(
@@ -37,12 +34,10 @@ class EventExplorePage extends StatelessWidget {
                   padding: EdgeInsets.all(16),
                   child: Column(
                     spacing: 4,
-                    crossAxisAlignment:
-                    CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             decoration: ShapeDecoration(
@@ -55,26 +50,17 @@ class EventExplorePage extends StatelessWidget {
                             ),
                             child: Text(
                               "Today",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
+                              style: TextStyle(color: Colors.white),
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                            ),
+                            decoration: BoxDecoration(color: Colors.white),
                             child: Text("31\nOCT"),
                           ),
                         ],
                       ),
                       Spacer(),
-                      Text(
-                        "DJ Dreams",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
+                      Text("DJ Dreams", style: TextStyle(color: Colors.white)),
                       Text(
                         "Halloween Party",
                         style: TextStyle(
@@ -92,9 +78,7 @@ class EventExplorePage extends StatelessWidget {
                           ),
                           Text(
                             "Dreamwalker",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(color: Colors.white),
                           ),
                         ],
                       ),
