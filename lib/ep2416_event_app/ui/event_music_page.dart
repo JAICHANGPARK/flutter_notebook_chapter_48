@@ -64,7 +64,13 @@ class _EventMusicPageState extends State<EventMusicPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           spacing: 4,
                           children: [
-                            Text("DJ DreamW"),
+                            Text(
+                              "DJ DreamW",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                             Text("Male"),
                             Row(
                               spacing: 16,
@@ -74,9 +80,11 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 8,
+                                    vertical: 4,
+                                  ),
                                   child: Row(
-
                                     spacing: 6,
                                     children: [
                                       Icon(
@@ -97,8 +105,7 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                   padding: EdgeInsets.all(4),
-                                  child: Icon(Icons.calendar_today,
-                                  size: 16,),
+                                  child: Icon(Icons.calendar_today, size: 16),
                                 ),
                               ],
                             ),
