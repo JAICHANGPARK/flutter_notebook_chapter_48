@@ -46,11 +46,12 @@ class _EventMusicPageState extends State<EventMusicPage> {
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
                 return Container(
-                  height: 100,
+                  // height: 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
                     color: Colors.grey,
                   ),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
 
                   margin: EdgeInsets.only(bottom: 12),
                   child: Row(
