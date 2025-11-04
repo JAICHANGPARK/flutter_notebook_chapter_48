@@ -41,6 +41,7 @@ class _EventHomePageState extends State<EventHomePage> {
           Positioned.fill(
             child: SafeArea(
               child: Column(
+                spacing: 20,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
