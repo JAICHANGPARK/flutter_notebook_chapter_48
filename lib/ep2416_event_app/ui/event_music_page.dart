@@ -17,22 +17,21 @@ class _EventMusicPageState extends State<EventMusicPage> {
           Container(
             height: 100,
             child: ListView.builder(
-                itemCount: 10,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Column(
-                    children: [
-                      Container(
-                        height: 64,
-                        width: 64,
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                        ),
-                      ),
-                      
-                    ],
-                  );
-                }),
+              itemCount: 10,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Column(
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(color: Colors.red),
+                    ),
+                    Text("DJ Dreamwalker"),
+                  ],
+                );
+              },
+            ),
           ),
           Expanded(
             child: ListView.builder(
