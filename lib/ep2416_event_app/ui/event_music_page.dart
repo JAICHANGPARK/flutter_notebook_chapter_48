@@ -11,6 +11,6 @@ class EventMusicPage extends StatefulWidget {
 class _EventMusicPageState extends State<EventMusicPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Padding(padding: EdgeInsets.symmetric(horizontal: 16),);
   }
 }
