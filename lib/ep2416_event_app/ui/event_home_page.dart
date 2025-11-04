@@ -73,7 +73,13 @@ class _EventHomePageState extends State<EventHomePage> {
                   Expanded(
                     child: IndexedStack(
                       index: pageNum,
-                      children: [EventExplorePage(), EventMusicPage()],
+                      children: [
+                        Container(),
+                        EventExplorePage(),
+                        Container(),
+                        EventMusicPage(),
+                        Container(),
+                      ],
                     ),
                   ),
                 ],
