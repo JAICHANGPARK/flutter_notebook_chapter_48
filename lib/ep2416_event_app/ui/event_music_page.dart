@@ -15,11 +15,20 @@ class _EventMusicPageState extends State<EventMusicPage> {
       child: Column(
         children: [
           Container(height: 100, child: Placeholder()),
-          Expanded(child: ListView.builder(
+          Expanded(
+            child: ListView.builder(
               itemCount: 10,
               itemBuilder: (context, index) {
-            return Container();
-          })),
+                return Container(
+                  height: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Placeholder(),
+                );
+              },
+            ),
+          ),
         ],
       ),
     );
