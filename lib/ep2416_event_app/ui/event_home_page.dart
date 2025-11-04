@@ -126,12 +126,16 @@ class _EventHomePageState extends State<EventHomePage> {
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {setState(() {
+                pageNum = 3;
+              });},
               icon: Icon(Icons.queue_music_outlined),
               iconSize: 32,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {setState(() {
+                pageNum = 4;
+              });},
               icon: Icon(Icons.account_circle_outlined),
               iconSize: 32,
             ),
