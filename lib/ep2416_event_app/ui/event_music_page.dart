@@ -24,7 +24,16 @@ class _EventMusicPageState extends State<EventMusicPage> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: Placeholder(),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 42,
+                      ),
+                      Expanded(child: Column(children: [
+                        
+                      ],))
+                    ],
+                  )
                 );
               },
             ),
