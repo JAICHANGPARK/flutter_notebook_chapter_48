@@ -30,14 +30,11 @@ class _EventMusicPageState extends State<EventMusicPage> {
                       decoration: BoxDecoration(
                         color: Colors.red,
                         shape: BoxShape.circle,
-
                       ),
                       padding: EdgeInsets.all(2),
                       child: CircleAvatar(),
                     ),
-                    Text("DJ Dreamwalker",style: TextStyle(
-                      fontSize: 12,
-                    ),),
+                    Text("DJ Dreamwalker", style: TextStyle(fontSize: 12)),
                   ],
                 );
               },
@@ -56,7 +53,36 @@ class _EventMusicPageState extends State<EventMusicPage> {
                   child: Row(
                     children: [
                       CircleAvatar(radius: 42),
-                      Expanded(child: Column(children: [])),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("DJ DreamW"),
+                            Text("Male"),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.favorite_border,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        "Show Love",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 );
