@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_48/ep2416_event_app/ui/event_explore_page.dart';
+import 'package:flutter_notebook_chapter_48/ep2416_event_app/ui/event_music_page.dart';
 
 class EventHomePage extends StatefulWidget {
   const EventHomePage({super.key});
@@ -12,6 +13,7 @@ class EventHomePage extends StatefulWidget {
 
 class _EventHomePageState extends State<EventHomePage> {
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,11 +73,7 @@ class _EventHomePageState extends State<EventHomePage> {
                   Expanded(
                     child: IndexedStack(
                       index: pageNum,
-                      children: [
-                        EventExplorePage(),
-                        
-
-                      ],
+                      children: [EventExplorePage(), EventMusicPage()],
                     ),
                   ),
                 ],
