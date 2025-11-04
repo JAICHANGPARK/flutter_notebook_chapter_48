@@ -49,7 +49,10 @@ class _EventMusicPageState extends State<EventMusicPage> {
                   height: 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
+                    color: Colors.grey,
                   ),
+
+                  margin: EdgeInsets.only(bottom: 12),
                   child: Row(
                     spacing: 16,
                     children: [
