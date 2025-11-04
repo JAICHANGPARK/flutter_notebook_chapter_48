@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class EventExplorePage extends StatelessWidget {
   const EventExplorePage({super.key});
 
