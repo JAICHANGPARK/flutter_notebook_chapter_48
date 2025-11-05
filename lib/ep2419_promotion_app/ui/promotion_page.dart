@@ -17,9 +17,16 @@ class _PromotionPageState extends State<PromotionPage> {
           children: [
             Row(
               children: [
-                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios_new)),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.arrow_back_ios_new),
+                ),
+                Text(
+                  "Promotion",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
