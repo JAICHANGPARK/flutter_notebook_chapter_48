@@ -29,7 +29,8 @@ class _PromotionPageState extends State<PromotionPage> {
             child: Center(
               child: Text(
                 "Create Discount",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white,
+                fontWeight: FontWeight.bold,),
               ),
             ),
           ),
