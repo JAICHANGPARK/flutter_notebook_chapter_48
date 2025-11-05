@@ -12,7 +12,17 @@ class _PromotionPageState extends State<PromotionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      bottomNavigationBar: Container(
+        height: 100,
+        child: Align(
+          alignment: Alignment.center,
+          child: Container(
+            decoration: BoxDecoration(
+              
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
