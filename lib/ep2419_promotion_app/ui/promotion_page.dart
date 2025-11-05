@@ -19,9 +19,11 @@ class _PromotionPageState extends State<PromotionPage> {
             width: double.infinity,
 
             decoration: BoxDecoration(color: Colors.deepOrange),
-            child: Text(
-              "Create Discount",
-              style: TextStyle(color: Colors.white),
+            child: Center(
+              child: Text(
+                "Create Discount",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
         ),
