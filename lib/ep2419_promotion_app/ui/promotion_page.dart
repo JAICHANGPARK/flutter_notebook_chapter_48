@@ -16,10 +16,10 @@ class _PromotionPageState extends State<PromotionPage> {
         child: Align(
           alignment: Alignment.center,
           child: Container(
-            decoration: BoxDecoration(color: Colors.orange),
+            decoration: BoxDecoration(color: Colors.deepOrange),
             child: Text(
               "Create Discount",
-              style: TextStyle(color: Colors.orange),
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ),
