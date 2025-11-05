@@ -11,14 +11,17 @@ class _PromotionPageState extends State<PromotionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios_new))
-            ],
-          )
-        ],
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios_new)),
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: Container(
         height: 100,
