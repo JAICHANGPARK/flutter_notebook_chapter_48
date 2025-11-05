@@ -19,7 +19,7 @@ class _PromotionPageState extends State<PromotionPage> {
             spacing: 24,
             children: [
               Row(
-                spacing: 24,
+                spacing: 16,
                 children: [
                   Icon(Icons.arrow_back_ios_new),
                   Text(
