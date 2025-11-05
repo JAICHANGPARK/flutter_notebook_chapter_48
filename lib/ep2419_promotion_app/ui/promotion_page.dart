@@ -16,6 +16,8 @@ class _PromotionPageState extends State<PromotionPage> {
         child: Align(
           alignment: Alignment.center,
           child: Container(
+            width: double.infinity,
+
             decoration: BoxDecoration(color: Colors.deepOrange),
             child: Text(
               "Create Discount",
