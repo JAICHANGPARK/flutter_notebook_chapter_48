@@ -6,7 +6,7 @@
 - Bagus Fikri for Fikri Studio
 - https://dribbble.com/shots/26718163-Nightlife-Discovery-App
 
-<img src="https://cdn.dribbble.com/userupload/45529431/file/f32bd58ad27082264c0d8738769ef77e.png?resize=2048x1536&vertical=center" alt="">
+<img src="https://cdn.dribbble.com/userupload/45413143/file/1f4171bef76972fb3e581bb87d53ce5a.png?resize=1905x1429&vertical=center" alt="">
 
 
 ## EP2416-2418
