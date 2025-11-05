@@ -14,6 +14,7 @@ class _PromotionPageState extends State<PromotionPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
+          spacing: 24,
           children: [
             Row(
               children: [
@@ -28,18 +29,19 @@ class _PromotionPageState extends State<PromotionPage> {
               ],
             ),
             Column(
+              spacing: 12,
               children: [
-                
+                Container(
+                  height: 52,
+                  child: Placeholder(),
+                ),
+                Container(
+                  height: 32,
+                  child: Placeholder(),
+                ),
               ],
-            )
-            Container(
-              height: 52,
-              child: Placeholder(),
             ),
-            Container(
-              height: 32,
-              child: Placeholder(),
-            ),
+
             Expanded(child: Placeholder(),),
 
           ],
