@@ -13,10 +13,12 @@ class _PromotionPageState extends State<PromotionPage> {
     return Scaffold(
       bottomNavigationBar: Container(
         height: 100,
+        color: Colors.white,
         child: Align(
           alignment: Alignment.center,
           child: Container(
             width: double.infinity,
+            height: 42,
             margin: EdgeInsets.only(bottom: 32,left: 24, right: 24, top: 16),
 
             decoration: BoxDecoration(color: Colors.deepOrange),
