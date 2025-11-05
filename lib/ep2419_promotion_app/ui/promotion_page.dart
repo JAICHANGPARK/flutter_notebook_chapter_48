@@ -13,38 +13,41 @@ class _PromotionPageState extends State<PromotionPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          spacing: 24,
-          children: [
-            Row(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.arrow_back_ios_new),
-                ),
-                Text(
-                  "Promotion",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-              ],
-            ),
-            Column(
-              spacing: 12,
-              children: [
-                Container(
-                  height: 52,
-                  child: Placeholder(),
-                ),
-                Container(
-                  height: 32,
-                  child: Placeholder(),
-                ),
-              ],
-            ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            spacing: 24,
+            children: [
+              Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.arrow_back_ios_new),
+                  ),
+                  Text(
+                    "Promotion",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ],
+              ),
+              Column(
+                spacing: 12,
+                children: [
+                  Container(
+                    height: 52,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 32,
+                    child: Placeholder(),
+                  ),
+                ],
+              ),
 
-            Expanded(child: Placeholder(),),
+              Expanded(child: Placeholder(),),
 
-          ],
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: Container(
