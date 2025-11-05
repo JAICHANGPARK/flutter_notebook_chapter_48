@@ -1,5 +1,14 @@
 # flutter_notebook_chapter_48
 
+## EP2419
+
+- Nightlife Discovery App
+- artocea
+- https://dribbble.com/shots/26718163-Nightlife-Discovery-App
+
+<img src="https://cdn.dribbble.com/userupload/45529431/file/f32bd58ad27082264c0d8738769ef77e.png?resize=2048x1536&vertical=center" alt="">
+
+
 ## EP2416-2418
 
 - Nightlife Discovery App
