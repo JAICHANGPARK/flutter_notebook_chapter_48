@@ -3,7 +3,7 @@
 ## EP2419
 
 - Ecomiq — Create and Manage Discounts for Mobile E-commerce
-- artocea
+- Bagus Fikri for Fikri Studio
 - https://dribbble.com/shots/26718163-Nightlife-Discovery-App
 
 <img src="https://cdn.dribbble.com/userupload/45529431/file/f32bd58ad27082264c0d8738769ef77e.png?resize=2048x1536&vertical=center" alt="">
