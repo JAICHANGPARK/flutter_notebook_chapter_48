@@ -17,6 +17,7 @@ class _PromotionPageState extends State<PromotionPage> {
           alignment: Alignment.center,
           child: Container(
             width: double.infinity,
+            margin: EdgeInsets.only(bottom: 32,left: 24, right: 24, top: 16),
 
             decoration: BoxDecoration(color: Colors.deepOrange),
             child: Center(
