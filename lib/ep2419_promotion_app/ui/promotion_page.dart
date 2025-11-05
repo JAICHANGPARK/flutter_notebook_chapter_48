@@ -11,6 +11,8 @@ class PromotionPage extends StatefulWidget {
 class _PromotionPageState extends State<PromotionPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      
+    );
   }
 }
