@@ -24,13 +24,15 @@ class _PromotionPageState extends State<PromotionPage> {
             decoration: BoxDecoration(
               color: Colors.deepOrange,
               border: Border.all(color: Colors.grey),
-              borderRadius: BorderRadius.circular(5),l
+              borderRadius: BorderRadius.circular(5),
             ),
             child: Center(
               child: Text(
                 "Create Discount",
-                style: TextStyle(color: Colors.white,
-                fontWeight: FontWeight.bold,),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
