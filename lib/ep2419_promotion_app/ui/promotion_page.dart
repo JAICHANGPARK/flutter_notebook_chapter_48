@@ -19,9 +19,13 @@ class _PromotionPageState extends State<PromotionPage> {
           child: Container(
             width: double.infinity,
             height: 42,
-            margin: EdgeInsets.only(bottom: 32,left: 24, right: 24, top: 16),
+            margin: EdgeInsets.only(bottom: 32, left: 24, right: 24, top: 16),
 
-            decoration: BoxDecoration(color: Colors.deepOrange),
+            decoration: BoxDecoration(
+              color: Colors.deepOrange,
+              border: Border.all(color: Colors.grey),
+              borderRadius: BorderRadius.circular(5),l
+            ),
             child: Center(
               child: Text(
                 "Create Discount",
