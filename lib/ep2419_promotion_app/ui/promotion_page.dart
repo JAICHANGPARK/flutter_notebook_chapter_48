@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PromotionPage extends StatefulWidget {
   const PromotionPage({super.key});
 
@@ -17,8 +16,10 @@ class _PromotionPageState extends State<PromotionPage> {
         child: Align(
           alignment: Alignment.center,
           child: Container(
-            decoration: BoxDecoration(
-              
+            decoration: BoxDecoration(color: Colors.orange),
+            child: Text(
+              "Create Discount",
+              style: TextStyle(color: Colors.orange),
             ),
           ),
         ),
