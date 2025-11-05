@@ -2,7 +2,7 @@
 
 ## EP2419
 
-- Nightlife Discovery App
+- Ecomiq — Create and Manage Discounts for Mobile E-commerce
 - artocea
 - https://dribbble.com/shots/26718163-Nightlife-Discovery-App
 
