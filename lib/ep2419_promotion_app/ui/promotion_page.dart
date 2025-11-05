@@ -19,11 +19,9 @@ class _PromotionPageState extends State<PromotionPage> {
             spacing: 24,
             children: [
               Row(
+                spacing: 24,
                 children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.arrow_back_ios_new),
-                  ),
+                  Icon(Icons.arrow_back_ios_new),
                   Text(
                     "Promotion",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
@@ -33,19 +31,12 @@ class _PromotionPageState extends State<PromotionPage> {
               Column(
                 spacing: 12,
                 children: [
-                  Container(
-                    height: 52,
-                    child: Placeholder(),
-                  ),
-                  Container(
-                    height: 32,
-                    child: Placeholder(),
-                  ),
+                  Container(height: 52, child: Placeholder()),
+                  Container(height: 32, child: Placeholder()),
                 ],
               ),
 
-              Expanded(child: Placeholder(),),
-
+              Expanded(child: Placeholder()),
             ],
           ),
         ),
