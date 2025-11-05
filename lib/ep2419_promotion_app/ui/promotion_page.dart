@@ -27,6 +27,11 @@ class _PromotionPageState extends State<PromotionPage> {
                 ),
               ],
             ),
+            Container(
+              height: 52,
+              child: Placeholder(),
+            ),
+
           ],
         ),
       ),
