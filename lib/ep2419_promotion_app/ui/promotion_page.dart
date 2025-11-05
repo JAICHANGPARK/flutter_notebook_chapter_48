@@ -27,10 +27,20 @@ class _PromotionPageState extends State<PromotionPage> {
                 ),
               ],
             ),
+            Column(
+              children: [
+                
+              ],
+            )
             Container(
               height: 52,
               child: Placeholder(),
             ),
+            Container(
+              height: 32,
+              child: Placeholder(),
+            ),
+            Expanded(child: Placeholder(),),
 
           ],
         ),
