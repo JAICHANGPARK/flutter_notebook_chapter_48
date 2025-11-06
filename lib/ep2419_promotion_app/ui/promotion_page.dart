@@ -147,10 +147,12 @@ class _PromotionPageState extends State<PromotionPage> {
                             shape: StadiumBorder(),
                             color: Colors.green[100]!,
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 2,vertical: 2),
                           child: Row(
                             spacing: 5,
                             children: [
-                              Icon(Icons.check_circle, color: Colors.green),
+                              Icon(Icons.check_circle, color: Colors.green,
+                              size: 15,),
                               Text("Active")
                             ],
                           ),
