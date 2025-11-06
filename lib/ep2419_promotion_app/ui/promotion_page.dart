@@ -63,7 +63,7 @@ class _PromotionPageState extends State<PromotionPage> {
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
-                            borderRadius: BorderRadius.circular(3),
+                            borderRadius: BorderRadius.circular(6),
                           ),
                           padding: EdgeInsets.symmetric(
                             horizontal: 8,
@@ -77,7 +77,7 @@ class _PromotionPageState extends State<PromotionPage> {
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(3),
+                            borderRadius: BorderRadius.circular(6),
                             border: Border.all(color: Colors.grey),
                           ),
                           padding: EdgeInsets.symmetric(
@@ -125,7 +125,7 @@ class _PromotionPageState extends State<PromotionPage> {
                 ],
               ),
 
-              Expanded(child: Placeholder()),
+              Expanded(child: ListView.separated(itemBuilder: (context,index){}, separatorBuilder: separatorBuilder, itemCount: itemCount)),
             ],
           ),
         ),
