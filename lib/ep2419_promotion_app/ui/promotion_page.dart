@@ -137,7 +137,10 @@ class _PromotionPageState extends State<PromotionPage> {
                             children: [
                               Text(
                                 "Holiday Discount",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
                               ),
                               Text("Amount of Orders 20%"),
                             ],
@@ -148,24 +151,26 @@ class _PromotionPageState extends State<PromotionPage> {
                             shape: StadiumBorder(),
                             color: Colors.green[100]!,
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 2,vertical: 2),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 2,
+                            vertical: 2,
+                          ),
                           child: Row(
                             spacing: 5,
                             children: [
-                              Icon(Icons.check_circle, color: Colors.green,
-                              size: 15,),
-                              Text("Active",style: TextStyle(
-                                fontSize: 12,
-                              ),)
+                              Icon(
+                                Icons.check_circle,
+                                color: Colors.green,
+                                size: 15,
+                              ),
+                              Text("Active", style: TextStyle(fontSize: 12)),
                             ],
                           ),
                         ),
                       ],
                     );
                   },
-                  separatorBuilder: (context, index) => Divider(
-                    height: 32,
-                  ),
+                  separatorBuilder: (context, index) => Divider(height: 32),
                   itemCount: 25,
                 ),
               ),
