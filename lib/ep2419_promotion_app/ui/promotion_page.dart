@@ -64,6 +64,7 @@ class _PromotionPageState extends State<PromotionPage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(3),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: Text(
                             "All",
                             style: TextStyle(color: Colors.white),
