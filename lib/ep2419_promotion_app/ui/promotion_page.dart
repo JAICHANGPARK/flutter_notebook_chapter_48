@@ -48,16 +48,30 @@ class _PromotionPageState extends State<PromotionPage> {
                             decoration: InputDecoration(
                               hintText: "Search or create a customer",
                               border: InputBorder.none,
-                              contentPadding: EdgeInsets.only(
-                                bottom: 8
-                              ),
+                              contentPadding: EdgeInsets.only(bottom: 8),
                             ),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  Container(height: 32, child: Placeholder()),
+                  Container(
+                    height: 32,
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                          child: Text(
+                            "All",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
 
