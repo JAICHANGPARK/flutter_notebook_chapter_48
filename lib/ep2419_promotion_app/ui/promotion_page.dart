@@ -129,7 +129,19 @@ class _PromotionPageState extends State<PromotionPage> {
                 child: ListView.separated(
                   itemBuilder: (context, index) {
                     return Row(
-                      children: [Expanded(child: Column(children: []))],
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Text(
+                                "Holiday Discount",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text("Amount of Orders 20%")
+                            ],
+                          ),
+                        ),
+                      ],
                     );
                   },
                   separatorBuilder: (context, index) => Divider(),
