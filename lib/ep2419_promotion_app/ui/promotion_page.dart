@@ -40,6 +40,7 @@ class _PromotionPageState extends State<PromotionPage> {
                       border: Border.all(color: Colors.grey),
                     ),
                     child: Row(
+                      spacing: 4,
                       children: [
                         Icon(Icons.search),
                         Expanded(
