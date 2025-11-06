@@ -132,6 +132,7 @@ class _PromotionPageState extends State<PromotionPage> {
                       children: [
                         Expanded(
                           child: Column(
+                            spacing: 6,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
