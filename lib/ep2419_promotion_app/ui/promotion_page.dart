@@ -58,7 +58,7 @@ class _PromotionPageState extends State<PromotionPage> {
                   Container(
                     height: 32,
                     child: Row(
-                      spacing: 12,
+                      spacing: 8,
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -86,6 +86,36 @@ class _PromotionPageState extends State<PromotionPage> {
                           ),
                           child: Text(
                             "Active",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(3),
+                            border: Border.all(color: Colors.grey),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
+                          child: Text(
+                            "Scheduled",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(3),
+                            border: Border.all(color: Colors.grey),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
+                          child: Text(
+                            "Expired",
                             style: TextStyle(color: Colors.black),
                           ),
                         ),
