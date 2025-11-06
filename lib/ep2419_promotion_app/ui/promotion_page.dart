@@ -58,16 +58,35 @@ class _PromotionPageState extends State<PromotionPage> {
                   Container(
                     height: 32,
                     child: Row(
+                      spacing: 12,
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(3),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
                           child: Text(
                             "All",
                             style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(3),
+                            border: Border.all(color: Colors.grey),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
+                          child: Text(
+                            "Active",
+                            style: TextStyle(color: Colors.black),
                           ),
                         ),
                       ],
