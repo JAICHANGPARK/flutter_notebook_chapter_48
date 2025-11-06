@@ -35,6 +35,8 @@ class _PromotionPageState extends State<PromotionPage> {
                     height: 52,
                     decoration: BoxDecoration(
                       color: Color.fromRGBO(249, 249, 251, 1),
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(color: Colors.grey),
                     ),
                     child: Row(
                       children: [
