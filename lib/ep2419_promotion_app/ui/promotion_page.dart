@@ -132,12 +132,24 @@ class _PromotionPageState extends State<PromotionPage> {
                       children: [
                         Expanded(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Holiday Discount",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              Text("Amount of Orders 20%")
+                              Text("Amount of Orders 20%"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.green[400]!,
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(Icons.check_circle, color: Colors.green),
                             ],
                           ),
                         ),
