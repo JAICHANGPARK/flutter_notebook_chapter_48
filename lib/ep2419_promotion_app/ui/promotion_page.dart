@@ -42,9 +42,14 @@ class _PromotionPageState extends State<PromotionPage> {
                     child: Row(
                       children: [
                         Icon(Icons.search),
-                        Expanded(child: TextField(
-                          decoration: InputDecoration(),
-                        )),
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Search or create a customer",
+                              border: InputBorder.none,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
