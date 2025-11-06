@@ -163,7 +163,9 @@ class _PromotionPageState extends State<PromotionPage> {
                       ],
                     );
                   },
-                  separatorBuilder: (context, index) => Divider(),
+                  separatorBuilder: (context, index) => Divider(
+                    height: 32,
+                  ),
                   itemCount: 25,
                 ),
               ),
