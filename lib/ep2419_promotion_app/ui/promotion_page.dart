@@ -125,7 +125,7 @@ class _PromotionPageState extends State<PromotionPage> {
                 ],
               ),
 
-              Expanded(child: ListView.separated(itemBuilder: (context,index){}, separatorBuilder: (context,index)=> Divider()  , itemCount: itemCount)),
+              Expanded(child: ListView.separated(itemBuilder: (context,index){}, separatorBuilder: (context,index)=> Divider()  , itemCount: 25)),
             ],
           ),
         ),
