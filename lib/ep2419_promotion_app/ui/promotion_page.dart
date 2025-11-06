@@ -48,6 +48,9 @@ class _PromotionPageState extends State<PromotionPage> {
                             decoration: InputDecoration(
                               hintText: "Search or create a customer",
                               border: InputBorder.none,
+                              contentPadding: EdgeInsets.only(
+                                bottom: 8
+                              ),
                             ),
                           ),
                         ),
