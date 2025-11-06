@@ -148,8 +148,10 @@ class _PromotionPageState extends State<PromotionPage> {
                             color: Colors.green[400]!,
                           ),
                           child: Row(
+                            spacing: 5,
                             children: [
                               Icon(Icons.check_circle, color: Colors.green),
+                              Text("Active")
                             ],
                           ),
                         ),
