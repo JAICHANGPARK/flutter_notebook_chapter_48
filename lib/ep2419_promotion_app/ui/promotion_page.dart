@@ -33,7 +33,9 @@ class _PromotionPageState extends State<PromotionPage> {
                 children: [
                   Container(
                     height: 52,
-                    decoration: BoxDecoration(),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(249, 249, 251, 1),
+                    ),
                     child: Row(
                       children: [
                         Icon(Icons.search),
