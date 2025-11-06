@@ -32,7 +32,8 @@ class _PromotionPageState extends State<PromotionPage> {
                 spacing: 12,
                 children: [
                   Container(
-                    height: 52,
+                    height: 42,
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       color: Color.fromRGBO(249, 249, 251, 1),
                       borderRadius: BorderRadius.circular(4),
@@ -41,7 +42,9 @@ class _PromotionPageState extends State<PromotionPage> {
                     child: Row(
                       children: [
                         Icon(Icons.search),
-                        Expanded(child: TextField()),
+                        Expanded(child: TextField(
+                          decoration: InputDecoration(),
+                        )),
                       ],
                     ),
                   ),
