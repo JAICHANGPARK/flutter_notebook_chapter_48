@@ -31,7 +31,16 @@ class _PromotionPageState extends State<PromotionPage> {
               Column(
                 spacing: 12,
                 children: [
-                  Container(height: 52, child: Placeholder()),
+                  Container(
+                    height: 52,
+                    decoration: BoxDecoration(),
+                    child: Row(
+                      children: [
+                        Icon(Icons.search),
+                        Expanded(child: TextField()),
+                      ],
+                    ),
+                  ),
                   Container(height: 32, child: Placeholder()),
                 ],
               ),
