@@ -145,7 +145,7 @@ class _PromotionPageState extends State<PromotionPage> {
                         Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
-                            color: Colors.green[400]!,
+                            color: Colors.green[100]!,
                           ),
                           child: Row(
                             spacing: 5,
