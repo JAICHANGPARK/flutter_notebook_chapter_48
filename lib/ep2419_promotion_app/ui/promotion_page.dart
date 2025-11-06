@@ -125,7 +125,17 @@ class _PromotionPageState extends State<PromotionPage> {
                 ],
               ),
 
-              Expanded(child: ListView.separated(itemBuilder: (context,index){}, separatorBuilder: (context,index)=> Divider()  , itemCount: 25)),
+              Expanded(
+                child: ListView.separated(
+                  itemBuilder: (context, index) {
+                    return Row(
+                      children: [Expanded(child: Column(children: []))],
+                    );
+                  },
+                  separatorBuilder: (context, index) => Divider(),
+                  itemCount: 25,
+                ),
+              ),
             ],
           ),
         ),
