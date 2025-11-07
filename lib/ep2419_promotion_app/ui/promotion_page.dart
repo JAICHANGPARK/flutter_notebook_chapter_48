@@ -193,10 +193,13 @@ class _PromotionPageState extends State<PromotionPage> {
         child: Align(
           alignment: Alignment.center,
           child: GestureDetector(
-            onTap: (){
-              showModalBottomSheet(context: context, builder: (context){
-                return Container()
-              });
+            onTap: () {
+              showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return Container();
+                },
+              );
             },
             child: Container(
               width: double.infinity,
