@@ -163,7 +163,13 @@ class _PromotionPageState extends State<PromotionPage> {
                                 color: Colors.green,
                                 size: 15,
                               ),
-                              Text("Active", style: TextStyle(fontSize: 12)),
+                              Text(
+                                "Active",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color.fromRGBO(47, 140, 64, 1),
+                                ),
+                              ),
                             ],
                           ),
                         ),
