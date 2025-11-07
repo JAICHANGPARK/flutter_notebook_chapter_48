@@ -149,7 +149,7 @@ class _PromotionPageState extends State<PromotionPage> {
                         Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
-                            color: Colors.green[100]!,
+                            color: Color.fromRGBO(212, 253, 212, 1),
                           ),
                           padding: EdgeInsets.symmetric(
                             horizontal: 2,
@@ -160,7 +160,7 @@ class _PromotionPageState extends State<PromotionPage> {
                             children: [
                               Icon(
                                 Icons.check_circle,
-                                color: Colors.green,
+                                color: Color.fromRGBO(212, 253, 212, opacity),
                                 size: 15,
                               ),
                               Text("Active", style: TextStyle(fontSize: 12)),
