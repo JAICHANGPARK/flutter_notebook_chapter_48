@@ -160,7 +160,7 @@ class _PromotionPageState extends State<PromotionPage> {
                             children: [
                               Icon(
                                 Icons.check_circle,
-                                color: Color.fromRGBO(212, 253, 212, opacity),
+                                color: Colors.green,
                                 size: 15,
                               ),
                               Text("Active", style: TextStyle(fontSize: 12)),
