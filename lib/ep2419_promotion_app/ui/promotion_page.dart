@@ -152,9 +152,10 @@ class _PromotionPageState extends State<PromotionPage> {
                             color: Color.fromRGBO(212, 253, 212, 1),
                           ),
                           padding: EdgeInsets.only(
-                            left: 3, right: 6,
+                            left: 3,
+                            right: 6,
                             bottom: 4,
-                            top: 4
+                            top: 4,
                           ),
                           child: Row(
                             spacing: 5,
@@ -191,22 +192,29 @@ class _PromotionPageState extends State<PromotionPage> {
         color: Colors.white,
         child: Align(
           alignment: Alignment.center,
-          child: Container(
-            width: double.infinity,
-            height: 42,
-            margin: EdgeInsets.only(bottom: 32, left: 24, right: 24, top: 16),
+          child: GestureDetector(
+            onTap: (){
+              showModalBottomSheet(context: context, builder: (context){
+                return Container()
+              });
+            },
+            child: Container(
+              width: double.infinity,
+              height: 42,
+              margin: EdgeInsets.only(bottom: 32, left: 24, right: 24, top: 16),
 
-            decoration: BoxDecoration(
-              color: Colors.deepOrange,
-              border: Border.all(color: Colors.grey),
-              borderRadius: BorderRadius.circular(5),
-            ),
-            child: Center(
-              child: Text(
-                "Create Discount",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+              decoration: BoxDecoration(
+                color: Colors.deepOrange,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Center(
+                child: Text(
+                  "Create Discount",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
