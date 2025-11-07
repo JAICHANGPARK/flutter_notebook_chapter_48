@@ -8,7 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/45413143/file/1f4171bef76972fb3e581bb87d53ce5a.png?resize=1905x1429&vertical=center" alt="">
 
-
 ## EP2416-2418
 
 - Nightlife Discovery App
@@ -16,7 +15,6 @@
 - https://dribbble.com/shots/26718163-Nightlife-Discovery-App
 
 <img src="https://cdn.dribbble.com/userupload/45529431/file/f32bd58ad27082264c0d8738769ef77e.png?resize=2048x1536&vertical=center" alt="">
-
 
 ## EP2411-2415
 
@@ -26,7 +24,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/45467303/file/2bc9ef332354425c679191deb1922632.jpg?resize=1905x1429&vertical=center" alt="">
 
-
 ## EP2407-2410
 
 - Food Recipe Mobile App Redesign
@@ -34,7 +31,6 @@
 - https://dribbble.com/shots/26681617-Food-Recipe-Mobile-App-Redesign
 
 <img src="https://cdn.dribbble.com/userupload/45413513/file/21b50ede5a2e14e1f638ecc9665e0361.png?resize=2048x1536&vertical=center" alt="">
-
 
 ## EP2401-2406
 
