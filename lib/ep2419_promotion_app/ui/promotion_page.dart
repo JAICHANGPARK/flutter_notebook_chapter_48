@@ -338,7 +338,7 @@ class _PromotionPageState extends State<PromotionPage> {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(24, 24, 24, 32),
+                              padding: EdgeInsets.fromLTRB(24, 24, 24, 42),
                               child: Row(
                                 spacing: 24,
                                 children: [
@@ -348,7 +348,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                         borderRadius: BorderRadius.circular(6),
                                         border: Border.all(color: Colors.black),
                                       ),
-                                      height: 42,
+                                      height: 38,
                                       child: Center(
                                         child: Text(
                                           "Cancel",
@@ -361,7 +361,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                   ),
                                   Expanded(
                                     child: Container(
-                                      height: 42,
+                                      height: 38,
                                       decoration: BoxDecoration(
                                         color: Colors.deepOrange,
                                         border: Border.all(color: Colors.grey),
@@ -372,6 +372,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                           "Save",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
+                                            color: Colors.white,
                                           ),
                                         ),
                                       ),
