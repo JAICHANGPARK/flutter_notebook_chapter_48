@@ -208,8 +208,14 @@ class _PromotionPageState extends State<PromotionPage> {
                         Row(
                           children: [
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
                               icon: Icon(Icons.arrow_back),
+                            ),
+                            Text(
+                              "Create Discount",
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
