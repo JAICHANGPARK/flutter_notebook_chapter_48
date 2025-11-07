@@ -208,7 +208,9 @@ class _PromotionPageState extends State<PromotionPage> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 9,
+                              ),
                               child: Row(
                                 children: [
                                   IconButton(
@@ -234,7 +236,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                   spacing: 16,
                                   children: [
                                     Column(
-                                      spacing: 8,
+                                      spacing: 4,
                                       children: [
                                         Row(
                                           spacing: 4,
@@ -283,7 +285,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                       ],
                                     ),
                                     Column(
-                                      spacing: 8,
+                                      spacing: 4,
                                       children: [
                                         Row(
                                           spacing: 4,
@@ -297,7 +299,11 @@ class _PromotionPageState extends State<PromotionPage> {
                                           ],
                                         ),
                                         Container(
+                                          width: double.infinity,
                                           height: 42,
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 8,
+                                          ),
                                           decoration: BoxDecoration(
                                             color: Color.fromRGBO(
                                               249,
@@ -313,7 +319,15 @@ class _PromotionPageState extends State<PromotionPage> {
                                             ),
                                           ),
                                           child: DropdownButton(
-                                            items: [],
+                                            isExpanded: true,
+                                            underline: SizedBox.shrink(),
+                                            items: [
+                                              DropdownMenuItem(
+                                                child: Text(
+                                                  "No minimum requirements",
+                                                ),
+                                              ),
+                                            ],
                                             onChanged: (v) {},
                                           ),
                                         ),
@@ -323,7 +337,47 @@ class _PromotionPageState extends State<PromotionPage> {
                                 ),
                               ),
                             ),
-                            Container(),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(left, top, right, bottom),
+                              child: Row(
+                                spacing: 24,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(color: Colors.black),
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          "Cancel",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.deepOrange,
+                                        border: Border.all(color: Colors.grey),
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          "Save",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       );
