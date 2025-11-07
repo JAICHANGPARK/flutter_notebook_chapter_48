@@ -338,7 +338,7 @@ class _PromotionPageState extends State<PromotionPage> {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(left, top, right, bottom),
+                              padding: EdgeInsets.fromLTRB(24, 24, 24, 32),
                               child: Row(
                                 spacing: 24,
                                 children: [
