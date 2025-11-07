@@ -201,26 +201,63 @@ class _PromotionPageState extends State<PromotionPage> {
                 useSafeArea: true,
                 backgroundColor: Colors.white,
                 builder: (context) {
-                  return Container(
-                    color: Colors.white,
-                    child: Column(
-                      children: [
-                        Row(
+                  return StatefulBuilder(
+                    builder: (context, setState) {
+                      return Container(
+                        color: Colors.white,
+                        child: Column(
                           children: [
-                            IconButton(
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              },
-                              icon: Icon(Icons.arrow_back),
+                            Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  icon: Icon(Icons.arrow_back),
+                                ),
+                                Text(
+                                  "Create Discount",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                              ],
                             ),
-                            Text(
-                              "Create Discount",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                            Divider(),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  spacing: 16,
+                                  children: [
+                                    Column(
+                                      spacing: 8,
+                                      children: [
+                                        Row(
+                                          spacing: 4,
+                                          children: [
+                                            Text("Discount Code"),
+                                            Icon(Icons.info_outline, size: 14),
+                                          ],
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          decoration: BoxDecoration(
+                                            color: Color.fromRGBO(249, 249, 251, 1),
+                                            borderRadius: BorderRadius.circular(4),
+                                            border: Border.all(color: Colors.grey),
+                                          ),
+                                        )
+                                      ],
+                                    )
+
+                                  ],
+                                ),
+                              ),
                             ),
+                            Container(),
                           ],
                         ),
-                      ],
-                    ),
+                      );
+                    },
                   );
                 },
               );
