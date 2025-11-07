@@ -6,8 +6,6 @@ class PromotionApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: PromotionPage(),
-    );
+    return MaterialApp(home: PromotionPage());
   }
 }
