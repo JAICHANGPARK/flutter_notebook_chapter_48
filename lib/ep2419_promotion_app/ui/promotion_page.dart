@@ -207,19 +207,24 @@ class _PromotionPageState extends State<PromotionPage> {
                         color: Colors.white,
                         child: Column(
                           children: [
-                            Row(
-                              children: [
-                                IconButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  icon: Icon(Icons.arrow_back),
-                                ),
-                                Text(
-                                  "Create Discount",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  IconButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    icon: Icon(Icons.arrow_back),
+                                  ),
+                                  Text(
+                                    "Create Discount",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                             Divider(),
                             Expanded(
@@ -273,6 +278,43 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 ),
                                               ),
                                             ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Column(
+                                      spacing: 8,
+                                      children: [
+                                        Row(
+                                          spacing: 4,
+                                          children: [
+                                            Text(
+                                              "Minimum Purchase Requirements",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Container(
+                                          height: 42,
+                                          decoration: BoxDecoration(
+                                            color: Color.fromRGBO(
+                                              249,
+                                              249,
+                                              251,
+                                              1,
+                                            ),
+                                            borderRadius: BorderRadius.circular(
+                                              4,
+                                            ),
+                                            border: Border.all(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          child: DropdownButton(
+                                            items: [],
+                                            onChanged: (v) {},
                                           ),
                                         ),
                                       ],
