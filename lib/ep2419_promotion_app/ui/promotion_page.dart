@@ -348,6 +348,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                         borderRadius: BorderRadius.circular(6),
                                         border: Border.all(color: Colors.black),
                                       ),
+                                      height: 42,
                                       child: Center(
                                         child: Text(
                                           "Cancel",
@@ -360,6 +361,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                   ),
                                   Expanded(
                                     child: Container(
+                                      height: 42,
                                       decoration: BoxDecoration(
                                         color: Colors.deepOrange,
                                         border: Border.all(color: Colors.grey),
