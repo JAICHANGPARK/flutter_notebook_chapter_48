@@ -151,9 +151,10 @@ class _PromotionPageState extends State<PromotionPage> {
                             shape: StadiumBorder(),
                             color: Color.fromRGBO(212, 253, 212, 1),
                           ),
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 2,
-                            vertical: 2,
+                          padding: EdgeInsets.only(
+                            left: 3, right: 6,
+                            bottom: 4,
+                            top: 4
                           ),
                           child: Row(
                             spacing: 5,
