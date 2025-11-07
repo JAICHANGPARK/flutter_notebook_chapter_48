@@ -196,8 +196,26 @@ class _PromotionPageState extends State<PromotionPage> {
             onTap: () {
               showModalBottomSheet(
                 context: context,
+                isDismissible: false,
+                isScrollControlled: true,
+                useSafeArea: true,
+                backgroundColor: Colors.white,
                 builder: (context) {
-                  return Container();
+                  return Container(
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.arrow_back),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  );
                 },
               );
             },
