@@ -508,10 +508,10 @@ class _PromotionPageState extends State<PromotionPage> {
                                           ],
                                         ),
                                         Column(
-                                          children: List.generate(4, (idx){
-                                           return Container(
+                                          children: List.generate(4, (idx) {
+                                            return Container(
                                               width: double.infinity,
-                                            padding: EdgeInsets.all(12),
+                                              padding: EdgeInsets.all(12),
                                               decoration: BoxDecoration(
                                                 color: Color.fromRGBO(
                                                   249,
@@ -519,24 +519,30 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   251,
                                                   1,
                                                 ),
-                                                borderRadius: BorderRadius.circular(
-                                                  4,
-                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
                                                 border: Border.all(
                                                   color: Colors.grey[400]!,
                                                 ),
                                               ),
-                                             child: Row(
-                                               children: [
-                                                 
-                                               ],
-                                             ),
-
-
+                                              child: Row(
+                                                children: [
+                                                  Container(
+                                                    height: 52,
+                                                    width: 52,
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                            8,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
                                             );
                                           }),
                                         ),
-
                                       ],
                                     ),
                                   ],
