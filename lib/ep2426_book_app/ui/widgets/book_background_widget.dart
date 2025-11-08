@@ -6,6 +6,19 @@ class BookBackgroundWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.bottomCenter,
+          end: Alignment.topCenter,
+
+          colors: [
+            Color.fromRGBO(254, 247, 236, 1),
+            Colors.white,
+            Colors.white,
+          ],
+        ),
+      ),
+    );
   }
 }
