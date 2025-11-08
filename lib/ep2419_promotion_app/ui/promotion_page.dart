@@ -486,11 +486,12 @@ class _PromotionPageState extends State<PromotionPage> {
                                           spacing: 4,
                                           children: [
                                             Text(
-                                              "Applies to",
+                                              "Product",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
+                                            Spacer(),
                                             Icon(Icons.add),
                                             TextButton(onPressed: (){}, child: Text("Add Product",),
                                             )
