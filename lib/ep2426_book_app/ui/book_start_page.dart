@@ -30,9 +30,19 @@ class _BookStartPageState extends State<BookStartPage> {
                     child: Placeholder(),)),
             ),
             Container(
-              height: 180,
-              child: Placeholder(),
-            )
+              height: 220,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+
+                  itemBuilder: (context,index)=> Container(
+                    width: 160,
+                    margin: EdgeInsets.only(
+                        right: 16
+                    ),
+                    child: Placeholder(),)),
+            ),
+            Text("Learn more in less time"),
+            Text("Enjoy ")
           ],
         ),
       ),
