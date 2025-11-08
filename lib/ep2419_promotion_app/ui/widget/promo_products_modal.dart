@@ -93,7 +93,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                 ),
                 Expanded(
                   child: Container(
-                    height: 38,
+                    height: 40,
                     decoration: BoxDecoration(
                       color: Colors.deepOrange,
                       border: Border.all(color: Colors.grey),
