@@ -555,7 +555,16 @@ class _PromotionPageState extends State<PromotionPage> {
                                                     ),
                                                     Expanded(
                                                       child: Column(
-                                                        children: [],
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Text("Macbook M2 Pro 512GB"),
+                                                          Row(
+                                                            children: [
+                                                              Text("\$1200"),
+                                                              
+                                                            ],
+                                                          )
+                                                        ],
                                                       ),
                                                     ),
                                                     Icon(
