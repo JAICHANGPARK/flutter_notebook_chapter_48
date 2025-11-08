@@ -479,6 +479,56 @@ class _PromotionPageState extends State<PromotionPage> {
                                         ),
                                       ],
                                     ),
+                                    Column(
+                                      spacing: 4,
+                                      children: [
+                                        Row(
+                                          spacing: 4,
+                                          children: [
+                                            Text(
+                                              "Applies to",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Icon(Icons.add),
+                                            TextButton(onPressed: (){}, child: Text("Add Product",),
+                                            )
+                                          ],
+                                        ),
+                                        Container(
+                                          width: double.infinity,
+                                          height: 42,
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 8,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Color.fromRGBO(
+                                              249,
+                                              249,
+                                              251,
+                                              1,
+                                            ),
+                                            borderRadius: BorderRadius.circular(
+                                              4,
+                                            ),
+                                            border: Border.all(
+                                              color: Colors.grey[400]!,
+                                            ),
+                                          ),
+                                          child: DropdownButton(
+                                            isExpanded: true,
+                                            underline: SizedBox.shrink(),
+                                            items: [
+                                              DropdownMenuItem(
+                                                child: Text("Specific Product"),
+                                              ),
+                                            ],
+                                            onChanged: (v) {},
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ],
                                 ),
                               ),
