@@ -16,13 +16,14 @@ class _BookStartPageState extends State<BookStartPage> {
         child: Column(
           spacing: 16,
           children: [
+            SizedBox(height: 16,),
             Container(
-              height: 180,
+              height: 220,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
 
                   itemBuilder: (context,index)=> Container(
-                    width: 120,
+                    width: 160,
                     margin: EdgeInsets.only(
                       right: 16
                     ),
