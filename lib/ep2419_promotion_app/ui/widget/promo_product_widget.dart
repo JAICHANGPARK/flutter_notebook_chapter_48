@@ -18,10 +18,12 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
       width: double.infinity,
       padding: EdgeInsets.all(12),
       margin: EdgeInsets.only(bottom: 8),
-      decoration: !widget.enableEdit ? BoxDecoration(
-        borderRadius: BorderRadius.circular(4),
-        border: Border.all(color: Colors.grey[400]!),
-      ) : null,
+      decoration: !widget.enableEdit
+          ? BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+              border: Border.all(color: Colors.grey[400]!),
+            )
+          : null,
       child: Row(
         spacing: 8,
         children: [
@@ -43,7 +45,10 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
                 Row(
                   spacing: 8,
                   children: [
-                    Text("\$1200"),
+                    Text(
+                      "\$1200",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     Container(
                       height: 12,
                       width: 12,
@@ -56,7 +61,10 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
               ],
             ),
           ),
-          Icon(Icons.delete_outline, color: Colors.red),
+          switch (widget.enableEdit) {
+            true => Icon(Icons.delete_outline, color: Colors.red),
+            false => Checkbox(value: null, onChanged: (bool? value) {}),
+          },
         ],
       ),
     );
