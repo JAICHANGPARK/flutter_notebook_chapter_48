@@ -16,6 +16,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
       child: Column(
         children: [
           Container(
+            margin: EdgeInsets.symmetric(vertical: ),
             height: 42,
             width: double.infinity,
             child: Stack(
