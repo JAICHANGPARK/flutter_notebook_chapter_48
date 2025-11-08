@@ -43,9 +43,11 @@ class _BookStartPageState extends State<BookStartPage> {
             Text("Learn more in less time", style: TextStyle(fontSize: 28)),
             Text(
               "Enjoy quick insights, simple takeaways, and smarter reading made easy.",
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16,),
+              textAlign: TextAlign.center,
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 16,),
               decoration: BoxDecoration(color: Colors.black),
               child: Center(
                 child: Text(
