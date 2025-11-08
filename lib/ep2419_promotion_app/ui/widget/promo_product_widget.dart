@@ -18,16 +18,10 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
       width: double.infinity,
       padding: EdgeInsets.all(12),
       margin: EdgeInsets.only(bottom: 8),
-      decoration: BoxDecoration(
-        // color: Color.fromRGBO(
-        //   249,
-        //   249,
-        //   251,
-        //   1,
-        // ),
+      decoration: !widget.enableEdit ? BoxDecoration(
         borderRadius: BorderRadius.circular(4),
         border: Border.all(color: Colors.grey[400]!),
-      ),
+      ) : null,
       child: Row(
         spacing: 8,
         children: [
