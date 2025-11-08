@@ -46,7 +46,11 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                   child: Container(
                     decoration: BoxDecoration(color: Colors.red),
                     child: TextField(
-                      decoration: InputDecoration(border: InputBorder.none),
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search product",
+                        icon: Icon(Icons.search),
+                      ),
                     ),
                   ),
                 ),
@@ -60,6 +64,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               ],
             ),
           ),
+          Text("Recommended by AI")
         ],
       ),
     );
