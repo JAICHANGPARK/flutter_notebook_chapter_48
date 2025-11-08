@@ -10,6 +10,8 @@ class BookHomePage extends StatefulWidget {
 class _BookHomePageState extends State<BookHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(child: Column(children: [])),
+    );
   }
 }
