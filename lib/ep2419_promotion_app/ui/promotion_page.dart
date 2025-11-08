@@ -507,37 +507,42 @@ class _PromotionPageState extends State<PromotionPage> {
                                             ),
                                           ],
                                         ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 42,
-                                          padding: EdgeInsets.symmetric(
-                                            horizontal: 8,
-                                          ),
-                                          decoration: BoxDecoration(
-                                            color: Color.fromRGBO(
-                                              249,
-                                              249,
-                                              251,
-                                              1,
-                                            ),
-                                            borderRadius: BorderRadius.circular(
-                                              4,
-                                            ),
-                                            border: Border.all(
-                                              color: Colors.grey[400]!,
-                                            ),
-                                          ),
-                                          child: DropdownButton(
-                                            isExpanded: true,
-                                            underline: SizedBox.shrink(),
-                                            items: [
-                                              DropdownMenuItem(
-                                                child: Text("Specific Product"),
+                                        Column(
+                                          children: List.generate(4, (idx){
+                                           return Container(
+                                              width: double.infinity,
+                                              height: 42,
+                                              padding: EdgeInsets.symmetric(
+                                                horizontal: 8,
                                               ),
-                                            ],
-                                            onChanged: (v) {},
-                                          ),
+                                              decoration: BoxDecoration(
+                                                color: Color.fromRGBO(
+                                                  249,
+                                                  249,
+                                                  251,
+                                                  1,
+                                                ),
+                                                borderRadius: BorderRadius.circular(
+                                                  4,
+                                                ),
+                                                border: Border.all(
+                                                  color: Colors.grey[400]!,
+                                                ),
+                                              ),
+                                              child: DropdownButton(
+                                                isExpanded: true,
+                                                underline: SizedBox.shrink(),
+                                                items: [
+                                                  DropdownMenuItem(
+                                                    child: Text("Specific Product"),
+                                                  ),
+                                                ],
+                                                onChanged: (v) {},
+                                              ),
+                                            );
+                                          }),
                                         ),
+
                                       ],
                                     ),
                                   ],
