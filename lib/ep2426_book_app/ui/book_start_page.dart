@@ -40,6 +40,7 @@ class _BookStartPageState extends State<BookStartPage> {
                 ),
               ),
             ),
+           Spacer(),
             Text("Learn more in less time", style: TextStyle(fontSize: 28)),
             Text(
               "Enjoy quick insights, simple takeaways, and smarter reading made easy.",
@@ -53,7 +54,8 @@ class _BookStartPageState extends State<BookStartPage> {
               child: Center(
                 child: Text(
                   "Get Started",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,
+                  fontSize: 16),
                 ),
               ),
             ),
