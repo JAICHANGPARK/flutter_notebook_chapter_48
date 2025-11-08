@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2419_promotion_app/ui/widget/promo_create_discount_modal_widget.dart';
 
 import 'widget/active_chip_widget.dart';
 
@@ -174,11 +175,7 @@ class _PromotionPageState extends State<PromotionPage> {
                 useSafeArea: true,
                 backgroundColor: Colors.white,
                 builder: (context) {
-                  return StatefulBuilder(
-                    builder: (context, setState) {
-                      return
-                    },
-                  );
+                  return PromoCreateDiscountModalWidget();
                 },
               );
             },
