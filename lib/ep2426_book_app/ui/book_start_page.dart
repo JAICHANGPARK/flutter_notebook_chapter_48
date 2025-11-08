@@ -13,7 +13,14 @@ class _BookStartPageState extends State<BookStartPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: Container(decoration: BoxDecoration(),),),
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(gradient: LinearGradient(colors: [
+                Color.fromRGBO(254, 247, 236, 1),
+                Colors.white
+              ])),
+            ),
+          ),
           SafeArea(
             child: Column(
               spacing: 16,
@@ -43,25 +50,24 @@ class _BookStartPageState extends State<BookStartPage> {
                     ),
                   ),
                 ),
-               Spacer(),
+                Spacer(),
                 Text("Learn more in less time", style: TextStyle(fontSize: 28)),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 32),
                   child: Text(
                     "Enjoy quick insights, simple takeaways, and smarter reading made easy.",
-                    style: TextStyle(fontSize: 16,),
+                    style: TextStyle(fontSize: 16),
                     textAlign: TextAlign.center,
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 16,),
+                  margin: EdgeInsets.symmetric(horizontal: 16),
                   padding: EdgeInsets.symmetric(vertical: 16),
                   decoration: BoxDecoration(color: Colors.black),
                   child: Center(
                     child: Text(
                       "Get Started",
-                      style: TextStyle(color: Colors.white,
-                      fontSize: 16),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ),
                 ),
