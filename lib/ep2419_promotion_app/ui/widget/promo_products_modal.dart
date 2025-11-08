@@ -90,12 +90,15 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
             ),
           ),
           Expanded(
-            child: ListView.separated(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return PromoProductWidget();
-              },
-              separatorBuilder: (context, _) => Divider(),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: ListView.separated(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return PromoProductWidget(enableEdit: true);
+                },
+                separatorBuilder: (context, _) => Divider(),
+              ),
             ),
           ),
           Container(
