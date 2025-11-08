@@ -30,7 +30,6 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                 ),
                 Positioned(
                   right: 8,
-
                   child: IconButton(onPressed: () {}, icon: Icon(Icons.clear)),
                 ),
               ],
