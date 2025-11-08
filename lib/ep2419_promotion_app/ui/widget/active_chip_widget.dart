@@ -12,6 +12,7 @@ class ActiveChipWidget extends StatelessWidget {
       ),
       padding: EdgeInsets.only(left: 3, right: 6, bottom: 4, top: 4),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         spacing: 5,
         children: [
           Icon(Icons.check_circle, color: Colors.green, size: 15),
