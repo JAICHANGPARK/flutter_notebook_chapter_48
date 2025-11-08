@@ -364,9 +364,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                     251,
                                                     1,
                                                   ),
-                                                  borderRadius: BorderRadius.circular(
-                                                    4,
-                                                  ),
+                                                  borderRadius:
+                                                      BorderRadius.circular(4),
                                                   border: Border.all(
                                                     color: Colors.grey,
                                                   ),
@@ -376,9 +375,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   underline: SizedBox.shrink(),
                                                   items: [
                                                     DropdownMenuItem(
-                                                      child: Text(
-                                                        "Percentage",
-                                                      ),
+                                                      child: Text("Percentage"),
                                                     ),
                                                   ],
                                                   onChanged: (v) {},
@@ -399,24 +396,31 @@ class _PromotionPageState extends State<PromotionPage> {
                                                     251,
                                                     1,
                                                   ),
-                                                  borderRadius: BorderRadius.circular(
-                                                    4,
-                                                  ),
+                                                  borderRadius:
+                                                      BorderRadius.circular(4),
                                                   border: Border.all(
                                                     color: Colors.grey,
                                                   ),
                                                 ),
-                                                child:Row(
+                                                child: Row(
                                                   children: [
-                                                    Expanded(child: TextField()),
-                                                    Text("%")
+                                                    Expanded(
+                                                      child: TextField(
+                                                        decoration:
+                                                            InputDecoration(
+                                                              border:
+                                                                  InputBorder
+                                                                      .none,
+                                                            ),
+                                                      ),
+                                                    ),
+                                                    Text("%"),
                                                   ],
-                                                )
+                                                ),
                                               ),
                                             ),
                                           ],
-                                        )
-
+                                        ),
                                       ],
                                     ),
                                   ],
