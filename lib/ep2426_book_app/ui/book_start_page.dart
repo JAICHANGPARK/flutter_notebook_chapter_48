@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2426_book_app/ui/book_home_page.dart';
 
 class BookStartPage extends StatefulWidget {
   const BookStartPage({super.key});
@@ -69,7 +70,11 @@ class _BookStartPageState extends State<BookStartPage> {
                   ),
                 ),
                 GestureDetector(
-                  
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => BookHomePage()),
+                    );
+                  },
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     padding: EdgeInsets.symmetric(vertical: 16),
