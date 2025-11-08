@@ -577,7 +577,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                                           .grey,
                                                                     ),
                                                               ),
-                                                              Text("Space Grey")
+                                                              Text("Space Grey"),
+                                                              Text("1234 stocks")
                                                             ],
                                                           ),
                                                         ],
