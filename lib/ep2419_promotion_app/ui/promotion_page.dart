@@ -491,7 +491,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                   Expanded(
                                     child: GestureDetector(
                                       onTap: (){
-                                        
+                                        Navigator.of(context).pop();
                                       },
                                       child: Container(
                                         decoration: BoxDecoration(
