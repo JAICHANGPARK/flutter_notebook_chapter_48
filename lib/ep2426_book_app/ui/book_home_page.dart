@@ -41,8 +41,8 @@ class _BookHomePageState extends State<BookHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.bookmark_border),label: "Bookmark"),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_basket_outlined),label: "Transaction"),
       ],),
     );
   }
