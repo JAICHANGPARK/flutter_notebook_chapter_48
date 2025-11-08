@@ -37,7 +37,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
           ),
           Divider(),
           Container(
-            height: 42,
+            height: 46,
             margin: EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               spacing: 12,
@@ -45,6 +45,9 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(color: Colors.red),
+                    child: TextField(
+                      decoration: InputDecoration(border: InputBorder.none),
+                    ),
                   ),
                 ),
                 Container(
