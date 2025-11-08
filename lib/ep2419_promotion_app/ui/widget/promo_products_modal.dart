@@ -23,7 +23,11 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               children: [
                 Align(
                   alignment: Alignment.center,
-                    child: Text("Add Product to Discount")),
+                  child: Text(
+                    "Add Product to Discount",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                ),
                 Positioned(
                   right: 8,
 
