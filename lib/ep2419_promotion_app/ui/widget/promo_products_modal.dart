@@ -60,7 +60,10 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(color: Colors.blue),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey[300]!),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
                   child: IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.filter_list_outlined),
