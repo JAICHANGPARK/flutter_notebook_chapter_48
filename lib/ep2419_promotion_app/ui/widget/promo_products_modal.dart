@@ -20,7 +20,8 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
             width: double.infinity,
             child: Stack(
               children: [
-                Text("Add Product to Discount"),
+                Align(
+                    child: Text("Add Product to Discount")),
                 Positioned(
                   right: 8,
 
