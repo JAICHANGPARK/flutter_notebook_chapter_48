@@ -62,7 +62,13 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
             ),
           ),
           switch (widget.enableEdit) {
-            true => Checkbox(value: null, onChanged: (bool? value) {}),
+            true => SizedBox(
+              height: 32,
+              width: 32,
+              child: Checkbox(
+
+                  value: false, onChanged: (bool? value) {}),
+            ),
             false => Icon(Icons.delete_outline, color: Colors.red),
           },
         ],
