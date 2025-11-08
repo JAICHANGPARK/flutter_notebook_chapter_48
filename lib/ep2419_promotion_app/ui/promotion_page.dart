@@ -511,10 +511,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                           children: List.generate(4, (idx){
                                            return Container(
                                               width: double.infinity,
-                                              height: 42,
-                                              padding: EdgeInsets.symmetric(
-                                                horizontal: 8,
-                                              ),
+                                            padding: EdgeInsets.all(12),
                                               decoration: BoxDecoration(
                                                 color: Color.fromRGBO(
                                                   249,
@@ -529,16 +526,13 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   color: Colors.grey[400]!,
                                                 ),
                                               ),
-                                              child: DropdownButton(
-                                                isExpanded: true,
-                                                underline: SizedBox.shrink(),
-                                                items: [
-                                                  DropdownMenuItem(
-                                                    child: Text("Specific Product"),
-                                                  ),
-                                                ],
-                                                onChanged: (v) {},
-                                              ),
+                                             child: Row(
+                                               children: [
+                                                 
+                                               ],
+                                             ),
+
+
                                             );
                                           }),
                                         ),
