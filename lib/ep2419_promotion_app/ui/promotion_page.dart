@@ -349,42 +349,42 @@ class _PromotionPageState extends State<PromotionPage> {
                                         ),
                                         Row(
                                           children: [
-
-                                          ],
-                                        )
-                                        Container(
-                                          width: double.infinity,
-                                          height: 42,
-                                          padding: EdgeInsets.symmetric(
-                                            horizontal: 8,
-                                          ),
-                                          decoration: BoxDecoration(
-                                            color: Color.fromRGBO(
-                                              249,
-                                              249,
-                                              251,
-                                              1,
-                                            ),
-                                            borderRadius: BorderRadius.circular(
-                                              4,
-                                            ),
-                                            border: Border.all(
-                                              color: Colors.grey,
-                                            ),
-                                          ),
-                                          child: DropdownButton(
-                                            isExpanded: true,
-                                            underline: SizedBox.shrink(),
-                                            items: [
-                                              DropdownMenuItem(
-                                                child: Text(
-                                                  "No minimum requirements",
+                                            Container(
+                                              width: double.infinity,
+                                              height: 42,
+                                              padding: EdgeInsets.symmetric(
+                                                horizontal: 8,
+                                              ),
+                                              decoration: BoxDecoration(
+                                                color: Color.fromRGBO(
+                                                  249,
+                                                  249,
+                                                  251,
+                                                  1,
+                                                ),
+                                                borderRadius: BorderRadius.circular(
+                                                  4,
+                                                ),
+                                                border: Border.all(
+                                                  color: Colors.grey,
                                                 ),
                                               ),
-                                            ],
-                                            onChanged: (v) {},
-                                          ),
-                                        ),
+                                              child: DropdownButton(
+                                                isExpanded: true,
+                                                underline: SizedBox.shrink(),
+                                                items: [
+                                                  DropdownMenuItem(
+                                                    child: Text(
+                                                      "No minimum requirements",
+                                                    ),
+                                                  ),
+                                                ],
+                                                onChanged: (v) {},
+                                              ),
+                                            ),
+                                          ],
+                                        )
+
                                       ],
                                     ),
                                   ],
