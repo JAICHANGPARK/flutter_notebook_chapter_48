@@ -48,6 +48,7 @@ class _BookStartPageState extends State<BookStartPage> {
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 16,),
+              padding: EdgeInsets.symmetric(vertical: 16),
               decoration: BoxDecoration(color: Colors.black),
               child: Center(
                 child: Text(
