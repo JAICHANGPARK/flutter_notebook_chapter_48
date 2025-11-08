@@ -497,6 +497,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                               child: Text("Add Product"),
                                               style: TextButton.styleFrom(
                                                 foregroundColor: Colors.black,
+                                                padding: EdgeInsets.zero,
                                                 textStyle: TextStyle(
                                                   decoration:
                                                       TextDecoration.underline,
