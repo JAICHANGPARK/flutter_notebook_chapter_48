@@ -19,7 +19,12 @@ class _BookStartPageState extends State<BookStartPage> {
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: [Color.fromRGBO(254, 247, 236, 1), Colors.white],
+
+                  colors: [
+                    Color.fromRGBO(254, 247, 236, 1),
+                    Colors.white,
+                    Colors.white,
+                  ],
                 ),
               ),
             ),
@@ -77,7 +82,10 @@ class _BookStartPageState extends State<BookStartPage> {
                 TextButton(
                   onPressed: () {},
                   child: Text("I already have an account"),
-                  style: TextButton.styleFrom(foregroundColor: Colors.black),
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.black,
+                    textStyle: TextStyle(fontSize: 16),
+                  ),
                 ),
               ],
             ),
