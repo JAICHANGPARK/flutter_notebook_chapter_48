@@ -513,6 +513,9 @@ class _PromotionPageState extends State<PromotionPage> {
                                               return Container(
                                                 width: double.infinity,
                                                 padding: EdgeInsets.all(12),
+                                                margin: EdgeInsets.only(
+                                                  bottom: 8
+                                                ),
                                                 decoration: BoxDecoration(
                                                   color: Color.fromRGBO(
                                                     249,
@@ -529,8 +532,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 child: Row(
                                                   children: [
                                                     Container(
-                                                      height: 52,
-                                                      width: 52,
+                                                      height: 72,
+                                                      width: 72,
                                                       decoration: BoxDecoration(
                                                         color: Colors.grey[100]!,
                                                         borderRadius:
