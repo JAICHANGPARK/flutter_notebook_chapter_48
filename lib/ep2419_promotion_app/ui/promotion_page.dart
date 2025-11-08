@@ -277,6 +277,9 @@ class _PromotionPageState extends State<PromotionPage> {
                                               ),
                                               TextButton(
                                                 onPressed: () {},
+                                                style: TextButton.styleFrom(
+                                                  foregroundColor: Colors.black,
+                                                ),
                                                 child: Text(
                                                   "Generate",
                                                   style: TextStyle(
