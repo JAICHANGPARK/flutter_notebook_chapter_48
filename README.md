@@ -2,7 +2,7 @@
 
 ## EP2426
 
-- Ecomiq — Create and Manage Discounts for Mobile E-commerce
+- Litex - Reading Book App
 - Bagus Fikri for Fikri Studio
 - https://dribbble.com/shots/26681488-Ecomiq-Create-and-Manage-Discounts-for-Mobile-E-commerce
 
