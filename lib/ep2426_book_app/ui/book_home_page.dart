@@ -21,9 +21,7 @@ class _BookHomePageState extends State<BookHomePage> {
 
         leading: Padding(
           padding: const EdgeInsets.only(left: 16),
-          child: CircleAvatar(
-            radius: 18,
-          ),
+          child: CircleAvatar(radius: 18),
         ),
         title: Text("BookApp"),
         centerTitle: true,
@@ -35,34 +33,46 @@ class _BookHomePageState extends State<BookHomePage> {
       ),
       body: SafeArea(
         child: Stack(
-          children: [Positioned.fill(child: BookBackgroundWidget()),
-          Positioned(child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-            Text("Looking for something inspiring?"),
-            Text("Explore our library!"),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('Recommended for You'),
-                Container(
-                  height: 240,
-                  child: Placeholder(),
-                )
-              ],
-            )
-          ],))
-          ],
+          children: [
+            Positioned.fill(child: BookBackgroundWidget()),
+            Positioned(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    children: [
+                      Text("Looking for something inspiring?"),
+                      Text("Explore our library!"),
+                    ],
+                  ),
 
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Recommended for You'),
+                      Container(height: 240, child: Placeholder()),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.bookmark_border),label: "Bookmark"),
-        BottomNavigationBarItem(icon: Icon(Icons.shopping_basket_outlined),label: "Transaction"),
-      ],),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bookmark_border),
+            label: "Bookmark",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_basket_outlined),
+            label: "Transaction",
+          ),
+        ],
+      ),
     );
   }
 }
