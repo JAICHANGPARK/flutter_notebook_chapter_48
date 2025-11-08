@@ -489,17 +489,22 @@ class _PromotionPageState extends State<PromotionPage> {
                                 spacing: 24,
                                 children: [
                                   Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(6),
-                                        border: Border.all(color: Colors.black),
-                                      ),
-                                      height: 38,
-                                      child: Center(
-                                        child: Text(
-                                          "Cancel",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    child: GestureDetector(
+                                      onTap: (){
+                                        
+                                      },
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(6),
+                                          border: Border.all(color: Colors.black),
+                                        ),
+                                        height: 38,
+                                        child: Center(
+                                          child: Text(
+                                            "Cancel",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                         ),
                                       ),
