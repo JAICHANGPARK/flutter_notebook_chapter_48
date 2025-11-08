@@ -248,7 +248,10 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
-                                              Icon(Icons.info_outline, size: 14),
+                                              Icon(
+                                                Icons.info_outline,
+                                                size: 14,
+                                              ),
                                             ],
                                           ),
                                           Container(
@@ -260,9 +263,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 251,
                                                 1,
                                               ),
-                                              borderRadius: BorderRadius.circular(
-                                                4,
-                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
                                               border: Border.all(
                                                 color: Colors.grey[400]!,
                                               ),
@@ -279,7 +281,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 TextButton(
                                                   onPressed: () {},
                                                   style: TextButton.styleFrom(
-                                                    foregroundColor: Colors.black,
+                                                    foregroundColor:
+                                                        Colors.black,
                                                   ),
                                                   child: Text(
                                                     "Generate",
@@ -321,9 +324,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 251,
                                                 1,
                                               ),
-                                              borderRadius: BorderRadius.circular(
-                                                4,
-                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ),
@@ -375,17 +377,22 @@ class _PromotionPageState extends State<PromotionPage> {
                                                       1,
                                                     ),
                                                     borderRadius:
-                                                        BorderRadius.circular(4),
+                                                        BorderRadius.circular(
+                                                          4,
+                                                        ),
                                                     border: Border.all(
                                                       color: Colors.grey[400]!,
                                                     ),
                                                   ),
                                                   child: DropdownButton(
                                                     isExpanded: true,
-                                                    underline: SizedBox.shrink(),
+                                                    underline:
+                                                        SizedBox.shrink(),
                                                     items: [
                                                       DropdownMenuItem(
-                                                        child: Text("Percentage"),
+                                                        child: Text(
+                                                          "Percentage",
+                                                        ),
                                                       ),
                                                     ],
                                                     onChanged: (v) {},
@@ -407,7 +414,9 @@ class _PromotionPageState extends State<PromotionPage> {
                                                       1,
                                                     ),
                                                     borderRadius:
-                                                        BorderRadius.circular(4),
+                                                        BorderRadius.circular(
+                                                          4,
+                                                        ),
                                                     border: Border.all(
                                                       color: Colors.grey[400]!,
                                                     ),
@@ -460,9 +469,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 251,
                                                 1,
                                               ),
-                                              borderRadius: BorderRadius.circular(
-                                                4,
-                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
                                               border: Border.all(
                                                 color: Colors.grey[400]!,
                                               ),
@@ -472,7 +480,9 @@ class _PromotionPageState extends State<PromotionPage> {
                                               underline: SizedBox.shrink(),
                                               items: [
                                                 DropdownMenuItem(
-                                                  child: Text("Specific Product"),
+                                                  child: Text(
+                                                    "Specific Product",
+                                                  ),
                                                 ),
                                               ],
                                               onChanged: (v) {},
@@ -499,8 +509,8 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   foregroundColor: Colors.black,
                                                   padding: EdgeInsets.zero,
                                                   textStyle: TextStyle(
-                                                    decoration:
-                                                        TextDecoration.underline,
+                                                    decoration: TextDecoration
+                                                        .underline,
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
@@ -514,15 +524,15 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 width: double.infinity,
                                                 padding: EdgeInsets.all(12),
                                                 margin: EdgeInsets.only(
-                                                  bottom: 8
+                                                  bottom: 8,
                                                 ),
                                                 decoration: BoxDecoration(
-                                                  color: Color.fromRGBO(
-                                                    249,
-                                                    249,
-                                                    251,
-                                                    1,
-                                                  ),
+                                                  // color: Color.fromRGBO(
+                                                  //   249,
+                                                  //   249,
+                                                  //   251,
+                                                  //   1,
+                                                  // ),
                                                   borderRadius:
                                                       BorderRadius.circular(4),
                                                   border: Border.all(
@@ -535,12 +545,22 @@ class _PromotionPageState extends State<PromotionPage> {
                                                       height: 72,
                                                       width: 72,
                                                       decoration: BoxDecoration(
-                                                        color: Colors.grey[100]!,
+                                                        color:
+                                                            Colors.grey[100]!,
                                                         borderRadius:
                                                             BorderRadius.circular(
                                                               8,
                                                             ),
                                                       ),
+                                                    ),
+                                                    Expanded(
+                                                      child: Column(
+                                                        children: [],
+                                                      ),
+                                                    ),
+                                                    Icon(
+                                                      Icons.delete_outline,
+                                                      color: Colors.red,
                                                     ),
                                                   ],
                                                 ),
