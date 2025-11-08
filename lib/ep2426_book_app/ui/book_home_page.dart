@@ -35,7 +35,17 @@ class _BookHomePageState extends State<BookHomePage> {
       ),
       body: SafeArea(
         child: Stack(
-          children: [Positioned.fill(child: BookBackgroundWidget())],
+          children: [Positioned.fill(child: BookBackgroundWidget()),
+          Positioned(child: Column(children: [
+            Text("Looking for something inspiring?"),
+            Text("Explore our library!"),
+            Column(
+              children: [
+                Text('')
+              ],
+            )
+          ],))
+          ],
 
         ),
       ),
