@@ -14,6 +14,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
       height: MediaQuery.sizeOf(context).height * 0.88,
       child: Column(
         spacing: 12,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             margin: EdgeInsets.only(top: 12),
@@ -64,7 +65,11 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               ],
             ),
           ),
-          Text("Recommended by AI"),
+          Padding(
+            padding: const EdgeInsets.only(left: 16,
+            top: 12),
+            child: Text("Recommended by AI"),
+          ),
           Expanded(child: Placeholder()),
           Container(
             padding: EdgeInsets.fromLTRB(24, 12, 24, 42),
