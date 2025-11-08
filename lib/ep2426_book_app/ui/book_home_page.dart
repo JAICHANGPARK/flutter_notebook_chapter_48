@@ -14,7 +14,12 @@ class _BookHomePageState extends State<BookHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: CircleAvatar(),
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.transparent,
+
+        leading: CircleAvatar(
+          radius: 18,
+        ),
         title: Text("BookApp"),
         centerTitle: true,
         actions: [
