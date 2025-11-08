@@ -66,9 +66,11 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 16,
-            top: 12),
-            child: Text("Recommended by AI"),
+            padding: const EdgeInsets.only(left: 16, top: 12),
+            child: Text(
+              "Recommended by AI",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
           Expanded(child: Placeholder()),
           Container(
@@ -118,7 +120,6 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               ],
             ),
           ),
-
         ],
       ),
     );
