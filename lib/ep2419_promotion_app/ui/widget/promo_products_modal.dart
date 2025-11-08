@@ -15,12 +15,13 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
       color: Colors.blue,
       child: Column(
         children: [
-          SizedBox(
+          Container(
             height: 42,
             width: double.infinity,
             child: Stack(
               children: [
                 Align(
+                  alignment: Alignment.center,
                     child: Text("Add Product to Discount")),
                 Positioned(
                   right: 8,
