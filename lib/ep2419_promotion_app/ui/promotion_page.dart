@@ -493,8 +493,10 @@ class _PromotionPageState extends State<PromotionPage> {
                                             ),
                                             Spacer(),
                                             Icon(Icons.add),
-                                            TextButton(onPressed: (){}, child: Text("Add Product",),
-                                            )
+                                            TextButton(onPressed: (){}, child: Text("Add Product",
+                                           ),
+                                                style: TextButton.styleFrom()
+                                            ),
                                           ],
                                         ),
                                         Container(
