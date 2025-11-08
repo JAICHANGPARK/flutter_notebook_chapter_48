@@ -504,7 +504,11 @@ class _PromotionPageState extends State<PromotionPage> {
                                               Spacer(),
                                               Icon(Icons.add, size: 16),
                                               TextButton(
-                                                onPressed: () {},
+                                                onPressed: () {
+                                                  showModalBottomSheet(context: context, builder: (context){
+                                                    return Container()
+                                                  });
+                                                },
                                                 style: TextButton.styleFrom(
                                                   foregroundColor: Colors.black,
                                                   padding: EdgeInsets.zero,
