@@ -230,174 +230,289 @@ class _PromotionPageState extends State<PromotionPage> {
                             ),
                             Divider(),
                             Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  spacing: 16,
-                                  children: [
-                                    Column(
-                                      spacing: 4,
-                                      children: [
-                                        Row(
-                                          spacing: 4,
-                                          children: [
-                                            Text(
-                                              "Discount Code",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
+                              child: SingleChildScrollView(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    spacing: 16,
+                                    children: [
+                                      Column(
+                                        spacing: 4,
+                                        children: [
+                                          Row(
+                                            spacing: 4,
+                                            children: [
+                                              Text(
+                                                "Discount Code",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Icon(Icons.info_outline, size: 14),
+                                            ],
+                                          ),
+                                          Container(
+                                            height: 42,
+                                            decoration: BoxDecoration(
+                                              color: Color.fromRGBO(
+                                                249,
+                                                249,
+                                                251,
+                                                1,
+                                              ),
+                                              borderRadius: BorderRadius.circular(
+                                                4,
+                                              ),
+                                              border: Border.all(
+                                                color: Colors.grey[400]!,
                                               ),
                                             ),
-                                            Icon(Icons.info_outline, size: 14),
-                                          ],
-                                        ),
-                                        Container(
-                                          height: 42,
-                                          decoration: BoxDecoration(
-                                            color: Color.fromRGBO(
-                                              249,
-                                              249,
-                                              251,
-                                              1,
-                                            ),
-                                            borderRadius: BorderRadius.circular(
-                                              4,
-                                            ),
-                                            border: Border.all(
-                                              color: Colors.grey[400]!,
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                  child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: InputBorder.none,
+                                                    ),
+                                                  ),
+                                                ),
+                                                TextButton(
+                                                  onPressed: () {},
+                                                  style: TextButton.styleFrom(
+                                                    foregroundColor: Colors.black,
+                                                  ),
+                                                  child: Text(
+                                                    "Generate",
+                                                    style: TextStyle(
+                                                      decoration: TextDecoration
+                                                          .underline,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
                                           ),
-                                          child: Row(
+                                        ],
+                                      ),
+                                      Column(
+                                        spacing: 4,
+                                        children: [
+                                          Row(
+                                            spacing: 4,
+                                            children: [
+                                              Text(
+                                                "Minimum Purchase Requirements",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Container(
+                                            width: double.infinity,
+                                            height: 42,
+                                            padding: EdgeInsets.symmetric(
+                                              horizontal: 8,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color: Color.fromRGBO(
+                                                249,
+                                                249,
+                                                251,
+                                                1,
+                                              ),
+                                              borderRadius: BorderRadius.circular(
+                                                4,
+                                              ),
+                                              border: Border.all(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                            child: DropdownButton(
+                                              isExpanded: true,
+                                              underline: SizedBox.shrink(),
+                                              items: [
+                                                DropdownMenuItem(
+                                                  child: Text(
+                                                    "No minimum requirements",
+                                                  ),
+                                                ),
+                                              ],
+                                              onChanged: (v) {},
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Column(
+                                        spacing: 4,
+                                        children: [
+                                          Row(
+                                            spacing: 4,
+                                            children: [
+                                              Text(
+                                                "Type",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            spacing: 8,
                                             children: [
                                               Expanded(
-                                                child: TextField(
-                                                  decoration: InputDecoration(
-                                                    border: InputBorder.none,
+                                                child: Container(
+                                                  width: double.infinity,
+                                                  height: 42,
+                                                  padding: EdgeInsets.symmetric(
+                                                    horizontal: 8,
+                                                  ),
+                                                  decoration: BoxDecoration(
+                                                    color: Color.fromRGBO(
+                                                      249,
+                                                      249,
+                                                      251,
+                                                      1,
+                                                    ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(4),
+                                                    border: Border.all(
+                                                      color: Colors.grey[400]!,
+                                                    ),
+                                                  ),
+                                                  child: DropdownButton(
+                                                    isExpanded: true,
+                                                    underline: SizedBox.shrink(),
+                                                    items: [
+                                                      DropdownMenuItem(
+                                                        child: Text("Percentage"),
+                                                      ),
+                                                    ],
+                                                    onChanged: (v) {},
                                                   ),
                                                 ),
                                               ),
+                                              Expanded(
+                                                child: Container(
+                                                  width: double.infinity,
+                                                  height: 42,
+                                                  padding: EdgeInsets.symmetric(
+                                                    horizontal: 8,
+                                                  ),
+                                                  decoration: BoxDecoration(
+                                                    color: Color.fromRGBO(
+                                                      249,
+                                                      249,
+                                                      251,
+                                                      1,
+                                                    ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(4),
+                                                    border: Border.all(
+                                                      color: Colors.grey[400]!,
+                                                    ),
+                                                  ),
+                                                  child: Row(
+                                                    children: [
+                                                      Expanded(
+                                                        child: TextField(
+                                                          decoration:
+                                                              InputDecoration(
+                                                                border:
+                                                                    InputBorder
+                                                                        .none,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                      Text("%"),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      Column(
+                                        spacing: 4,
+                                        children: [
+                                          Row(
+                                            spacing: 4,
+                                            children: [
+                                              Text(
+                                                "Applies to",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Container(
+                                            width: double.infinity,
+                                            height: 42,
+                                            padding: EdgeInsets.symmetric(
+                                              horizontal: 8,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color: Color.fromRGBO(
+                                                249,
+                                                249,
+                                                251,
+                                                1,
+                                              ),
+                                              borderRadius: BorderRadius.circular(
+                                                4,
+                                              ),
+                                              border: Border.all(
+                                                color: Colors.grey[400]!,
+                                              ),
+                                            ),
+                                            child: DropdownButton(
+                                              isExpanded: true,
+                                              underline: SizedBox.shrink(),
+                                              items: [
+                                                DropdownMenuItem(
+                                                  child: Text("Specific Product"),
+                                                ),
+                                              ],
+                                              onChanged: (v) {},
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Column(
+                                        spacing: 4,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text(
+                                                "Product",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Spacer(),
+                                              Icon(Icons.add, size: 16),
                                               TextButton(
                                                 onPressed: () {},
+                                                child: Text("Add Product"),
                                                 style: TextButton.styleFrom(
                                                   foregroundColor: Colors.black,
-                                                ),
-                                                child: Text(
-                                                  "Generate",
-                                                  style: TextStyle(
-                                                    decoration: TextDecoration
-                                                        .underline,
+                                                  padding: EdgeInsets.zero,
+                                                  textStyle: TextStyle(
+                                                    decoration:
+                                                        TextDecoration.underline,
+                                                    fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
                                               ),
                                             ],
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                    Column(
-                                      spacing: 4,
-                                      children: [
-                                        Row(
-                                          spacing: 4,
-                                          children: [
-                                            Text(
-                                              "Minimum Purchase Requirements",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 42,
-                                          padding: EdgeInsets.symmetric(
-                                            horizontal: 8,
-                                          ),
-                                          decoration: BoxDecoration(
-                                            color: Color.fromRGBO(
-                                              249,
-                                              249,
-                                              251,
-                                              1,
-                                            ),
-                                            borderRadius: BorderRadius.circular(
-                                              4,
-                                            ),
-                                            border: Border.all(
-                                              color: Colors.grey,
-                                            ),
-                                          ),
-                                          child: DropdownButton(
-                                            isExpanded: true,
-                                            underline: SizedBox.shrink(),
-                                            items: [
-                                              DropdownMenuItem(
-                                                child: Text(
-                                                  "No minimum requirements",
-                                                ),
-                                              ),
-                                            ],
-                                            onChanged: (v) {},
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Column(
-                                      spacing: 4,
-                                      children: [
-                                        Row(
-                                          spacing: 4,
-                                          children: [
-                                            Text(
-                                              "Type",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Row(
-                                          spacing: 8,
-                                          children: [
-                                            Expanded(
-                                              child: Container(
+                                          Column(
+                                            children: List.generate(4, (idx) {
+                                              return Container(
                                                 width: double.infinity,
-                                                height: 42,
-                                                padding: EdgeInsets.symmetric(
-                                                  horizontal: 8,
-                                                ),
-                                                decoration: BoxDecoration(
-                                                  color: Color.fromRGBO(
-                                                    249,
-                                                    249,
-                                                    251,
-                                                    1,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(4),
-                                                  border: Border.all(
-                                                    color: Colors.grey[400]!,
-                                                  ),
-                                                ),
-                                                child: DropdownButton(
-                                                  isExpanded: true,
-                                                  underline: SizedBox.shrink(),
-                                                  items: [
-                                                    DropdownMenuItem(
-                                                      child: Text("Percentage"),
-                                                    ),
-                                                  ],
-                                                  onChanged: (v) {},
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Container(
-                                                width: double.infinity,
-                                                height: 42,
-                                                padding: EdgeInsets.symmetric(
-                                                  horizontal: 8,
-                                                ),
+                                                padding: EdgeInsets.all(12),
                                                 decoration: BoxDecoration(
                                                   color: Color.fromRGBO(
                                                     249,
@@ -413,139 +528,26 @@ class _PromotionPageState extends State<PromotionPage> {
                                                 ),
                                                 child: Row(
                                                   children: [
-                                                    Expanded(
-                                                      child: TextField(
-                                                        decoration:
-                                                            InputDecoration(
-                                                              border:
-                                                                  InputBorder
-                                                                      .none,
+                                                    Container(
+                                                      height: 52,
+                                                      width: 52,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey[100]!,
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                              8,
                                                             ),
                                                       ),
                                                     ),
-                                                    Text("%"),
                                                   ],
                                                 ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                    Column(
-                                      spacing: 4,
-                                      children: [
-                                        Row(
-                                          spacing: 4,
-                                          children: [
-                                            Text(
-                                              "Applies to",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 42,
-                                          padding: EdgeInsets.symmetric(
-                                            horizontal: 8,
+                                              );
+                                            }),
                                           ),
-                                          decoration: BoxDecoration(
-                                            color: Color.fromRGBO(
-                                              249,
-                                              249,
-                                              251,
-                                              1,
-                                            ),
-                                            borderRadius: BorderRadius.circular(
-                                              4,
-                                            ),
-                                            border: Border.all(
-                                              color: Colors.grey[400]!,
-                                            ),
-                                          ),
-                                          child: DropdownButton(
-                                            isExpanded: true,
-                                            underline: SizedBox.shrink(),
-                                            items: [
-                                              DropdownMenuItem(
-                                                child: Text("Specific Product"),
-                                              ),
-                                            ],
-                                            onChanged: (v) {},
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Column(
-                                      spacing: 4,
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Text(
-                                              "Product",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                            Spacer(),
-                                            Icon(Icons.add, size: 16),
-                                            TextButton(
-                                              onPressed: () {},
-                                              child: Text("Add Product"),
-                                              style: TextButton.styleFrom(
-                                                foregroundColor: Colors.black,
-                                                padding: EdgeInsets.zero,
-                                                textStyle: TextStyle(
-                                                  decoration:
-                                                      TextDecoration.underline,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Column(
-                                          children: List.generate(4, (idx) {
-                                            return Container(
-                                              width: double.infinity,
-                                              padding: EdgeInsets.all(12),
-                                              decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                  249,
-                                                  249,
-                                                  251,
-                                                  1,
-                                                ),
-                                                borderRadius:
-                                                    BorderRadius.circular(4),
-                                                border: Border.all(
-                                                  color: Colors.grey[400]!,
-                                                ),
-                                              ),
-                                              child: Row(
-                                                children: [
-                                                  Container(
-                                                    height: 52,
-                                                    width: 52,
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.grey[100]!,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                            8,
-                                                          ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            );
-                                          }),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
