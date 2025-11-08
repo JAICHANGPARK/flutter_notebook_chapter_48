@@ -40,9 +40,10 @@ class _BookStartPageState extends State<BookStartPage> {
                 ),
               ),
             ),
-            Text("Learn more in less time"),
+            Text("Learn more in less time", style: TextStyle(fontSize: 28)),
             Text(
               "Enjoy quick insights, simple takeaways, and smarter reading made easy.",
+              style: TextStyle(fontSize: 16),
             ),
             Container(
               decoration: BoxDecoration(color: Colors.black),
