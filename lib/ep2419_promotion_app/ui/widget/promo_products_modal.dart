@@ -12,7 +12,6 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.sizeOf(context).height * 0.88,
-      color: Colors.blue,
       child: Column(
         children: [
           Container(
