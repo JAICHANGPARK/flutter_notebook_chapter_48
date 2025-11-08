@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'promo_product_widget.dart';
+
 class PromoProductsModal extends StatefulWidget {
   const PromoProductsModal({super.key});
 
@@ -87,15 +89,14 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
           ),
-          Expanded(child: ListView.separated(
+          Expanded(
+            child: ListView.separated(
               itemCount: 10,
               itemBuilder: (context, index) {
-
+                return PromoProductWidget();
               },
-            separatorBuilder: (context, _)=> Divider(),
-
-          ),
-
+              separatorBuilder: (context, _) => Divider(),
+            ),
           ),
           Container(
             padding: EdgeInsets.fromLTRB(24, 12, 24, 42),
