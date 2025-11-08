@@ -540,6 +540,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   ),
                                                 ),
                                                 child: Row(
+                                                  spacing: 8,
                                                   children: [
                                                     Container(
                                                       height: 72,
@@ -555,6 +556,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                     ),
                                                     Expanded(
                                                       child: Column(
+                                                        spacing: 4,
                                                         crossAxisAlignment:
                                                             CrossAxisAlignment
                                                                 .start,
@@ -563,6 +565,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                             "Macbook M2 Pro 512GB",
                                                           ),
                                                           Row(
+                                                            spacing: 8,
                                                             children: [
                                                               Text("\$1200"),
                                                               Container(
@@ -574,6 +577,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                                           .grey,
                                                                     ),
                                                               ),
+                                                              Text("Space Grey")
                                                             ],
                                                           ),
                                                         ],
