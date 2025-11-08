@@ -16,11 +16,14 @@ class _BookHomePageState extends State<BookHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.transparent,
-        leadingWidth: 42,
+        // leadingWidth: 42,
         actionsPadding: EdgeInsets.only(right: 16),
-        
-        leading: CircleAvatar(
-          radius: 18,
+
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: CircleAvatar(
+            radius: 18,
+          ),
         ),
         title: Text("BookApp"),
         centerTitle: true,
