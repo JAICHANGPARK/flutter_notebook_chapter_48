@@ -367,7 +367,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   borderRadius:
                                                       BorderRadius.circular(4),
                                                   border: Border.all(
-                                                    color: Colors.grey,
+                                                    color: Colors.grey[400]!,
                                                   ),
                                                 ),
                                                 child: DropdownButton(
@@ -399,7 +399,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                   borderRadius:
                                                       BorderRadius.circular(4),
                                                   border: Border.all(
-                                                    color: Colors.grey,
+                                                    color: Colors.grey[400]!,
                                                   ),
                                                 ),
                                                 child: Row(
@@ -454,7 +454,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                               4,
                                             ),
                                             border: Border.all(
-                                              color: Colors.grey,
+                                              color: Colors.grey[400]!,
                                             ),
                                           ),
                                           child: DropdownButton(
@@ -463,7 +463,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                             items: [
                                               DropdownMenuItem(
                                                 child: Text(
-                                                  "No minimum requirements",
+                                                  "Specific Product",
                                                 ),
                                               ),
                                             ],
