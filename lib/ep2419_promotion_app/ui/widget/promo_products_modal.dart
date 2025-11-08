@@ -50,7 +50,9 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                       color: Colors.white,
                       border: Border.all(color: Colors.grey[300]!),
                       borderRadius: BorderRadius.circular(6),
-                      boxShadow: [BoxShadow(color: Colors.grey)],
+                      boxShadow: [BoxShadow(color: Colors.grey,
+                      blurRadius: 1,
+                      offset: Offset(1, 1))],
                     ),
                     child: TextField(
                       decoration: InputDecoration(
