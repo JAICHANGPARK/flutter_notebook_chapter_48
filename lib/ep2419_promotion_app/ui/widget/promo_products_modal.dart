@@ -34,6 +34,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               ],
             ),
           ),
+          Divider(),
         ],
       ),
     );
