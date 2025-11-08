@@ -81,7 +81,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                         borderRadius: BorderRadius.circular(6),
                         border: Border.all(color: Colors.black),
                       ),
-                      height: 38,
+                      height: 40,
                       child: Center(
                         child: Text(
                           "Cancel",
