@@ -316,7 +316,10 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                             Icon(Icons.add, size: 16),
                             TextButton(
                               onPressed: () {
-                                showModalBottomSheet(context: context, builder: (context){
+                                showModalBottomSheet(
+                                    isScrollControlled: true,
+
+                                    context: context, builder: (context){
                                   return PromoProductsModal();
                                 });
                               },
