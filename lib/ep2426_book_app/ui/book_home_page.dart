@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/book_background_widget.dart';
+
 class BookHomePage extends StatefulWidget {
   const BookHomePage({super.key});
 
@@ -24,8 +26,14 @@ class _BookHomePageState extends State<BookHomePage> {
       body: SafeArea(
         child: Stack(
           children: [Positioned.fill(child: BookBackgroundWidget())],
+
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+      ],),
     );
   }
 }
