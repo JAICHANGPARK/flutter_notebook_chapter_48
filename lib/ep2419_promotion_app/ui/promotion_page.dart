@@ -555,15 +555,27 @@ class _PromotionPageState extends State<PromotionPage> {
                                                     ),
                                                     Expanded(
                                                       child: Column(
-                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
                                                         children: [
-                                                          Text("Macbook M2 Pro 512GB"),
+                                                          Text(
+                                                            "Macbook M2 Pro 512GB",
+                                                          ),
                                                           Row(
                                                             children: [
                                                               Text("\$1200"),
-                                                              
+                                                              Container(
+                                                                height: 12,
+                                                                width: 12,
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                      color: Colors
+                                                                          .grey,
+                                                                    ),
+                                                              ),
                                                             ],
-                                                          )
+                                                          ),
                                                         ],
                                                       ),
                                                     ),
