@@ -66,6 +66,53 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
           ),
           Text("Recommended by AI"),
           Expanded(child: Placeholder()),
+          Container(
+            padding: EdgeInsets.fromLTRB(24, 12, 24, 42),
+            child: Row(
+              spacing: 24,
+              children: [
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(color: Colors.black),
+                      ),
+                      height: 38,
+                      child: Center(
+                        child: Text(
+                          "Cancel",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    height: 38,
+                    decoration: BoxDecoration(
+                      color: Colors.deepOrange,
+                      border: Border.all(color: Colors.grey),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Save",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
 
         ],
       ),
