@@ -36,56 +36,58 @@ class _BookHomePageState extends State<BookHomePage> {
           children: [
             Positioned.fill(child: BookBackgroundWidget()),
             Positioned(
-              child: Column(
-                spacing: 16,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Column(
-                      spacing: 4,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Looking for something inspiring?"),
-                        Text("Explore our library!"),
-                      ],
+              child: SingleChildScrollView(
+                child: Column(
+                  spacing: 16,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        spacing: 4,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Looking for something inspiring?"),
+                          Text("Explore our library!"),
+                        ],
+                      ),
                     ),
-                  ),
-
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Column(
-                      spacing: 14,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Recommended for You'),
-                        Container(height: 240, child: Placeholder()),
-                      ],
+                
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        spacing: 14,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Recommended for You'),
+                          Container(height: 240, child: Placeholder()),
+                        ],
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Column(
-                      spacing: 14,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Stories from the World\'s Best Authors'),
-                        Container(height: 180, child: Placeholder()),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        spacing: 14,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Stories from the World\'s Best Authors'),
+                          Container(height: 180, child: Placeholder()),
+                        ],
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Column(
-                      spacing: 14,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Trending on Books'),
-                        Container(height: 180, child: Placeholder()),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        spacing: 14,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Trending on Books'),
+                          Container(height: 180, child: Placeholder()),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],
