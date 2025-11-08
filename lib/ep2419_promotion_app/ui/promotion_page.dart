@@ -506,7 +506,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                               TextButton(
                                                 onPressed: () {
                                                   showModalBottomSheet(context: context, builder: (context){
-                                                    return Container()
+                                                    return Container();
                                                   });
                                                 },
                                                 style: TextButton.styleFrom(
