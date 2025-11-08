@@ -13,6 +13,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
     return Container(
       height: MediaQuery.sizeOf(context).height * 0.88,
       child: Column(
+        spacing: 12,
         children: [
           Container(
             margin: EdgeInsets.only(top: 12),
@@ -37,6 +38,7 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
           Divider(),
           Container(
             height: 42,
+            margin: EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               spacing: 12,
               children: [
@@ -45,7 +47,13 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                     decoration: BoxDecoration(color: Colors.red),
                   ),
                 ),
-
+                Container(
+                  decoration: BoxDecoration(color: Colors.blue),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.filter_list_outlined),
+                  ),
+                ),
               ],
             ),
           ),
