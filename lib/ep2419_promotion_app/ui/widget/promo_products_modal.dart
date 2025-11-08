@@ -50,9 +50,13 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                       color: Colors.white,
                       border: Border.all(color: Colors.grey[300]!),
                       borderRadius: BorderRadius.circular(6),
-                      boxShadow: [BoxShadow(color: Colors.grey,
-                      blurRadius: 1,
-                      offset: Offset(1, 1))],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 1,
+                          offset: Offset(1, 1),
+                        ),
+                      ],
                     ),
                     child: TextField(
                       decoration: InputDecoration(
@@ -80,10 +84,10 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
             padding: const EdgeInsets.only(left: 16, top: 12),
             child: Text(
               "Recommended by AI",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
           ),
-          Expanded(child: Placeholder()),
+          Expanded(child: ListView.builder(itemBuilder: (context, index) {})),
           Container(
             padding: EdgeInsets.fromLTRB(24, 12, 24, 42),
             child: Row(
