@@ -41,7 +41,11 @@ class _BookHomePageState extends State<BookHomePage> {
             Text("Explore our library!"),
             Column(
               children: [
-                Text('')
+                Text('Recommended for You'),
+                Container(
+                  height: 240,
+                  child: Placeholder(),
+                )
               ],
             )
           ],))
