@@ -483,7 +483,6 @@ class _PromotionPageState extends State<PromotionPage> {
                                       spacing: 4,
                                       children: [
                                         Row(
-                                          spacing: 4,
                                           children: [
                                             Text(
                                               "Product",
@@ -492,10 +491,18 @@ class _PromotionPageState extends State<PromotionPage> {
                                               ),
                                             ),
                                             Spacer(),
-                                            Icon(Icons.add),
-                                            TextButton(onPressed: (){}, child: Text("Add Product",
-                                           ),
-                                                style: TextButton.styleFrom()
+                                            Icon(Icons.add, size: 16),
+                                            TextButton(
+                                              onPressed: () {},
+                                              child: Text("Add Product"),
+                                              style: TextButton.styleFrom(
+                                                foregroundColor: Colors.black,
+                                                textStyle: TextStyle(
+                                                  decoration:
+                                                      TextDecoration.underline,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                             ),
                                           ],
                                         ),
@@ -543,13 +550,17 @@ class _PromotionPageState extends State<PromotionPage> {
                                 children: [
                                   Expanded(
                                     child: GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         Navigator.of(context).pop();
                                       },
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(6),
-                                          border: Border.all(color: Colors.black),
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                          border: Border.all(
+                                            color: Colors.black,
+                                          ),
                                         ),
                                         height: 38,
                                         child: Center(
