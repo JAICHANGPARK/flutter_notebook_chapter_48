@@ -36,10 +36,13 @@ class _BookHomePageState extends State<BookHomePage> {
       body: SafeArea(
         child: Stack(
           children: [Positioned.fill(child: BookBackgroundWidget()),
-          Positioned(child: Column(children: [
+          Positioned(child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
             Text("Looking for something inspiring?"),
             Text("Explore our library!"),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Recommended for You'),
                 Container(
