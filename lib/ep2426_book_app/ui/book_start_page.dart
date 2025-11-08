@@ -53,6 +53,10 @@ class _BookStartPageState extends State<BookStartPage> {
                 ),
               ),
             ),
+            TextButton(
+              onPressed: () {},
+              child: Text("I already have an account"),
+            ),
           ],
         ),
       ),
