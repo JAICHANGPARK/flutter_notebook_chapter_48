@@ -87,7 +87,16 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
           ),
-          Expanded(child: ListView.builder(itemBuilder: (context, index) {})),
+          Expanded(child: ListView.separated(
+              itemCount: 10,
+              itemBuilder: (context, index) {
+
+              },
+            separatorBuilder: (context, _)=> Divider(),
+
+          ),
+
+          ),
           Container(
             padding: EdgeInsets.fromLTRB(24, 12, 24, 42),
             child: Row(
