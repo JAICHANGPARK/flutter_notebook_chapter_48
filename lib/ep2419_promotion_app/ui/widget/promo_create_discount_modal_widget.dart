@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_48/ep2419_promotion_app/ui/widget/active_chip_widget.dart';
 
+import 'promo_products_modal.dart';
+
 
 class PromoCreateDiscountModalWidget extends StatefulWidget {
   const PromoCreateDiscountModalWidget({super.key});
@@ -315,7 +317,7 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                             TextButton(
                               onPressed: () {
                                 showModalBottomSheet(context: context, builder: (context){
-                                  return Container();
+                                  return PromoProductsModal();
                                 });
                               },
                               style: TextButton.styleFrom(
