@@ -62,8 +62,8 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
             ),
           ),
           switch (widget.enableEdit) {
-            true => Icon(Icons.delete_outline, color: Colors.red),
-            false => Checkbox(value: null, onChanged: (bool? value) {}),
+            true => Checkbox(value: null, onChanged: (bool? value) {}),
+            false => Icon(Icons.delete_outline, color: Colors.red),
           },
         ],
       ),
