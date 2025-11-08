@@ -68,14 +68,17 @@ class _BookStartPageState extends State<BookStartPage> {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 16),
-                  padding: EdgeInsets.symmetric(vertical: 16),
-                  decoration: BoxDecoration(color: Colors.black),
-                  child: Center(
-                    child: Text(
-                      "Get Started",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+                GestureDetector(
+                  
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    decoration: BoxDecoration(color: Colors.black),
+                    child: Center(
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
                     ),
                   ),
                 ),
