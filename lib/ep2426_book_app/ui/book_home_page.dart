@@ -74,6 +74,17 @@ class _BookHomePageState extends State<BookHomePage> {
                       ],
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Column(
+                      spacing: 14,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Trending on Books'),
+                        Container(height: 180, child: Placeholder()),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
