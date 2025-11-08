@@ -268,7 +268,13 @@ class _PromotionPageState extends State<PromotionPage> {
                                           ),
                                           child: Row(
                                             children: [
-                                              Expanded(child: TextField()),
+                                              Expanded(
+                                                child: TextField(
+                                                  decoration: InputDecoration(
+                                                    border: InputBorder.none,
+                                                  ),
+                                                ),
+                                              ),
                                               TextButton(
                                                 onPressed: () {},
                                                 child: Text(
@@ -462,9 +468,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                             underline: SizedBox.shrink(),
                                             items: [
                                               DropdownMenuItem(
-                                                child: Text(
-                                                  "Specific Product",
-                                                ),
+                                                child: Text("Specific Product"),
                                               ),
                                             ],
                                             onChanged: (v) {},
