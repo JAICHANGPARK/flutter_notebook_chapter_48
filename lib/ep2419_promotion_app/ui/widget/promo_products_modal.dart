@@ -35,6 +35,20 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
             ),
           ),
           Divider(),
+          Container(
+            height: 42,
+            child: Row(
+              spacing: 12,
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.red),
+                  ),
+                ),
+
+              ],
+            ),
+          ),
         ],
       ),
     );
