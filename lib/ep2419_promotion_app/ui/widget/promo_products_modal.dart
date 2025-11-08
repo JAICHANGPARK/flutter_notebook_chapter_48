@@ -104,8 +104,9 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
           Container(
             padding: EdgeInsets.fromLTRB(24, 12, 24, 42),
             decoration: BoxDecoration(
+              color: Colors.white,
               boxShadow: [
-                BoxShadow(color: Colors.black.withValues(alpha: 0.2),
+                BoxShadow(color: Colors.black.withValues(alpha: 0.1),
                 spreadRadius: 9,
                   blurRadius: 8
                 ),
