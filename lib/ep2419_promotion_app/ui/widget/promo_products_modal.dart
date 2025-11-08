@@ -47,8 +47,8 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.red,
-                      border: Border.all(color: Colors.grey[300]!
-                      ),
+                      border: Border.all(color: Colors.grey[300]!),
+                      borderRadius: BorderRadius.circular(6),
                     ),
                     child: TextField(
                       decoration: InputDecoration(
