@@ -3,15 +3,16 @@ import 'package:flutter_notebook_chapter_48/ep2419_promotion_app/ui/widget/activ
 
 import 'promo_products_modal.dart';
 
-
 class PromoCreateDiscountModalWidget extends StatefulWidget {
   const PromoCreateDiscountModalWidget({super.key});
 
   @override
-  State<PromoCreateDiscountModalWidget> createState() => _PromoCreateDiscountModalWidgetState();
+  State<PromoCreateDiscountModalWidget> createState() =>
+      _PromoCreateDiscountModalWidgetState();
 }
 
-class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModalWidget> {
+class _PromoCreateDiscountModalWidgetState
+    extends State<PromoCreateDiscountModalWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,9 +20,7 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 9,
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 9),
             child: Row(
               children: [
                 IconButton(
@@ -32,9 +31,7 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                 ),
                 Text(
                   "Create Discount",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
             ),
@@ -55,30 +52,17 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                           children: [
                             Text(
                               "Discount Code",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
-                            Icon(
-                              Icons.info_outline,
-                              size: 14,
-                            ),
+                            Icon(Icons.info_outline, size: 14),
                           ],
                         ),
                         Container(
                           height: 42,
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(
-                              249,
-                              249,
-                              251,
-                              1,
-                            ),
-                            borderRadius:
-                            BorderRadius.circular(4),
-                            border: Border.all(
-                              color: Colors.grey[400]!,
-                            ),
+                            color: Color.fromRGBO(249, 249, 251, 1),
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(color: Colors.grey[400]!),
                           ),
                           child: Row(
                             children: [
@@ -92,14 +76,12 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                               TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  foregroundColor:
-                                  Colors.black,
+                                  foregroundColor: Colors.black,
                                 ),
                                 child: Text(
                                   "Generate",
                                   style: TextStyle(
-                                    decoration: TextDecoration
-                                        .underline,
+                                    decoration: TextDecoration.underline,
                                   ),
                                 ),
                               ),
@@ -116,39 +98,25 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                           children: [
                             Text(
                               "Minimum Purchase Requirements",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
                         Container(
                           width: double.infinity,
                           height: 42,
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 8,
-                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(
-                              249,
-                              249,
-                              251,
-                              1,
-                            ),
-                            borderRadius:
-                            BorderRadius.circular(4),
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
+                            color: Color.fromRGBO(249, 249, 251, 1),
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(color: Colors.grey),
                           ),
                           child: DropdownButton(
                             isExpanded: true,
                             underline: SizedBox.shrink(),
                             items: [
                               DropdownMenuItem(
-                                child: Text(
-                                  "No minimum requirements",
-                                ),
+                                child: Text("No minimum requirements"),
                               ),
                             ],
                             onChanged: (v) {},
@@ -164,9 +132,7 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                           children: [
                             Text(
                               "Type",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
@@ -177,34 +143,17 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                               child: Container(
                                 width: double.infinity,
                                 height: 42,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 8,
-                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 8),
                                 decoration: BoxDecoration(
-                                  color: Color.fromRGBO(
-                                    249,
-                                    249,
-                                    251,
-                                    1,
-                                  ),
-                                  borderRadius:
-                                  BorderRadius.circular(
-                                    4,
-                                  ),
-                                  border: Border.all(
-                                    color: Colors.grey[400]!,
-                                  ),
+                                  color: Color.fromRGBO(249, 249, 251, 1),
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(color: Colors.grey[400]!),
                                 ),
                                 child: DropdownButton(
                                   isExpanded: true,
-                                  underline:
-                                  SizedBox.shrink(),
+                                  underline: SizedBox.shrink(),
                                   items: [
-                                    DropdownMenuItem(
-                                      child: Text(
-                                        "Percentage",
-                                      ),
-                                    ),
+                                    DropdownMenuItem(child: Text("Percentage")),
                                   ],
                                   onChanged: (v) {},
                                 ),
@@ -214,33 +163,18 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                               child: Container(
                                 width: double.infinity,
                                 height: 42,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 8,
-                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 8),
                                 decoration: BoxDecoration(
-                                  color: Color.fromRGBO(
-                                    249,
-                                    249,
-                                    251,
-                                    1,
-                                  ),
-                                  borderRadius:
-                                  BorderRadius.circular(
-                                    4,
-                                  ),
-                                  border: Border.all(
-                                    color: Colors.grey[400]!,
-                                  ),
+                                  color: Color.fromRGBO(249, 249, 251, 1),
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(color: Colors.grey[400]!),
                                 ),
                                 child: Row(
                                   children: [
                                     Expanded(
                                       child: TextField(
-                                        decoration:
-                                        InputDecoration(
-                                          border:
-                                          InputBorder
-                                              .none,
+                                        decoration: InputDecoration(
+                                          border: InputBorder.none,
                                         ),
                                       ),
                                     ),
@@ -261,40 +195,24 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                           children: [
                             Text(
                               "Applies to",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
                         Container(
                           width: double.infinity,
                           height: 42,
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 8,
-                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(
-                              249,
-                              249,
-                              251,
-                              1,
-                            ),
-                            borderRadius:
-                            BorderRadius.circular(4),
-                            border: Border.all(
-                              color: Colors.grey[400]!,
-                            ),
+                            color: Color.fromRGBO(249, 249, 251, 1),
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(color: Colors.grey[400]!),
                           ),
                           child: DropdownButton(
                             isExpanded: true,
                             underline: SizedBox.shrink(),
                             items: [
-                              DropdownMenuItem(
-                                child: Text(
-                                  "Specific Product",
-                                ),
-                              ),
+                              DropdownMenuItem(child: Text("Specific Product")),
                             ],
                             onChanged: (v) {},
                           ),
@@ -308,27 +226,27 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                           children: [
                             Text(
                               "Product",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Icon(Icons.add, size: 16),
                             TextButton(
                               onPressed: () {
                                 showModalBottomSheet(
-                                    isScrollControlled: true,
+                                  isScrollControlled: true,
+                                  backgroundColor: Colors.white,
 
-                                    context: context, builder: (context){
-                                  return PromoProductsModal();
-                                });
+                                  context: context,
+                                  builder: (context) {
+                                    return PromoProductsModal();
+                                  },
+                                );
                               },
                               style: TextButton.styleFrom(
                                 foregroundColor: Colors.black,
                                 padding: EdgeInsets.zero,
                                 textStyle: TextStyle(
-                                  decoration: TextDecoration
-                                      .underline,
+                                  decoration: TextDecoration.underline,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -341,9 +259,7 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                             return Container(
                               width: double.infinity,
                               padding: EdgeInsets.all(12),
-                              margin: EdgeInsets.only(
-                                bottom: 8,
-                              ),
+                              margin: EdgeInsets.only(bottom: 8),
                               decoration: BoxDecoration(
                                 // color: Color.fromRGBO(
                                 //   249,
@@ -351,11 +267,8 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                                 //   251,
                                 //   1,
                                 // ),
-                                borderRadius:
-                                BorderRadius.circular(4),
-                                border: Border.all(
-                                  color: Colors.grey[400]!,
-                                ),
+                                borderRadius: BorderRadius.circular(4),
+                                border: Border.all(color: Colors.grey[400]!),
                               ),
                               child: Row(
                                 spacing: 8,
@@ -364,25 +277,18 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                                     height: 72,
                                     width: 72,
                                     decoration: BoxDecoration(
-                                      color:
-                                      Colors.grey[100]!,
-                                      borderRadius:
-                                      BorderRadius.circular(
-                                        8,
-                                      ),
+                                      color: Colors.grey[100]!,
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
                                   ),
                                   Expanded(
                                     child: Column(
                                       spacing: 4,
                                       crossAxisAlignment:
-                                      CrossAxisAlignment
-                                          .start,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         ActiveChipWidget(),
-                                        Text(
-                                          "Macbook M2 Pro 512GB",
-                                        ),
+                                        Text("Macbook M2 Pro 512GB"),
                                         Row(
                                           spacing: 8,
                                           children: [
@@ -390,23 +296,18 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                                             Container(
                                               height: 12,
                                               width: 12,
-                                              decoration:
-                                              BoxDecoration(
-                                                color: Colors
-                                                    .grey,
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey,
                                               ),
                                             ),
                                             Text("Space Grey"),
-                                            Text("1234 stocks")
+                                            Text("1234 stocks"),
                                           ],
                                         ),
                                       ],
                                     ),
                                   ),
-                                  Icon(
-                                    Icons.delete_outline,
-                                    color: Colors.red,
-                                  ),
+                                  Icon(Icons.delete_outline, color: Colors.red),
                                 ],
                               ),
                             );
@@ -431,20 +332,14 @@ class _PromoCreateDiscountModalWidgetState extends State<PromoCreateDiscountModa
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(
-                          6,
-                        ),
-                        border: Border.all(
-                          color: Colors.black,
-                        ),
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(color: Colors.black),
                       ),
                       height: 38,
                       child: Center(
                         child: Text(
                           "Cancel",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
