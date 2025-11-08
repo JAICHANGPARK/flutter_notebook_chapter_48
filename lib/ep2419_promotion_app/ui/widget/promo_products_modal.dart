@@ -64,7 +64,9 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
               ],
             ),
           ),
-          Text("Recommended by AI")
+          Text("Recommended by AI"),
+          Expanded(child: Placeholder()),
+
         ],
       ),
     );
