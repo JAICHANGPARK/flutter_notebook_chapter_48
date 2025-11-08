@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class BookBasePage extends StatefulWidget {
-  Widget child;
-  const BookBasePage({super.key ,this.child,});
+  final Widget child;
+
+  const BookBasePage({super.key, required this.child});
 
   @override
   State<BookBasePage> createState() => _BookBasePageState();
@@ -30,7 +31,7 @@ class _BookBasePageState extends State<BookBasePage> {
               ),
             ),
           ),
-
+          widget.child,
         ],
       ),
     );
