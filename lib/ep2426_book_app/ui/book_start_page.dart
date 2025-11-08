@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BookStartPage extends StatefulWidget {
   const BookStartPage({super.key});
 
@@ -16,33 +15,44 @@ class _BookStartPageState extends State<BookStartPage> {
         child: Column(
           spacing: 16,
           children: [
-            SizedBox(height: 16,),
+            SizedBox(height: 16),
             Container(
               height: 220,
               child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
+                scrollDirection: Axis.horizontal,
 
-                  itemBuilder: (context,index)=> Container(
-                    width: 160,
-                    margin: EdgeInsets.only(
-                      right: 16
-                    ),
-                    child: Placeholder(),)),
+                itemBuilder: (context, index) => Container(
+                  width: 160,
+                  margin: EdgeInsets.only(right: 16),
+                  child: Placeholder(),
+                ),
+              ),
             ),
             Container(
               height: 220,
               child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
+                scrollDirection: Axis.horizontal,
 
-                  itemBuilder: (context,index)=> Container(
-                    width: 160,
-                    margin: EdgeInsets.only(
-                        right: 16
-                    ),
-                    child: Placeholder(),)),
+                itemBuilder: (context, index) => Container(
+                  width: 160,
+                  margin: EdgeInsets.only(right: 16),
+                  child: Placeholder(),
+                ),
+              ),
             ),
             Text("Learn more in less time"),
-            Text("Enjoy ")
+            Text(
+              "Enjoy quick insights, simple takeaways, and smarter reading made easy.",
+            ),
+            Container(
+              decoration: BoxDecoration(color: Colors.black),
+              child: Center(
+                child: Text(
+                  "Get Started",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
           ],
         ),
       ),
