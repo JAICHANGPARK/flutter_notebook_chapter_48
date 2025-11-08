@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PromoProductsModal extends StatefulWidget {
   const PromoProductsModal({super.key});
 
@@ -11,6 +10,27 @@ class PromoProductsModal extends StatefulWidget {
 class _PromoProductsModalState extends State<PromoProductsModal> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      height: MediaQuery.sizeOf(context).height * 0.88,
+      color: Colors.blue,
+      child: Column(
+        children: [
+          SizedBox(
+            height: 42,
+            width: double.infinity,
+            child: Stack(
+              children: [
+                Text("Add Product to Discount"),
+                Positioned(
+                  right: 8,
+
+                  child: IconButton(onPressed: () {}, icon: Icon(Icons.clear)),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
