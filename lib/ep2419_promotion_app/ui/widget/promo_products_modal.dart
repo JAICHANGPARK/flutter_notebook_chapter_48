@@ -47,8 +47,10 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
                   child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
+                      color: Colors.white,
                       border: Border.all(color: Colors.grey[300]!),
                       borderRadius: BorderRadius.circular(6),
+                      boxShadow: [BoxShadow(color: Colors.grey)],
                     ),
                     child: TextField(
                       decoration: InputDecoration(
