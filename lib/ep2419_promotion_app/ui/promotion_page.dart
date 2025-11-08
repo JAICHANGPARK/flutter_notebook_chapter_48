@@ -263,7 +263,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                               4,
                                             ),
                                             border: Border.all(
-                                              color: Colors.grey,
+                                              color: Colors.grey[400]!,
                                             ),
                                           ),
                                           child: Row(
