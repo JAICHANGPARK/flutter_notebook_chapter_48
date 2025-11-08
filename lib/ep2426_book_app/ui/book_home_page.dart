@@ -11,7 +11,7 @@ class _BookHomePageState extends State<BookHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
       appBar: AppBar(
         leading: CircleAvatar(),
         title: Text("BookApp"),
@@ -22,7 +22,7 @@ class _BookHomePageState extends State<BookHomePage> {
           ),
         ],
       ),
-      body: SafeArea(child: Column(children: [])),
+      body: SafeArea(child: Stack(children: [])),
     );
   }
 }
