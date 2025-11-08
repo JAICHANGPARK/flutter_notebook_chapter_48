@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'active_chip_widget.dart';
 
-
 class PromoProductWidget extends StatefulWidget {
-  const PromoProductWidget({super.key});
+  final bool enableEdit;
+
+  const PromoProductWidget({super.key, this.enableEdit = false});
 
   @override
   State<PromoProductWidget> createState() => _PromoProductWidgetState();
@@ -41,8 +42,7 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
           Expanded(
             child: Column(
               spacing: 4,
-              crossAxisAlignment:
-              CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ActiveChipWidget(),
                 Text("Macbook M2 Pro 512GB"),
@@ -53,9 +53,7 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
                     Container(
                       height: 12,
                       width: 12,
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                      decoration: BoxDecoration(color: Colors.grey),
                     ),
                     Text("Space Grey"),
                     Text("1234 stocks"),
