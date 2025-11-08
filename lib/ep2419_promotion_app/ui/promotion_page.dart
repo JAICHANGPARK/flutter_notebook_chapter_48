@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widget/active_chip_widget.dart';
+
 class PromotionPage extends StatefulWidget {
   const PromotionPage({super.key});
 
@@ -146,36 +148,7 @@ class _PromotionPageState extends State<PromotionPage> {
                             ],
                           ),
                         ),
-                        Container(
-                          decoration: ShapeDecoration(
-                            shape: StadiumBorder(),
-                            color: Color.fromRGBO(212, 253, 212, 1),
-                          ),
-                          padding: EdgeInsets.only(
-                            left: 3,
-                            right: 6,
-                            bottom: 4,
-                            top: 4,
-                          ),
-                          child: Row(
-                            spacing: 5,
-                            children: [
-                              Icon(
-                                Icons.check_circle,
-                                color: Colors.green,
-                                size: 15,
-                              ),
-                              Text(
-                                "Active",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  color: Color.fromRGBO(47, 140, 64, 1),
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                        ActiveChipWidget(),
                       ],
                     );
                   },
