@@ -1,6 +1,7 @@
 # flutter_notebook_chapter_48
 
-## EP2419
+
+## EP2419-2425
 
 - Ecomiq — Create and Manage Discounts for Mobile E-commerce
 - Bagus Fikri for Fikri Studio
