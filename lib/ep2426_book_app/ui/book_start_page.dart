@@ -18,7 +18,15 @@ class _BookStartPageState extends State<BookStartPage> {
           children: [
             Container(
               height: 180,
-              child: ListView.builder(itemBuilder: (context,index)=> Container(child: Placeholder(),)),
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+
+                  itemBuilder: (context,index)=> Container(
+                    width: 120,
+                    margin: EdgeInsets.only(
+                      right: 16
+                    ),
+                    child: Placeholder(),)),
             ),
             Container(
               height: 180,
