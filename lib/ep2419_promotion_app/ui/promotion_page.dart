@@ -348,38 +348,70 @@ class _PromotionPageState extends State<PromotionPage> {
                                           ],
                                         ),
                                         Row(
+                                          spacing: 8,
                                           children: [
-                                            Container(
-                                              width: double.infinity,
-                                              height: 42,
-                                              padding: EdgeInsets.symmetric(
-                                                horizontal: 8,
-                                              ),
-                                              decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                  249,
-                                                  249,
-                                                  251,
-                                                  1,
+                                            Expanded(
+                                              child: Container(
+                                                width: double.infinity,
+                                                height: 42,
+                                                padding: EdgeInsets.symmetric(
+                                                  horizontal: 8,
                                                 ),
-                                                borderRadius: BorderRadius.circular(
-                                                  4,
-                                                ),
-                                                border: Border.all(
-                                                  color: Colors.grey,
-                                                ),
-                                              ),
-                                              child: DropdownButton(
-                                                isExpanded: true,
-                                                underline: SizedBox.shrink(),
-                                                items: [
-                                                  DropdownMenuItem(
-                                                    child: Text(
-                                                      "No minimum requirements",
-                                                    ),
+                                                decoration: BoxDecoration(
+                                                  color: Color.fromRGBO(
+                                                    249,
+                                                    249,
+                                                    251,
+                                                    1,
                                                   ),
-                                                ],
-                                                onChanged: (v) {},
+                                                  borderRadius: BorderRadius.circular(
+                                                    4,
+                                                  ),
+                                                  border: Border.all(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                child: DropdownButton(
+                                                  isExpanded: true,
+                                                  underline: SizedBox.shrink(),
+                                                  items: [
+                                                    DropdownMenuItem(
+                                                      child: Text(
+                                                        "Percentage",
+                                                      ),
+                                                    ),
+                                                  ],
+                                                  onChanged: (v) {},
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                width: double.infinity,
+                                                height: 42,
+                                                padding: EdgeInsets.symmetric(
+                                                  horizontal: 8,
+                                                ),
+                                                decoration: BoxDecoration(
+                                                  color: Color.fromRGBO(
+                                                    249,
+                                                    249,
+                                                    251,
+                                                    1,
+                                                  ),
+                                                  borderRadius: BorderRadius.circular(
+                                                    4,
+                                                  ),
+                                                  border: Border.all(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                child:Row(
+                                                  children: [
+                                                    Expanded(child: TextField()),
+                                                    Text("%")
+                                                  ],
+                                                )
                                               ),
                                             ),
                                           ],
