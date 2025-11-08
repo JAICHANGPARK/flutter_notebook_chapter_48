@@ -15,13 +15,13 @@ class _BookStartPageState extends State<BookStartPage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(gradient: LinearGradient(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: [
-                Color.fromRGBO(254, 247, 236, 1),
-                Colors.white
-              ])),
+                  colors: [Color.fromRGBO(254, 247, 236, 1), Colors.white],
+                ),
+              ),
             ),
           ),
           SafeArea(
@@ -77,6 +77,7 @@ class _BookStartPageState extends State<BookStartPage> {
                 TextButton(
                   onPressed: () {},
                   child: Text("I already have an account"),
+                  style: TextButton.styleFrom(foregroundColor: Colors.black),
                 ),
               ],
             ),
