@@ -39,19 +39,26 @@ class _BookHomePageState extends State<BookHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    children: [
-                      Text("Looking for something inspiring?"),
-                      Text("Explore our library!"),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Looking for something inspiring?"),
+                        Text("Explore our library!"),
+                      ],
+                    ),
                   ),
 
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Recommended for You'),
-                      Container(height: 240, child: Placeholder()),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Recommended for You'),
+                        Container(height: 240, child: Placeholder()),
+                      ],
+                    ),
                   ),
                 ],
               ),
