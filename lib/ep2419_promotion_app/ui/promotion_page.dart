@@ -495,7 +495,6 @@ class _PromotionPageState extends State<PromotionPage> {
                                               Icon(Icons.add, size: 16),
                                               TextButton(
                                                 onPressed: () {},
-                                                child: Text("Add Product"),
                                                 style: TextButton.styleFrom(
                                                   foregroundColor: Colors.black,
                                                   padding: EdgeInsets.zero,
@@ -505,6 +504,7 @@ class _PromotionPageState extends State<PromotionPage> {
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
+                                                child: Text("Add Product"),
                                               ),
                                             ],
                                           ),
