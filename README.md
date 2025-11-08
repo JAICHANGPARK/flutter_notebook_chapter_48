@@ -3,7 +3,7 @@
 ## EP2426
 
 - Litex - Reading Book App
-- Bagus Fikri for Fikri Studio
+- Nija Design for Nija Works
 - https://dribbble.com/shots/26681488-Ecomiq-Create-and-Manage-Discounts-for-Mobile-E-commerce
 
 <img src="https://cdn.dribbble.com/userupload/45413143/file/1f4171bef76972fb3e581bb87d53ce5a.png?resize=1905x1429&vertical=center" alt="">
