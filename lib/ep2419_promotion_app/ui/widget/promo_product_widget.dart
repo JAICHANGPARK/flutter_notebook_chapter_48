@@ -65,9 +65,7 @@ class _PromoProductWidgetState extends State<PromoProductWidget> {
             true => SizedBox(
               height: 32,
               width: 32,
-              child: Checkbox(
-
-                  value: false, onChanged: (bool? value) {}),
+              child: Checkbox(value: false, onChanged: (bool? value) {}),
             ),
             false => Icon(Icons.delete_outline, color: Colors.red),
           },
