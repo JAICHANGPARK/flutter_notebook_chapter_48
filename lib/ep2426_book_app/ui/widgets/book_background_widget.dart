@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BookBackgroundWidget extends StatelessWidget {
   const BookBackgroundWidget({super.key});
 
