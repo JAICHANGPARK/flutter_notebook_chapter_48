@@ -17,9 +17,7 @@ class _BookBasePageState extends State<BookBasePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(
-            child: BookBackgroundWidget(),
-          ),
+          Positioned.fill(child: BookBackgroundWidget()),
           widget.child,
         ],
       ),
