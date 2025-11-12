@@ -12,7 +12,7 @@ class PromoProductsModal extends StatefulWidget {
 class _PromoProductsModalState extends State<PromoProductsModal> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: MediaQuery.sizeOf(context).height * 0.88,
       child: Column(
         spacing: 12,
@@ -106,11 +106,11 @@ class _PromoProductsModalState extends State<PromoProductsModal> {
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
-                BoxShadow(color: Colors.black.withValues(alpha: 0.1),
-                spreadRadius: 9,
-                  blurRadius: 8
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.1),
+                  spreadRadius: 9,
+                  blurRadius: 8,
                 ),
-
               ],
             ),
             child: Row(
