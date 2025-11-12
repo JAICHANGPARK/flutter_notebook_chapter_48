@@ -55,9 +55,9 @@ class _BookStartPageState extends State<BookStartPage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => BookHomePage()),
-                );
+                Navigator.of(
+                  context,
+                ).push(MaterialPageRoute(builder: (context) => BookHomePage()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 16),
@@ -83,6 +83,5 @@ class _BookStartPageState extends State<BookStartPage> {
         ),
       ),
     );
-
   }
 }
