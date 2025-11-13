@@ -16,7 +16,6 @@ class _BookHomePageState extends State<BookHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.transparent,
-        // leadingWidth: 42,
         actionsPadding: EdgeInsets.only(right: 16),
 
         leading: Padding(
