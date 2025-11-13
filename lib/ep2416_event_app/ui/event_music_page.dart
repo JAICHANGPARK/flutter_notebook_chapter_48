@@ -71,11 +71,13 @@ class _EventMusicPageState extends State<EventMusicPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Text("Male",
+                            Text(
+                              "Male",
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontWeight: FontWeight.bold,
-                              ),),
+                              ),
+                            ),
                             Row(
                               spacing: 16,
                               children: [
