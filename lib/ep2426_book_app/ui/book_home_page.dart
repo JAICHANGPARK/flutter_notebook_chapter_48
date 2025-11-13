@@ -17,7 +17,6 @@ class _BookHomePageState extends State<BookHomePage> {
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.transparent,
         actionsPadding: EdgeInsets.only(right: 16),
-
         leading: Padding(
           padding: const EdgeInsets.only(left: 16),
           child: CircleAvatar(radius: 18),
