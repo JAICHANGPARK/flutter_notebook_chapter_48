@@ -76,7 +76,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 spacing: 12,
                 children: [
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.of(context).pop();
                     },
                     child: CircleAvatar(
