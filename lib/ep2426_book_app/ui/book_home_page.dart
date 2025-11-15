@@ -25,7 +25,7 @@ class _BookHomePageState extends State<BookHomePage> {
         centerTitle: true,
         actions: [
           CircleAvatar(
-            child: Badge(child: Icon(Icons.notifications_active_outlined)),
+            child: Badge(child: Icon(Icons.notifications_active_outlined),),
           ),
         ],
       ),
