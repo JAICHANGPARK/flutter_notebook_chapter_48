@@ -58,7 +58,10 @@ class _BookHomePageState extends State<BookHomePage> {
                         children: [
                           Text(
                             'Recommended for You',
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                           Container(height: 240, child: Placeholder()),
                         ],
