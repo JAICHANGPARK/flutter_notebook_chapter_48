@@ -107,7 +107,11 @@ class _BookHomePageState extends State<BookHomePage> {
                         spacing: 14,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Stories from the World\'s Best Authors'),
+                          Text('Stories from the World\'s Best Authors',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),),
                           Container(height: 180, child: Placeholder()),
                         ],
                       ),
