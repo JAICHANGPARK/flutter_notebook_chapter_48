@@ -45,10 +45,14 @@ class _BookHomePageState extends State<BookHomePage> {
                         spacing: 4,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Looking for something inspiring?",style: TextStyle(
-                            fontSize: 18
-                          ),),
-                          Text("Explore our library!"),
+                          Text(
+                            "Looking for something inspiring?",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Text(
+                            "Explore our library!",
+                            style: TextStyle(fontSize: 18),
+                          ),
                         ],
                       ),
                     ),
