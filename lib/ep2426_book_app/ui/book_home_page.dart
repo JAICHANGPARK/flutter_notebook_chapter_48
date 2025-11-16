@@ -170,15 +170,19 @@ class _BookHomePageState extends State<BookHomePage> {
                             height: 180,
                             child: ListView.builder(
                               itemBuilder: (context, index) {
-                                return Row(
-                                  children: [
-                                    Container(
-                                      height: 120,
-                                      width: 140,
-                                      child: Placeholder(),
-                                    ),
-                                    Expanded(child: Text("The Fast 20 Hours: How to Learn Anything..."))
-                                  ],
+                                return Padding(
+                                  padding: const EdgeInsets.only(bottom: 16),
+                                  child: Row(
+                                    spacing: 12,
+                                    children: [
+                                      Container(
+                                        height: 120,
+                                        width: 140,
+                                        child: Placeholder(),
+                                      ),
+                                      Expanded(child: Text("The Fast 20 Hours: How to Learn Anything..."))
+                                    ],
+                                  ),
                                 );
                               },
                             ),
