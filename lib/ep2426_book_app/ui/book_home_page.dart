@@ -144,6 +144,7 @@ class _BookHomePageState extends State<BookHomePage> {
                                           ),
                                         ),
                                       ),
+                                      Text("Dream Walker")
                                     ],
                                   ),
                                 );
