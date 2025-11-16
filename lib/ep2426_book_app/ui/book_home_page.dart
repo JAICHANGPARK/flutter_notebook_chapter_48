@@ -26,6 +26,7 @@ class _BookHomePageState extends State<BookHomePage> {
         actions: [
           CircleAvatar(
             backgroundColor: Colors.grey[200],
+            foregroundColor: Colors.black,
             child: Badge(child: Icon(Icons.notifications_active_outlined)),
           ),
         ],
