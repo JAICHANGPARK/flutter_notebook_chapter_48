@@ -73,7 +73,11 @@ class _BookHomePageState extends State<BookHomePage> {
                                   margin: EdgeInsets.only(right: 12),
                                   width: 160,
                                   decoration: BoxDecoration(
-                                    
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2022/12/16/16/28/flowers-7660120_1280.jpg",
+                                      ),
+                                    ),
                                   ),
                                 );
                               },
