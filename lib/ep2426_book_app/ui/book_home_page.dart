@@ -194,7 +194,7 @@ class _BookHomePageState extends State<BookHomePage> {
                                       ),
                                       Expanded(child: Text("The Fast 20 Hours: How to Learn Anything...",
                                       style: TextStyle(
-                                        fontSize: 24,
+                                        fontSize: 22,
                                       ),))
                                     ],
                                   ),
