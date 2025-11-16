@@ -64,13 +64,14 @@ class _BookHomePageState extends State<BookHomePage> {
                             ),
                           ),
                           Container(
-                            height: 240,
+                            height: 220,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 140,
+                                  margin: EdgeInsets.only(right: 12),
+                                  width: 160,
                                   child: Placeholder(),
                                 );
                               },
