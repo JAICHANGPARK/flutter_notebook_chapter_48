@@ -125,26 +125,29 @@ class _BookHomePageState extends State<BookHomePage> {
                                   width: 150,
                                   padding: EdgeInsets.all(3),
                                   child: Column(
+                                    spacing: 6,
                                     children: [
                                       Expanded(
                                         child: Container(
 
                                           decoration: BoxDecoration(
                                             border: Border.all(
-                                              color: Colors.grey[400]!,
-                                              width: 2,
+                                              // color: Colors.grey[400]!,
+                                              // width: 2,
                                             ),
                                             borderRadius: BorderRadius.circular(4),
                                             image: DecorationImage(
                                               image: NetworkImage(
-                                                "https://cdn.pixabay.com/photo/2023/10/05/11/57/book-8295812_1280.jpg",
+                                                "https://cdn.pixabay.com/photo/2021/11/10/18/21/woman-6784555_1280.jpg",
                                               ),
                                               fit: BoxFit.cover,
                                             ),
                                           ),
                                         ),
                                       ),
-                                      Text("Dream Walker")
+                                      Text("Dream Walker",style: TextStyle(
+                                        fontSize: 15,
+                                      ),)
                                     ],
                                   ),
                                 );
