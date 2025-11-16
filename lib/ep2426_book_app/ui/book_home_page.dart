@@ -66,7 +66,13 @@ class _BookHomePageState extends State<BookHomePage> {
                           Container(
                             height: 240,
                             child: ListView.builder(
-                              itemBuilder: (context, index) {},
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  
+                                );
+                              },
                             ),
                           ),
                         ],
