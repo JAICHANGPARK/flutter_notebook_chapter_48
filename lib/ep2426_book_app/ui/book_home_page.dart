@@ -107,12 +107,49 @@ class _BookHomePageState extends State<BookHomePage> {
                         spacing: 14,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Stories from the World\'s Best Authors',
+                          Text(
+                            'Stories from the World\'s Best Authors',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-                            ),),
-                          Container(height: 180, child: Placeholder()),
+                            ),
+                          ),
+                          Container(
+                            height: 180,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin: EdgeInsets.only(right: 12),
+                                  width: 150,
+                                  padding: EdgeInsets.all(3),
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.grey[400]!,
+                                              width: 2,
+                                            ),
+                                            borderRadius: BorderRadius.circular(4),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2023/10/05/11/57/book-8295812_1280.jpg",
+                                              ),
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
                         ],
                       ),
                     ),
