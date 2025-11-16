@@ -129,9 +129,7 @@ class _BookHomePageState extends State<BookHomePage> {
                                     children: [
                                       Expanded(
                                         child: Container(
-
                                           decoration: BoxDecoration(
-
                                             // borderRadius: BorderRadius.circular(4),
                                             image: DecorationImage(
                                               image: NetworkImage(
@@ -142,9 +140,10 @@ class _BookHomePageState extends State<BookHomePage> {
                                           ),
                                         ),
                                       ),
-                                      Text("Dream Walker",style: TextStyle(
-                                        fontSize: 15,
-                                      ),)
+                                      Text(
+                                        "Dream Walker",
+                                        style: TextStyle(fontSize: 15),
+                                      ),
                                     ],
                                   ),
                                 );
@@ -160,12 +159,29 @@ class _BookHomePageState extends State<BookHomePage> {
                         spacing: 14,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Trending on Books',
+                          Text(
+                            'Trending on Books',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-                            ),),
-                          Container(height: 180, child: Placeholder()),
+                            ),
+                          ),
+                          Container(
+                            height: 180,
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Row(
+                                  children: [
+                                    Container(
+                                      height: 120,
+                                      width: 140,
+                                      child: Placeholder(),
+                                    )
+                                  ],
+                                );
+                              },
+                            ),
+                          ),
                         ],
                       ),
                     ),
