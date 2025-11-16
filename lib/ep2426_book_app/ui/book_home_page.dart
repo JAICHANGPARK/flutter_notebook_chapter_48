@@ -70,7 +70,8 @@ class _BookHomePageState extends State<BookHomePage> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  
+                                  width: 140,
+                                  child: Placeholder(),
                                 );
                               },
                             ),
