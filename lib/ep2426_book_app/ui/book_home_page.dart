@@ -72,6 +72,7 @@ class _BookHomePageState extends State<BookHomePage> {
                                 return Container(
                                   margin: EdgeInsets.only(right: 12),
                                   width: 160,
+                                  padding: EdgeInsets.all(3),
                                   decoration: BoxDecoration(
                                     border: Border.all(
                                       color: Colors.grey[400]!,
