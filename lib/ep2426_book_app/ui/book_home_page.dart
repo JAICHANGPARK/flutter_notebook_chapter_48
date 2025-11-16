@@ -178,9 +178,24 @@ class _BookHomePageState extends State<BookHomePage> {
                                       Container(
                                         height: 120,
                                         width: 140,
-                                        child: Placeholder(),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.grey[400]!,
+                                            width: 2,
+                                          ),
+                                          borderRadius: BorderRadius.circular(4),
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2022/12/16/16/28/flowers-7660120_1280.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
                                       ),
-                                      Expanded(child: Text("The Fast 20 Hours: How to Learn Anything..."))
+                                      Expanded(child: Text("The Fast 20 Hours: How to Learn Anything...",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                      ),))
                                     ],
                                   ),
                                 );
