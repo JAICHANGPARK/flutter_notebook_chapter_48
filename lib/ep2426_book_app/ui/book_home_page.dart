@@ -122,7 +122,7 @@ class _BookHomePageState extends State<BookHomePage> {
                               itemBuilder: (context, index) {
                                 return Container(
                                   margin: EdgeInsets.only(right: 12),
-                                  width: 120,
+                                  width: 130,
                                   padding: EdgeInsets.all(3),
                                   child: Column(
                                     spacing: 6,
@@ -160,7 +160,11 @@ class _BookHomePageState extends State<BookHomePage> {
                         spacing: 14,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Trending on Books'),
+                          Text('Trending on Books',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),),
                           Container(height: 180, child: Placeholder()),
                         ],
                       ),
