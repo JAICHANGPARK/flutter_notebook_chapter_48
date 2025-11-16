@@ -176,7 +176,8 @@ class _BookHomePageState extends State<BookHomePage> {
                                       height: 120,
                                       width: 140,
                                       child: Placeholder(),
-                                    )
+                                    ),
+                                    Expanded(child: Text("The Fast 20 Hours: How to Learn Anything..."))
                                   ],
                                 );
                               },
