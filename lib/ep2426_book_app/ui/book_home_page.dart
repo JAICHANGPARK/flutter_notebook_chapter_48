@@ -25,7 +25,7 @@ class _BookHomePageState extends State<BookHomePage> {
         centerTitle: true,
         actions: [
           CircleAvatar(
-            child: Badge(child: Icon(Icons.notifications_active_outlined),),
+            child: Badge(child: Icon(Icons.notifications_active_outlined)),
           ),
         ],
       ),
@@ -56,7 +56,10 @@ class _BookHomePageState extends State<BookHomePage> {
                         spacing: 14,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Recommended for You'),
+                          Text(
+                            'Recommended for You',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
                           Container(height: 240, child: Placeholder()),
                         ],
                       ),
