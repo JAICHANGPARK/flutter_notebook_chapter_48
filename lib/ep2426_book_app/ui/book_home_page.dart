@@ -131,11 +131,8 @@ class _BookHomePageState extends State<BookHomePage> {
                                         child: Container(
 
                                           decoration: BoxDecoration(
-                                            border: Border.all(
-                                              // color: Colors.grey[400]!,
-                                              // width: 2,
-                                            ),
-                                            borderRadius: BorderRadius.circular(4),
+
+                                            // borderRadius: BorderRadius.circular(4),
                                             image: DecorationImage(
                                               image: NetworkImage(
                                                 "https://cdn.pixabay.com/photo/2021/11/10/18/21/woman-6784555_1280.jpg",
