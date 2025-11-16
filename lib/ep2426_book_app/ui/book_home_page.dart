@@ -63,7 +63,12 @@ class _BookHomePageState extends State<BookHomePage> {
                               fontSize: 16,
                             ),
                           ),
-                          Container(height: 240, child: Placeholder()),
+                          Container(
+                            height: 240,
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {},
+                            ),
+                          ),
                         ],
                       ),
                     ),
