@@ -9,13 +9,14 @@ class BarberMainPage extends StatefulWidget {
 }
 
 class _BarberMainPageState extends State<BarberMainPage> {
+  int pageNum = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           Positioned.fill(child: IndexedStack(
-            index: 0,
+            index: pageNum,
             children: [
               Placeholder(),
               Placeholder(),
