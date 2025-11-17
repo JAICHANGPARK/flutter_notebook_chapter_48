@@ -33,7 +33,12 @@ class _BarberMainPageState extends State<BarberMainPage> {
                 shape: StadiumBorder(),
                 color: Colors.black,
               ),
-              child: Row(children: []),
+              child: Row(children: [
+                CircleAvatar(),
+                CircleAvatar(),
+                CircleAvatar(),
+                CircleAvatar(),
+              ]),
             ),
           ),
         ],
