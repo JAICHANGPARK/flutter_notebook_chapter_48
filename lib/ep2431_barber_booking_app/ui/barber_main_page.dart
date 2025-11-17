@@ -10,6 +10,7 @@ class BarberMainPage extends StatefulWidget {
 
 class _BarberMainPageState extends State<BarberMainPage> {
   int pageNum = 0;
+  Color accentColor = Color.fromRGBO(109, 234, 237, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +48,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: pageNum == 1 ? Colors.white10,
+                      backgroundColor: pageNum == 1 ? accentColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
                     ),
