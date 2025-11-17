@@ -14,8 +14,14 @@ class _BarberMainPageState extends State<BarberMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(child: Column(
-            children: [],
+          Positioned.fill(child: IndexedStack(
+            index: 0,
+            children: [
+              Placeholder(),
+              Placeholder(),
+              Placeholder(),
+              Placeholder(),
+            ],
           )),
           Align(child: Container())
         ],
