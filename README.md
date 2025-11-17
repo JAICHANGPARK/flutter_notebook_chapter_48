@@ -2,7 +2,7 @@
 
 ## EP2431
 
-- Litex - Reading Book App
+- Barber & Salon Booking App UI
 - Nija Design for Nija Works
 - https://dribbble.com/shots/26742927-Litex-Reading-Book-App
 
