@@ -41,35 +41,56 @@ class _BarberMainPageState extends State<BarberMainPage> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CircleAvatar(
-                      radius: 32,
-                      backgroundColor: pageNum == 0
-                          ? accentColor
-                          : Colors.white10,
-                      foregroundColor: pageNum == 0
-                          ? Colors.black
-                          : Colors.white,
-                      child: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          pageNum = 0;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 32,
+                        backgroundColor: pageNum == 0
+                            ? accentColor
+                            : Colors.white10,
+                        foregroundColor: pageNum == 0
+                            ? Colors.black
+                            : Colors.white,
+                        child: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                      ),
                     ),
-                    CircleAvatar(
-                      radius: 32,
-                      backgroundColor: pageNum == 1
-                          ? accentColor
-                          : Colors.white10,
-                      foregroundColor: pageNum == 1
-                          ? Colors.black
-                          : Colors.white,
-                      child: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          pageNum = 0;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 32,
+                        backgroundColor: pageNum == 1
+                            ? accentColor
+                            : Colors.white10,
+                        foregroundColor: pageNum == 1
+                            ? Colors.black
+                            : Colors.white,
+                        child: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
+                      ),
                     ),
-                    CircleAvatar(
-                      radius: 32,
-                      backgroundColor: pageNum == 2
-                          ? accentColor
-                          : Colors.white10,
-                      foregroundColor: pageNum == 2
-                          ? Colors.black
-                          : Colors.white,
-                      child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          pageNum = 0;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 32,
+                        backgroundColor: pageNum == 2
+                            ? accentColor
+                            : Colors.white10,
+                        foregroundColor: pageNum == 2
+                            ? Colors.black
+                            : Colors.white,
+                        child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
+                      ),
                     ),
                     CircleAvatar(
                       radius: 32,
