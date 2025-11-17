@@ -3,8 +3,8 @@
 ## EP2431
 
 - Barber & Salon Booking App UI
-- Nija Design for Nija Works
-- https://dribbble.com/shots/26742927-Litex-Reading-Book-App
+- Md Habibur Rahman
+- https://dribbble.com/shots/26772453-Barber-Salon-Booking-App-UI
 
 <img src="https://cdn.dribbble.com/userupload/45609320/file/ac69751e28048acb7ccb4e7e0498d036.png?resize=1905x1429&vertical=center" alt="">
 
