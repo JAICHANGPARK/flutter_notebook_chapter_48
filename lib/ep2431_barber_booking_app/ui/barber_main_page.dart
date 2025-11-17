@@ -21,10 +21,18 @@ class _BarberMainPageState extends State<BarberMainPage> {
             child: IndexedStack(
               index: pageNum,
               children: [
-                Placeholder(),
-                Placeholder(),
-                Placeholder(),
-                Placeholder(),
+                Container(
+                  color: Colors.red,
+                ),
+                Container(
+                  color: Colors.orange,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.green,
+                ),
               ],
             ),
           ),
