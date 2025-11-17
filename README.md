@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_48
 
-## EP2426
+## EP2431
+
+- Litex - Reading Book App
+- Nija Design for Nija Works
+- https://dribbble.com/shots/26742927-Litex-Reading-Book-App
+
+<img src="https://cdn.dribbble.com/userupload/45609320/file/ac69751e28048acb7ccb4e7e0498d036.png?resize=1905x1429&vertical=center" alt="">
+
+## EP2426-2430
 
 - Litex - Reading Book App
 - Nija Design for Nija Works
