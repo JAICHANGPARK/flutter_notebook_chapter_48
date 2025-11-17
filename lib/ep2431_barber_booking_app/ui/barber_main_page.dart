@@ -40,14 +40,29 @@ class _BarberMainPageState extends State<BarberMainPage> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     CircleAvatar(
-                      radius: 30,
+                      radius: 32,
                       backgroundColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
                     ),
-                    CircleAvatar(radius: 30),
-                    CircleAvatar(radius: 30),
-                    CircleAvatar(radius: 30),
+                    CircleAvatar(
+                      radius: 32,
+                      backgroundColor: Colors.white10,
+                      foregroundColor: Colors.white,
+                      child: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
+                    ),
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundColor: Colors.white10,
+                      foregroundColor: Colors.white,
+                      child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
+                    ),
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundColor: Colors.white10,
+                      foregroundColor: Colors.white,
+                      child: HugeIcon(icon: HugeIcons.strokeRoundedUser02),
+                    ),
                   ],
                 ),
               ),
