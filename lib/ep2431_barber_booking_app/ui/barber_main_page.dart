@@ -11,6 +11,8 @@ class BarberMainPage extends StatefulWidget {
 class _BarberMainPageState extends State<BarberMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+
+    );
   }
 }
