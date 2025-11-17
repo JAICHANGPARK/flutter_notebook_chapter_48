@@ -37,6 +37,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
+                padding: EdgeInsets.all(2),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
