@@ -6,7 +6,7 @@
 - Md Habibur Rahman
 - https://dribbble.com/shots/26772453-Barber-Salon-Booking-App-UI
 
-<img src="https://cdn.dribbble.com/userupload/45609320/file/ac69751e28048acb7ccb4e7e0498d036.png?resize=1905x1429&vertical=center" alt="">
+<img src="https://cdn.dribbble.com/userupload/45702823/file/c776e061688ba00221a7aef76bd415f4.png?resize=1905x1429&vertical=center" alt="">
 
 ## EP2426-2430
 
