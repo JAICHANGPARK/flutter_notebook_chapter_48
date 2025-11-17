@@ -47,18 +47,18 @@ class _BarberMainPageState extends State<BarberMainPage> {
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: Colors.white10,
+                      backgroundColor: pageNum == 1 ? Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
                     ),
                     CircleAvatar(
-                      radius: 30,
+                      radius: 32,
                       backgroundColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
                     ),
                     CircleAvatar(
-                      radius: 30,
+                      radius: 32,
                       backgroundColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedUser02),
