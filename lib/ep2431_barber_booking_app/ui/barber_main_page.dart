@@ -42,26 +42,42 @@ class _BarberMainPageState extends State<BarberMainPage> {
                   children: [
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: pageNum == 0 ? accentColor: Colors.white10,
-                      foregroundColor: Colors.white,
+                      backgroundColor: pageNum == 0
+                          ? accentColor
+                          : Colors.white10,
+                      foregroundColor: pageNum == 0
+                          ? Colors.black
+                          : Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: pageNum == 1 ? accentColor: Colors.white10,
-                      foregroundColor: Colors.white,
+                      backgroundColor: pageNum == 1
+                          ? accentColor
+                          : Colors.white10,
+                      foregroundColor: pageNum == 1
+                          ? Colors.black
+                          : Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: pageNum == 2 ? accentColor: Colors.white10,
-                      foregroundColor: Colors.white,
+                      backgroundColor: pageNum == 2
+                          ? accentColor
+                          : Colors.white10,
+                      foregroundColor: pageNum == 2
+                          ? Colors.black
+                          : Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: pageNum == 3 ? accentColor: Colors.white10,
-                      foregroundColor: Colors.white,
+                      backgroundColor: pageNum == 3
+                          ? accentColor
+                          : Colors.white10,
+                      foregroundColor: pageNum == 3
+                          ? Colors.black
+                          : Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedUser02),
                     ),
                   ],
