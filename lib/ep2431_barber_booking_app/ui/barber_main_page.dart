@@ -42,7 +42,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
                   children: [
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: Colors.white10,
+                      backgroundColor: pageNum == 0 ? accentColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
                     ),
@@ -54,13 +54,13 @@ class _BarberMainPageState extends State<BarberMainPage> {
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: Colors.white10,
+                      backgroundColor: pageNum == 2 ? accentColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
                     ),
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: Colors.white10,
+                      backgroundColor: pageNum == 3 ? accentColor: Colors.white10,
                       foregroundColor: Colors.white,
                       child: HugeIcon(icon: HugeIcons.strokeRoundedUser02),
                     ),
