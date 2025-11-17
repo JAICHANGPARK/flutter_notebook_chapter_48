@@ -61,7 +61,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
                     GestureDetector(
                       onTap: (){
                         setState(() {
-                          pageNum = 0;
+                          pageNum = 1;
                         });
                       },
                       child: CircleAvatar(
@@ -78,7 +78,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
                     GestureDetector(
                       onTap: (){
                         setState(() {
-                          pageNum = 0;
+                          pageNum = 2;
                         });
                       },
                       child: CircleAvatar(
@@ -92,15 +92,22 @@ class _BarberMainPageState extends State<BarberMainPage> {
                         child: HugeIcon(icon: HugeIcons.strokeRoundedCalendar01),
                       ),
                     ),
-                    CircleAvatar(
-                      radius: 32,
-                      backgroundColor: pageNum == 3
-                          ? accentColor
-                          : Colors.white10,
-                      foregroundColor: pageNum == 3
-                          ? Colors.black
-                          : Colors.white,
-                      child: HugeIcon(icon: HugeIcons.strokeRoundedUser02),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          pageNum = 3;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 32,
+                        backgroundColor: pageNum == 3
+                            ? accentColor
+                            : Colors.white10,
+                        foregroundColor: pageNum == 3
+                            ? Colors.black
+                            : Colors.white,
+                        child: HugeIcon(icon: HugeIcons.strokeRoundedUser02),
+                      ),
                     ),
                   ],
                 ),
