@@ -26,19 +26,26 @@ class _BarberMainPageState extends State<BarberMainPage> {
               ],
             ),
           ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-                color: Colors.black,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 32),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.black,
+                ),
+                child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                  CircleAvatar(
+                    radius: 28,
+                  ),
+                  CircleAvatar(radius: 28,),
+                  CircleAvatar(radius: 28,),
+                  CircleAvatar(radius: 28,),
+                ]),
               ),
-              child: Row(children: [
-                CircleAvatar(),
-                CircleAvatar(),
-                CircleAvatar(),
-                CircleAvatar(),
-              ]),
             ),
           ),
         ],
