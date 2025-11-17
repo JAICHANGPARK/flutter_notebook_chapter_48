@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class BarberMainPage extends StatefulWidget {
   const BarberMainPage({super.key});
@@ -36,15 +37,19 @@ class _BarberMainPageState extends State<BarberMainPage> {
                   color: Colors.black,
                 ),
                 child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                  CircleAvatar(
-                    radius: 28,
-                  ),
-                  CircleAvatar(radius: 28,),
-                  CircleAvatar(radius: 28,),
-                  CircleAvatar(radius: 28,),
-                ]),
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundColor: Colors.white10,
+                      foregroundColor: Colors.white,
+                      child: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                    ),
+                    CircleAvatar(radius: 30),
+                    CircleAvatar(radius: 30),
+                    CircleAvatar(radius: 30),
+                  ],
+                ),
               ),
             ),
           ),
