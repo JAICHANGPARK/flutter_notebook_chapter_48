@@ -10,6 +10,11 @@ class BarberSearchPage extends StatefulWidget {
 class _BarberSearchPageState extends State<BarberSearchPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+
+      ],
+    );
   }
 }
