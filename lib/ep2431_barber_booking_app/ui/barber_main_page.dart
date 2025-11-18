@@ -17,6 +17,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Stack(
         children: [
           Positioned.fill(
