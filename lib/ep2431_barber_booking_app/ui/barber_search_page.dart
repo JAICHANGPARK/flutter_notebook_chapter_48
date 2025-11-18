@@ -52,7 +52,21 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
               ],
             ),
           ),
-          SizedBox(height: 62, child: Placeholder()),
+          SizedBox(height: 54, child: Placeholder()),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Eid offers",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              TextButton(onPressed: (){}, child: Text("See all"),),
+
+            ],
+          ),
         ],
       ),
     );
