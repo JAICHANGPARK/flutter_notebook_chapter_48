@@ -13,7 +13,16 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                decoration: ShapeDecoration(shape: StadiumBorder()),
+              ),
+            ),
+            CircleAvatar()
+          ],
+        ),
       ],
     );
   }
