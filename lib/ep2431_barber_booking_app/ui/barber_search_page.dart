@@ -31,6 +31,8 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       decoration: InputDecoration(
                         hintText: "Search...",
                         icon: Icon(Icons.search),
+                        
+                        border: InputBorder.none,
                       ),
                     ),
                   ),
