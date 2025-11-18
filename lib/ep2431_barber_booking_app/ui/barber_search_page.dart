@@ -63,10 +63,14 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                   color: Colors.white,
                 ),
               ),
-              TextButton(onPressed: (){}, child: Text("See all"),),
-
+              TextButton(onPressed: () {}, child: Text("See all")),
             ],
           ),
+          Container(
+            height: 280,
+            child: Placeholder(),
+          ),
+
         ],
       ),
     );
