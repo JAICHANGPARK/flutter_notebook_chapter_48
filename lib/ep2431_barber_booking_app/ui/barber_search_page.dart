@@ -30,7 +30,6 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search...",
-
                         hintStyle: TextStyle(color: Colors.white),
                         icon: Icon(Icons.search),
                         iconColor: Colors.white,
@@ -45,10 +44,15 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                   child: Icon(Icons.tune),
                   foregroundColor: Colors.black,
                 ),
-                CircleAvatar(radius: 24, backgroundColor: Colors.white24),
+                CircleAvatar(
+                  radius: 24,
+                  backgroundColor: Colors.white24,
+                  child: Icon(Icons.calendar_month),
+                ),
               ],
             ),
           ),
+          SizedBox(height: 62, child: Placeholder()),
         ],
       ),
     );
