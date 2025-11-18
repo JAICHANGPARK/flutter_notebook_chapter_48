@@ -62,6 +62,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
+                  fontSize: 20,
                 ),
               ),
               TextButton(onPressed: () {}, child: Text("See all")),
@@ -70,6 +71,20 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
           Container(
             height: 280,
             child: Placeholder(),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Results (2512)",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 20,
+                ),
+              ),
+              TextButton(onPressed: () {}, child: Text("See all")),
+            ],
           ),
 
         ],
