@@ -13,10 +13,11 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
+        spacing: 16,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               spacing: 12,
               children: [
