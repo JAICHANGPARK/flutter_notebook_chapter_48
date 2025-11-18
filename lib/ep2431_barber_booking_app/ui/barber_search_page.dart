@@ -12,12 +12,13 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      bottom: false,
       child: Column(
         spacing: 16,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(
               spacing: 12,
               children: [
@@ -48,53 +49,54 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                 CircleAvatar(
                   radius: 24,
                   backgroundColor: Colors.white24,
+                  foregroundColor: Colors.white,
                   child: Icon(Icons.calendar_month),
                 ),
               ],
             ),
           ),
           SizedBox(height: 54, child: Placeholder()),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "Eid offers",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 20,
-                ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                spacing: 16,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Eid offers",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                      TextButton(onPressed: () {}, child: Text("See all")),
+                    ],
+                  ),
+                  Container(height: 280, child: Placeholder()),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Results (2512)",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                      TextButton(onPressed: () {}, child: Text("See all")),
+                    ],
+                  ),
+                  Container(height: 180, child: Placeholder()),
+                  Container(height: 180, child: Placeholder()),
+                ],
               ),
-              TextButton(onPressed: () {}, child: Text("See all")),
-            ],
+            ),
           ),
-          Container(
-            height: 280,
-            child: Placeholder(),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "Results (2512)",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 20,
-                ),
-              ),
-              TextButton(onPressed: () {}, child: Text("See all")),
-            ],
-          ),
-          Container(
-            height: 180,
-            child: Placeholder(),
-          ),
-          Container(
-            height: 180,
-            child: Placeholder(),
-          )
-
         ],
       ),
     );
