@@ -86,6 +86,14 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
               TextButton(onPressed: () {}, child: Text("See all")),
             ],
           ),
+          Container(
+            height: 180,
+            child: Placeholder(),
+          ),
+          Container(
+            height: 180,
+            child: Placeholder(),
+          )
 
         ],
       ),
