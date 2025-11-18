@@ -26,8 +26,12 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       shape: StadiumBorder(),
                       color: Colors.white24,
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
-                      decoration: InputDecoration(hintText: "Search..."),
+                      decoration: InputDecoration(
+                        hintText: "Search...",
+                        icon: Icon(Icons.search),
+                      ),
                     ),
                   ),
                 ),
