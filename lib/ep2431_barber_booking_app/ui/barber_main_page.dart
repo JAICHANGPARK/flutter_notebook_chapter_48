@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+import '../barber_theme.dart';
 import 'barber_search_page.dart';
 
 class BarberMainPage extends StatefulWidget {
