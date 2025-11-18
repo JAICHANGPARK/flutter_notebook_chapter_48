@@ -30,8 +30,10 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search...",
+
+                        hintStyle: TextStyle(color: Colors.white),
                         icon: Icon(Icons.search),
-                        
+                        iconColor: Colors.white,
                         border: InputBorder.none,
                       ),
                     ),
