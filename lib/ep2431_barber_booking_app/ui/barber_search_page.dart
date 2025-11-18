@@ -22,7 +22,13 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
               children: [
                 Expanded(
                   child: Container(
-                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.white24,
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(hintText: "Search..."),
+                    ),
                   ),
                 ),
                 CircleAvatar(
