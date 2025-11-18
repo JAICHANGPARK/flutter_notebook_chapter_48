@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+import 'barber_search_page.dart';
+
 class BarberMainPage extends StatefulWidget {
   const BarberMainPage({super.key});
 
@@ -24,9 +26,7 @@ class _BarberMainPageState extends State<BarberMainPage> {
                 Container(
                   color: Colors.red,
                 ),
-                Container(
-                  color: Colors.orange,
-                ),
+                BarberSearchPage(),
                 Container(
                   color: Colors.yellow,
                 ),
