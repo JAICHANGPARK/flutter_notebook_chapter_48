@@ -12,7 +12,6 @@ class BarberMainPage extends StatefulWidget {
 
 class _BarberMainPageState extends State<BarberMainPage> {
   int pageNum = 0;
-  Color accentColor = Color.fromRGBO(109, 234, 237, 1);
 
   @override
   Widget build(BuildContext context) {
