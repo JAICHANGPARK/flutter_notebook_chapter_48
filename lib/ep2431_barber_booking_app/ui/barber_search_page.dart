@@ -168,14 +168,36 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             fontSize: 20,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: Text("See all"),
+                        TextButton(
+                          onPressed: () {},
                           style: TextButton.styleFrom(
                             foregroundColor: accentColor,
-                          ),),
+                          ),
+                          child: Text("See all"),
+                        ),
                       ],
                     ),
                   ),
-                  Container(height: 180, child: Placeholder()),
+                  Container(
+                    height: 160,
+                    padding: EdgeInsets.only(left: 12),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 120,
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            color: Colors.white12,
+                          ),
+                          // child: Placeholder(),
+                        );
+                      },
+                    ),
+                  ),
                   Container(height: 180, child: Placeholder()),
                 ],
               ),
