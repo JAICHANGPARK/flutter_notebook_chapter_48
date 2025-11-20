@@ -137,7 +137,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 12),
-                    height: 280,
+                    height: 260,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
