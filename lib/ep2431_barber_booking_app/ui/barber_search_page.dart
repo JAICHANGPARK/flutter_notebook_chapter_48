@@ -72,6 +72,8 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                     });
                   },
                   child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
                     child: Center(
                       child: Text(
                         "${item}",
