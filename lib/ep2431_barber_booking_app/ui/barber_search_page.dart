@@ -59,7 +59,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
             ),
           ),
           SizedBox(
-            height: 54,
+            height: 42,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: tabs.length,
@@ -72,7 +72,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                     });
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
                       color: index == selectedTab
