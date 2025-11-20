@@ -43,8 +43,8 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                 CircleAvatar(
                   radius: 24,
                   backgroundColor: accentColor,
-                  child: Icon(Icons.tune),
                   foregroundColor: Colors.black,
+                  child: Icon(Icons.tune),
                 ),
                 CircleAvatar(
                   radius: 24,
