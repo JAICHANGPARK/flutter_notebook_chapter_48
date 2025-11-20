@@ -155,19 +155,22 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       },
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Results (2512)",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Results (2512)",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      TextButton(onPressed: () {}, child: Text("See all")),
-                    ],
+                        TextButton(onPressed: () {}, child: Text("See all")),
+                      ],
+                    ),
                   ),
                   Container(height: 180, child: Placeholder()),
                   Container(height: 180, child: Placeholder()),
