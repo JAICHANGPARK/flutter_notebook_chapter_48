@@ -127,15 +127,17 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See all"),
                           style: TextButton.styleFrom(
                             foregroundColor: accentColor,
                           ),
+                          child: Text("See all"),
                         ),
                       ],
                     ),
                   ),
-                  Container(height: 280, child: Placeholder()),
+                  Container(
+                      padding: EdgeInsets.only(left: 12),
+                      height: 280, child: Placeholder()),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
