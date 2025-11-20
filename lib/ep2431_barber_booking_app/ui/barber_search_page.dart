@@ -143,6 +143,12 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 240,
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                          ),
                           child: Placeholder(),
                         );
                       },
