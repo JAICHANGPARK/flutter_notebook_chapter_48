@@ -71,7 +71,18 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       selectedTab = index;
                     });
                   },
-                  child: Container(child: Center(child: Text("${item}"))),
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        "${item}",
+                        style: TextStyle(
+                          color: index == selectedTab
+                              ? Colors.black
+                              : Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
                 );
               },
             ),
