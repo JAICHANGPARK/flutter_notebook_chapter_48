@@ -61,6 +61,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
             height: 54,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
+              itemCount: tabs.length,
               itemBuilder: (context, index) {
                 final item = tabs[index];
                 return Container(child: Center(child: Text("${item}")));
