@@ -136,8 +136,18 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                     ),
                   ),
                   Container(
-                      padding: EdgeInsets.only(left: 12),
-                      height: 280, child: Placeholder()),
+                    padding: EdgeInsets.only(left: 12),
+                    height: 280,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 240,
+                          child: Placeholder(),
+                        );
+                      },
+                    ),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
