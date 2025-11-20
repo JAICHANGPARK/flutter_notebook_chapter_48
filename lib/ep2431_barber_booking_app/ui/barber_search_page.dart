@@ -102,19 +102,22 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                 spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Eid offers",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Eid offers",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      TextButton(onPressed: () {}, child: Text("See all")),
-                    ],
+                        TextButton(onPressed: () {}, child: Text("See all")),
+                      ],
+                    ),
                   ),
                   Container(height: 280, child: Placeholder()),
                   Row(
