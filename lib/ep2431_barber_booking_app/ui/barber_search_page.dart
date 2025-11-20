@@ -73,7 +73,12 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                   },
                   child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 12),
-                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: index == selectedTab
+                          ? accentColor
+                          : Colors.white24,
+                    ),
                     child: Center(
                       child: Text(
                         "${item}",
