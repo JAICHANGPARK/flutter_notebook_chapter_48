@@ -148,8 +148,9 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(25),
                             ),
+                            color: Colors.white12,
                           ),
-                          child: Placeholder(),
+                          // child: Placeholder(),
                         );
                       },
                     ),
