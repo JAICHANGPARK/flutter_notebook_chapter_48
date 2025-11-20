@@ -185,7 +185,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 120,
+                          width: 116,
                           margin: EdgeInsets.only(right: 12),
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
