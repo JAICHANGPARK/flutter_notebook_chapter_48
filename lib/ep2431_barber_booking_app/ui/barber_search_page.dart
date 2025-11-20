@@ -9,7 +9,17 @@ class BarberSearchPage extends StatefulWidget {
 }
 
 class _BarberSearchPageState extends State<BarberSearchPage> {
-  final List<String> tabs = ["All", "Haircuts", "Color", "Perm", "Hairdo", "Facial", "Skincare", "Nail", "Mass"];
+  final List<String> tabs = [
+    "All",
+    "Haircuts",
+    "Color",
+    "Perm",
+    "Hairdo",
+    "Facial",
+    "Skincare",
+    "Nail",
+    "Mass",
+  ];
   int selectedTab = 0;
 
   @override
@@ -103,7 +113,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 16),
+                    padding: const EdgeInsets.only(left: 12),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -115,7 +125,13 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             fontSize: 20,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: Text("See all")),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See all"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: accentColor,
+                          ),
+                        ),
                       ],
                     ),
                   ),
