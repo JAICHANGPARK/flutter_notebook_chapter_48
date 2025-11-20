@@ -198,7 +198,16 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       },
                     ),
                   ),
-                  Container(height: 180, child: Placeholder()),
+                  Container(
+                    height: 180,
+                    margin: EdgeInsets.only(right: 12),
+                    decoration: ShapeDecoration(
+                      shape: RoundedSuperellipseBorder(
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                      color: Colors.white12,
+                    ),
+                  ),
                 ],
               ),
             ),
