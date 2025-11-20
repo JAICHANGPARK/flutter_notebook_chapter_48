@@ -9,6 +9,13 @@ class BarberSearchPage extends StatefulWidget {
 }
 
 class _BarberSearchPageState extends State<BarberSearchPage> {
+  final List<String> tabs = [
+    "All",
+    "Haircuts",
+    "Facial",
+    "Hairdo",
+    "Mass"
+  ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -57,7 +64,10 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
           ),
           SizedBox(height: 54, child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemBuilder: (context,index){},)),
+            itemBuilder: (context,index){
+
+              return
+            },)),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
