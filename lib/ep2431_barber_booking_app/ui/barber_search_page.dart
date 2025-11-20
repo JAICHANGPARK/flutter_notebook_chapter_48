@@ -10,7 +10,7 @@ class BarberSearchPage extends StatefulWidget {
 
 class _BarberSearchPageState extends State<BarberSearchPage> {
   final List<String> tabs = ["All", "Haircuts", "Facial", "Hairdo", "Mass"];
-
+  int selectedTab = 0;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
