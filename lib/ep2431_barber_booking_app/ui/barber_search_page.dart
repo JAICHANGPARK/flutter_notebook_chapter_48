@@ -168,7 +168,10 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             fontSize: 20,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: Text("See all")),
+                        TextButton(onPressed: () {}, child: Text("See all"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: accentColor,
+                          ),),
                       ],
                     ),
                   ),
