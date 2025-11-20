@@ -9,7 +9,7 @@ class BarberSearchPage extends StatefulWidget {
 }
 
 class _BarberSearchPageState extends State<BarberSearchPage> {
-  final List<String> tabs = ["All", "Haircuts", "Facial", "Hairdo", "Mass"];
+  final List<String> tabs = ["All", "Haircuts", "Color", "Perm", "Hairdo", "Facial", "Skincare", "Nail", "Mass"];
   int selectedTab = 0;
 
   @override
