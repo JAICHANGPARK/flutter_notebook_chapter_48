@@ -55,7 +55,9 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
               ],
             ),
           ),
-          SizedBox(height: 54, child: Placeholder()),
+          SizedBox(height: 54, child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context,index){},)),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
