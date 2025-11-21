@@ -102,7 +102,12 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 shape: StadiumBorder(),
                 color: accentColor,
               ),
-              child: Center(child: Text("Book Now", style: TextStyle())),
+              child: Center(
+                child: Text(
+                  "Book Now",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
             ),
           ],
         ),
