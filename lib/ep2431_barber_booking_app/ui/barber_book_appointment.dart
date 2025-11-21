@@ -96,6 +96,8 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             Text("Date & Time"),
             Expanded(child: Placeholder()),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 12),
+              height: 42,
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: accentColor,
