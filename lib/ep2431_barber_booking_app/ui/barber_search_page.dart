@@ -158,8 +158,10 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                               Expanded(
                                 child: Container(
                                   decoration: ShapeDecoration(
-                                    shape: RoundedSuperellipseBorder(),
-                                    color: Colors.brown
+                                    shape: RoundedSuperellipseBorder(
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    color: Colors.brown,
                                   ),
                                 ),
                               ),
