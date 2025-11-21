@@ -173,7 +173,11 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                                   Icon(Icons.star,),
                                   Text("5.6"),
                                   Text(" | 130 Views"),
-                                  Spacer()
+                                  Spacer(),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    child: Icon(Icons.arrow_forward_rounded),
+                                  ),
                                 ],
                               )
                             ],
