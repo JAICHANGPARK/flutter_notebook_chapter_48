@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_48/ep2431_barber_booking_app/barber_theme.dart';
 
+import 'barber_book_appointment.dart';
+
 class BarberSearchPage extends StatefulWidget {
   const BarberSearchPage({super.key});
 
@@ -142,7 +144,13 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => BarberBookAppointment(),
+                              ),
+                            );
+                          },
                           child: Container(
                             width: 230,
                             margin: EdgeInsets.only(right: 12),
@@ -249,16 +257,15 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
-                          spacing: 24,
+                            spacing: 24,
                             children: [
-                              CircleAvatar(
-                                radius: 32,
+                              CircleAvatar(radius: 32),
+                              Text(
+                                "Hair Colour",
+                                style: TextStyle(color: Colors.white),
                               ),
-                              Text("Hair Colour",style: TextStyle(
-                                color: Colors.white
-                              ),),
                             ],
-                          )
+                          ),
                         );
                       },
                     ),
