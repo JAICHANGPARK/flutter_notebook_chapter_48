@@ -28,6 +28,10 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Container(
+              height: 82,
+              child: Placeholder(),
+            )
           ],
         ),
       ),
