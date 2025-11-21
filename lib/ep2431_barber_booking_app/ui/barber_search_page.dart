@@ -175,6 +175,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                                   Text(" | 130 Views"),
                                   Spacer(),
                                   CircleAvatar(
+                                    radius: 16,
                                     backgroundColor: Colors.white,
                                     child: Icon(Icons.arrow_forward_rounded),
                                   ),
