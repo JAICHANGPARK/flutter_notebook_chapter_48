@@ -244,7 +244,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             ),
                             color: Colors.white12,
                           ),
-                          // child: Placeholder(),
+                          child: Placeholder(),
                         );
                       },
                     ),
