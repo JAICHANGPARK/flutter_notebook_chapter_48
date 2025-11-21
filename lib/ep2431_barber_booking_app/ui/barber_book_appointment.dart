@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2431_barber_booking_app/barber_theme.dart';
 
 class BarberBookAppointment extends StatefulWidget {
   const BarberBookAppointment({super.key});
@@ -95,13 +96,12 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             Text("Date & Time"),
             Expanded(child: Placeholder()),
             Container(
-
-              child: Center(
-                child: Text("Book Now",style: TextStyle(
-
-                ),),
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                color: accentColor,
               ),
-            )
+              child: Center(child: Text("Book Now", style: TextStyle())),
+            ),
           ],
         ),
       ),
