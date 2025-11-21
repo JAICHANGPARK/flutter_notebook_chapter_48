@@ -23,7 +23,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
               child: Row(children: []),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Column(
                 spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,17 +33,17 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 18
+                      fontSize: 18,
                     ),
                   ),
-                  Container(
-                    height: 82,
-                    child: Placeholder(),
-                  )
+                  Container(height: 82, child: Placeholder()),
                 ],
               ),
-            )
-
+            ),
+            SizedBox(
+              height: 100,
+              child: Placeholder()
+            ),
           ],
         ),
       ),
