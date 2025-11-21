@@ -167,6 +167,15 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                                   fontSize: 18,
                                 ),
                               ),
+                              Text("30 minute service"),
+                              Row(
+                                children: [
+                                  Icon(Icons.star,),
+                                  Text("5.6"),
+                                  Text(" | 130 Views"),
+                                  Spacer()
+                                ],
+                              )
                             ],
                           ),
                         );
