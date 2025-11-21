@@ -25,6 +25,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
+                spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -32,6 +33,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      fontSize: 18
                     ),
                   ),
                   Container(
