@@ -40,15 +40,19 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 80,
-              child: Placeholder()
-            ),
+            SizedBox(height: 80, child: Placeholder()),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: 16,
               children: [
-                Text("Select Experts"),
+                Text(
+                  "Select Experts",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
                 Container(
                   height: 160,
                   padding: EdgeInsets.only(left: 12),
@@ -73,9 +77,10 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                               "Dream",
                               style: TextStyle(color: Colors.white),
                             ),
-                            Text("10 yrs exp",style: TextStyle(
-                              color: Colors.white,
-                            ),)
+                            Text(
+                              "10 yrs exp",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ],
                         ),
                       );
@@ -84,7 +89,6 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 ),
               ],
             ),
-
           ],
         ),
       ),
