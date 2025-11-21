@@ -244,7 +244,15 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             ),
                             color: Colors.white12,
                           ),
-                          child: Placeholder(),
+                          child: Column(
+
+                            children: [
+                              CircleAvatar(
+                                radius: 28,
+                              ),
+                              Text("Hair Colour"),
+                            ],
+                          )
                         );
                       },
                     ),
