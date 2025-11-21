@@ -150,6 +150,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             ),
                             color: Colors.white12,
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Column(
                             children: [
                               Expanded(
