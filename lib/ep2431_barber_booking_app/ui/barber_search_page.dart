@@ -141,66 +141,69 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: 230,
-                          margin: EdgeInsets.only(right: 12),
-                          decoration: ShapeDecoration(
-                            shape: RoundedSuperellipseBorder(
-                              borderRadius: BorderRadius.circular(25),
+                        return GestureDetector(
+                          
+                          child: Container(
+                            width: 230,
+                            margin: EdgeInsets.only(right: 12),
+                            decoration: ShapeDecoration(
+                              shape: RoundedSuperellipseBorder(
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              color: Colors.white12,
                             ),
-                            color: Colors.white12,
-                          ),
-                          padding: EdgeInsets.all(12),
-                          child: Column(
-                            spacing: 10,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: ShapeDecoration(
-                                    shape: RoundedSuperellipseBorder(
-                                      borderRadius: BorderRadius.circular(24),
+                            padding: EdgeInsets.all(12),
+                            child: Column(
+                              spacing: 10,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedSuperellipseBorder(
+                                        borderRadius: BorderRadius.circular(24),
+                                      ),
+                                      color: Colors.brown,
                                     ),
-                                    color: Colors.brown,
                                   ),
                                 ),
-                              ),
-                              Text(
-                                "Dream haircut",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                Text(
+                                  "Dream haircut",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                "30 minute service",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.yellow,
-                                    size: 15,
-                                  ),
-                                  Text(
-                                    "5.6",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  Text(
-                                    " | 130 Views",
-                                    style: TextStyle(color: Colors.white24),
-                                  ),
-                                  Spacer(),
-                                  CircleAvatar(
-                                    radius: 16,
-                                    backgroundColor: Colors.white,
-                                    child: Icon(Icons.arrow_forward_rounded),
-                                  ),
-                                ],
-                              ),
-                            ],
+                                Text(
+                                  "30 minute service",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.yellow,
+                                      size: 15,
+                                    ),
+                                    Text(
+                                      "5.6",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                    Text(
+                                      " | 130 Views",
+                                      style: TextStyle(color: Colors.white24),
+                                    ),
+                                    Spacer(),
+                                    CircleAvatar(
+                                      radius: 16,
+                                      backgroundColor: Colors.white,
+                                      child: Icon(Icons.arrow_forward_rounded),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         );
                       },
