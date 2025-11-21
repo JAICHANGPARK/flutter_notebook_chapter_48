@@ -12,6 +12,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
         ],
