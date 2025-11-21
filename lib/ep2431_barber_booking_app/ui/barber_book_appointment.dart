@@ -68,7 +68,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           spacing: 12,
                           children: [
-                            CircleAvatar(radius: 32),
+                            CircleAvatar(radius: 30),
                             Text(
                               "Dream",
                               style: TextStyle(color: Colors.white),
