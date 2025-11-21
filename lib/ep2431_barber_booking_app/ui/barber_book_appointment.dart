@@ -13,7 +13,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
