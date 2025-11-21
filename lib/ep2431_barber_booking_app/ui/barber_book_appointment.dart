@@ -19,12 +19,15 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             Container(
               height: 62,
               color: Colors.blue,
-        child: Row(
-          children: [
-            
-          ],
-        ),
-            )
+              child: Row(children: []),
+            ),
+            Text(
+              "Select Date",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
