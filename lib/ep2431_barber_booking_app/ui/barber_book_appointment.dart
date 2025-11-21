@@ -14,6 +14,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
+          spacing: 16,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
@@ -21,17 +22,26 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
               color: Colors.blue,
               child: Row(children: []),
             ),
-            Text(
-              "Select Date",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Select Date",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    height: 82,
+                    child: Placeholder(),
+                  )
+                ],
               ),
-            ),
-            Container(
-              height: 82,
-              child: Placeholder(),
             )
+
           ],
         ),
       ),
