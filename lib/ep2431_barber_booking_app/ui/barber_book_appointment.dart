@@ -10,6 +10,12 @@ class BarberBookAppointment extends StatefulWidget {
 class _BarberBookAppointmentState extends State<BarberBookAppointment> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
