@@ -152,12 +152,14 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
+                            spacing: 10,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: Container(
                                   decoration: ShapeDecoration(
                                     shape: RoundedSuperellipseBorder(),
+                                    color: Colors.brown
                                   ),
                                 ),
                               ),
