@@ -152,6 +152,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: Container(
@@ -168,11 +169,18 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                                   fontSize: 18,
                                 ),
                               ),
-                              Text("30 minute service"),
+                              Text(
+                                "30 minute service",
+                                style: TextStyle(color: Colors.white),
+                              ),
                               Row(
                                 children: [
-                                  Icon(Icons.star,),
-                                  Text("5.6"),
+                                  Icon(Icons.star,
+                                  color: Colors.yellow,
+                                  size: 15,),
+                                  Text("5.6",style: TextStyle(
+                                    color: Colors.white,
+                                  ),),
                                   Text(" | 130 Views"),
                                   Spacer(),
                                   CircleAvatar(
@@ -181,7 +189,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                                     child: Icon(Icons.arrow_forward_rounded),
                                   ),
                                 ],
-                              )
+                              ),
                             ],
                           ),
                         );
