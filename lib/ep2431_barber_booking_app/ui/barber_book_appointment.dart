@@ -45,41 +45,43 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
               child: Placeholder()
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 16,
               children: [
                 Text("Select Experts"),
-
+                Container(
+                  height: 160,
+                  padding: EdgeInsets.only(left: 12),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 116,
+                        margin: EdgeInsets.only(right: 12),
+                        decoration: ShapeDecoration(
+                          shape: RoundedSuperellipseBorder(
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          color: Colors.white12,
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          spacing: 24,
+                          children: [
+                            CircleAvatar(radius: 32),
+                            Text(
+                              "Hair Colour",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+                ),
               ],
             ),
-            Container(
-              height: 160,
-              padding: EdgeInsets.only(left: 12),
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 116,
-                    margin: EdgeInsets.only(right: 12),
-                    decoration: ShapeDecoration(
-                      shape: RoundedSuperellipseBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      color: Colors.white12,
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      spacing: 24,
-                      children: [
-                        CircleAvatar(radius: 32),
-                        Text(
-                          "Hair Colour",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  );
-                },
-              ),
-            ),
+
           ],
         ),
       ),
