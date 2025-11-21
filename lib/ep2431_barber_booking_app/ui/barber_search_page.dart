@@ -150,7 +150,25 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             ),
                             color: Colors.white12,
                           ),
-                          // child: Placeholder(),
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedSuperellipseBorder(),
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                "Dream haircut",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ],
+                          ),
                         );
                       },
                     ),
@@ -200,7 +218,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                   ),
                   Container(
                     height: 180,
-                    margin: EdgeInsets.only(right: 12,left: 12),
+                    margin: EdgeInsets.only(right: 12, left: 12),
                     decoration: ShapeDecoration(
                       shape: RoundedSuperellipseBorder(
                         borderRadius: BorderRadius.circular(25),
