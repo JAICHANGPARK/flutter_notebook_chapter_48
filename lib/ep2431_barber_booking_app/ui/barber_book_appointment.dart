@@ -66,7 +66,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          spacing: 12,
+                          spacing: 8,
                           children: [
                             CircleAvatar(radius: 30),
                             Text(
