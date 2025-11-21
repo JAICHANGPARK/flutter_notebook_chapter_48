@@ -142,7 +142,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 240,
+                          width: 230,
                           margin: EdgeInsets.only(right: 12),
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
@@ -150,7 +150,7 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             ),
                             color: Colors.white12,
                           ),
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(12),
                           child: Column(
                             spacing: 10,
                             crossAxisAlignment: CrossAxisAlignment.start,
