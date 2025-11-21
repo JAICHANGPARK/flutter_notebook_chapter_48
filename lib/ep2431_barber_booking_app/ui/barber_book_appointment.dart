@@ -41,54 +41,67 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
               ),
             ),
             SizedBox(height: 80, child: Placeholder()),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              spacing: 16,
-              children: [
-                Text(
-                  "Select Experts",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
+            Padding(
+              padding: const EdgeInsets.only(left: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                spacing: 16,
+                children: [
+                  Text(
+                    "Select Experts",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
                   ),
-                ),
-                Container(
-                  height: 160,
-                  padding: EdgeInsets.only(left: 12),
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        width: 116,
-                        margin: EdgeInsets.only(right: 12),
-                        decoration: ShapeDecoration(
-                          shape: RoundedSuperellipseBorder(
-                            borderRadius: BorderRadius.circular(25),
+                  Container(
+                    height: 160,
+                    // padding: EdgeInsets.only(left: 12),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 116,
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            color: Colors.white12,
                           ),
-                          color: Colors.white12,
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          spacing: 8,
-                          children: [
-                            CircleAvatar(radius: 30),
-                            Text(
-                              "Dream",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Text(
-                              "10 yrs exp",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
-                        ),
-                      );
-                    },
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            spacing: 8,
+                            children: [
+                              CircleAvatar(radius: 30),
+                              Text(
+                                "Dream",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Text(
+                                "10 yrs exp",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
+            Text("Date & Time"),
+            Expanded(child: Placeholder()),
+            Container(
+
+              child: Center(
+                child: Text("Book Now",style: TextStyle(
+
+                ),),
+              ),
+            )
           ],
         ),
       ),
