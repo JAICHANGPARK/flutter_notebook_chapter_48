@@ -12,15 +12,21 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 42,
-            color: Colors.blue,
-
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 62,
+              color: Colors.blue,
+        child: Row(
+          children: [
+            
+          ],
+        ),
+            )
+          ],
+        ),
       ),
     );
   }
