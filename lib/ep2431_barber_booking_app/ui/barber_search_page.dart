@@ -245,12 +245,15 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                             color: Colors.white12,
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
 
                             children: [
                               CircleAvatar(
                                 radius: 28,
                               ),
-                              Text("Hair Colour"),
+                              Text("Hair Colour",style: TextStyle(
+                                color: Colors.white
+                              ),),
                             ],
                           )
                         );
