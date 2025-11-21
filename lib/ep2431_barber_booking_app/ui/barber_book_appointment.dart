@@ -41,9 +41,14 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
               ),
             ),
             SizedBox(
-              height: 100,
+              height: 80,
               child: Placeholder()
             ),
+            Column(
+              children: [
+                Text("Select Experts")
+              ],
+            )
           ],
         ),
       ),
