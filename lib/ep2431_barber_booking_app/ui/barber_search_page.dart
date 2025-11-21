@@ -175,13 +175,19 @@ class _BarberSearchPageState extends State<BarberSearchPage> {
                               ),
                               Row(
                                 children: [
-                                  Icon(Icons.star,
-                                  color: Colors.yellow,
-                                  size: 15,),
-                                  Text("5.6",style: TextStyle(
-                                    color: Colors.white,
-                                  ),),
-                                  Text(" | 130 Views"),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 15,
+                                  ),
+                                  Text(
+                                    "5.6",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text(
+                                    " | 130 Views",
+                                    style: TextStyle(color: Colors.white24),
+                                  ),
                                   Spacer(),
                                   CircleAvatar(
                                     radius: 16,
