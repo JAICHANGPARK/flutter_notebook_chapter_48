@@ -20,14 +20,18 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
           children: [
             Container(
               height: 54,
+
               width: double.infinity,
               child: Stack(
                 children: [
-                  CircleAvatar(
-                    radius: 26,
-                    foregroundColor: Colors.white,
-                    backgroundColor: Colors.white24,
-                    child: Icon(Icons.arrow_back_outlined),
+                  Positioned(
+                    left: 12,
+                    child: CircleAvatar(
+                      radius: 26,
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.white24,
+                      child: Icon(Icons.arrow_back_outlined),
+                    ),
                   ),
                   Positioned.fill(
                     child: Center(
