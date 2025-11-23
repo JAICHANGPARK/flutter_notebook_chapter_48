@@ -19,7 +19,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 62,
+              height: 54,
               width: double.infinity,
               color: Colors.blue,
               child: Stack(
