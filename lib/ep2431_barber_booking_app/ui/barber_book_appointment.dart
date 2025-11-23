@@ -198,6 +198,9 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                       itemCount: 9,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
+                        childAspectRatio: 4,
+                        crossAxisSpacing: 10,
+                        mainAxisSpacing: 10,
                       ),
                       itemBuilder: (context, index) {
                         bool isSelected = index == 7;
@@ -205,10 +208,19 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                         if (index > 3) time = "${9 + (index % 3)}:00 am";
 
                         return Container(
-                          child: Text(
-                            time,
-                            style: TextStyle(
-                              color: isSelected ? Colors.black : Colors.grey,
+                          decoration: BoxDecoration(
+                            color: isSelected ? accentColor : Colors.white12,
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          child: Center(
+                            child: Text(
+                              time,
+                              style: TextStyle(
+                                color: isSelected ? Colors.black : Colors.grey,
+                                fontWeight: isSelected
+                                    ? FontWeight.bold
+                                    : FontWeight.normal,
+                              ),
                             ),
                           ),
                         );
