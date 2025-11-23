@@ -60,7 +60,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     ),
                   ),
                   Container(
-                    height: 72,
+                    height: 68,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.white10,
@@ -77,6 +77,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                         IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.calendar_month),
+                          color: Colors.white,
                         ),
                       ],
                     ),
