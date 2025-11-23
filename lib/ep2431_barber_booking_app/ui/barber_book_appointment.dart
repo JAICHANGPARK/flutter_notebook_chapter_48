@@ -169,25 +169,31 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             ),
             Expanded(
               child: Column(
+                spacing: 16,
                 children: [
-                  Row(
-                    children: [
-                      CircleAvatar(),
-                      Expanded(
-                        child: Center(
-                          child: Text(
-                            "October 2025",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Expanded(
+                          child: Center(
+                            child: Text(
+                              "October 2025",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      CircleAvatar(),
-                    ],
+                        CircleAvatar(),
+                      ],
+                    ),
                   ),
                   Container(height: 48, child: Placeholder()),
+                  Expanded(child: Wrap(children: [],),)
                 ],
               ),
             ),
