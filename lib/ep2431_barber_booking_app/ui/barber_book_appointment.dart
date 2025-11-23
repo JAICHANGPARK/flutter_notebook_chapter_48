@@ -177,6 +177,10 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                       CircleAvatar(),
                     ],
                   ),
+                  Container(
+                    height: 42,
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),
