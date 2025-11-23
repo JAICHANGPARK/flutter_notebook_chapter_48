@@ -20,6 +20,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
           children: [
             Container(
               height: 62,
+              width: double.infinity,
               color: Colors.blue,
               child: Stack(
                 children: [
