@@ -156,7 +156,14 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 ],
               ),
             ),
-            Text("Date & Time"),
+            Text(
+              "Date & Time",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
             Expanded(child: Placeholder()),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 12),
