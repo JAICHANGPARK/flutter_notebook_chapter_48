@@ -23,7 +23,8 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
               color: Colors.blue,
               child: Stack(children: [
                 CircleAvatar(
-                  
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.white24,
                   child: Icon(Icons.arrow_back_outlined),
                 )
               ]),
