@@ -112,7 +112,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     ),
                   ),
                   Container(
-                    height: 160,
+                    height: 150,
                     // padding: EdgeInsets.only(left: 12),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
