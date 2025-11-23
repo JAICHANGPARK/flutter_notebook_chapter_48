@@ -88,7 +88,12 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 ],
               ),
             ),
-            SizedBox(height: 80, child: Placeholder()),
+            SizedBox(height: 80, child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            )),
             Padding(
               padding: const EdgeInsets.only(left: 12),
               child: Column(
