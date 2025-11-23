@@ -21,7 +21,12 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             Container(
               height: 62,
               color: Colors.blue,
-              child: Row(children: []),
+              child: Stack(children: [
+                CircleAvatar(
+                  
+                  child: Icon(Icons.arrow_back_outlined),
+                )
+              ]),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
