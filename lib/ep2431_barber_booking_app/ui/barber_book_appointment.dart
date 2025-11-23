@@ -34,7 +34,11 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     child: Center(
                       child: Text(
                         "Book Appointment",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
