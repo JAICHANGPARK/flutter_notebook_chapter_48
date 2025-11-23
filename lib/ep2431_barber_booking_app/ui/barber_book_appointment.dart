@@ -193,7 +193,28 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     ),
                   ),
                   Container(height: 48, child: Placeholder()),
-                  Expanded(child: Wrap(children: [],),)
+                  Expanded(
+                    child: GridView.builder(
+                      itemCount: 9,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                      ),
+                      itemBuilder: (context, index) {
+                        bool isSelected = index == 7;
+                        String time = "${7 + (index % 4)}:00 am";
+                        if (index > 3) time = "${9 + (index % 3)}:00 am";
+
+                        return Container(
+                          child: Text(
+                            time,
+                            style: TextStyle(
+                              color: isSelected ? Colors.black : Colors.grey,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
