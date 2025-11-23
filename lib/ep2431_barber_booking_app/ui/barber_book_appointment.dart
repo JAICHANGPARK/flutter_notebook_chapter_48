@@ -60,11 +60,12 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                     ),
                   ),
                   Container(
-                    height: 82,
+                    height: 72,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
-                      color: Colors.white24
+                      color: Colors.white10,
                     ),
+                    padding: EdgeInsets.only(left: 24),
                     child: Row(
                       children: [
                         Expanded(
