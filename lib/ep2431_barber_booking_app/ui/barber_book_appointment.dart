@@ -36,7 +36,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                         "Book Appointment",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -59,7 +59,18 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                       fontSize: 18,
                     ),
                   ),
-                  Container(height: 82, child: Placeholder()),
+                  Container(
+                    height: 82,
+                    child: Row(
+                      children: [
+                        Expanded(child: Text("23-11-2025")),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.calendar_month),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
