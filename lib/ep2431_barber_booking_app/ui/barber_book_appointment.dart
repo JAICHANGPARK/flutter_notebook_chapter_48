@@ -133,7 +133,7 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                               CircleAvatar(radius: 30),
                               Text(
                                 "Dream",
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(color:index == 0 ? Colors.black: Colors.white),
                               ),
                               Text(
                                 "10 yrs exp",
