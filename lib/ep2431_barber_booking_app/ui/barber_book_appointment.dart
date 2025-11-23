@@ -61,9 +61,18 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                   ),
                   Container(
                     height: 82,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.white24
+                    ),
                     child: Row(
                       children: [
-                        Expanded(child: Text("23-11-2025")),
+                        Expanded(
+                          child: Text(
+                            "23-11-2025",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                         IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.calendar_month),
