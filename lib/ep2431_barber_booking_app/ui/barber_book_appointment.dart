@@ -21,7 +21,6 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
             Container(
               height: 54,
               width: double.infinity,
-              color: Colors.blue,
               child: Stack(
                 children: [
                   CircleAvatar(
