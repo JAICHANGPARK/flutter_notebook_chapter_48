@@ -156,15 +156,30 @@ class _BarberBookAppointmentState extends State<BarberBookAppointment> {
                 ],
               ),
             ),
-            Text(
-              "Date & Time",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                "Date & Time",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
               ),
             ),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Expanded(child: Center(child: Text("October 2025"))),
+                      CircleAvatar(),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 12),
               height: 42,
