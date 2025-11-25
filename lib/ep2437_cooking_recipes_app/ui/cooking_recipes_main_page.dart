@@ -77,7 +77,11 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                             ? Color.fromRGBO(17, 60, 21, 1)
                             : Colors.black,
                         size: 28,
-                      ), Text("Search")],
+                      ), Text("Search",style: TextStyle(
+                        color: pageNum == 1
+                            ? Color.fromRGBO(17, 60, 21, 1)
+                            : Colors.grey,
+                      ),)],
                     ),
                   ),
                   GestureDetector(
@@ -95,7 +99,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                             : Colors.black,
                         size: 28,
                       ), Text("Saved",style: TextStyle(
-                        color: pageNum == 3
+                        color: pageNum == 2
                             ? Color.fromRGBO(17, 60, 21, 1)
                             : Colors.grey,
                       ),)],
