@@ -2,8 +2,8 @@
 
 ## EP2437
 
-- Barber & Salon Booking App UI
-- Md Habibur Rahman
+- Cookio - Cooking Recipes Mobile App
+- Fanka for Korsa
 - https://dribbble.com/shots/26772453-Barber-Salon-Booking-App-UI
 
 <img src="https://cdn.dribbble.com/userupload/45702823/file/c776e061688ba00221a7aef76bd415f4.png?resize=1905x1429&vertical=center" alt="">
