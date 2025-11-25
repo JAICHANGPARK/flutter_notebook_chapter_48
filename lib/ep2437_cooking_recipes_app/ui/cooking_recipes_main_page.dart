@@ -26,17 +26,14 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                 ),
                 color: Colors.white,
               ),
+              padding: .symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Column(
                     spacing: 12,
                     mainAxisAlignment: .center,
-                    children: [
-                      Icon(Icons.home_filled),
-                      Text("Home")
-
-                    ],
-                  )
+                    children: [Icon(Icons.home_filled), Text("Home")],
+                  ),
                 ],
               ),
             ),
