@@ -107,7 +107,12 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.person_2_outlined),
+                        Icon(Icons.person_2_outlined,
+                          color: pageNum == 3
+                              ? Color.fromRGBO(17, 60, 21, 1)
+                              : Colors.black,
+                          size: 28,
+                        ),
                         Text("Profile"),
                       ],
                     ),
