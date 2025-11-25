@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class CookingRecipesMainPage extends StatefulWidget {
@@ -16,6 +14,16 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
       body: Stack(
         children: [
           Positioned.fill(child: Placeholder()),
+          Positioned(
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                  topRight: Radius.circular(24),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
