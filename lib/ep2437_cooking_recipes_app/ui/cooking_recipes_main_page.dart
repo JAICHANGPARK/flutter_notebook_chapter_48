@@ -28,6 +28,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
               ),
               padding: .symmetric(horizontal: 24, vertical: 16),
               child: Row(
+                mainAxisAlignment: .spaceAround,
                 children: [
                   Column(
                     spacing: 8,
@@ -47,7 +48,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                   Column(
                     spacing: 8,
                     mainAxisAlignment: .center,
-                    children: [Icon(Icons.person_2_outlined), Text("Home")],
+                    children: [Icon(Icons.person_2_outlined), Text("Profile")],
                   ),
                 ],
               ),
