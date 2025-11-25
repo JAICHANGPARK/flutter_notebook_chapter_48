@@ -26,6 +26,19 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                 ),
                 color: Colors.white,
               ),
+              child: Row(
+                children: [
+                  Column(
+                    spacing: 12,
+                    mainAxisAlignment: .center,
+                    children: [
+                      Icon(Icons.home_filled),
+                      Text("Home")
+
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
