@@ -77,10 +77,12 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                       children: [Icon(Icons.inbox), Text("Saved")],
                     ),
                   ),
-                  Column(
-                    spacing: 8,
-                    mainAxisAlignment: .center,
-                    children: [Icon(Icons.person_2_outlined), Text("Profile")],
+                  GestureDetector(
+                    child: Column(
+                      spacing: 8,
+                      mainAxisAlignment: .center,
+                      children: [Icon(Icons.person_2_outlined), Text("Profile")],
+                    ),
                   ),
                 ],
               ),
