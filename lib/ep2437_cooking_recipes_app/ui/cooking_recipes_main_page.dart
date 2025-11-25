@@ -14,7 +14,15 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(child: Placeholder()),
+          Positioned.fill(child: IndexedStack(
+            index: pageNum,
+            children: [
+              Placeholder(),
+              Placeholder(),
+              Placeholder(),
+              Placeholder(),
+            ],
+          )),
           Positioned(
             bottom: 0,
             left: 0,
