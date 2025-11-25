@@ -39,10 +39,17 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
               child: Row(
                 mainAxisAlignment: .spaceAround,
                 children: [
-                  Column(
-                    spacing: 8,
-                    mainAxisAlignment: .center,
-                    children: [Icon(Icons.home_filled), Text("Home")],
+                  GestureDetector(
+                    onTap: (){
+                      setState(() {
+                        pageNum = 0;
+                      });
+                    },
+                    child: Column(
+                      spacing: 8,
+                      mainAxisAlignment: .center,
+                      children: [Icon(Icons.home_filled), Text("Home")],
+                    ),
                   ),
                   Column(
                     spacing: 8,
