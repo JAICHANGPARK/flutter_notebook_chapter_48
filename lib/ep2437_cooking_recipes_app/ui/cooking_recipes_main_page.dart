@@ -15,12 +15,16 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
         children: [
           Positioned.fill(child: Placeholder()),
           Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
                 ),
+                color: Colors.white,
               ),
             ),
           ),
