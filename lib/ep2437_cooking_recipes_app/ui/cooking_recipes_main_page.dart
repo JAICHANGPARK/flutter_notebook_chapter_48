@@ -56,7 +56,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                           Icons.home_filled,
                           color: pageNum == 0
                               ? Color.fromRGBO(17, 60, 21, 1)
-                              : Colors.black,
+                              : Colors.grey,
                           size: 28,
                         ),
                         Text(
@@ -84,7 +84,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                           Icons.search,
                           color: pageNum == 1
                               ? Color.fromRGBO(17, 60, 21, 1)
-                              : Colors.black,
+                              : Colors.grey,
                           size: 28,
                         ),
                         Text(
@@ -112,7 +112,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                           Icons.inbox,
                           color: pageNum == 2
                               ? Color.fromRGBO(17, 60, 21, 1)
-                              : Colors.black,
+                              : Colors.grey,
                           size: 28,
                         ),
                         Text(
