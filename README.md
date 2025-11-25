@@ -6,7 +6,7 @@
 - Fanka for Korsa
 - https://dribbble.com/shots/26811263-Cookio-Cooking-Recipes-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/45702823/file/c776e061688ba00221a7aef76bd415f4.png?resize=1905x1429&vertical=center" alt="">
+<img src="https://cdn.dribbble.com/userupload/45823941/file/822b597fa2b067be5984b7cf3bc8fb72.png?resize=1905x1429&vertical=center" alt="">
 
 ## EP2431-2436
 
