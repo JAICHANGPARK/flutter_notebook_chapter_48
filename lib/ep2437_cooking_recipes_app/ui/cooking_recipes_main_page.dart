@@ -9,20 +9,23 @@ class CookingRecipesMainPage extends StatefulWidget {
 
 class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(child: IndexedStack(
-            index: pageNum,
-            children: [
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-            ],
-          )),
+          Positioned.fill(
+            child: IndexedStack(
+              index: pageNum,
+              children: [
+                Placeholder(),
+                Placeholder(),
+                Placeholder(),
+                Placeholder(),
+              ],
+            ),
+          ),
           Positioned(
             bottom: 0,
             left: 0,
@@ -40,7 +43,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                 mainAxisAlignment: .spaceAround,
                 children: [
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         pageNum = 0;
                       });
@@ -48,7 +51,15 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
-                      children: [Icon(Icons.home_filled), Text("Home")],
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                          color: pageNum == 0
+                              ? Color.fromRGBO(17, 60, 21, 1)
+                              : Colors.black,
+                        ),
+                        Text("Home"),
+                      ],
                     ),
                   ),
                   Column(
