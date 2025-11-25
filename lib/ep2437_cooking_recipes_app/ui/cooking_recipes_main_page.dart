@@ -30,7 +30,22 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
               child: Row(
                 children: [
                   Column(
-                    spacing: 12,
+                    spacing: 8,
+                    mainAxisAlignment: .center,
+                    children: [Icon(Icons.home_filled), Text("Home")],
+                  ),
+                  Column(
+                    spacing: 8,
+                    mainAxisAlignment: .center,
+                    children: [Icon(Icons.search), Text("Search")],
+                  ),
+                  Column(
+                    spacing: 8,
+                    mainAxisAlignment: .center,
+                    children: [Icon(Icons.home_filled), Text("Home")],
+                  ),
+                  Column(
+                    spacing: 8,
                     mainAxisAlignment: .center,
                     children: [Icon(Icons.home_filled), Text("Home")],
                   ),
