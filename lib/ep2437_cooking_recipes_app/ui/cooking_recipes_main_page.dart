@@ -1,5 +1,7 @@
 
 
+import 'package:flutter/material.dart';
+
 class CookingRecipesMainPage extends StatefulWidget {
   const CookingRecipesMainPage({super.key});
 
@@ -10,6 +12,6 @@ class CookingRecipesMainPage extends StatefulWidget {
 class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
