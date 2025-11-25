@@ -63,21 +63,33 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                       ],
                     ),
                   ),
-                  GestureDetector(
+                  GestureDetector(onTap: () {
+                    setState(() {
+                      pageNum = 1;
+                    });
+                  },
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [Icon(Icons.search), Text("Search")],
                     ),
                   ),
-                  GestureDetector(
+                  GestureDetector(onTap: () {
+                    setState(() {
+                      pageNum = 2;
+                    });
+                  },
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [Icon(Icons.inbox), Text("Saved")],
                     ),
                   ),
-                  GestureDetector(
+                  GestureDetector(onTap: () {
+                    setState(() {
+                      pageNum = 3;
+                    });
+                  },
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
