@@ -63,37 +63,48 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                       ],
                     ),
                   ),
-                  GestureDetector(onTap: () {
-                    setState(() {
-                      pageNum = 1;
-                    });
-                  },
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pageNum = 1;
+                      });
+                    },
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
-                      children: [Icon(Icons.search), Text("Search")],
+                      children: [Icon(Icons.search,
+                        color: pageNum == 1
+                            ? Color.fromRGBO(17, 60, 21, 1)
+                            : Colors.black,
+                        size: 28,
+                      ), Text("Search")],
                     ),
                   ),
-                  GestureDetector(onTap: () {
-                    setState(() {
-                      pageNum = 2;
-                    });
-                  },
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pageNum = 2;
+                      });
+                    },
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [Icon(Icons.inbox), Text("Saved")],
                     ),
                   ),
-                  GestureDetector(onTap: () {
-                    setState(() {
-                      pageNum = 3;
-                    });
-                  },
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pageNum = 3;
+                      });
+                    },
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
-                      children: [Icon(Icons.person_2_outlined), Text("Profile")],
+                      children: [
+                        Icon(Icons.person_2_outlined),
+                        Text("Profile"),
+                      ],
                     ),
                   ),
                 ],
