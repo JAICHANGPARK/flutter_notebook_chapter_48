@@ -89,7 +89,12 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
-                      children: [Icon(Icons.inbox), Text("Saved")],
+                      children: [Icon(Icons.inbox,
+                        color: pageNum == 2
+                            ? Color.fromRGBO(17, 60, 21, 1)
+                            : Colors.black,
+                        size: 28,
+                      ), Text("Saved")],
                     ),
                   ),
                   GestureDetector(
