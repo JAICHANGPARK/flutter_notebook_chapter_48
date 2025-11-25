@@ -57,6 +57,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                           color: pageNum == 0
                               ? Color.fromRGBO(17, 60, 21, 1)
                               : Colors.black,
+                          size: 28,
                         ),
                         Text("Home"),
                       ],
