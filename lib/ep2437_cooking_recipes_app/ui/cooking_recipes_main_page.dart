@@ -12,6 +12,12 @@ class CookingRecipesMainPage extends StatefulWidget {
 class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(child: Placeholder()),
+        ],
+      ),
+    );
   }
 }
