@@ -8,6 +8,7 @@ class CookingRecipesMainPage extends StatefulWidget {
 }
 
 class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
+  int pageNum = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
