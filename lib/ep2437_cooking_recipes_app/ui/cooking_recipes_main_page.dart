@@ -42,12 +42,12 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                   Column(
                     spacing: 8,
                     mainAxisAlignment: .center,
-                    children: [Icon(Icons.home_filled), Text("Home")],
+                    children: [Icon(Icons.inbox), Text("Saved")],
                   ),
                   Column(
                     spacing: 8,
                     mainAxisAlignment: .center,
-                    children: [Icon(Icons.home_filled), Text("Home")],
+                    children: [Icon(Icons.person_2_outlined), Text("Home")],
                   ),
                 ],
               ),
