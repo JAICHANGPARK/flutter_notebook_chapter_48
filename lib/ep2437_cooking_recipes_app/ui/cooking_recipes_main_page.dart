@@ -26,7 +26,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                 ),
                 color: Colors.white,
               ),
-              padding: .symmetric(horizontal: 16),
+              padding: .symmetric(horizontal: 24, vertical: 16),
               child: Row(
                 children: [
                   Column(
