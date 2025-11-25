@@ -59,7 +59,14 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                               : Colors.black,
                           size: 28,
                         ),
-                        Text("Home"),
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            color: pageNum == 0
+                                ? Color.fromRGBO(17, 60, 21, 1)
+                                : Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -72,16 +79,23 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
-                      children: [Icon(Icons.search,
-                        color: pageNum == 1
-                            ? Color.fromRGBO(17, 60, 21, 1)
-                            : Colors.black,
-                        size: 28,
-                      ), Text("Search",style: TextStyle(
-                        color: pageNum == 1
-                            ? Color.fromRGBO(17, 60, 21, 1)
-                            : Colors.grey,
-                      ),)],
+                      children: [
+                        Icon(
+                          Icons.search,
+                          color: pageNum == 1
+                              ? Color.fromRGBO(17, 60, 21, 1)
+                              : Colors.black,
+                          size: 28,
+                        ),
+                        Text(
+                          "Search",
+                          style: TextStyle(
+                            color: pageNum == 1
+                                ? Color.fromRGBO(17, 60, 21, 1)
+                                : Colors.grey,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   GestureDetector(
@@ -93,16 +107,23 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                     child: Column(
                       spacing: 8,
                       mainAxisAlignment: .center,
-                      children: [Icon(Icons.inbox,
-                        color: pageNum == 2
-                            ? Color.fromRGBO(17, 60, 21, 1)
-                            : Colors.black,
-                        size: 28,
-                      ), Text("Saved",style: TextStyle(
-                        color: pageNum == 2
-                            ? Color.fromRGBO(17, 60, 21, 1)
-                            : Colors.grey,
-                      ),)],
+                      children: [
+                        Icon(
+                          Icons.inbox,
+                          color: pageNum == 2
+                              ? Color.fromRGBO(17, 60, 21, 1)
+                              : Colors.black,
+                          size: 28,
+                        ),
+                        Text(
+                          "Saved",
+                          style: TextStyle(
+                            color: pageNum == 2
+                                ? Color.fromRGBO(17, 60, 21, 1)
+                                : Colors.grey,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   GestureDetector(
@@ -115,17 +136,21 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.person_2_outlined,
+                        Icon(
+                          Icons.person_2_outlined,
                           color: pageNum == 3
                               ? Color.fromRGBO(17, 60, 21, 1)
                               : Colors.grey,
                           size: 28,
                         ),
-                        Text("Profile",style: TextStyle(
-                          color: pageNum == 3
-                              ? Color.fromRGBO(17, 60, 21, 1)
-                              : Colors.grey,
-                        ),),
+                        Text(
+                          "Profile",
+                          style: TextStyle(
+                            color: pageNum == 3
+                                ? Color.fromRGBO(17, 60, 21, 1)
+                                : Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   ),
