@@ -21,8 +21,8 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(24),
-                  topRight: Radius.circular(24),
+                  topLeft: .circular(24),
+                  topRight: .circular(24),
                 ),
                 color: Colors.white,
               ),
