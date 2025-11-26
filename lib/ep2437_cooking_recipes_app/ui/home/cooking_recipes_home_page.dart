@@ -29,22 +29,28 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
             ),
           ),
         ),
-        Positioned(child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  CircleAvatar(),
-                  Expanded(child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Good Morning"),
-                    Text("Dreamwalker")
-                  ],),),
-                ],
-              )
-
-            ])),
+        Positioned(
+          child: SafeArea(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  
+                  children: [
+                    CircleAvatar(),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [Text("Good Morning"), Text("Dreamwalker"),],
+                      ),
+                    ),
+                    CircleAvatar(),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }
