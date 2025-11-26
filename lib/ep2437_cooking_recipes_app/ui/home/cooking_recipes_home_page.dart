@@ -16,10 +16,12 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
                 colors: [
                   Color.fromRGBO(227, 253, 221, 1),
                   Color.fromRGBO(240, 254, 238, 1),
+                  Colors.white,
                   Colors.white,
                 ],
               ),
