@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2437_cooking_recipes_app/ui/home/cooking_recipes_home_page.dart';
 
 class CookingRecipesMainPage extends StatefulWidget {
   const CookingRecipesMainPage({super.key});
@@ -20,7 +21,7 @@ class _CookingRecipesMainPageState extends State<CookingRecipesMainPage> {
               index: pageNum,
               children: [
                 Placeholder(),
-                Placeholder(),
+                CookingRecipesHomePage(),
                 Placeholder(),
                 Placeholder(),
               ],
