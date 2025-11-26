@@ -63,6 +63,13 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                     ],
                   ),
                 ),
+                SizedBox(height: 42),
+                Row(
+                  children: [
+                    Text("Recommendation"),
+                    TextButton(onPressed: () {}, child: Text()),
+                  ],
+                ),
               ],
             ),
           ),
