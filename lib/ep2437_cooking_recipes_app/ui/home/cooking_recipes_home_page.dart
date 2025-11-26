@@ -35,18 +35,19 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  
                   children: [
                     CircleAvatar(),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [Text("Good Morning"), Text("Dreamwalker"),],
+                        children: [Text("Good Morning"), Text("Dreamwalker")],
                       ),
                     ),
                     CircleAvatar(),
                   ],
                 ),
+                Text("Feeling hungry?\nWhat are we cookin' today?"),
+                Container(decoration: BoxDecoration(color: Colors.white)),
               ],
             ),
           ),
