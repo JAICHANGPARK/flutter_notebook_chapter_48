@@ -14,7 +14,11 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
       children: [
         Positioned.fill(
           child: Container(
-            decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color.fromRGBO(227, 253, 221, 1)],
+              ),
+            ),
           ),
         ),
       ],
