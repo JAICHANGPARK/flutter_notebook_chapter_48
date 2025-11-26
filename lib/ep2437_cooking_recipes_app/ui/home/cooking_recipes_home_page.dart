@@ -65,20 +65,34 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   ),
                 ),
                 SizedBox(height: 42, child: Placeholder()),
-                Row(
-                  children: [
-                    Text("Recommendation"),
-                    TextButton(onPressed: () {}, child: Text("See All")),
-                  ],
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("Recommendation"),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("See All"),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 260, child: Placeholder()),
+                        Row(
+                          children: [
+                            Text("Recipe of The Week"),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("See All"),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 260, child: Placeholder()),
+                      ],
+                    ),
+                  ),
                 ),
-                SizedBox(height: 260, child: Placeholder()),
-                Row(
-                  children: [
-                    Text("Recipe of The Week"),
-                    TextButton(onPressed: () {}, child: Text("See All")),
-                  ],
-                ),
-                SizedBox(height: 260, child: Placeholder()),
               ],
             ),
           ),
