@@ -16,11 +16,11 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
+                begin: .topCenter,
+                end: .bottomCenter,
                 colors: [
-                  Color.fromRGBO(227, 253, 221, 1),
-                  Color.fromRGBO(240, 254, 238, 1),
+                  .fromRGBO(227, 253, 221, 1),
+                  .fromRGBO(240, 254, 238, 1),
                   Colors.white,
                   Colors.white,
                   Colors.white,
@@ -32,14 +32,14 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
         Positioned(
           child: SafeArea(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: .start,
               children: [
                 Row(
                   children: [
                     CircleAvatar(),
                     Expanded(
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: .start,
                         children: [Text("Good Morning"), Text("Dreamwalker")],
                       ),
                     ),
@@ -48,15 +48,17 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                 ),
                 Text("Feeling hungry?\nWhat are we cookin' today?"),
                 Container(
-                  decoration: BoxDecoration(color: .white),
+                  decoration: BoxDecoration(color: Colors.white),
                   child: Row(
                     children: [
                       Icon(Icons.search),
-                      Expanded(child: TextField(
-                        decoration:InputDecoration(
-                          hintText: "Search any recipe...",
+                      Expanded(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: "Search any recipe...",
+                          ),
                         ),
-                      )),
+                      ),
                       Icon(Icons.filter_list),
                     ],
                   ),
