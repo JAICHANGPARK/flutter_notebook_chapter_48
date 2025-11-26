@@ -32,6 +32,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
         Positioned(
           child: SafeArea(
             child: Column(
+              spacing: 16,
               crossAxisAlignment: .start,
               children: [
                 Row(
@@ -70,6 +71,14 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                     TextButton(onPressed: () {}, child: Text("See All")),
                   ],
                 ),
+                SizedBox(height: 260, child: Placeholder()),
+                Row(
+                  children: [
+                    Text("Recipe of The Week"),
+                    TextButton(onPressed: () {}, child: Text("See All")),
+                  ],
+                ),
+                SizedBox(height: 260, child: Placeholder()),
               ],
             ),
           ),
