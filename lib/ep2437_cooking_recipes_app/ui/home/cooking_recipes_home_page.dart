@@ -68,8 +68,10 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
+                      crossAxisAlignment: .start,
                       children: [
                         Row(
+                          mainAxisAlignment: .spaceBetween,
                           children: [
                             Text("Recommendation"),
                             TextButton(
@@ -80,6 +82,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                         ),
                         SizedBox(height: 260, child: Placeholder()),
                         Row(
+                          mainAxisAlignment: .spaceBetween,
                           children: [
                             Text("Recipe of The Week"),
                             TextButton(
