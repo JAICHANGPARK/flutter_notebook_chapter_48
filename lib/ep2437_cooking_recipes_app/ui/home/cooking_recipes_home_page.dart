@@ -23,6 +23,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   Color.fromRGBO(240, 254, 238, 1),
                   Colors.white,
                   Colors.white,
+                  Colors.white,
                 ],
               ),
             ),
