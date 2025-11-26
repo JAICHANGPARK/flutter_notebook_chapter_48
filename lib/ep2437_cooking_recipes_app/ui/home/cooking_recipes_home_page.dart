@@ -11,8 +11,8 @@ class CookingRecipesHomePage extends StatefulWidget {
 class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return Stack(
+      children: [],
     );
   }
 }
