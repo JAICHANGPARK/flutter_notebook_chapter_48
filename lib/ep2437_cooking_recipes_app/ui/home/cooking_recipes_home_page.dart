@@ -47,14 +47,19 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   ],
                 ),
                 Text("Feeling hungry?\nWhat are we cookin' today?"),
-                Container(decoration: BoxDecoration(color: Colors.white),
-                child: Row(
-                  children: [
-                    Icon(Icons.search),
-                    Expanded(child: TextField()),
-                    Icon(Icons.filter_list)
-                  ],
-                ),
+                Container(
+                  decoration: BoxDecoration(color: .white),
+                  child: Row(
+                    children: [
+                      Icon(Icons.search),
+                      Expanded(child: TextField(
+                        decoration:InputDecoration(
+                          hintText: "Search any recipe...",
+                        ),
+                      )),
+                      Icon(Icons.filter_list),
+                    ],
+                  ),
                 ),
               ],
             ),
