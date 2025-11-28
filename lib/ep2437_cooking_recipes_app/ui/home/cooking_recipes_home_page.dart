@@ -44,7 +44,13 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: .start,
-                          children: [Text("Good Morning"), Text("Dreamwalker")],
+                          children: [
+                            Text("Good Morning"),
+                            Text(
+                              "Dreamwalker",
+                              style: TextStyle(fontWeight: .bold),
+                            ),
+                          ],
                         ),
                       ),
                       CircleAvatar(),
