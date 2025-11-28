@@ -164,7 +164,10 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                         SizedBox(
                           height: 260,
                           child: ListView.builder(
-                            itemBuilder: (context, index) {},
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              
+                            },
                           ),
                         ),
                         Padding(
@@ -172,7 +175,13 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           child: Row(
                             mainAxisAlignment: .spaceBetween,
                             children: [
-                              Text("Recipe of The Week"),
+                              Text(
+                                "Recipe of The Week",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text("See All"),
