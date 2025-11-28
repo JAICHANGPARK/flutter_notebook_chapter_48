@@ -48,17 +48,19 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             Text("Good Morning"),
                             Text(
                               "Dreamwalker",
-                              style: TextStyle(fontWeight: .bold,
-                              fontSize: 20),
+                              style: TextStyle(fontWeight: .bold, fontSize: 20),
                             ),
                           ],
                         ),
                       ),
-                      CircleAvatar(),
+                      CircleAvatar(child: Icon(Icons.menu)),
                     ],
                   ),
                 ),
-                Text("Feeling hungry?\nWhat are we cookin' today?"),
+                Padding(
+                  padding: .all(8.0),
+                  child: Text("Feeling hungry?\nWhat are we cookin' today?"),
+                ),
                 Container(
                   decoration: BoxDecoration(color: Colors.white),
                   child: Row(
