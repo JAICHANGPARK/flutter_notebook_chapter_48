@@ -175,7 +175,13 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                                   spacing: 8,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Expanded(child: Placeholder()),
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                    ),
                                     Text(
                                       "Spicy Thai Tom Yum",
                                       style: TextStyle(fontWeight: .bold),
