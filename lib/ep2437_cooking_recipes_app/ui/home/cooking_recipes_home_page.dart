@@ -129,7 +129,10 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             children: [
                               Text(
                                 "Recommendation",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                               TextButton(
                                 onPressed: () {},
