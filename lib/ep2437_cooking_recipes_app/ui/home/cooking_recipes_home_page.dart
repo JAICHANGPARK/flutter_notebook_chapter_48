@@ -164,12 +164,12 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                         Container(
                           height: 280,
                           padding: EdgeInsets.only(left: 16),
-
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 180,
+                                // decoration: BoxDecoration(color: Colors.orange),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
