@@ -8,6 +8,8 @@ class CookingRecipesHomePage extends StatefulWidget {
 }
 
 class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
+  final tabs = ["See All", "Soup", "Breakfast", "Salad"];
+
   @override
   Widget build(BuildContext context) {
     return Stack(
