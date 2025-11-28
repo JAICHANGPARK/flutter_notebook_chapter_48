@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CookingRecipesHomePage extends StatefulWidget {
   const CookingRecipesHomePage({super.key});
@@ -201,6 +202,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             },
                           ),
                         ),
+                        Gap(16),
                         Padding(
                           padding: .symmetric(horizontal: 16),
                           child: Row(
