@@ -38,7 +38,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
-                    spacing: 16,
+                    spacing: 12,
                     children: [
                       CircleAvatar(),
                       Expanded(
