@@ -58,7 +58,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   ),
                 ),
                 Padding(
-                  padding: .all(8.0),
+                  padding: .symmetric(horizontal: 16),
                   child: Text("Feeling hungry?\nWhat are we cookin' today?"),
                 ),
                 Container(
