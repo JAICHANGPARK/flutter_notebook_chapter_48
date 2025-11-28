@@ -86,6 +86,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           decoration: InputDecoration(
                             hintText: "Search any recipe...",
                             border: InputBorder.none,
+                            hintStyle: TextStyle(color: Colors.grey),
                           ),
                         ),
                       ),
@@ -93,7 +94,17 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 42, child: Placeholder()),
+                SizedBox(
+                  height: 42,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                    return Container(
+                      decoration: ShapeDecoration(shape: StadiumBorder(),),
+                      child: Center(child: Text("Soup"),),
+                    );
+                  }),
+                ),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
