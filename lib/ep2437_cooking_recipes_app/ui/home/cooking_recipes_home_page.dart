@@ -179,6 +179,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.blue,
+                                          borderRadius: .circular(14),
                                         ),
                                       ),
                                     ),
