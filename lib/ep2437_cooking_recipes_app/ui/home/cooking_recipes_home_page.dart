@@ -161,7 +161,12 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 260, child: Placeholder()),
+                        SizedBox(
+                          height: 260,
+                          child: ListView.builder(
+                            itemBuilder: (context, index) {},
+                          ),
+                        ),
                         Row(
                           mainAxisAlignment: .spaceBetween,
                           children: [
