@@ -13,8 +13,29 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
   final tabs = ["See All", "Soup", "Breakfast", "Salad"];
   int selectedTab = 0;
 
-  final List<CookingRecipes>
-
+  final List<CookingRecipe> menuList = [
+    CookingRecipe(
+      id: 1,
+      name: "Spicy Thai Tom Yum",
+      description: "A tangy and spicy Thai soup...",
+      imageUrl:
+          "https://cdn.pixabay.com/photo/2017/06/30/04/58/green-curry-2457236_1280.jpg",
+    ),
+    CookingRecipe(
+      id: 2,
+      name: "Spicy Thai Tom Yum",
+      description: "A tangy and spicy Thai soup...",
+      imageUrl:
+          "https://cdn.pixabay.com/photo/2016/11/18/16/10/food-1835565_1280.jpg",
+    ),
+    CookingRecipe(
+      id: 3,
+      name: "Classic Pad Thai",
+      description: "Stir-fried rice noodle...",
+      imageUrl:
+          "https://cdn.pixabay.com/photo/2017/06/30/04/58/green-curry-2457236_1280.jpg",
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +167,6 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   child: SingleChildScrollView(
                     padding: .zero,
                     child: Column(
-
                       crossAxisAlignment: .start,
                       children: [
                         Padding(
