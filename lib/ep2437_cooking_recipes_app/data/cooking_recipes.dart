@@ -19,6 +19,13 @@ class CookingRecipes {
       imageUrl: json['image_url'] as String,
     );
   }
-  
 
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'description': description,
+      'image_url': imageUrl,
+    };
+  }
 }
