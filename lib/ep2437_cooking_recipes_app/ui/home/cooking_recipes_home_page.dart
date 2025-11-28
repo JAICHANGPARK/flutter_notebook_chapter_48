@@ -97,13 +97,17 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                 SizedBox(
                   height: 42,
                   child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                    return Container(
-                      decoration: ShapeDecoration(shape: StadiumBorder(),),
-                      child: Center(child: Text("Soup"),),
-                    );
-                  }),
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: .fromRGBO(18, 60, 21, 1),
+                        ),
+                        child: Center(child: Text("Soup")),
+                      );
+                    },
+                  ),
                 ),
                 Expanded(
                   child: SingleChildScrollView(
