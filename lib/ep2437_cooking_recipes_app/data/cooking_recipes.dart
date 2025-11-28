@@ -1,18 +1,18 @@
-class CookingRecipes {
+class CookingRecipe {
   final int id;
   final String name;
   final String description;
   final String imageUrl;
 
-  CookingRecipes({
+  CookingRecipe({
     required this.id,
     required this.name,
     required this.description,
     required this.imageUrl,
   });
 
-  factory CookingRecipes.fromJson(Map<String, dynamic> json) {
-    return CookingRecipes(
+  factory CookingRecipe.fromJson(Map<String, dynamic> json) {
+    return CookingRecipe(
       id: json['id'] as int,
       name: json['name'] as String,
       description: json['description'] as String? ?? '',
