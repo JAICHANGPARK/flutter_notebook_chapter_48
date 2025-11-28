@@ -167,15 +167,18 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             itemBuilder: (context, index) {},
                           ),
                         ),
-                        Row(
-                          mainAxisAlignment: .spaceBetween,
-                          children: [
-                            Text("Recipe of The Week"),
-                            TextButton(
-                              onPressed: () {},
-                              child: Text("See All"),
-                            ),
-                          ],
+                        Padding(
+                          padding: .symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisAlignment: .spaceBetween,
+                            children: [
+                              Text("Recipe of The Week"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("See All"),
+                              ),
+                            ],
+                          ),
                         ),
                         SizedBox(height: 260, child: Placeholder()),
                       ],
