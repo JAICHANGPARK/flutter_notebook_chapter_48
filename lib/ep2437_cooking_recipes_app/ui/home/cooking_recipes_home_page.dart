@@ -9,7 +9,7 @@ class CookingRecipesHomePage extends StatefulWidget {
 
 class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
   final tabs = ["See All", "Soup", "Breakfast", "Salad"];
-
+  int selectedTab = 0;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -101,7 +101,9 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   padding: EdgeInsets.only(left: 16),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
+                    itemCount: tabs.length,
                     itemBuilder: (context, index) {
+                      final tab = tabs[index];
                       return Container(
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
