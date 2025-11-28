@@ -100,14 +100,19 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-
                       return Container(
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
                           color: .fromRGBO(18, 60, 21, 1),
                         ),
+                        margin: EdgeInsets.only(right: 8),
                         padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(child: Text("Soup",)),
+                        child: Center(
+                          child: Text(
+                            "Soup",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                       );
                     },
                   ),
@@ -117,15 +122,21 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                     child: Column(
                       crossAxisAlignment: .start,
                       children: [
-                        Row(
-                          mainAxisAlignment: .spaceBetween,
-                          children: [
-                            Text("Recommendation"),
-                            TextButton(
-                              onPressed: () {},
-                              child: Text("See All"),
-                            ),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisAlignment: .spaceBetween,
+                            children: [
+                              Text(
+                                "Recommendation",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("See All"),
+                              ),
+                            ],
+                          ),
                         ),
                         SizedBox(height: 260, child: Placeholder()),
                         Row(
