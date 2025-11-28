@@ -10,6 +10,7 @@ class CookingRecipesHomePage extends StatefulWidget {
 class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
   final tabs = ["See All", "Soup", "Breakfast", "Salad"];
   int selectedTab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -105,16 +106,19 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                     itemBuilder: (context, index) {
                       final tab = tabs[index];
                       return GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
-                            
-
+                            selectedTab = index;
                           });
                         },
                         child: Container(
                           decoration: ShapeDecoration(
-                            shape: StadiumBorder(),
-                            color: .fromRGBO(18, 60, 21, 1),
+                            shape: StadiumBorder(
+                              side: BorderSide(color: Colors.grey[200]!),
+                            ),
+                            color: index == selectedTab
+                                ? .fromRGBO(18, 60, 21, 1)
+                                : Colors.transparent,
                           ),
                           margin: EdgeInsets.only(right: 8),
                           padding: EdgeInsets.symmetric(horizontal: 16),
