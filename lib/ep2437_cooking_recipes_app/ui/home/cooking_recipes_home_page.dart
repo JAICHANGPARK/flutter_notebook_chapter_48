@@ -125,7 +125,11 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           child: Center(
                             child: Text(
                               "${tab}",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: index == selectedTab
+                                    ? Colors.white
+                                    : .fromRGBO(18, 60, 21, 1),
+                              ),
                             ),
                           ),
                         ),
