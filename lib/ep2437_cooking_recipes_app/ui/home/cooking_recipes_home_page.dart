@@ -48,7 +48,8 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             Text("Good Morning"),
                             Text(
                               "Dreamwalker",
-                              style: TextStyle(fontWeight: .bold),
+                              style: TextStyle(fontWeight: .bold,
+                              fontSize: 20),
                             ),
                           ],
                         ),
