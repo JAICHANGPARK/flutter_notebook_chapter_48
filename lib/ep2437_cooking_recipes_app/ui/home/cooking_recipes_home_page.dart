@@ -104,17 +104,25 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                     itemCount: tabs.length,
                     itemBuilder: (context, index) {
                       final tab = tabs[index];
-                      return Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: .fromRGBO(18, 60, 21, 1),
-                        ),
-                        margin: EdgeInsets.only(right: 8),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Soup",
-                            style: TextStyle(color: Colors.white),
+                      return GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            
+
+                          });
+                        },
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: .fromRGBO(18, 60, 21, 1),
+                          ),
+                          margin: EdgeInsets.only(right: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "${tab}",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       );
