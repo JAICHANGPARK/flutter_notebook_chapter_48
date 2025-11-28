@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2437_cooking_recipes_app/data/cooking_recipes.dart';
 import 'package:gap/gap.dart';
 
 class CookingRecipesHomePage extends StatefulWidget {
@@ -11,6 +12,9 @@ class CookingRecipesHomePage extends StatefulWidget {
 class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
   final tabs = ["See All", "Soup", "Breakfast", "Salad"];
   int selectedTab = 0;
+
+  final List<CookingRecipes>
+
 
   @override
   Widget build(BuildContext context) {
