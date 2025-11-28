@@ -141,6 +141,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   child: SingleChildScrollView(
                     padding: .zero,
                     child: Column(
+
                       crossAxisAlignment: .start,
                       children: [
                         Padding(
