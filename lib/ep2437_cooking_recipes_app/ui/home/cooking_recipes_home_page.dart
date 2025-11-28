@@ -193,6 +193,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           padding: EdgeInsets.only(left: 16),
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
+                            itemCount: menuList.length,
                             itemBuilder: (context, index) {
                               final menu = menuList[index];
                               return Container(
