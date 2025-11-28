@@ -172,13 +172,16 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                                 margin: EdgeInsets.only(right: 12),
                                 // decoration: BoxDecoration(color: Colors.orange),
                                 child: Column(
+                                  spacing: 8,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(child: Placeholder()),
                                     Text("Spicy Thai Tom Yum"),
-                                    Text("A tangy and spicy Thai soup...",
-                                    maxLines: 1,
-                                    overflow: .ellipsis,),
+                                    Text(
+                                      "A tangy and spicy Thai soup...",
+                                      maxLines: 1,
+                                      overflow: .ellipsis,
+                                    ),
                                   ],
                                 ),
                               );
