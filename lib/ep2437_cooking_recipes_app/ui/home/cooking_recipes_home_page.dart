@@ -166,7 +166,14 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
-                              
+                              return Container(
+                                width: 240,
+                                child: Column(
+                                  children: [
+                                    
+                                  ],
+                                ),
+                              );
                             },
                           ),
                         ),
