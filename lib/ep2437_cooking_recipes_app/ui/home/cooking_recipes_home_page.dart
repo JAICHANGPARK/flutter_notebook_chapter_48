@@ -217,11 +217,11 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                                       ),
                                     ),
                                     Text(
-                                      "Spicy Thai Tom Yum",
+                                      menu.name,
                                       style: TextStyle(fontWeight: .bold),
                                     ),
                                     Text(
-                                      "A tangy and spicy Thai soup...",
+                                      menu.description,
                                       maxLines: 1,
                                       overflow: .ellipsis,
                                       style: TextStyle(fontSize: 13),
