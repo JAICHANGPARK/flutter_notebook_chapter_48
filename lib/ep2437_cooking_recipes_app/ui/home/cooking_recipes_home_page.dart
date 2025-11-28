@@ -194,6 +194,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
+                              final menu = menuList[index];
                               return Container(
                                 width: 180,
                                 margin: EdgeInsets.only(right: 12),
@@ -207,6 +208,10 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.blue,
                                           borderRadius: .circular(14),
+                                          image: DecorationImage(
+                                            image: NetworkImage(menu.imageUrl),
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
                                     ),
