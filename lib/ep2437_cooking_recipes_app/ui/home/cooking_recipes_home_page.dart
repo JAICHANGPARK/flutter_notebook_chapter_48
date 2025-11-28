@@ -69,10 +69,14 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   padding: .symmetric(horizontal: 12),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    boxShadow: [BoxShadow(color: Colors.grey[300]!,
-                    spreadRadius: 1,offset: Offset(0, 2),
-                      blurRadius: 3
-                    )],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey[300]!,
+                        spreadRadius: 1,
+                        offset: Offset(0, 2),
+                        blurRadius: 3,
+                      ),
+                    ],
                   ),
                   child: Row(
                     children: [
@@ -81,6 +85,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                         child: TextField(
                           decoration: InputDecoration(
                             hintText: "Search any recipe...",
+                            border: InputBorder.none,
                           ),
                         ),
                       ),
