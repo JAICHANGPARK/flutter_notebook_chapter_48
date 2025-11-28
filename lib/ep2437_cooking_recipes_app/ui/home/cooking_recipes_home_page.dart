@@ -162,15 +162,18 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                           ),
                         ),
                         SizedBox(
-                          height: 260,
+                          height: 280,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
-                                width: 240,
+                                width: 180,
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    
+                                    Expanded(child: Placeholder(),),
+                                    Text("Spicy Thai Tom Yum"),
+                                    Text("A tangy and spicy Thai soup...")
                                   ],
                                 ),
                               );
