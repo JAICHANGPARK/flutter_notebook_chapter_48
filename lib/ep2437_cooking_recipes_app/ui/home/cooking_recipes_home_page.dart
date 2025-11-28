@@ -65,6 +65,7 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                   ),
                 ),
                 Container(
+                  margin: .symmetric(horizontal: 16),
                   padding: .symmetric(horizontal: 16),
                   decoration: BoxDecoration(color: Colors.white),
                   child: Row(
