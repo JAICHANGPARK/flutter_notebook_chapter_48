@@ -222,7 +222,44 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 260, child: Placeholder()),
+                        Container(
+                          height: 270,
+                          padding: EdgeInsets.only(left: 16),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 220,
+                                margin: EdgeInsets.only(right: 12),
+                                // decoration: BoxDecoration(color: Colors.orange),
+                                child: Column(
+                                  spacing: 8,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                          borderRadius: .circular(14),
+                                        ),
+                                      ),
+                                    ),
+                                    Text(
+                                      "Spicy Thai Tom Yum",
+                                      style: TextStyle(fontWeight: .bold),
+                                    ),
+                                    Text(
+                                      "A tangy and spicy Thai soup...",
+                                      maxLines: 1,
+                                      overflow: .ellipsis,
+                                      style: TextStyle(fontSize: 13),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ),
                       ],
                     ),
                   ),
