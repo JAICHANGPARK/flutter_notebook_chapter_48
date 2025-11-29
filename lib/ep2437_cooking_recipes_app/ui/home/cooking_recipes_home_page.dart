@@ -196,37 +196,50 @@ class _CookingRecipesHomePageState extends State<CookingRecipesHomePage> {
                             itemCount: menuList.length,
                             itemBuilder: (context, index) {
                               final menu = menuList[index];
-                              return Container(
-                                width: 180,
-                                margin: EdgeInsets.only(right: 12),
-                                // decoration: BoxDecoration(color: Colors.orange),
-                                child: Column(
-                                  spacing: 8,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: .circular(14),
-                                          image: DecorationImage(
-                                            image: NetworkImage(menu.imageUrl),
-                                            fit: BoxFit.cover,
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          CookingRecipesDetailPage(),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  width: 180,
+                                  margin: EdgeInsets.only(right: 12),
+                                  // decoration: BoxDecoration(color: Colors.orange),
+                                  child: Column(
+                                    spacing: 8,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: .circular(14),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                menu.imageUrl,
+                                              ),
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    Text(
-                                      menu.name,
-                                      style: TextStyle(fontWeight: .bold),
-                                    ),
-                                    Text(
-                                      menu.description,
-                                      maxLines: 1,
-                                      overflow: .ellipsis,
-                                      style: TextStyle(fontSize: 13),
-                                    ),
-                                  ],
+                                      Text(
+                                        menu.name,
+                                        style: TextStyle(fontWeight: .bold),
+                                      ),
+                                      Text(
+                                        menu.description,
+                                        maxLines: 1,
+                                        overflow: .ellipsis,
+                                        style: TextStyle(fontSize: 13),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               );
                             },
