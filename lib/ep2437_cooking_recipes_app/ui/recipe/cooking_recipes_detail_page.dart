@@ -22,10 +22,14 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
             children: [
               SizedBox(height: 52, child: Stack(children: [Placeholder()])),
               Row(
+                spacing: 12,
                 children: [
-                  Text("Choco Macarons"),
+                  Text(
+                    "Choco Macarons",
+                    style: TextStyle(fontWeight: .bold, fontSize: 26),
+                  ),
                   Spacer(),
-                  Icon(Icons.star),
+                  Icon(Icons.star, color: Colors.orange),
                   Text("4.7"),
                 ],
               ),
@@ -44,10 +48,16 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 maxLines: 2,
               ),
               ExpansionTile(title: Text("Ingredients")),
-              Divider(height: 0,),
-              ExpansionTile(title: Text("Directions"),
-              children: [Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")],),
-              Divider(height: 0,),
+              Divider(height: 0),
+              ExpansionTile(
+                title: Text("Directions"),
+                children: [
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  ),
+                ],
+              ),
+              Divider(height: 0),
             ],
           ),
         ),
