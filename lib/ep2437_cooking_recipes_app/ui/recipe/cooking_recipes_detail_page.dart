@@ -55,6 +55,9 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               ExpansionTile(title: Text("Ingredients")),
               Divider(height: 0),
               ExpansionTile(
+                tilePadding: EdgeInsets.zero,
+                minTileHeight: 0,
+                visualDensity: VisualDensity.compact,
                 title: Text("Directions"),
                 children: [
                   Text(
