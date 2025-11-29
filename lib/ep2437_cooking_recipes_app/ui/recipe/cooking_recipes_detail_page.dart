@@ -22,7 +22,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
             children: [
               SizedBox(height: 52, child: Stack(children: [Placeholder()])),
               Row(
-                spacing: 12,
+                spacing: 8,
                 children: [
                   Text(
                     "Choco Macarons",
@@ -36,14 +36,18 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.alarm_add,size: 18,),
+                  Icon(Icons.alarm_add, size: 18),
                   Text("10 min"),
-                  Icon(Icons.bar_chart,size: 18,),
+                  Icon(Icons.bar_chart, size: 18),
                   Text("Medium"),
                 ],
               ),
               Container(height: 320, child: Placeholder()),
-              Text("Description"),
+              Text(
+                "Description",
+                style: TextStyle(fontWeight: FontWeight.bold,
+                fontSize: 18,),
+              ),
               Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 maxLines: 2,
