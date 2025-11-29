@@ -45,8 +45,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               Container(height: 320, child: Placeholder()),
               Text(
                 "Description",
-                style: TextStyle(fontWeight: FontWeight.bold,
-                fontSize: 18,),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -56,13 +55,13 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 children: [
                   ListTileTheme(
                     contentPadding: .zero,
-                    minVerticalPadding: 0,
+                    // minVerticalPadding: 0,
                     child: ExpansionTile(
-
-                        tilePadding: EdgeInsets.zero,
-                        minTileHeight: 0,
-                        visualDensity: VisualDensity.compact,
-                        title: Text("Ingredients")),
+                      tilePadding: EdgeInsets.zero,
+                      minTileHeight: 0,
+                      visualDensity: VisualDensity.compact,
+                      title: Text("Ingredients"),
+                    ),
                   ),
                   Divider(height: 0),
                 ],
