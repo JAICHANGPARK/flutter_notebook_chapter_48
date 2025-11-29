@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_48/ep2437_cooking_recipes_app/data/cooking_recipes.dart';
 import 'package:gap/gap.dart';
 
+import '../recipe/cooking_recipes_detail_page.dart';
+
 class CookingRecipesHomePage extends StatefulWidget {
   const CookingRecipesHomePage({super.key});
 
