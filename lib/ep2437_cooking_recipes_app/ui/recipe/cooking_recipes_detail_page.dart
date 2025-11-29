@@ -12,10 +12,12 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: .start,
             spacing: 12,
             children: [
               SizedBox(height: 52, child: Stack(children: [Placeholder()])),
