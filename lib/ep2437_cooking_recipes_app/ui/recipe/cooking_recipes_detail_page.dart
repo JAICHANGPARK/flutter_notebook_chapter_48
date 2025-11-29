@@ -57,10 +57,13 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 children: [
                   ListTileTheme(
                     contentPadding: .zero,
+
                     // minVerticalPadding: 0,
                     child: ExpansionTile(
                       tilePadding: EdgeInsets.zero,
                       minTileHeight: 0,
+                      shape: Border(),
+
                       visualDensity: VisualDensity.compact,
                       title: Text("Ingredients"),
                     ),
@@ -74,6 +77,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                   ExpansionTile(
                     tilePadding: EdgeInsets.zero,
                     minTileHeight: 0,
+                    shape: Border(),
                     visualDensity: VisualDensity.compact,
                     title: Text("Directions"),
                     children: [
@@ -84,9 +88,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                   ),
                   Divider(height: 0),
                 ],
-              )
-
-
+              ),
             ],
           ),
         ),
