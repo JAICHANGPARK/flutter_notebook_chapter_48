@@ -34,10 +34,11 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 ],
               ),
               Row(
+                spacing: 8,
                 children: [
-                  Icon(Icons.alarm_add),
+                  Icon(Icons.alarm_add,size: 18,),
                   Text("10 min"),
-                  Icon(Icons.bar_chart),
+                  Icon(Icons.bar_chart,size: 18,),
                   Text("Medium"),
                 ],
               ),
