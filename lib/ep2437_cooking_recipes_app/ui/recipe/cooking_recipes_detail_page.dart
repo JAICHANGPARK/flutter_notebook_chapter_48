@@ -24,6 +24,14 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 Text("4.7"),
               ],
             ),
+            Row(
+              children: [
+                Icon(Icons.alarm_add),
+                Text("10 min"),
+                Icon(Icons.bar_chart),
+                Text("Medium")
+              ],
+            )
           ],
         ),
       ),
