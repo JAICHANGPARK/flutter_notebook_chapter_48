@@ -13,9 +13,14 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(child: Column(children: [
-        Row(children: [
-          
-        ],)
+        SizedBox(
+          height: 52,
+
+          child: Stack(children: [
+          Placeholder()
+          ],),
+        ),
+
 
       ])),
     );
