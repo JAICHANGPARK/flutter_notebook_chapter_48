@@ -149,7 +149,11 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               right: 0,
               child: Container(
                 height: 240,
-                decoration: BoxDecoration(gradient: LinearGradient(colors: [
+                decoration: BoxDecoration(gradient: LinearGradient(
+
+                    begin: .bottomCenter,
+                    end: .topCenter,
+                    colors: [
                   Colors.white,
                   Colors.white24,
 
