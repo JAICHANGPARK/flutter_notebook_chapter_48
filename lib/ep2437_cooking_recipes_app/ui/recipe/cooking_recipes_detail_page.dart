@@ -33,11 +33,11 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                         child: Icon(Icons.arrow_back_outlined),
                       ),
                     ),
-                    Positioned(child: Center(
-                      child: Text("Recipes",style: TextStyle(
-                        fontSize: 18
-                      ),),
-                    ),)
+                    Positioned(
+                      child: Center(
+                        child: Text("Recipes", style: TextStyle(fontSize: 22)),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -62,7 +62,16 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                   Text("Medium"),
                 ],
               ),
-              Container(height: 320, child: Placeholder()),
+              Container(
+                height: 320,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2021/01/31/06/39/coffee-5966002_1280.jpg",
+                    ),
+                  ),
+                ),
+              ),
               Text(
                 "Description",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
