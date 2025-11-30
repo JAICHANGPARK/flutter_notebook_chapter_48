@@ -174,7 +174,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                   style: TextStyle(
                     // fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: 16,
                   ),
                 ),
               ),
