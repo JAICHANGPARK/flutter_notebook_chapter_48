@@ -143,6 +143,14 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 ),
               ),
             ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+              ),
+            ),
             Align(
               alignment: .bottomCenter,
               child: Container(
@@ -157,7 +165,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                   style: TextStyle(
                     // fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 18
+                    fontSize: 18,
                   ),
                 ),
               ),
