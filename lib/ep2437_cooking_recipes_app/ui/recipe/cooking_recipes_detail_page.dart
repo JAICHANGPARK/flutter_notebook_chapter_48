@@ -34,7 +34,9 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                             child: CircleAvatar(
                               radius: 24,
                               backgroundColor: Colors.grey[200]!,
+                              foregroundColor: Colors.black,
                               child: Icon(Icons.arrow_back_outlined),
+
                             ),
                           ),
                           Positioned(
