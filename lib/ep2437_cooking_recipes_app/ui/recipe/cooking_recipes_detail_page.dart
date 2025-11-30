@@ -21,7 +21,10 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
             crossAxisAlignment: .start,
             spacing: 12,
             children: [
-              SizedBox(height: 52, child: Stack(children: [Placeholder()])),
+              SizedBox(
+                height: 52,
+                child: Stack(children: [Positioned(child: CircleAvatar())]),
+              ),
               Row(
                 spacing: 8,
                 children: [
