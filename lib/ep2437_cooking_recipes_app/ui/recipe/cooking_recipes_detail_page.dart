@@ -151,7 +151,13 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                   shape: StadiumBorder(),
                   color: .fromRGBO(18, 60, 21, 1),
                 ),
-                child: Text("Watch Video"),
+                child: Text(
+                  "Watch Video",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
           ],
