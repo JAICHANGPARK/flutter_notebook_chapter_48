@@ -146,10 +146,12 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
             Align(
               alignment: .bottomCenter,
               child: Container(
+                margin: EdgeInsets.only(bottom: 42),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: .fromRGBO(18, 60, 21, 1),
                 ),
+                child: Text("Watch Video"),
               ),
             ),
           ],
