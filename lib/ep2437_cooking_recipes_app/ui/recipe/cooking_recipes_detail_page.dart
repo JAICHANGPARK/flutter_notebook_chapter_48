@@ -143,10 +143,13 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 ),
               ),
             ),
-            Container(
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-                color: .fromRGBO(18, 60, 21, 1),
+            Align(
+              alignment: .bottomCenter,
+              child: Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: .fromRGBO(18, 60, 21, 1),
+                ),
               ),
             ),
           ],
