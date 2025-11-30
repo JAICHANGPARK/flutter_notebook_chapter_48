@@ -164,7 +164,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               alignment: .bottomCenter,
               child: Container(
                 margin: EdgeInsets.only(bottom: 42),
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: .fromRGBO(18, 60, 21, 1),
