@@ -77,6 +77,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               ),
               Expanded(child: SingleChildScrollView(child: Column(
                 crossAxisAlignment: .start,
+                spacing: 12,
                 children: [
                   Text(
                     "Description",
