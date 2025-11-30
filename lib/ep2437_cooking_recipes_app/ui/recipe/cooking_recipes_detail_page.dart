@@ -16,7 +16,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
           child: Column(
             crossAxisAlignment: .start,
             spacing: 12,
