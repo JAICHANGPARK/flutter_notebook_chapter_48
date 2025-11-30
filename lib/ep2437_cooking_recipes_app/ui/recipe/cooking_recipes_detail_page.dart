@@ -71,7 +71,9 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                     ),
                     fit: .cover,
                   ),
+                  borderRadius: .circular(16)
                 ),
+                
               ),
               Text(
                 "Description",
