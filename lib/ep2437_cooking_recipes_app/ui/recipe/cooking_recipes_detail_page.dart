@@ -147,7 +147,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
               alignment: .bottomCenter,
               child: Container(
                 margin: EdgeInsets.only(bottom: 42),
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: .fromRGBO(18, 60, 21, 1),
@@ -155,8 +155,9 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                 child: Text(
                   "Watch Video",
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    // fontWeight: FontWeight.bold,
                     color: Colors.white,
+                    fontSize: 18
                   ),
                 ),
               ),
