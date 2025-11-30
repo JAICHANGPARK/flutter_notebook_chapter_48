@@ -15,6 +15,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
+        bottom: false,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
           child: Column(
