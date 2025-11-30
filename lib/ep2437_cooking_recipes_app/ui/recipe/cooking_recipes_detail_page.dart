@@ -23,7 +23,17 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
             children: [
               SizedBox(
                 height: 52,
-                child: Stack(children: [Positioned(child: CircleAvatar())]),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 0,
+                      child: CircleAvatar(
+                        radius: 24,
+                        child: Icon(Icons.arrow_back_outlined),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Row(
                 spacing: 8,
