@@ -69,6 +69,7 @@ class _CookingRecipesDetailPageState extends State<CookingRecipesDetailPage> {
                     image: NetworkImage(
                       "https://cdn.pixabay.com/photo/2021/01/31/06/39/coffee-5966002_1280.jpg",
                     ),
+                    fit: .cover,
                   ),
                 ),
               ),
