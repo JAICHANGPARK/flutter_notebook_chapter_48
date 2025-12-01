@@ -15,11 +15,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
       body: Stack(
         children: [
           Column(
-            spacing: 12,
+            spacing: 16,
             children: [
               Container(
                 height: 320,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: BoxDecoration(color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  bottomRight: .circular(32),
+                  bottomLeft: .circular(32),
+                )
+                ),
               ),
               Expanded(
                 child: Container(
