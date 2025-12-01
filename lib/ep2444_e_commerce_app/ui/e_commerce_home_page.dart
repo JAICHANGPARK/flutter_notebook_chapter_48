@@ -25,18 +25,24 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     bottomRight: .circular(42),
                     bottomLeft: .circular(42),
                   ),
-                  
                 ),
                 child: SafeArea(
                   child: Column(
                     children: [
                       Row(
                         children: [
-                          CircleAvatar(),
-                          Expanded(child: Center(child: Text("WINTER"),)),
-                          CircleAvatar(),
+                          CircleAvatar(radius: 30),
+                          Expanded(
+                            child: Center(
+                              child: Text(
+                                "WINTER",
+                                style: TextStyle(fontSize: 20),
+                              ),
+                            ),
+                          ),
+                          CircleAvatar(radius: 30),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
