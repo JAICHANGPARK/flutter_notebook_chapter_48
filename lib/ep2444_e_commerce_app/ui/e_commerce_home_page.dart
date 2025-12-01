@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ECommerceHomePage extends StatefulWidget {
   const ECommerceHomePage({super.key});
@@ -30,6 +31,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
+                      crossAxisAlignment: .start,
                       children: [
                         Row(
                           children: [
@@ -44,6 +46,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ),
                             CircleAvatar(radius: 30),
                           ],
+                        ),
+                        Gap(24),
+                        Text("Hello Dream", style: TextStyle(fontSize: 28)),
+                        Text("Fashion confidence and reveals beauty."),
+                        Container(
+                          height: 58,
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: .fromRGBO(237, 241, 244, 1),
+                          ),
                         ),
                       ],
                     ),
