@@ -12,7 +12,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: .fromRGBO(237, 241, 244, 1),
-      body: Stack(children: []),
+      body: Stack(
+        children: [
+          Column(
+            children: [
+              Container(
+                height: 240,
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
