@@ -66,12 +66,21 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               ),
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.only(left: 16,top: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: .only(
                       topLeft: .circular(42),
                       topRight: .circular(42),
                     ),
+                  ),
+                  child: Column(
+                    spacing: 16,
+                    children: [
+                      SizedBox(height: 62,
+                      child: Placeholder(),),
+                      Expanded(child: Placeholder())
+                    ],
                   ),
                 ),
               ),
