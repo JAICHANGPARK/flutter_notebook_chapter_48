@@ -19,7 +19,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             spacing: 16,
             children: [
               Container(
-                height: 320,
+                height: 332,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: .only(
@@ -47,11 +47,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             CircleAvatar(radius: 30),
                           ],
                         ),
-                        Gap(24),
+                        Gap(16),
                         Text("Hello Dream", style: TextStyle(fontSize: 28)),
+                        Gap(8),
                         Text("Fashion confidence and reveals beauty."),
+                        Gap(16),
                         Container(
-                          height: 58,
+                          height: 54,
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: .fromRGBO(237, 241, 244, 1),
