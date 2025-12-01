@@ -27,23 +27,26 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   ),
                 ),
                 child: SafeArea(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          CircleAvatar(radius: 30),
-                          Expanded(
-                            child: Center(
-                              child: Text(
-                                "WINTER",
-                                style: TextStyle(fontSize: 20),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(radius: 30),
+                            Expanded(
+                              child: Center(
+                                child: Text(
+                                  "WINTER",
+                                  style: TextStyle(fontSize: 20),
+                                ),
                               ),
                             ),
-                          ),
-                          CircleAvatar(radius: 30),
-                        ],
-                      ),
-                    ],
+                            CircleAvatar(radius: 30),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
