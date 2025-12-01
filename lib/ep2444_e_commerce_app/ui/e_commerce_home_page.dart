@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ECommerceHomePage extends StatefulWidget {
   const ECommerceHomePage({super.key});
 
@@ -11,6 +10,9 @@ class ECommerceHomePage extends StatefulWidget {
 class _ECommerceHomePageState extends State<ECommerceHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: .fromRGBO(237, 241, 244, 1),
+      body: Stack(children: []),
+    );
   }
 }
