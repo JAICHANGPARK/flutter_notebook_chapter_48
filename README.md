@@ -6,7 +6,7 @@
 - Helal Hossain
 - https://dribbble.com/shots/26830042-Winter-Fashion-E-Commerce-App-Design
 
-<img src="https://cdn.dribbble.com/userupload/45823941/file/822b597fa2b067be5984b7cf3bc8fb72.png?resize=1905x1429&vertical=center" alt="">
+<img src="https://cdn.dribbble.com/userupload/45885649/file/ca73ea38f286738542745c68d7a2c309.png?resize=2400x1800&vertical=center" alt="">
 
 ## EP2437-2443
 
