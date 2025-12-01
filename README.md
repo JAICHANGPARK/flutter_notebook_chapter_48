@@ -2,9 +2,9 @@
 
 ## EP2444
 
-- Cookio - Cooking Recipes Mobile App
-- Fanka for Korsa
-- https://dribbble.com/shots/26811263-Cookio-Cooking-Recipes-Mobile-App
+- Winter Fashion E-Commerce App Design
+- Helal Hossain
+- https://dribbble.com/shots/26830042-Winter-Fashion-E-Commerce-App-Design
 
 <img src="https://cdn.dribbble.com/userupload/45823941/file/822b597fa2b067be5984b7cf3bc8fb72.png?resize=1905x1429&vertical=center" alt="">
 
