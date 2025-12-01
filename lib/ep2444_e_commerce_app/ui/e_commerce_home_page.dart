@@ -21,9 +21,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                 height: 320,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    bottomRight: .circular(32),
-                    bottomLeft: .circular(32),
+                  borderRadius: .only(
+                    bottomRight: .circular(42),
+                    bottomLeft: .circular(42),
                   ),
                 ),
               ),
@@ -31,9 +31,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topLeft: .circular(32),
-                      topRight: .circular(32),
+                    borderRadius: .only(
+                      topLeft: .circular(42),
+                      topRight: .circular(42),
                     ),
                   ),
                 ),
