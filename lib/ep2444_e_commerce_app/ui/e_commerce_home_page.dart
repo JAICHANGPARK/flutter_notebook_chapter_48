@@ -58,6 +58,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             shape: StadiumBorder(),
                             color: .fromRGBO(237, 241, 244, 1),
                           ),
+                          padding: EdgeInsets.only(left: 16),
                           child: Row(
                             children: [
                               Expanded(child: TextField()),
@@ -73,6 +74,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                     Icon(
                                       Icons.tune_outlined,
                                       color: Colors.white,
+                                      size: 16,
                                     ),
                                     Text(
                                       "Filter",
