@@ -19,7 +19,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             spacing: 16,
             children: [
               Container(
-                height: 325,
+                height: 308,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: .only(
@@ -29,7 +29,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                 ),
                 child: SafeArea(
                   child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
                     child: Column(
                       crossAxisAlignment: .start,
                       children: [
