@@ -65,13 +65,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Colors.black,
-
                                 ),
                                 child: Row(
                                   spacing: 6,
                                   children: [
-                                    Icon(Icons.tune_outlined),
-                                    Text("Filter")
+                                    Icon(
+                                      Icons.tune_outlined,
+                                      color: Colors.white,
+                                    ),
+                                    Text(
+                                      "Filter",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ],
                                 ),
                               ),
