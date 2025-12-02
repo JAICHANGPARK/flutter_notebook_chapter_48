@@ -144,7 +144,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             itemCount: 10,
                             itemBuilder: (context, index) {
                               return Container(
-                                height: 200,
+                                height: 320,
                                 margin: .only(bottom: 12),
                                 decoration: ShapeDecoration(
                                   shape: RoundedSuperellipseBorder(
