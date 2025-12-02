@@ -66,6 +66,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   shape: StadiumBorder(),
                                   color: Colors.black,
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
                                 child: Row(
                                   spacing: 6,
                                   children: [
