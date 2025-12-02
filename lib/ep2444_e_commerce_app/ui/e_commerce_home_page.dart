@@ -65,6 +65,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 child: TextField(
                                   decoration: InputDecoration(
                                     border: .none,
+                                    icon: Icon(Icons.search),
                                     hintText: "Search here",
                                   ),
                                 ),
