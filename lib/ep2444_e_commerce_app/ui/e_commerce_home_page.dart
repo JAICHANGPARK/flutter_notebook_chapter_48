@@ -138,6 +138,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ),
                       Expanded(
                         child: ListView.builder(
+                          padding: .zero,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
