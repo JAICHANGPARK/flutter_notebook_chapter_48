@@ -137,21 +137,23 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                         ),
                       ),
                       Expanded(
-                        child: ListView.builder(
-                          padding: .zero,
-                          itemCount: 10,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              height: 200,
-                              decoration: ShapeDecoration(
-                                shape: RoundedSuperellipseBorder(
-                                  borderRadius: .circular(16),
-
+                        child: Padding(
+                          padding: .only(right: 16),
+                          child: ListView.builder(
+                            padding: .zero,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                height: 200,
+                                decoration: ShapeDecoration(
+                                  shape: RoundedSuperellipseBorder(
+                                    borderRadius: .circular(16),
+                                  ),
+                                  color: .fromRGBO(237, 241, 244, 1),
                                 ),
-                                color: .fromRGBO(237, 241, 244, 1),
-                              ),
-                            );
-                          },
+                              );
+                            },
+                          ),
                         ),
                       ),
                     ],
