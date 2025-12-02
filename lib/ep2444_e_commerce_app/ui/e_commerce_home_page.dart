@@ -124,8 +124,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             return Container(
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
+                                color: .fromRGBO(237, 241, 244, 1),
                               ),
-                              color: .fromRGBO(237, 241, 244, 1),
+                              child: Text("Trending",),
+
+
                             );
                           },
                         ),
