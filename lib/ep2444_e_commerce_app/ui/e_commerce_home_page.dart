@@ -61,13 +61,20 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           padding: EdgeInsets.only(left: 16),
                           child: Row(
                             children: [
-                              Expanded(child: TextField()),
+                              Expanded(
+                                child: TextField(
+                                  decoration: InputDecoration(border: .none),
+                                ),
+                              ),
                               Container(
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Colors.black,
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 15,
+                                  vertical: 12,
+                                ),
                                 child: Row(
                                   spacing: 6,
                                   children: [
