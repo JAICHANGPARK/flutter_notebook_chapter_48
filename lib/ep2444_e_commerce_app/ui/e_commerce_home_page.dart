@@ -116,7 +116,19 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   child: Column(
                     spacing: 16,
                     children: [
-                      SizedBox(height: 62, child: Placeholder()),
+                      SizedBox(
+                        height: 62,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
                       Expanded(child: Placeholder()),
                     ],
                   ),
