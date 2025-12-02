@@ -125,6 +125,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
                               ),
+                              color: .fromRGBO(237, 241, 244, 1),
                             );
                           },
                         ),
