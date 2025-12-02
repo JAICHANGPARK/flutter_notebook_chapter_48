@@ -122,18 +122,25 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 24,
+                                vertical: 12,
+                              ),
+                              margin: EdgeInsets.only(right: 8),
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
                                 color: .fromRGBO(237, 241, 244, 1),
                               ),
-                              child: Text("Trending",),
-
-
+                              child: Text("Trending"),
                             );
                           },
                         ),
                       ),
-                      Expanded(child: Placeholder()),
+                      Expanded(
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {},
+                        ),
+                      ),
                     ],
                   ),
                 ),
