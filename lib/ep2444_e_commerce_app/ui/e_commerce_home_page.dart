@@ -117,7 +117,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     spacing: 16,
                     children: [
                       SizedBox(
-                        height: 62,
+                        height: 52,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
@@ -131,7 +131,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 shape: StadiumBorder(),
                                 color: .fromRGBO(237, 241, 244, 1),
                               ),
-                              child: Text("Trending"),
+                              child: Center(child: Text("Trending")),
                             );
                           },
                         ),
