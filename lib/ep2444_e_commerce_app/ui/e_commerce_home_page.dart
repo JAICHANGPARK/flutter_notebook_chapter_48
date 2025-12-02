@@ -138,7 +138,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ),
                       Expanded(
                         child: ListView.builder(
-                          itemBuilder: (context, index) {},
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: ShapeDecoration(
+                                shape: RoundedSuperellipseBorder(
+                                  borderRadius: .circular(16),
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ],
