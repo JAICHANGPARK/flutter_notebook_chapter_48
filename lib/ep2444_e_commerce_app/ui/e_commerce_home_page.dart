@@ -19,7 +19,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             spacing: 16,
             children: [
               Container(
-                height: 332,
+                height: 325,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: .only(
