@@ -19,7 +19,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             spacing: 16,
             children: [
               Container(
-                height: 308,
+                height: 316,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: .only(
@@ -58,6 +58,25 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             shape: StadiumBorder(),
                             color: .fromRGBO(237, 241, 244, 1),
                           ),
+                          child: Row(
+                            children: [
+                              Expanded(child: TextField()),
+                              Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Colors.black,
+
+                                ),
+                                child: Row(
+                                  spacing: 6,
+                                  children: [
+                                    Icon(Icons.tune_outlined),
+                                    Text("Filter")
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
@@ -66,7 +85,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.only(left: 16,top: 16),
+                  padding: EdgeInsets.only(left: 16, top: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: .only(
@@ -77,9 +96,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   child: Column(
                     spacing: 16,
                     children: [
-                      SizedBox(height: 62,
-                      child: Placeholder(),),
-                      Expanded(child: Placeholder())
+                      SizedBox(height: 62, child: Placeholder()),
+                      Expanded(child: Placeholder()),
                     ],
                   ),
                 ),
