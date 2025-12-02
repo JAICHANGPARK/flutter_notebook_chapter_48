@@ -32,6 +32,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
                     child: Column(
                       crossAxisAlignment: .start,
+                      mainAxisAlignment: .spaceBetween,
                       children: [
                         Row(
                           children: [
@@ -76,8 +77,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   color: Colors.black,
                                 ),
                                 padding: EdgeInsets.symmetric(
-                                  horizontal: 15,
-                                  vertical: 12,
+                                  horizontal: 20,
+                                  vertical: 16,
                                 ),
                                 child: Row(
                                   spacing: 6,
