@@ -143,7 +143,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                     shape: StadiumBorder(),
                                     color: .fromRGBO(237, 241, 244, 1),
                                   ),
-                                  child: Center(child: Text("Trending")),
+                                  child: Center(child: Text(item)),
                                 );
                               },
                             );
