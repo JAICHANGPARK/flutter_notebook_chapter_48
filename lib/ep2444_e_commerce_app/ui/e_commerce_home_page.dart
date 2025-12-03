@@ -212,6 +212,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                     color: Colors.white,
                                                     borderRadius: .circular(16),
                                                   ),
+                                                  padding: .symmetric(horizontal: 12, vertical: 12),
                                                   child: Column(
                                                     children: [
                                                       Row(
