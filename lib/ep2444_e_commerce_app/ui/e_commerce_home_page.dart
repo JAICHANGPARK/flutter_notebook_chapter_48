@@ -131,8 +131,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ];
                             return ListView.builder(
                               scrollDirection: Axis.horizontal,
+                              itemCount: tabs.length,
                               itemBuilder: (context, index) {
                                 final item = tabs[index];
+
                                 return Container(
                                   padding: EdgeInsets.symmetric(
                                     horizontal: 24,
