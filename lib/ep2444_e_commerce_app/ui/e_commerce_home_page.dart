@@ -217,6 +217,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                     vertical: 12,
                                                   ),
                                                   child: Column(
+                                                    spacing: 4,
                                                     children: [
                                                       Row(
                                                         mainAxisAlignment:
