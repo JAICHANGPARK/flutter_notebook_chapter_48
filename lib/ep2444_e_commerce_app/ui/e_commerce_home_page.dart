@@ -208,7 +208,25 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                 Container( decoration: BoxDecoration(
                                                   color: Colors.white,
                                                   borderRadius: .circular(16),
-                                                ),)
+
+                                                ),
+                                                child: Column(
+                                                  children: [
+                                                    Row(
+                                                      children: [
+                                                        Text("Men's Pullover"),
+                                                        Text("Price"),
+
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        
+                                                      ],
+                                                    )
+                                                  ],
+                                                ),
+                                                )
                                               ],
                                             ),
                                           ),
