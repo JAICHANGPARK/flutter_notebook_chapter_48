@@ -201,32 +201,36 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.white,
-                                                      borderRadius: .circular(16),
+                                                      borderRadius: .circular(
+                                                        16,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
-                                                Container( decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius: .circular(16),
-
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: .circular(16),
+                                                  ),
+                                                  child: Column(
+                                                    children: [
+                                                      Row(
+                                                        children: [
+                                                          Text(
+                                                            "Men's Pullover",
+                                                          ),
+                                                          Text("Price"),
+                                                        ],
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Text("Hoodie"),
+                                                          Text("\$199.00"),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
                                                 ),
-                                                child: Column(
-                                                  children: [
-                                                    Row(
-                                                      children: [
-                                                        Text("Men's Pullover"),
-                                                        Text("Price"),
-
-                                                      ],
-                                                    ),
-                                                    Row(
-                                                      children: [
-                                                        
-                                                      ],
-                                                    )
-                                                  ],
-                                                ),
-                                                )
                                               ],
                                             ),
                                           ),
