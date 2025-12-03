@@ -9,7 +9,6 @@ class ECommerceHomePage extends StatefulWidget {
 }
 
 class _ECommerceHomePageState extends State<ECommerceHomePage> {
-
   int selectedTab = 0;
 
   @override
@@ -123,10 +122,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                         height: 52,
                         child: Builder(
                           builder: (context) {
-                            final tabs = ["Trending", "Shows", ""];
+                            final tabs = [
+                              "Trending",
+                              "Shows",
+                              "Bog",
+                              "Shirts",
+                              "Pants",
+                            ];
                             return ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
+                                final item = tabs[index];
                                 return Container(
                                   padding: EdgeInsets.symmetric(
                                     horizontal: 24,
@@ -141,7 +147,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 );
                               },
                             );
-                          }
+                          },
                         ),
                       ),
                       Expanded(
