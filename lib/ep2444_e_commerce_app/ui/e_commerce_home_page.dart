@@ -225,7 +225,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                           Text(
                                                             "Men's Pullover",
                                                             style: TextStyle(
-                                                              fontSize: 20,
+                                                              fontSize: 16,
                                                             ),
                                                           ),
                                                           Text("Price"),
@@ -238,12 +238,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                           Text(
                                                             "Hoodie",
                                                             style: TextStyle(
-                                                              fontSize: 18,
+                                                              fontSize: 16,
                                                             ),
                                                           ),
                                                           Text("\$199.00",
                                                             style: TextStyle(
-                                                              fontSize: 18,
+                                                              fontSize: 16,
                                                             ),),
                                                         ],
                                                       ),
