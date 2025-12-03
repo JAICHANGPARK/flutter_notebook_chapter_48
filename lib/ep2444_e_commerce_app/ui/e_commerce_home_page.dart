@@ -153,7 +153,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           ? Colors.black
                                           : .fromRGBO(237, 241, 244, 1),
                                     ),
-                                    child: Center(child: Text(item)),
+                                    child: Center(
+                                      child: Text(
+                                        item,
+                                        style: TextStyle(
+                                          color: selectedTab == index
+                                              ? Colors.white
+                                              : Colors.black,
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 );
                               },
