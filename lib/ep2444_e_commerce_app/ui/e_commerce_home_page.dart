@@ -195,14 +195,20 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           child: Padding(
                                             padding: const EdgeInsets.all(12.0),
                                             child: Column(
+                                              spacing: 12,
                                               children: [
                                                 Expanded(
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.white,
+                                                      borderRadius: .circular(16),
                                                     ),
                                                   ),
                                                 ),
+                                                Container( decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius: .circular(16),
+                                                ),)
                                               ],
                                             ),
                                           ),
