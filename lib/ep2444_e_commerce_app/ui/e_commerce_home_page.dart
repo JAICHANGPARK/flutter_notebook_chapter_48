@@ -248,7 +248,15 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           top: 4,
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              color: .fromRGBO(237, 241, 244, 1),
+                                              color: .fromRGBO(
+                                                237,
+                                                241,
+                                                244,
+                                                1,
+                                              ),
+                                              borderRadius: .only(
+                                                bottomLeft: .circular(24),
+                                              ),
                                             ),
                                             padding: .all(12),
                                             child: Icon(Icons.favorite_border),
