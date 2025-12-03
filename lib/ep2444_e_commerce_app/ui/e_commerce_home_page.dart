@@ -212,11 +212,15 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                     color: Colors.white,
                                                     borderRadius: .circular(16),
                                                   ),
-                                                  padding: .symmetric(horizontal: 12, vertical: 12),
+                                                  padding: .symmetric(
+                                                    horizontal: 12,
+                                                    vertical: 12,
+                                                  ),
                                                   child: Column(
                                                     children: [
                                                       Row(
-                                                        mainAxisAlignment: .spaceBetween,
+                                                        mainAxisAlignment:
+                                                            .spaceBetween,
                                                         children: [
                                                           Text(
                                                             "Men's Pullover",
@@ -225,7 +229,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                         ],
                                                       ),
                                                       Row(
-                                                        mainAxisAlignment: .spaceBetween,
+                                                        mainAxisAlignment:
+                                                            .spaceBetween,
                                                         children: [
                                                           Text("Hoodie"),
                                                           Text("\$199.00"),
@@ -239,10 +244,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           ),
                                         ),
                                         Positioned(
-                                          child: Container(decoration: BoxDecoration(
-                                            
-                                          ),),
-                                        )
+                                          right: 0,
+                                          top: 0,
+                                          child: Container(
+                                            decoration: BoxDecoration(),
+                                            padding: .all(12),
+                                            child: Icon(Icons.favorite_border),
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   );
