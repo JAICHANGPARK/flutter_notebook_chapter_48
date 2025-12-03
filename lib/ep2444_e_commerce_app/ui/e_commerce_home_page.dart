@@ -224,6 +224,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                         children: [
                                                           Text(
                                                             "Men's Pullover",
+                                                            style: TextStyle(
+                                                              fontSize: 20,
+                                                            ),
                                                           ),
                                                           Text("Price"),
                                                         ],
@@ -232,8 +235,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                         mainAxisAlignment:
                                                             .spaceBetween,
                                                         children: [
-                                                          Text("Hoodie"),
-                                                          Text("\$199.00"),
+                                                          Text(
+                                                            "Hoodie",
+                                                            style: TextStyle(
+                                                              fontSize: 18,
+                                                            ),
+                                                          ),
+                                                          Text("\$199.00",
+                                                            style: TextStyle(
+                                                              fontSize: 18,
+                                                            ),),
                                                         ],
                                                       ),
                                                     ],
@@ -258,8 +269,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                 bottomLeft: .circular(24),
                                               ),
                                             ),
-                                            padding: .all(12),
-                                            child: Icon(Icons.favorite_border),
+                                            padding: .all(16),
+                                            child: Icon(
+                                              Icons.favorite_border,
+                                              size: 18,
+                                            ),
                                           ),
                                         ),
                                       ],
