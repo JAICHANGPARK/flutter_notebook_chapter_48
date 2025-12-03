@@ -135,17 +135,24 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               itemBuilder: (context, index) {
                                 final item = tabs[index];
 
-                                return Container(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 24,
-                                    vertical: 12,
+                                return GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      selectedTab = index;
+                                    });
+                                  },
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 24,
+                                      vertical: 12,
+                                    ),
+                                    margin: EdgeInsets.only(right: 8),
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: .fromRGBO(237, 241, 244, 1),
+                                    ),
+                                    child: Center(child: Text(item)),
                                   ),
-                                  margin: EdgeInsets.only(right: 8),
-                                  decoration: ShapeDecoration(
-                                    shape: StadiumBorder(),
-                                    color: .fromRGBO(237, 241, 244, 1),
-                                  ),
-                                  child: Center(child: Text(item)),
                                 );
                               },
                             );
