@@ -189,6 +189,26 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                       ),
                                       color: .fromRGBO(237, 241, 244, 1),
                                     ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned.fill(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(12.0),
+                                            child: Column(
+                                              children: [
+                                                Expanded(
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   );
                                 },
                               ),
