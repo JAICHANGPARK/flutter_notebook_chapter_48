@@ -149,7 +149,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                     margin: EdgeInsets.only(right: 8),
                                     decoration: ShapeDecoration(
                                       shape: StadiumBorder(),
-                                      color: .fromRGBO(237, 241, 244, 1),
+                                      color: selectedTab == index
+                                          ? Colors.black
+                                          : .fromRGBO(237, 241, 244, 1),
                                     ),
                                     child: Center(child: Text(item)),
                                   ),
