@@ -216,6 +216,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   child: Column(
                                                     children: [
                                                       Row(
+                                                        mainAxisAlignment: .spaceBetween,
                                                         children: [
                                                           Text(
                                                             "Men's Pullover",
