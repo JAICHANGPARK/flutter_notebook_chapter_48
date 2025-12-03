@@ -181,7 +181,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
                                   return Container(
-                                    height: 320,
+                                    height: 360,
                                     margin: .only(bottom: 12),
                                     decoration: ShapeDecoration(
                                       shape: RoundedSuperellipseBorder(
@@ -238,6 +238,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             ),
                                           ),
                                         ),
+                                        Positioned(
+                                          child: Container(decoration: BoxDecoration(
+                                            
+                                          ),),
+                                        )
                                       ],
                                     ),
                                   );
