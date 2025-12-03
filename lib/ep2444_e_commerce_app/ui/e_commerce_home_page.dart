@@ -9,6 +9,9 @@ class ECommerceHomePage extends StatefulWidget {
 }
 
 class _ECommerceHomePageState extends State<ECommerceHomePage> {
+
+  int selectedTab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -118,22 +121,27 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     children: [
                       SizedBox(
                         height: 52,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 24,
-                                vertical: 12,
-                              ),
-                              margin: EdgeInsets.only(right: 8),
-                              decoration: ShapeDecoration(
-                                shape: StadiumBorder(),
-                                color: .fromRGBO(237, 241, 244, 1),
-                              ),
-                              child: Center(child: Text("Trending")),
+                        child: Builder(
+                          builder: (context) {
+                            final tabs = ["Trending", "Shows", ""];
+                            return ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 24,
+                                    vertical: 12,
+                                  ),
+                                  margin: EdgeInsets.only(right: 8),
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: .fromRGBO(237, 241, 244, 1),
+                                  ),
+                                  child: Center(child: Text("Trending")),
+                                );
+                              },
                             );
-                          },
+                          }
                         ),
                       ),
                       Expanded(
