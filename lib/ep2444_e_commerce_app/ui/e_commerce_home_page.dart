@@ -173,21 +173,30 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       Expanded(
                         child: Padding(
                           padding: .only(right: 16),
-                          child: ListView.builder(
-                            padding: .zero,
-                            itemCount: 10,
-                            itemBuilder: (context, index) {
-                              return Container(
-                                height: 320,
-                                margin: .only(bottom: 12),
-                                decoration: ShapeDecoration(
-                                  shape: RoundedSuperellipseBorder(
-                                    borderRadius: .circular(16),
-                                  ),
-                                  color: .fromRGBO(237, 241, 244, 1),
-                                ),
-                              );
-                            },
+                          child: IndexedStack(
+                            index: selectedTab,
+                            children: [
+                              ListView.builder(
+                                padding: .zero,
+                                itemCount: 10,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    height: 320,
+                                    margin: .only(bottom: 12),
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedSuperellipseBorder(
+                                        borderRadius: .circular(16),
+                                      ),
+                                      color: .fromRGBO(237, 241, 244, 1),
+                                    ),
+                                  );
+                                },
+                              ),
+                              Placeholder(),
+                              Placeholder(),
+                              Placeholder(),
+                              Placeholder(),
+                            ],
                           ),
                         ),
                       ),
