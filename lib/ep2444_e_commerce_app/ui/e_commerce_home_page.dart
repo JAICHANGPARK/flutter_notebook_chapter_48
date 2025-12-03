@@ -244,10 +244,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           ),
                                         ),
                                         Positioned(
-                                          right: 0,
-                                          top: 0,
+                                          right: 4,
+                                          top: 4,
                                           child: Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: BoxDecoration(
+                                              color: .fromRGBO(237, 241, 244, 1),
+                                            ),
                                             padding: .all(12),
                                             child: Icon(Icons.favorite_border),
                                           ),
