@@ -301,7 +301,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             ),
           ),
           Align(alignment: Alignment.bottomCenter,
-
+child: Container(decoration: BoxDecoration(),),
           ),
         ],
       ),
