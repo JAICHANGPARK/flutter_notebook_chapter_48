@@ -305,8 +305,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               ],
             ),
           ),
-          Align(
-            alignment: Alignment.bottomCenter,
+          Positioned(
+            bottom: 42,
+            left: 0,
+            right: 0,
             child: Container(
               decoration: ShapeDecoration(shape: StadiumBorder()),
               child: Row(
