@@ -307,8 +307,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
           ),
           Positioned(
             bottom: 42,
-            left: 0,
-            right: 0,
+            left: 24,
+            right: 24,
             child: Container(
               padding: .symmetric(horizontal: 24, vertical: 12),
               decoration: ShapeDecoration(shape: StadiumBorder(),
