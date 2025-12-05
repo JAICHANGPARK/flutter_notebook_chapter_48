@@ -28,16 +28,27 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ),
                   ),
                   child: SafeArea(
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            CircleAvatar(radius: 32),
-                            Expanded(child: Center(child: Text("Details"))),
-                            CircleAvatar(radius: 32),
-                          ],
-                        ),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        spacing: 16,
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(radius: 28),
+                              Expanded(
+                                child: Center(
+                                  child: Text(
+                                    "Details",
+                                    style: TextStyle(fontSize: 20),
+                                  ),
+                                ),
+                              ),
+                              CircleAvatar(radius: 28),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
