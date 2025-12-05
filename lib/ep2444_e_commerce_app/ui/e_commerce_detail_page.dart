@@ -18,13 +18,23 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             child: Column(
               spacing: 16,
               children: [
+                Container(
+                  height: 420,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: .only(
+                      bottomRight: .circular(32),
+                      bottomLeft: .circular(32),
+                    ),
+                  ),
+                ),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: .only(
-                        bottomRight: .circular(32),
-                        bottomLeft: .circular(32),
+                        topRight: .circular(32),
+                        topLeft: .circular(32),
                       ),
                     ),
                   ),
