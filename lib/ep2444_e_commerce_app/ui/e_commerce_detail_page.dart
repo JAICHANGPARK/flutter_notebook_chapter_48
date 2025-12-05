@@ -12,7 +12,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
