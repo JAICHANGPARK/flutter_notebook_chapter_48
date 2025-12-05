@@ -21,7 +21,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   child: Container(
 
                     decoration: BoxDecoration(
-                      borderRadius: .only(bottomRight: .circular(32)),
+                      color: Colors.white,
+                      borderRadius: .only(bottomRight: .circular(32),
+                          bottomTop: .circular(32)
+                      ),
                     ),
                   ),
                 ),
