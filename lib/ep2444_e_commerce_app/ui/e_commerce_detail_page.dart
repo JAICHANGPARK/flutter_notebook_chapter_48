@@ -55,9 +55,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                             ],
                           ),
-                          Expanded(child: Stack(children: [
-                            Placeholder(),
-                          ],))
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Placeholder(),
+                                Positioned(
+                                  top: 0,
+                                  right: 0,
+                                  bottom: 0,
+                                  child: Container(width: 72),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
