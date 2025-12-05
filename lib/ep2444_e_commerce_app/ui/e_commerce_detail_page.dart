@@ -19,7 +19,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               spacing: 16,
               children: [
                 Container(
-                  height: 420,
+                  height: 480,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: .only(
