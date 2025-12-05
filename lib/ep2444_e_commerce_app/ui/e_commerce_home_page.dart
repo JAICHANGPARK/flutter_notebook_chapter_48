@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class ECommerceHomePage extends StatefulWidget {
   const ECommerceHomePage({super.key});
@@ -321,7 +322,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     spacing: 4,
                     children: [
                       // CircleAvatar(radius: 6, backgroundColor: Colors.black),
-
+                      HugeIcon(icon: HugeIcons.strokeRoundedShoppingBag01),
                     ],
                   ),
                   Column(
