@@ -216,7 +216,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   spacing: 4,
                                                   children: [
                                                     Row(
-                                                      mainAxisAlignment: .spaceBetween,
+                                                      mainAxisAlignment:
+                                                          .spaceBetween,
                                                       children: [
                                                         Text(
                                                           "Men's Pullover",
@@ -228,7 +229,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                       ],
                                                     ),
                                                     Row(
-                                                      mainAxisAlignment: .spaceBetween,
+                                                      mainAxisAlignment:
+                                                          .spaceBetween,
                                                       children: [
                                                         Text(
                                                           "Hoodie",
@@ -262,7 +264,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             ),
                                           ),
                                           padding: .all(16),
-                                          child: Icon(Icons.favorite_border, size: 18),
+                                          child: Icon(
+                                            Icons.favorite_border,
+                                            size: 18,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -277,12 +282,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         shrinkWrap: true,
                                         padding: .zero,
                                         gridDelegate:
-                                        SliverGridDelegateWithFixedCrossAxisCount(
-                                          crossAxisCount: 2,
-                                          mainAxisSpacing: 8,
-                                          crossAxisSpacing: 8,
-                                          childAspectRatio: .7
-                                        ),
+                                            SliverGridDelegateWithFixedCrossAxisCount(
+                                              crossAxisCount: 2,
+                                              mainAxisSpacing: 8,
+                                              crossAxisSpacing: 8,
+                                              childAspectRatio: .7,
+                                            ),
                                         itemCount: 10,
                                         itemBuilder: (context, index) {
                                           return Container(
@@ -292,35 +297,47 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                               shape: RoundedSuperellipseBorder(
                                                 borderRadius: .circular(16),
                                               ),
-                                              color: .fromRGBO(237, 241, 244, 1),
+                                              color: .fromRGBO(
+                                                237,
+                                                241,
+                                                244,
+                                                1,
+                                              ),
                                             ),
                                             child: Stack(
                                               children: [
                                                 Positioned.fill(
                                                   child: Padding(
-                                                    padding: const EdgeInsets.all(
-                                                      12.0,
-                                                    ),
+                                                    padding:
+                                                        const EdgeInsets.all(
+                                                          12.0,
+                                                        ),
                                                     child: Column(
                                                       spacing: 12,
                                                       children: [
                                                         Expanded(
                                                           child: Container(
-                                                            decoration: BoxDecoration(
-                                                              color: Colors.white,
-                                                              borderRadius: .circular(
-                                                                16,
-                                                              ),
-                                                            ),
+                                                            decoration:
+                                                                BoxDecoration(
+                                                                  color: Colors
+                                                                      .white,
+                                                                  borderRadius:
+                                                                      .circular(
+                                                                        16,
+                                                                      ),
+                                                                ),
                                                           ),
                                                         ),
                                                         Container(
-                                                          decoration: BoxDecoration(
-                                                            color: Colors.white,
-                                                            borderRadius: .circular(
-                                                              16,
-                                                            ),
-                                                          ),
+                                                          decoration:
+                                                              BoxDecoration(
+                                                                color: Colors
+                                                                    .white,
+                                                                borderRadius:
+                                                                    .circular(
+                                                                      16,
+                                                                    ),
+                                                              ),
                                                           padding: .symmetric(
                                                             horizontal: 12,
                                                             vertical: 12,
@@ -335,7 +352,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                                   Text(
                                                                     "Men's Pullover",
                                                                     style: TextStyle(
-                                                                      fontSize: 16,
+                                                                      fontSize:
+                                                                          16,
                                                                     ),
                                                                   ),
                                                                   // Text("Price"),
@@ -348,13 +366,15 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                                   Text(
                                                                     "Hoodie",
                                                                     style: TextStyle(
-                                                                      fontSize: 16,
+                                                                      fontSize:
+                                                                          16,
                                                                     ),
                                                                   ),
                                                                   Text(
                                                                     "\$199.00",
                                                                     style: TextStyle(
-                                                                      fontSize: 16,
+                                                                      fontSize:
+                                                                          16,
                                                                     ),
                                                                   ),
                                                                 ],
@@ -378,7 +398,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                         1,
                                                       ),
                                                       borderRadius: .only(
-                                                        bottomLeft: .circular(24),
+                                                        bottomLeft: .circular(
+                                                          24,
+                                                        ),
                                                       ),
                                                     ),
                                                     padding: .all(16),
@@ -403,8 +425,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               ],
                             ),
                           ),
-                        )
-                       
+                        ),
                       ],
                     ),
                   ),
@@ -421,9 +442,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
                 child: Container(
-                  padding: .symmetric(horizontal: 24, vertical: 12),
+                  padding: .symmetric(horizontal: 24, vertical: 16),
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
+                    color: Colors.white12,
+                    // shadows: [
+                    //   BoxShadow(
+                    //     color: Colors.grey[100]!,
+                    //     blurRadius: 8,
+                    //     spreadRadius: 8,
+                    //   ),
+                    // ],
                     // color: Colors.white,
                   ),
                   child: Row(
