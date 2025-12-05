@@ -338,7 +338,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                                       fontSize: 16,
                                                                     ),
                                                                   ),
-                                                                  Text("Price"),
+                                                                  // Text("Price"),
                                                                 ],
                                                               ),
                                                               Row(
@@ -424,7 +424,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   padding: .symmetric(horizontal: 24, vertical: 12),
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
-                    color: Colors.white,
+                    // color: Colors.white,
                   ),
                   child: Row(
                     mainAxisAlignment: .spaceAround,
