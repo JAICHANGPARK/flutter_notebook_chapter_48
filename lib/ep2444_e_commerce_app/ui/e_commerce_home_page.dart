@@ -279,6 +279,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         gridDelegate:
                                         SliverGridDelegateWithFixedCrossAxisCount(
                                           crossAxisCount: 2,
+                                          mainAxisSpacing: 6,
+                                          crossAxisSpacing: 6,
                                         ),
                                         itemCount: 10,
                                         itemBuilder: (context, index) {
