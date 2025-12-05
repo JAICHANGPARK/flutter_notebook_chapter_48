@@ -180,7 +180,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               children: [
                                 Container(
                                   height: 360,
-                                  margin: .only(bottom: 12),
+                                  margin: .only(bottom: 12, right: 16),
                                   decoration: ShapeDecoration(
                                     shape: RoundedSuperellipseBorder(
                                       borderRadius: .circular(16),
