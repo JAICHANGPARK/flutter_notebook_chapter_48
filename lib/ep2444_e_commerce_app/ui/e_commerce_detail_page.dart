@@ -38,6 +38,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               CircleAvatar(
                                 radius: 28,
                                 backgroundColor: .fromRGBO(237, 241, 244, 1),
+                                child: Icon(Icons.arrow_back_outlined),
                               ),
                               Expanded(
                                 child: Center(
@@ -50,9 +51,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               CircleAvatar(
                                 radius: 28,
                                 backgroundColor: .fromRGBO(237, 241, 244, 1),
+                                child: Icon(Icons.favorite_border),
                               ),
                             ],
                           ),
+                          Expanded(child: Stack(children: [
+                            Placeholder(),
+                          ],))
                         ],
                       ),
                     ),
