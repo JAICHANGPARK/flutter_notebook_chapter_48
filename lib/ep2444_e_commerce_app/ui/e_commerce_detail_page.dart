@@ -35,7 +35,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         children: [
                           Row(
                             children: [
-                              CircleAvatar(radius: 28),
+                              CircleAvatar(
+                                radius: 28,
+                                backgroundColor: .fromRGBO(237, 241, 244, 1),
+                              ),
                               Expanded(
                                 child: Center(
                                   child: Text(
@@ -44,7 +47,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   ),
                                 ),
                               ),
-                              CircleAvatar(radius: 28),
+                              CircleAvatar(
+                                radius: 28,
+                                backgroundColor: .fromRGBO(237, 241, 244, 1),
+                              ),
                             ],
                           ),
                         ],
