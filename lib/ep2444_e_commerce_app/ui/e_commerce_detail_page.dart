@@ -10,8 +10,12 @@ class ECommerceDetailPage extends StatefulWidget {
 class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white,
-
+    return Scaffold(backgroundColor: .fromRGBO(237, 241, 244, 1),
+    body: Column(
+      children: [
+        
+      ],
+    ),
     );
   }
 }
