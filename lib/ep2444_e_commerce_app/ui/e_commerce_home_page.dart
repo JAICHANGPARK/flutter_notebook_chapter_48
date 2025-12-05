@@ -307,8 +307,39 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              decoration: BoxDecoration(shape: StadiumBorder()),
-              child: Row(children: [Column(children: [])]),
+              decoration: ShapeDecoration(shape: StadiumBorder()),
+              child: Row(
+                children: [
+                  Column(
+                    spacing: 4,
+                    children: [
+                      CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                      Text("Home"),
+                    ],
+                  ),
+                  Column(
+                    spacing: 4,
+                    children: [
+                      // CircleAvatar(radius: 6, backgroundColor: Colors.black),
+
+                    ],
+                  ),
+                  Column(
+                    spacing: 4,
+                    children: [
+                      CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                      Text("Home"),
+                    ],
+                  ),
+                  Column(
+                    spacing: 4,
+                    children: [
+                      CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                      Text("Home"),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
