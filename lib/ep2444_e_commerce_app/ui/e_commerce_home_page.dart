@@ -270,8 +270,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             child: IndexedStack(
                               index: selectedTab,
                               children: [
-                                ListView.builder(
+                                GridView.builder(
                                   padding: .zero,
+                                  gridDelegate:
+                                      SliverGridDelegateWithFixedCrossAxisCount(
+                                        crossAxisCount: 2,
+                                      ),
                                   itemCount: 10,
                                   itemBuilder: (context, index) {
                                     return Container(
