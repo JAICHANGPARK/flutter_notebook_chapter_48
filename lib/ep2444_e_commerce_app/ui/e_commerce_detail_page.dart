@@ -16,14 +16,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         children: [
           Positioned.fill(
             child: Column(
+              spacing: 16,
               children: [
                 Expanded(
                   child: Container(
-
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: .only(bottomRight: .circular(32),
-                          bottomTop: .circular(32)
+                      borderRadius: .only(
+                        bottomRight: .circular(32),
+                        bottomLeft: .circular(32),
                       ),
                     ),
                   ),
