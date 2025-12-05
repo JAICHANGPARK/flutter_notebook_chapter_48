@@ -183,7 +183,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   children: [
                                     GestureDetector(
                                       onTap: (){
-                                        
+
                                       },
                                       child: Container(
                                         height: 360,
