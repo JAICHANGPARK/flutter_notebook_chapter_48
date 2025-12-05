@@ -310,8 +310,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             left: 0,
             right: 0,
             child: Container(
-              decoration: ShapeDecoration(shape: StadiumBorder()),
+              padding: .symmetric(horizontal: 24, vertical: 12),
+              decoration: ShapeDecoration(shape: StadiumBorder(),
+              color: Colors.white,
+              ),
               child: Row(
+                mainAxisAlignment: .spaceAround,
                 children: [
                   Column(
                     spacing: 4,
