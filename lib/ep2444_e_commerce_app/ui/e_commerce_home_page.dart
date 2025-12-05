@@ -135,7 +135,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 itemCount: tabs.length,
                                 itemBuilder: (context, index) {
                                   final item = tabs[index];
-            
+
                                   return GestureDetector(
                                     onTap: () {
                                       setState(() {
@@ -194,7 +194,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         children: [
                                           Positioned.fill(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(
+                                                12.0,
+                                              ),
                                               child: Column(
                                                 spacing: 12,
                                                 children: [
@@ -211,7 +213,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.white,
-                                                      borderRadius: .circular(16),
+                                                      borderRadius: .circular(
+                                                        16,
+                                                      ),
                                                     ),
                                                     padding: .symmetric(
                                                       horizontal: 12,
@@ -300,8 +304,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               ],
             ),
           ),
-          Align(alignment: Alignment.bottomCenter,
-child: Container(decoration: BoxDecoration(),),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              decoration: BoxDecoration(shape: StadiumBorder()),
+              child: Row(children: [Column(children: [])]),
+            ),
           ),
         ],
       ),
