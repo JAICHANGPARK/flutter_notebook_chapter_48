@@ -328,15 +328,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Column(
                     spacing: 4,
                     children: [
-                      CircleAvatar(radius: 6, backgroundColor: Colors.black),
-                      Text("Home"),
+                      // CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                      // Text("Home"),
+                      HugeIcon(icon: HugeIcons.strokeRoundedShoppingCart01),
                     ],
                   ),
                   Column(
                     spacing: 4,
                     children: [
-                      CircleAvatar(radius: 6, backgroundColor: Colors.black),
-                      Text("Home"),
+                      // CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                      // Text("Home"),
+                      HugeIcon(icon: HugeIcons.strokeRoundedUser),
                     ],
                   ),
                 ],
