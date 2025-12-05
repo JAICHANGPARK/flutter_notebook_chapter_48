@@ -300,6 +300,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               ],
             ),
           ),
+          Align(alignment: Alignment.bottomCenter,
+
+          ),
         ],
       ),
     );
