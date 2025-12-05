@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  hugeicons: ^1.1.1
+  hugeicons: ^1.1.2
   gap: ^3.0.1
 
 
