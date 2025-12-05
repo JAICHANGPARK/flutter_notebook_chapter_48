@@ -83,11 +83,24 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         topLeft: .circular(32),
                       ),
                     ),
+                    child: Column(
+                      children: [
+
+                      ],
+                    ),
                   ),
                 ),
               ],
             ),
           ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              margin: EdgeInsets.all(32),
+              height: 72,
+              child: Placeholder(),
+            ),
+          )
         ],
       ),
     );
