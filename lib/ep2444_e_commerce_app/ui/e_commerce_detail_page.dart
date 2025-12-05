@@ -27,6 +27,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       bottomLeft: .circular(32),
                     ),
                   ),
+                  child: SafeArea(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(radius: 32),
+                            Expanded(child: Center(child: Text("Details"))),
+                            CircleAvatar(radius: 32),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
                 Expanded(
                   child: Container(
