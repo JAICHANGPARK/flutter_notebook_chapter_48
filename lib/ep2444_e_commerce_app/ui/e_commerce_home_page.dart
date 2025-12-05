@@ -311,47 +311,50 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             bottom: 42,
             left: 24,
             right: 24,
-            child: BackdropFilter(
-              filter: ImageFilter.blur(),
-              child: Container(
-                padding: .symmetric(horizontal: 24, vertical: 12),
-                decoration: ShapeDecoration(shape: StadiumBorder(),
-                color: Colors.white,
-                ),
-                child: Row(
-                  mainAxisAlignment: .spaceAround,
-                  children: [
-                    Column(
-                      spacing: 4,
-                      children: [
-                        CircleAvatar(radius: 4, backgroundColor: Colors.black),
-                        Text("Home"),
-                      ],
-                    ),
-                    Column(
-                      spacing: 4,
-                      children: [
-                        // CircleAvatar(radius: 6, backgroundColor: Colors.black),
-                        HugeIcon(icon: HugeIcons.strokeRoundedShoppingBag01),
-                      ],
-                    ),
-                    Column(
-                      spacing: 4,
-                      children: [
-                        // CircleAvatar(radius: 6, backgroundColor: Colors.black),
-                        // Text("Home"),
-                        HugeIcon(icon: HugeIcons.strokeRoundedShoppingCart01),
-                      ],
-                    ),
-                    Column(
-                      spacing: 4,
-                      children: [
-                        // CircleAvatar(radius: 6, backgroundColor: Colors.black),
-                        // Text("Home"),
-                        HugeIcon(icon: HugeIcons.strokeRoundedUser),
-                      ],
-                    ),
-                  ],
+            child: ClipRRect(
+              borderRadius: .circular(42),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                child: Container(
+                  padding: .symmetric(horizontal: 24, vertical: 12),
+                  decoration: ShapeDecoration(shape: StadiumBorder(),
+                  color: Colors.white,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: .spaceAround,
+                    children: [
+                      Column(
+                        spacing: 4,
+                        children: [
+                          CircleAvatar(radius: 4, backgroundColor: Colors.black),
+                          Text("Home"),
+                        ],
+                      ),
+                      Column(
+                        spacing: 4,
+                        children: [
+                          // CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                          HugeIcon(icon: HugeIcons.strokeRoundedShoppingBag01),
+                        ],
+                      ),
+                      Column(
+                        spacing: 4,
+                        children: [
+                          // CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                          // Text("Home"),
+                          HugeIcon(icon: HugeIcons.strokeRoundedShoppingCart01),
+                        ],
+                      ),
+                      Column(
+                        spacing: 4,
+                        children: [
+                          // CircleAvatar(radius: 6, backgroundColor: Colors.black),
+                          // Text("Home"),
+                          HugeIcon(icon: HugeIcons.strokeRoundedUser),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
