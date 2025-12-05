@@ -89,6 +89,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       children: [
                         Row(children: [Placeholder()]),
                         Row(children: [Placeholder()]),
+                        Text("Select Size"),
+                        Row(children: [Placeholder()]),
+                        Text("Description"),
                       ],
                     ),
                   ),
