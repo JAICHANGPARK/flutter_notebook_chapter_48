@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_48/ep2444_e_commerce_app/ui/e_commerce_detail_page.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -182,8 +183,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 child: Column(
                                   children: [
                                     GestureDetector(
-                                      onTap: (){
-
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                ECommerceDetailPage(),
+                                          ),
+                                        );
                                       },
                                       child: Container(
                                         height: 360,
@@ -206,12 +212,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   children: [
                                                     Expanded(
                                                       child: Container(
-                                                        decoration: BoxDecoration(
-                                                          color: Colors.white,
-                                                          borderRadius: .circular(
-                                                            16,
-                                                          ),
-                                                        ),
+                                                        decoration:
+                                                            BoxDecoration(
+                                                              color:
+                                                                  Colors.white,
+                                                              borderRadius:
+                                                                  .circular(16),
+                                                            ),
                                                       ),
                                                     ),
                                                     Container(
@@ -234,9 +241,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                             children: [
                                                               Text(
                                                                 "Men's Pullover",
-                                                                style: TextStyle(
-                                                                  fontSize: 16,
-                                                                ),
+                                                                style:
+                                                                    TextStyle(
+                                                                      fontSize:
+                                                                          16,
+                                                                    ),
                                                               ),
                                                               Text("Price"),
                                                             ],
@@ -247,15 +256,19 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                             children: [
                                                               Text(
                                                                 "Hoodie",
-                                                                style: TextStyle(
-                                                                  fontSize: 16,
-                                                                ),
+                                                                style:
+                                                                    TextStyle(
+                                                                      fontSize:
+                                                                          16,
+                                                                    ),
                                                               ),
                                                               Text(
                                                                 "\$199.00",
-                                                                style: TextStyle(
-                                                                  fontSize: 16,
-                                                                ),
+                                                                style:
+                                                                    TextStyle(
+                                                                      fontSize:
+                                                                          16,
+                                                                    ),
                                                               ),
                                                             ],
                                                           ),
