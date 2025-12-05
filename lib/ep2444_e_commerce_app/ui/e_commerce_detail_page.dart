@@ -63,8 +63,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   top: 0,
                                   right: 0,
                                   bottom: 0,
-                                  child: Container(width: 82,
-                                  child: Placeholder(),),
+                                  child: Container(
+                                    width: 82,
+                                    child: Placeholder(),
+                                  ),
                                 ),
                               ],
                             ),
@@ -85,7 +87,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ),
                     child: Column(
                       children: [
-
+                        Row(children: [Placeholder()]),
+                        Row(children: [Placeholder()]),
                       ],
                     ),
                   ),
@@ -100,7 +103,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               height: 72,
               child: Placeholder(),
             ),
-          )
+          ),
         ],
       ),
     );
