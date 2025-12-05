@@ -174,226 +174,235 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             },
                           ),
                         ),
-                        Container(
-                          height: 360,
-                          margin: .only(bottom: 12),
-                          decoration: ShapeDecoration(
-                            shape: RoundedSuperellipseBorder(
-                              borderRadius: .circular(16),
-                            ),
-                            color: .fromRGBO(237, 241, 244, 1),
-                          ),
-                          child: Stack(
-                            children: [
-                              Positioned.fill(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(12.0),
-                                  child: Column(
-                                    spacing: 12,
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 360,
+                                  margin: .only(bottom: 12),
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedSuperellipseBorder(
+                                      borderRadius: .circular(16),
+                                    ),
+                                    color: .fromRGBO(237, 241, 244, 1),
+                                  ),
+                                  child: Stack(
                                     children: [
-                                      Expanded(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: .circular(16),
+                                      Positioned.fill(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            spacing: 12,
+                                            children: [
+                                              Expanded(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: .circular(16),
+                                                  ),
+                                                ),
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius: .circular(16),
+                                                ),
+                                                padding: .symmetric(
+                                                  horizontal: 12,
+                                                  vertical: 12,
+                                                ),
+                                                child: Column(
+                                                  spacing: 4,
+                                                  children: [
+                                                    Row(
+                                                      mainAxisAlignment: .spaceBetween,
+                                                      children: [
+                                                        Text(
+                                                          "Men's Pullover",
+                                                          style: TextStyle(
+                                                            fontSize: 16,
+                                                          ),
+                                                        ),
+                                                        Text("Price"),
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      mainAxisAlignment: .spaceBetween,
+                                                      children: [
+                                                        Text(
+                                                          "Hoodie",
+                                                          style: TextStyle(
+                                                            fontSize: 16,
+                                                          ),
+                                                        ),
+                                                        Text(
+                                                          "\$199.00",
+                                                          style: TextStyle(
+                                                            fontSize: 16,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
                                           ),
                                         ),
                                       ),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius: .circular(16),
-                                        ),
-                                        padding: .symmetric(
-                                          horizontal: 12,
-                                          vertical: 12,
-                                        ),
-                                        child: Column(
-                                          spacing: 4,
-                                          children: [
-                                            Row(
-                                              mainAxisAlignment: .spaceBetween,
-                                              children: [
-                                                Text(
-                                                  "Men's Pullover",
-                                                  style: TextStyle(
-                                                    fontSize: 16,
-                                                  ),
-                                                ),
-                                                Text("Price"),
-                                              ],
+                                      Positioned(
+                                        right: 4,
+                                        top: 4,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: .fromRGBO(237, 241, 244, 1),
+                                            borderRadius: .only(
+                                              bottomLeft: .circular(24),
                                             ),
-                                            Row(
-                                              mainAxisAlignment: .spaceBetween,
-                                              children: [
-                                                Text(
-                                                  "Hoodie",
-                                                  style: TextStyle(
-                                                    fontSize: 16,
-                                                  ),
-                                                ),
-                                                Text(
-                                                  "\$199.00",
-                                                  style: TextStyle(
-                                                    fontSize: 16,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
+                                          ),
+                                          padding: .all(16),
+                                          child: Icon(Icons.favorite_border, size: 18),
                                         ),
                                       ),
                                     ],
                                   ),
                                 ),
-                              ),
-                              Positioned(
-                                right: 4,
-                                top: 4,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: .fromRGBO(237, 241, 244, 1),
-                                    borderRadius: .only(
-                                      bottomLeft: .circular(24),
-                                    ),
-                                  ),
-                                  padding: .all(16),
-                                  child: Icon(Icons.favorite_border, size: 18),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: .only(right: 16),
-                            child: IndexedStack(
-                              index: selectedTab,
-                              children: [
-                                GridView.builder(
-                                  padding: .zero,
-                                  gridDelegate:
-                                      SliverGridDelegateWithFixedCrossAxisCount(
-                                        crossAxisCount: 2,
-                                      ),
-                                  itemCount: 10,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      height: 360,
-                                      margin: .only(bottom: 12),
-                                      decoration: ShapeDecoration(
-                                        shape: RoundedSuperellipseBorder(
-                                          borderRadius: .circular(16),
-                                        ),
-                                        color: .fromRGBO(237, 241, 244, 1),
-                                      ),
-                                      child: Stack(
-                                        children: [
-                                          Positioned.fill(
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(
-                                                12.0,
+                                Expanded(
+                                  child: Padding(
+                                    padding: .only(right: 16),
+                                    child: IndexedStack(
+                                      index: selectedTab,
+                                      children: [
+                                        GridView.builder(
+                                          padding: .zero,
+                                          gridDelegate:
+                                          SliverGridDelegateWithFixedCrossAxisCount(
+                                            crossAxisCount: 2,
+                                          ),
+                                          itemCount: 10,
+                                          itemBuilder: (context, index) {
+                                            return Container(
+                                              height: 360,
+                                              margin: .only(bottom: 12),
+                                              decoration: ShapeDecoration(
+                                                shape: RoundedSuperellipseBorder(
+                                                  borderRadius: .circular(16),
+                                                ),
+                                                color: .fromRGBO(237, 241, 244, 1),
                                               ),
-                                              child: Column(
-                                                spacing: 12,
+                                              child: Stack(
                                                 children: [
-                                                  Expanded(
-                                                    child: Container(
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.white,
-                                                        borderRadius: .circular(
-                                                          16,
-                                                        ),
+                                                  Positioned.fill(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.all(
+                                                        12.0,
+                                                      ),
+                                                      child: Column(
+                                                        spacing: 12,
+                                                        children: [
+                                                          Expanded(
+                                                            child: Container(
+                                                              decoration: BoxDecoration(
+                                                                color: Colors.white,
+                                                                borderRadius: .circular(
+                                                                  16,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Container(
+                                                            decoration: BoxDecoration(
+                                                              color: Colors.white,
+                                                              borderRadius: .circular(
+                                                                16,
+                                                              ),
+                                                            ),
+                                                            padding: .symmetric(
+                                                              horizontal: 12,
+                                                              vertical: 12,
+                                                            ),
+                                                            child: Column(
+                                                              spacing: 4,
+                                                              children: [
+                                                                Row(
+                                                                  mainAxisAlignment:
+                                                                      .spaceBetween,
+                                                                  children: [
+                                                                    Text(
+                                                                      "Men's Pullover",
+                                                                      style: TextStyle(
+                                                                        fontSize: 16,
+                                                                      ),
+                                                                    ),
+                                                                    Text("Price"),
+                                                                  ],
+                                                                ),
+                                                                Row(
+                                                                  mainAxisAlignment:
+                                                                      .spaceBetween,
+                                                                  children: [
+                                                                    Text(
+                                                                      "Hoodie",
+                                                                      style: TextStyle(
+                                                                        fontSize: 16,
+                                                                      ),
+                                                                    ),
+                                                                    Text(
+                                                                      "\$199.00",
+                                                                      style: TextStyle(
+                                                                        fontSize: 16,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ],
                                                       ),
                                                     ),
                                                   ),
-                                                  Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: .circular(
-                                                        16,
+                                                  Positioned(
+                                                    right: 4,
+                                                    top: 4,
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                        color: .fromRGBO(
+                                                          237,
+                                                          241,
+                                                          244,
+                                                          1,
+                                                        ),
+                                                        borderRadius: .only(
+                                                          bottomLeft: .circular(24),
+                                                        ),
                                                       ),
-                                                    ),
-                                                    padding: .symmetric(
-                                                      horizontal: 12,
-                                                      vertical: 12,
-                                                    ),
-                                                    child: Column(
-                                                      spacing: 4,
-                                                      children: [
-                                                        Row(
-                                                          mainAxisAlignment:
-                                                              .spaceBetween,
-                                                          children: [
-                                                            Text(
-                                                              "Men's Pullover",
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                              ),
-                                                            ),
-                                                            Text("Price"),
-                                                          ],
-                                                        ),
-                                                        Row(
-                                                          mainAxisAlignment:
-                                                              .spaceBetween,
-                                                          children: [
-                                                            Text(
-                                                              "Hoodie",
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                              ),
-                                                            ),
-                                                            Text(
-                                                              "\$199.00",
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ],
+                                                      padding: .all(16),
+                                                      child: Icon(
+                                                        Icons.favorite_border,
+                                                        size: 18,
+                                                      ),
                                                     ),
                                                   ),
                                                 ],
                                               ),
-                                            ),
-                                          ),
-                                          Positioned(
-                                            right: 4,
-                                            top: 4,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: .fromRGBO(
-                                                  237,
-                                                  241,
-                                                  244,
-                                                  1,
-                                                ),
-                                                borderRadius: .only(
-                                                  bottomLeft: .circular(24),
-                                                ),
-                                              ),
-                                              padding: .all(16),
-                                              child: Icon(
-                                                Icons.favorite_border,
-                                                size: 18,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    );
-                                  },
+                                            );
+                                          },
+                                        ),
+                                        Placeholder(),
+                                        Placeholder(),
+                                        Placeholder(),
+                                        Placeholder(),
+                                      ],
+                                    ),
+                                  ),
                                 ),
-                                Placeholder(),
-                                Placeholder(),
-                                Placeholder(),
-                                Placeholder(),
                               ],
                             ),
                           ),
-                        ),
+                        )
+                       
                       ],
                     ),
                   ),
