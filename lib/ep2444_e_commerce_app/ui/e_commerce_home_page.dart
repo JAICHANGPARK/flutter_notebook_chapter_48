@@ -175,9 +175,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           ),
                         ),
                         Expanded(
-                          child:
-
-                          IndexedStack(
+                          child: IndexedStack(
                             index: selectedTab,
                             children: [
                               SingleChildScrollView(
@@ -196,7 +194,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         children: [
                                           Positioned.fill(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(
+                                                12.0,
+                                              ),
                                               child: Column(
                                                 spacing: 12,
                                                 children: [
@@ -204,14 +204,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         color: Colors.white,
-                                                        borderRadius: .circular(16),
+                                                        borderRadius: .circular(
+                                                          16,
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.white,
-                                                      borderRadius: .circular(16),
+                                                      borderRadius: .circular(
+                                                        16,
+                                                      ),
                                                     ),
                                                     padding: .symmetric(
                                                       horizontal: 12,
@@ -263,7 +267,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             top: 4,
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                color: .fromRGBO(237, 241, 244, 1),
+                                                color: .fromRGBO(
+                                                  237,
+                                                  241,
+                                                  244,
+                                                  1,
+                                                ),
                                                 borderRadius: .only(
                                                   bottomLeft: .circular(24),
                                                 ),
@@ -282,12 +291,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                       shrinkWrap: true,
                                       padding: .zero,
                                       gridDelegate:
-                                      SliverGridDelegateWithFixedCrossAxisCount(
-                                        crossAxisCount: 2,
-                                        mainAxisSpacing: 8,
-                                        crossAxisSpacing: 8,
-                                        childAspectRatio: .7,
-                                      ),
+                                          SliverGridDelegateWithFixedCrossAxisCount(
+                                            crossAxisCount: 2,
+                                            mainAxisSpacing: 8,
+                                            crossAxisSpacing: 8,
+                                            childAspectRatio: .7,
+                                          ),
                                       itemCount: 10,
                                       itemBuilder: (context, index) {
                                         return Container(
@@ -297,19 +306,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             shape: RoundedSuperellipseBorder(
                                               borderRadius: .circular(16),
                                             ),
-                                            color: .fromRGBO(
-                                              237,
-                                              241,
-                                              244,
-                                              1,
-                                            ),
+                                            color: .fromRGBO(237, 241, 244, 1),
                                           ),
                                           child: Stack(
                                             children: [
                                               Positioned.fill(
                                                 child: Padding(
-                                                  padding:
-                                                  const EdgeInsets.all(
+                                                  padding: const EdgeInsets.all(
                                                     12.0,
                                                   ),
                                                   child: Column(
@@ -318,26 +321,24 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                       Expanded(
                                                         child: Container(
                                                           decoration:
-                                                          BoxDecoration(
-                                                            color: Colors
-                                                                .white,
-                                                            borderRadius:
-                                                                .circular(
-                                                              16,
-                                                            ),
-                                                          ),
+                                                              BoxDecoration(
+                                                                color: Colors
+                                                                    .white,
+                                                                borderRadius:
+                                                                    .circular(
+                                                                      16,
+                                                                    ),
+                                                              ),
                                                         ),
                                                       ),
                                                       Container(
                                                         decoration:
-                                                        BoxDecoration(
-                                                          color: Colors
-                                                              .white,
-                                                          borderRadius:
-                                                              .circular(
-                                                            16,
-                                                          ),
-                                                        ),
+                                                            BoxDecoration(
+                                                              color:
+                                                                  Colors.white,
+                                                              borderRadius:
+                                                                  .circular(16),
+                                                            ),
                                                         padding: .symmetric(
                                                           horizontal: 12,
                                                           vertical: 12,
@@ -351,10 +352,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                               children: [
                                                                 Text(
                                                                   "Men's Pullover",
-                                                                  style: TextStyle(
-                                                                    fontSize:
-                                                                    16,
-                                                                  ),
+                                                                  style:
+                                                                      TextStyle(
+                                                                        fontSize:
+                                                                            16,
+                                                                      ),
                                                                 ),
                                                                 // Text("Price"),
                                                               ],
@@ -365,17 +367,19 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                               children: [
                                                                 Text(
                                                                   "Hoodie",
-                                                                  style: TextStyle(
-                                                                    fontSize:
-                                                                    16,
-                                                                  ),
+                                                                  style:
+                                                                      TextStyle(
+                                                                        fontSize:
+                                                                            16,
+                                                                      ),
                                                                 ),
                                                                 Text(
                                                                   "\$199.00",
-                                                                  style: TextStyle(
-                                                                    fontSize:
-                                                                    16,
-                                                                  ),
+                                                                  style:
+                                                                      TextStyle(
+                                                                        fontSize:
+                                                                            16,
+                                                                      ),
                                                                 ),
                                                               ],
                                                             ),
@@ -398,9 +402,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                       1,
                                                     ),
                                                     borderRadius: .only(
-                                                      bottomLeft: .circular(
-                                                        24,
-                                                      ),
+                                                      bottomLeft: .circular(24),
                                                     ),
                                                   ),
                                                   padding: .all(16),
@@ -415,7 +417,6 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         );
                                       },
                                     ),
-
                                   ],
                                 ),
                               ),
@@ -425,7 +426,6 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               Placeholder(),
                             ],
                           ),
-
                         ),
                       ],
                     ),
