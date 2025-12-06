@@ -100,7 +100,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             ),
           ),
           Align(
-            alignment: Alignment.bottomCenter,
+            alignment: .bottomCenter,
             child: Container(
               margin: EdgeInsets.all(32),
               height: 72,
