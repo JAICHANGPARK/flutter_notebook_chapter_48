@@ -29,7 +29,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   ),
                   child: SafeArea(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: .all(8.0),
                       child: Column(
                         spacing: 16,
                         children: [
