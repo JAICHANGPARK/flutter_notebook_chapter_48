@@ -81,7 +81,6 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ),
-
                                             ),
                                             child: Image.network(
                                               "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
@@ -89,13 +88,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Container( width: 72,
+                                          child: Container(
+                                            width: 72,
                                             decoration: BoxDecoration(
                                               borderRadius: .circular(15),
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ),
-
                                             ),
                                             child: Image.network(
                                               "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
@@ -103,13 +102,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Container( width: 72,
+                                          child: Container(
+                                            width: 72,
                                             decoration: BoxDecoration(
                                               borderRadius: .circular(15),
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ),
-
                                             ),
                                             child: Image.network(
                                               "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
@@ -117,13 +116,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Container( width: 72,
+                                          child: Container(
+                                            width: 72,
                                             decoration: BoxDecoration(
                                               borderRadius: .circular(15),
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ),
-
                                             ),
                                             child: Image.network(
                                               "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
@@ -151,14 +150,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         topLeft: .circular(32),
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        Row(children: [Placeholder()]),
-                        Row(children: [Placeholder()]),
-                        Text("Select Size"),
-                        Row(children: [Placeholder()]),
-                        Text("Description"),
-                      ],
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: .start,
+                        children: [
+                          Row(children: [Placeholder()]),
+                          Row(children: [Placeholder()]),
+                          Text("Select Size"),
+                          Row(children: [Placeholder()]),
+                          Text("Description"),
+                        ],
+                      ),
                     ),
                   ),
                 ),
