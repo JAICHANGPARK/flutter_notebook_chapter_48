@@ -170,8 +170,11 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   ),
                                   padding: .all(4),
                                   child: Row(
+                                    spacing: 12,
                                     children: [
-                                      CircleAvatar(),
+                                      CircleAvatar(
+                                        radius: 24,
+                                      ),
                                       Text("01"),
                                       CircleAvatar(),
                                     ],
