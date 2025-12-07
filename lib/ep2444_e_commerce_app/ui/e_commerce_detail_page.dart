@@ -223,8 +223,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                     "3XL",
                                   ].map((e) {
                                     return Container(
-                                      height: 42,
-                                      width: 42,
+                                      height: 48,
+                                      width: 48,
+                                      margin: .only(right: 8),
                                       decoration: BoxDecoration(shape: .circle,
                                       border: Border.all(color: Colors.grey)),
 
