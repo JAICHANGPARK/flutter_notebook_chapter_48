@@ -158,7 +158,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           children: [
                             Row(
                               children: [
-                                Text("Men's pullover\nHoodie"),
+                                Text("Men's pullover\nHoodie",style: TextStyle(
+                                  fontWeight:.bold,
+                                  fontSize: 20,
+                                ),),
                                 Spacer(),
                                 Container(
                                   decoration: ShapeDecoration(
