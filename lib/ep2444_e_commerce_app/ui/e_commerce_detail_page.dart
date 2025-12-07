@@ -223,7 +223,11 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                     "3XL",
                                   ].map((e) {
                                     return Container(
-                                      decoration: BoxDecoration(shape: .circle),
+
+                                      decoration: BoxDecoration(shape: .circle,
+                                      border: Border.all(color: Colors.grey)),
+                                      padding: .all(8),
+                                      child: Text("$e",),
                                     );
                                   }).toList(),
                             ),
