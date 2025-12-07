@@ -69,7 +69,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   bottom: 0,
                                   child: Container(
                                     width: 82,
-                                    child: Placeholder(),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: .circular(15),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
