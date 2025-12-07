@@ -154,7 +154,16 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       child: Column(
                         crossAxisAlignment: .start,
                         children: [
-                          Row(children: [Placeholder()]),
+                          Row(
+                            children: [
+                              Text("Men's pullover\nHoodie"),
+                              Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                ),
+                              ),
+                            ],
+                          ),
                           Row(children: [Placeholder()]),
                           Text("Select Size"),
                           Row(children: [Placeholder()]),
