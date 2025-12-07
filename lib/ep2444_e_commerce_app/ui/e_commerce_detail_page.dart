@@ -58,7 +58,11 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           Expanded(
                             child: Stack(
                               children: [
-                                Placeholder(),
+                                Positioned.fill(
+                                  child: Image.network(
+                                    "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
+                                  ),
+                                ),
                                 Positioned(
                                   top: 0,
                                   right: 0,
