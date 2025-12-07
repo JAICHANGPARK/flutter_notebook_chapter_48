@@ -178,13 +178,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(Icons.remove),
                                       ),
                                       Text("01",style: TextStyle(
                                         fontSize: 20,
                                       ),),
                                       CircleAvatar(
                                         radius: 24,
-                                        backgroundColor: Colors.white,
+                                        backgroundColor: Colors.black,
+                                        foregroundColor: Colors.white,
+                                        child: Icon(Icons.add),
                                       ),
                                     ],
                                   ),
