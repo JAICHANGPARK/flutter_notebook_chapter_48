@@ -202,14 +202,31 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               children: [
                                 Text("From:"),
                                 Text("\$199.00"),
+                                Spacer(),
                                 CircleAvatar(radius: 16),
                                 CircleAvatar(radius: 16),
                                 CircleAvatar(radius: 16),
                                 CircleAvatar(radius: 16),
                               ],
                             ),
+
                             Text("Select Size"),
-                            Row(children: [Placeholder()]),
+                            Row(
+                              children:
+                                  [
+                                    "XS",
+                                    "S",
+                                    "M",
+                                    "L",
+                                    "XL",
+                                    "XXL",
+                                    "3XL",
+                                  ].map((e) {
+                                    return Container(
+                                      decoration: BoxDecoration(shape: .circle),
+                                    );
+                                  }).toList(),
+                            ),
                             Text("Description"),
                           ],
                         ),
