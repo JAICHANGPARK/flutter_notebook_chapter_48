@@ -158,10 +158,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           children: [
                             Row(
                               children: [
-                                Text("Men's pullover\nHoodie",style: TextStyle(
-                                  // fontWeight:.bold,
-                                  fontSize: 26,
-                                ),),
+                                Text(
+                                  "Men's pullover\nHoodie",
+                                  style: TextStyle(
+                                    // fontWeight:.bold,
+                                    fontSize: 26,
+                                  ),
+                                ),
                                 Spacer(),
                                 Container(
                                   decoration: ShapeDecoration(
@@ -174,9 +177,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
+                                        backgroundColor: Colors.white,
                                       ),
                                       Text("01"),
-                                      CircleAvatar(),
+                                      CircleAvatar(
+                                        radius: 24,
+                                        backgroundColor: Colors.white,
+                                      ),
                                     ],
                                   ),
                                 ),
