@@ -160,6 +160,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               Container(
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
+                                  color: .fromRGBO(237, 241, 244, 1),
+                                ),
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Text("01"),
+                                    CircleAvatar(),
+                                  ],
                                 ),
                               ),
                             ],
