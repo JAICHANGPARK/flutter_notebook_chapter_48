@@ -70,7 +70,50 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   child: Container(
                                     width: 82,
                                     child: Column(
+                                      spacing: 12,
                                       children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: .circular(15),
+                                              border: Border.all(
+                                                color: Colors.grey,
+                                              ),
+
+                                            ),
+                                            child: Image.network(
+                                              "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: .circular(15),
+                                              border: Border.all(
+                                                color: Colors.grey,
+                                              ),
+
+                                            ),
+                                            child: Image.network(
+                                              "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: .circular(15),
+                                              border: Border.all(
+                                                color: Colors.grey,
+                                              ),
+
+                                            ),
+                                            child: Image.network(
+                                              "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
+                                            ),
+                                          ),
+                                        ),
                                         Expanded(
                                           child: Container(
                                             decoration: BoxDecoration(
