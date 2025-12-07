@@ -155,6 +155,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         padding: const EdgeInsets.all(16.0),
                         child: Column(
                           crossAxisAlignment: .start,
+                          spacing: 16,
                           children: [
                             Row(
                               children: [
@@ -181,9 +182,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                         foregroundColor: Colors.black,
                                         child: Icon(Icons.remove),
                                       ),
-                                      Text("01",style: TextStyle(
-                                        fontSize: 20,
-                                      ),),
+                                      Text(
+                                        "01",
+                                        style: TextStyle(fontSize: 20),
+                                      ),
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Colors.black,
@@ -195,7 +197,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                 ),
                               ],
                             ),
-                            Row(children: [Placeholder()]),
+                            Row(children: [Text("From:"), Text("\$199.00"),
+                            CircleAvatar(),
+                              CircleAvatar(),
+                              CircleAvatar(),
+                              CircleAvatar(),
+                            ]),
                             Text("Select Size"),
                             Row(children: [Placeholder()]),
                             Text("Description"),
