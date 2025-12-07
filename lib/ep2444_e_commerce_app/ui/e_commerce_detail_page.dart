@@ -159,8 +159,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             Row(
                               children: [
                                 Text("Men's pullover\nHoodie",style: TextStyle(
-                                  fontWeight:.bold,
-                                  fontSize: 20,
+                                  // fontWeight:.bold,
+                                  fontSize: 26,
                                 ),),
                                 Spacer(),
                                 Container(
@@ -168,6 +168,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                     shape: StadiumBorder(),
                                     color: .fromRGBO(237, 241, 244, 1),
                                   ),
+                                  padding: .all(4),
                                   child: Row(
                                     children: [
                                       CircleAvatar(),
