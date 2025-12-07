@@ -210,28 +210,35 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ],
                             ),
 
-                            Text("Select Size"),
-                            Row(
-                              children:
-                                  [
-                                    "XS",
-                                    "S",
-                                    "M",
-                                    "L",
-                                    "XL",
-                                    "XXL",
-                                    "3XL",
-                                  ].map((e) {
-                                    return Container(
-                                      height: 48,
-                                      width: 48,
-                                      margin: .only(right: 8),
-                                      decoration: BoxDecoration(shape: .circle,
-                                      border: Border.all(color: Colors.grey)),
+                            Text("Select Size", style: TextStyle(fontSize: 16)),
+                            SingleChildScrollView(
+                              scrollDirection: .horizontal,
+                              child: Row(
+                                children:
+                                    [
+                                      "XS",
+                                      "S",
+                                      "M",
+                                      "L",
+                                      "XL",
+                                      "XXL",
+                                      "3XL",
+                                    ].map((e) {
+                                      return Container(
+                                        height: 48,
+                                        width: 48,
+                                        margin: .only(right: 8),
+                                        decoration: BoxDecoration(
+                                          shape: .circle,
+                                          border: Border.all(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
 
-                                      child: Center(child: Text("$e",)),
-                                    );
-                                  }).toList(),
+                                        child: Center(child: Text("$e")),
+                                      );
+                                    }).toList(),
+                              ),
                             ),
                             Text("Description"),
                           ],
