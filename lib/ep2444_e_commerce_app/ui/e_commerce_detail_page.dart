@@ -151,32 +151,36 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ),
                     child: SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: .start,
-                        children: [
-                          Row(
-                            children: [
-                              Text("Men's pullover\nHoodie"),
-                              Container(
-                                decoration: ShapeDecoration(
-                                  shape: StadiumBorder(),
-                                  color: .fromRGBO(237, 241, 244, 1),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: .start,
+                          children: [
+                            Row(
+                              children: [
+                                Text("Men's pullover\nHoodie"),
+                                Spacer(),
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: .fromRGBO(237, 241, 244, 1),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      Text("01"),
+                                      CircleAvatar(),
+                                    ],
+                                  ),
                                 ),
-                                child: Row(
-                                  children: [
-                                    CircleAvatar(),
-                                    Text("01"),
-                                    CircleAvatar(),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(children: [Placeholder()]),
-                          Text("Select Size"),
-                          Row(children: [Placeholder()]),
-                          Text("Description"),
-                        ],
+                              ],
+                            ),
+                            Row(children: [Placeholder()]),
+                            Text("Select Size"),
+                            Row(children: [Placeholder()]),
+                            Text("Description"),
+                          ],
+                        ),
                       ),
                     ),
                   ),
