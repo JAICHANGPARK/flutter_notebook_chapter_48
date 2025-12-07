@@ -78,6 +78,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ),
+
+                                            ),
+                                            child: Image.network(
+                                              "https://cdn.pixabay.com/photo/2017/08/13/16/42/bears-2637756_1280.png",
                                             ),
                                           ),
                                         ),
