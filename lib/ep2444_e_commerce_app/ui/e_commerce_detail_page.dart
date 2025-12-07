@@ -103,7 +103,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Container(
+                                          child: Container( width: 72,
                                             decoration: BoxDecoration(
                                               borderRadius: .circular(15),
                                               border: Border.all(
@@ -117,7 +117,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Container(
+                                          child: Container( width: 72,
                                             decoration: BoxDecoration(
                                               borderRadius: .circular(15),
                                               border: Border.all(
