@@ -68,12 +68,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   right: 0,
                                   bottom: 0,
                                   child: Container(
-                                    width: 82,
+                                    width: 72,
                                     child: Column(
                                       spacing: 12,
                                       children: [
                                         Expanded(
                                           child: Container(
+                                            width: 72,
                                             decoration: BoxDecoration(
                                               borderRadius: .circular(15),
                                               border: Border.all(
