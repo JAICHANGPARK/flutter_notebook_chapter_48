@@ -286,7 +286,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               margin: EdgeInsets.all(32),
               height: 72,
               child: Row(
+                spacing: 12,
                 children: [
+                  Expanded(
+                    child: Container(
+                      decoration: ShapeDecoration(shape: StadiumBorder()),
+                      child: Center(
+                        child: Text(
+                          "Add to Cart",
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ),
+                    ),
+                  ),
                   Expanded(
                     child: Container(
                       decoration: ShapeDecoration(shape: StadiumBorder()),
