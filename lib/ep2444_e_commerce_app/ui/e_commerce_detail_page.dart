@@ -288,9 +288,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               padding: EdgeInsets.all(8),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
-                shadows: [BoxShadow(color: Colors.black.withValues(alpha: .1),
-                spreadRadius: 8,
-                blurRadius: 8)],
+                shadows: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: .1),
+                    spreadRadius: 8,
+                    blurRadius: 8,
+                  ),
+                ],
+                color: Colors.white,
               ),
               child: Row(
                 spacing: 12,
