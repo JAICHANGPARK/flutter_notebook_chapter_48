@@ -284,7 +284,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             alignment: .bottomCenter,
             child: Container(
               margin: EdgeInsets.all(32),
-              height: 62,
+              height: 72,
               padding: EdgeInsets.all(8),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
@@ -302,11 +302,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: ShapeDecoration(shape: StadiumBorder()),
+                      decoration: ShapeDecoration(shape: StadiumBorder(),
+                      color: .fromRGBO(237, 241, 244, 1),),
                       child: Center(
                         child: Text(
                           "Add to Cart",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 15),
                         ),
                       ),
                     ),
