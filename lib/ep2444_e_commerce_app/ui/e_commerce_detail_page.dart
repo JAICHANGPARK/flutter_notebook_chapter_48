@@ -282,7 +282,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           ),
           Positioned(bottom: 0, left: 0, right: 0, child: Container(
             color: Colors.white,
-            height: 120,
+            height: 72,
           )),
           Align(
             alignment: .bottomCenter,
