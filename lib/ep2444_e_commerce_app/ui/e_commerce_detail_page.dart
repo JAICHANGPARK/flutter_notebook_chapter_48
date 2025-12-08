@@ -302,8 +302,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: ShapeDecoration(shape: StadiumBorder(),
-                      color: .fromRGBO(237, 241, 244, 1),),
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: .fromRGBO(237, 241, 244, 1),
+                      ),
                       child: Center(
                         child: Text(
                           "Add to Cart",
@@ -321,7 +323,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       child: Center(
                         child: Text(
                           "Buy Now",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
                       ),
                     ),
