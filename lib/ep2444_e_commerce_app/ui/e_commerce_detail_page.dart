@@ -8,6 +8,8 @@ class ECommerceDetailPage extends StatefulWidget {
 }
 
 class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
+  String selectedSize = "M";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -224,18 +226,25 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                       "XXL",
                                       "3XL",
                                     ].map((e) {
-                                      return Container(
-                                        height: 48,
-                                        width: 48,
-                                        margin: .only(right: 8),
-                                        decoration: BoxDecoration(
-                                          shape: .circle,
-                                          border: Border.all(
-                                            color: Colors.grey,
+                                      return GestureDetector(
+                                        onTap: () {
+                                          setState(() {
+                                            selectedSize = e;
+                                          });
+                                        },
+                                        child: Container(
+                                          height: 48,
+                                          width: 48,
+                                          margin: .only(right: 8),
+                                          decoration: BoxDecoration(
+                                            shape: .circle,
+                                            border: Border.all(
+                                              color: Colors.grey,
+                                            ),
                                           ),
-                                        ),
 
-                                        child: Center(child: Text("$e")),
+                                          child: Center(child: Text("$e")),
+                                        ),
                                       );
                                     }).toList(),
                               ),
