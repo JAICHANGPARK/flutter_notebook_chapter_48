@@ -186,7 +186,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                       ),
                                       Text(
                                         "01",
-                                        style: TextStyle(fontSize: 20),
+                                        style: TextStyle(fontSize: 18),
                                       ),
                                       CircleAvatar(
                                         radius: 24,
@@ -203,7 +203,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               spacing: 8,
                               children: [
                                 Text("From:", style: TextStyle(fontSize: 18)),
-                                Text("\$199.00"),
+                                Text(
+                                  "\$199.00",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: .bold,
+                                  ),
+                                ),
                                 Spacer(),
                                 CircleAvatar(radius: 16),
                                 CircleAvatar(radius: 16),
