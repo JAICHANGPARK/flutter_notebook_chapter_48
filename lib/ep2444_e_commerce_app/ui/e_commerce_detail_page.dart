@@ -238,12 +238,24 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                           margin: .only(right: 8),
                                           decoration: BoxDecoration(
                                             shape: .circle,
+                                            color: selectedSize == e
+                                                ? Colors.black
+                                                : Colors.transparent,
                                             border: Border.all(
                                               color: Colors.grey,
                                             ),
                                           ),
 
-                                          child: Center(child: Text("$e")),
+                                          child: Center(
+                                            child: Text(
+                                              "$e",
+                                              style: TextStyle(
+                                                color: selectedSize == e
+                                                    ? Colors.white
+                                                    : Colors.black,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       );
                                     }).toList(),
