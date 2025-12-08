@@ -280,7 +280,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               ],
             ),
           ),
-          Positioned(child: Container()),
+          Positioned(bottom: 0, left: 0, right: 0, child: Container()),
           Align(
             alignment: .bottomCenter,
             child: Container(
