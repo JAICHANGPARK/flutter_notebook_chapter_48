@@ -285,7 +285,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             child: Container(
               margin: EdgeInsets.all(32),
               height: 72,
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: ShapeDecoration(shape: StadiumBorder()),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
