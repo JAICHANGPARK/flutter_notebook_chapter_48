@@ -250,7 +250,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                                 ? Colors.black
                                                 : Colors.transparent,
                                             border: Border.all(
-                                              color: Colors.grey[400]!,
+                                              color: Colors.grey[200]!,
                                             ),
                                           ),
 
