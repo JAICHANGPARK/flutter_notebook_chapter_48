@@ -302,7 +302,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   ),
                   Expanded(
                     child: Container(
-                      decoration: ShapeDecoration(shape: StadiumBorder()),
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.black,
+                      ),
+                      child: Text(
+                        "Buy Now",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ),
                 ],
