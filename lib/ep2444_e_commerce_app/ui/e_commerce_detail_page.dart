@@ -284,8 +284,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             alignment: .bottomCenter,
             child: Container(
               margin: EdgeInsets.all(32),
-              height: 72,
-              decoration: ShapeDecoration(shape: StadiumBorder()),
+              height: 62,
+              padding: EdgeInsets.all(8),
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                shadows: [BoxShadow(color: Colors.black.withValues(alpha: .1),
+                spreadRadius: 8,
+                blurRadius: 8)],
+              ),
               child: Row(
                 spacing: 12,
                 children: [
