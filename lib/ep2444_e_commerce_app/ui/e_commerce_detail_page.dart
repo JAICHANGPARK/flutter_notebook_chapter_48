@@ -280,11 +280,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               ],
             ),
           ),
+          Positioned(child: Container()),
           Align(
             alignment: .bottomCenter,
             child: Container(
               margin: EdgeInsets.all(32),
-              height: 72,
+              height: 68,
               padding: EdgeInsets.all(8),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
