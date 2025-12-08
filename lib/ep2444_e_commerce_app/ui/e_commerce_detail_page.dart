@@ -54,6 +54,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               CircleAvatar(
                                 radius: 28,
                                 backgroundColor: .fromRGBO(237, 241, 244, 1),
+                                foregroundColor: Colors.black,
                                 child: Icon(Icons.favorite_border),
                               ),
                             ],
