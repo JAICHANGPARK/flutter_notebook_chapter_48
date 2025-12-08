@@ -40,6 +40,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               CircleAvatar(
                                 radius: 28,
                                 backgroundColor: .fromRGBO(237, 241, 244, 1),
+                                foregroundColor: Colors.black,
                                 child: Icon(Icons.arrow_back_outlined),
                               ),
                               Expanded(
@@ -280,10 +281,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               ],
             ),
           ),
-          Positioned(bottom: 0, left: 0, right: 0, child: Container(
-            color: Colors.white,
-            height: 72,
-          )),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Container(color: Colors.white, height: 72),
+          ),
           Align(
             alignment: .bottomCenter,
             child: Container(
