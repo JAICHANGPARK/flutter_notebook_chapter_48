@@ -202,7 +202,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             Row(
                               spacing: 8,
                               children: [
-                                Text("From:"),
+                                Text("From:", style: TextStyle(fontSize: 18)),
                                 Text("\$199.00"),
                                 Spacer(),
                                 CircleAvatar(radius: 16),
