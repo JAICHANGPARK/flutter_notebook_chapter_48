@@ -306,9 +306,11 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         shape: StadiumBorder(),
                         color: Colors.black,
                       ),
-                      child: Text(
-                        "Buy Now",
-                        style: TextStyle(color: Colors.white),
+                      child: Center(
+                        child: Text(
+                          "Buy Now",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                   ),
