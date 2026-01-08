@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_48/ep2411_real_estate_app/ui/real_estate_detail_page.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+
+
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({super.key});
 
