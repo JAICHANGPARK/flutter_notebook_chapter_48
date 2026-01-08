@@ -15,7 +15,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
         children: [
           Positioned.fill(
             child: ListView.separated(
-              padding: EdgeInsets.zero,
+              padding: .zero,
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
