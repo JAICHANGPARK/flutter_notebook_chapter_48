@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'ui/cooking_recipes_main_page.dart';
 
 class CookingRecipesApp extends StatelessWidget {
